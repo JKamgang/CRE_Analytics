@@ -1,0 +1,123 @@
+
+// ============================================
+// CRE FLOOD GRAPH - DAX MEASURES
+// Copy each measure into Power BI Desktop
+// Modeling → New Measure → Paste formula
+// ============================================
+
+// --- CORE KPIs ---
+
+Total Projects = COUNTROWS(combined_pipeline)
+
+Total SF = SUM(combined_pipeline[sqft])
+
+Total SF (M) = DIVIDE(SUM(combined_pipeline[sqft]), 1000000, 0)
+
+Total Units = SUM(combined_pipeline[units])
+
+Total Est Value = SUM(combined_pipeline[est_value_millions])
+
+Active Cities = DISTINCTCOUNT(combined_pipeline[city])
+
+Active Sectors = DISTINCTCOUNT(combined_pipeline[sector])
+
+Avg Project Size = AVERAGE(combined_pipeline[sqft])
+
+Avg Unit Density = 
+    DIVIDE(
+        SUM(combined_pipeline[units]),
+        COUNTROWS(FILTER(combined_pipeline, combined_pipeline[units] > 0)),
+        0
+    )
+
+// --- GROWTH & CUMULATIVE (FLOOD EFFECT) ---
+
+Cumulative SF = 
+    CALCULATE(
+        SUM(combined_pipeline[sqft]),
+        FILTER(
+            ALL(combined_pipeline[delivery_year]),
+            combined_pipeline[delivery_year] <= MAX(combined_pipeline[delivery_year])
+        )
+    )
+
+Cumulative SF by Sector = 
+    CALCULATE(
+        SUM(combined_pipeline[sqft]),
+        FILTER(
+            ALL(combined_pipeline[delivery_year]),
+            combined_pipeline[delivery_year] <= MAX(combined_pipeline[delivery_year])
+        ),
+        VALUES(combined_pipeline[sector])
+    )
+
+Cumulative Projects = 
+    CALCULATE(
+        COUNTROWS(combined_pipeline),
+        FILTER(
+            ALL(combined_pipeline[delivery_year]),
+            combined_pipeline[delivery_year] <= MAX(combined_pipeline[delivery_year])
+        )
+    )
+
+Growth Rate YoY = 
+    VAR CurrentYearVal = [Total SF]
+    VAR PriorYearVal = CALCULATE(
+        [Total SF],
+        FILTER(
+            ALL(combined_pipeline[delivery_year]),
+            combined_pipeline[delivery_year] = MAX(combined_pipeline[delivery_year]) - 1
+        )
+    )
+    RETURN
+        DIVIDE(CurrentYearVal - PriorYearVal, PriorYearVal, 0)
+
+Projects Per Year = 
+    CALCULATE(
+        COUNTROWS(combined_pipeline),
+        VALUES(combined_pipeline[delivery_year])
+    )
+
+// --- MULTIFAMILY SPECIFIC ---
+
+MF Total Units = 
+    CALCULATE(
+        SUM(combined_pipeline[units]),
+        combined_pipeline[sector] = "Multifamily"
+    )
+
+MF Total Projects = 
+    CALCULATE(
+        COUNTROWS(combined_pipeline),
+        combined_pipeline[sector] = "Multifamily"
+    )
+
+MF Avg Unit Density = 
+    CALCULATE(
+        AVERAGE(combined_pipeline[units]),
+        combined_pipeline[sector] = "Multifamily",
+        combined_pipeline[units] > 0
+    )
+
+MF Pipeline Units = 
+    CALCULATE(
+        SUM(combined_pipeline[units]),
+        combined_pipeline[sector] = "Multifamily",
+        combined_pipeline[status] = "Pipeline"
+    )
+
+MF Completion Rate = 
+    DIVIDE(
+        CALCULATE(COUNTROWS(combined_pipeline), 
+            combined_pipeline[sector] = "Multifamily",
+            combined_pipeline[status] = "Completed"),
+        CALCULATE(COUNTROWS(combined_pipeline), 
+            combined_pipeline[sector] = "Multifamily"),
+        0
+    )
+
+// --- MAP & TOOLTIP ---
+
+Bubble Size = DIVIDE(SUM(combined_pipeline[sqft]), 1000, 1)
+
+Project Density = COUNTROWS(combined_pipeline) / DISTINCTCOUNT(combined_pipeline[neighborhood])

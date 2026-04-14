@@ -1,0 +1,8 @@
+sector,color_hex,sort_order
+Hotel,#9C27B0,1
+Industrial,#F44336,2
+Mixed-Use,#00BCD4,3
+Multifamily,#4CAF50,4
+Office,#2196F3,5
+Other,#607D8B,6
+Retail,#FF9800,7

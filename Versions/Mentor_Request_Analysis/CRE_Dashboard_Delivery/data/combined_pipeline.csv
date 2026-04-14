@@ -1,0 +1,1000 @@
+project_name,city,ward,neighborhood,developer,architect,sector,status,sqft,units,est_value_millions,est_delivery,report_year,latitude,longitude,delivery_year,delivery_quarter,delivery_date
+17xM,DC,2,1700 M St. NW,Skanska,,Office,Completed,317000.0,,216000000.0,Q2 24,2025,38.905406,-77.038834,2024.0,2.0,2024-06-15
+Reunion Square (Building 4),DC,8,Shannon Place & W St. SE,Curtis Development / Four Points / Blue Sky Housing,,Office,Completed,227000.0,,0.0,Q1 24,2025,38.865241,-76.99096,2024.0,1.0,2024-03-15
+MLK Gateway II,DC,8,1909 Martin L King Jr Ave. SE,Menkiti Group,,Office,Completed,60000.0,,70500000.0,Q1 24,2025,38.867224,-76.988901,2024.0,1.0,2024-03-15
+The Oliver,DC,1,2711 - 2719 Georgia Ave. NW,Rock Creek Property Group / Howard University,,Office,Completed,41000.0,,62000000.0,Q3 24,2025,38.925115,-77.022258,2024.0,3.0,2024-09-15
+The Community Partnership for the Prevention of Homelessness,DC,4,14 Kennedy St. NW,The Community Partnership for the Prevention of Homelessness,,Office,Completed,20000.0,,8000000.0,Q3 24,2025,38.956436,-77.010428,2024.0,3.0,2024-09-15
+611 Division Avenue,DC,7,611 Division Ave. NE,The Cox Development Group,,Office,Completed,12000.0,,0.0,Q2 24,2025,38.897659,-76.925616,2024.0,2.0,2024-06-15
+226 Massachusetts Avenue,DC,6,226 Massachusetts Ave. NE,Heritage Foundation,,Office,Completed,5500.0,,0.0,Q4 24,2025,38.895084,-77.002532,2024.0,4.0,2024-12-15
+Federal Reserve Renovation & Expansion,DC,2,1951 & 2051 Constitution Avenue NW,The Federal Reserve Board,,Office,Under Construction,826000.0,,0.0,,2025,38.892855,-77.044194,,,
+Cybersecurity & Infrastructure Security Agency HQ,DC,8,2701 Martin Luther King Jr. Ave. SE,General Services Administration,,Office,Under Construction,630000.0,,524000000.0,Q1 27,2025,38.851981,-77.000374,2027.0,1.0,2027-03-15
+600 5th Street,DC,2,600 5th St. NW,Stonebridge Associates / Rockefeller Group,,Office,Under Construction,415000.0,,370000000.0,Q4 25,2025,38.897837,-77.019472,2025.0,4.0,2025-12-15
+USDA South Building (Wing 7 Modernization),DC,6,1400 Independence Ave. SW,U.S. Department of Agriculture,,Office,Under Construction,250000.0,,114000000.0,Q2 25,2025,38.886773,-77.031541,2025.0,2.0,2025-06-15
+AIA Headquarters Modernization,DC,2,1735 New York Ave. NW,American Institute of Architects,,Office,Under Construction,180000.0,,60000000.0,Q2 25,2025,38.896541,-77.040894,2025.0,2.0,2025-06-15
+Cannon House Office Building Renewal (Ph IV),DC,6,27 Independence Ave. SE,Architect of the Capitol,,Office,Under Construction,170000.0,,188000000.0,Q4 25,2025,38.886239,-77.006633,2025.0,4.0,2025-12-15
+The Milken Center for Advancing the American Dream,DC,2,1501 - 1505 Pennsylvania Ave. NW & 730 15th St. NW,Milken Family Foundation / Akridge,,Office,Under Construction,132000.0,,0.0,Q3 25,2025,38.899124,-77.033909,2025.0,3.0,2025-09-15
+Carl F. West Estates,DC,1,1370 Harvard St. NW,DMA Companies / National Caucus & Center on Black Aging,,Office,Under Construction,10000.0,,134000000.0,Q1 26,2025,38.926488,-77.031429,2026.0,1.0,2026-03-15
+EucKal - 1724 Kalorama Road,DC,1,1724 Kalorama Rd. NW,Jubilee Housing,,Office,Under Construction,7500.0,,16000000.0,Q2 25,2025,38.920794,-77.039455,2025.0,2.0,2025-06-15
+900 New York Avenue,DC,2,900 New York Ave. NW,Gould Property Company / Oxford Properties Group,,Office,Pipeline,575000.0,,0.0,,2025,38.901517,-77.024405,,,
+Navy Yard - Parcel O,DC,6,1000 O St. SE,Redbrick LMD,,Office,Pipeline,400000.0,,0.0,2029,2025,38.872238,-76.993226,2029.0,,2029-06-15
+Reunion Square (Building 2),DC,8,Martin Luther King Jr. Ave. W St. & Shannon Place SE,Four Points / Curtis Development,,Office,Pipeline,400000.0,,0.0,,2025,38.864754,-76.990112,,,
+725 12th Street,DC,2,725 12th St. NW,BXP,,Office,Pipeline,306000.0,,0.0,2028,2025,38.898741,-77.02732,2028.0,,2028-06-15
+The Bridge District (Phase V),DC,8,Howard Rd. SE,Redbrick LMD,,Office,Pipeline,250000.0,,0.0,,2025,38.864545,-76.997911,,,
+Saint Elizabeths East (Parcel 17 - Bldg 2),DC,8,Saint Elizabeths East Campus,Redbrick LMD / Gragg Cardona Partners / DMPED,,Office,Pipeline,154000.0,,0.0,,2025,38.845248,-76.988885,,,
+525 Rhode Island Avenue,DC,5,525 Rhode Island Ave. NE,The Wilkes Company,,Office,Pipeline,130000.0,,57000000.0,,2025,38.920286,-76.998079,,,
+Saint Elizabeths East (Parcel 7),DC,8,Saint Elizabeths East Campus,St. Elizabeths Legacy Partners / Menkiti Group / DMPED,,Office,Pipeline,124300.0,,0.0,,2025,38.846047,-76.995065,,,
+2000 14th Street,DC,1,2000 14th St. NW,Reeves CMC Venture (Capri Investment Group / MRP Realty / CSG Urban Partners) / DMPED,,Office,Pipeline,108000.0,,300000000.0,2030,2025,38.917444,-77.032404,2030.0,,2030-06-15
+2828 Tenth Street,DC,5,2828 Tenth St. NE,The Wilkes Company,,Office,Pipeline,100000.0,,42000000.0,,2025,38.926199,-76.992687,,,
+Upton Place on Wisconsin,DC,3,4000 Wisconsin Ave. NW & 3990 Upton St. NW,Donohoe Development / AIMCO,,Retail,Completed,110400.0,,290000000.0,Q1 24,2025,38.94169,-77.076897,2024.0,1.0,2024-03-15
+Vermeer,DC,6,113 Potomac Ave. SW,Toll Brothers,,Retail,Completed,37000.0,,259000000.0,Q4 24,2025,38.870201,-77.011838,2024.0,4.0,2024-12-15
+ART Place at Fort Totten (Aldi),DC,5,5300 South Dakota Ave. NE,Morris & Gwendolyn Cafritz Foundation,,Retail,Completed,24000.0,,0.0,Q4 24,2025,38.954829,-77.00012,2024.0,4.0,2024-12-15
+The Westerly,DC,6,350 Maple Drive SW,Hoffman & Associates / Paramount Development Corp. / Affordable Housing Developers / CityPartners / DMPED,,Retail,Completed,20000.0,,179000000.0,Q1 24,2025,38.878393,-77.017095,2024.0,1.0,2024-03-15
+The Clara on Martin Luther King Jr. Ave,DC,8,2323 Martin Luther King Jr. Ave. SE,Banneker Ventures / Masjid Muhammad,,Retail,Completed,14000.0,,43000000.0,Q3 24,2025,38.86324,-76.991883,2024.0,3.0,2024-09-15
+17xM,DC,2,1700 M St. NW,Skanska,,Retail,Completed,13000.0,,216000000.0,Q2 24,2025,38.905406,-77.038834,2024.0,2.0,2024-06-15
+The Arbor at Takoma,DC,4,218 Cedar St. NW,Neighborhood Development Company,,Retail,Completed,8400.0,,22000000.0,Q3 24,2025,38.975293,-77.015943,2024.0,3.0,2024-09-15
+MLK Gateway II,DC,8,1909 Martin L King Jr Ave. SE,Menkiti Group,,Retail,Completed,8000.0,,70500000.0,Q1 24,2025,38.867224,-76.988901,2024.0,1.0,2024-03-15
+Elle Apartments,DC,2,1111 20th St. NW,WILLCO Companies,,Retail,Completed,8000.0,,40000000.0,Q2 24,2025,38.904084,-77.044497,2024.0,2.0,2024-06-15
+OZMA,DC,6,44 M St. NE,Skanska,,Retail,Completed,7700.0,,128000000.0,Q3 24,2025,38.906078,-77.006823,2024.0,3.0,2024-09-15
+Residences at Mazza,DC,3,5300 Wisconsin Ave. NW,Tishman Speyer,,Retail,Under Construction,90000.0,,150000000.0,Q2 25,2025,38.959718,-77.085767,2025.0,2.0,2025-06-15
+Reservoir District,DC,5,North Capitol St. & Michigan Ave. NW,Vision McMillan Partners (Jair Lynch Real Estate Partners / Trammell Crow Company),,Retail,Under Construction,80000.0,,720000000.0,2029,2025,38.923912,-77.010582,2029.0,,2029-06-15
+The Bridge District (Phase I),DC,8,632 Howard Rd. SE,Redbrick LMD,,Retail,Under Construction,45000.0,,350000000.0,Q1 25,2025,38.86513,-77.000747,2025.0,1.0,2025-03-15
+The Stacks (Phase I),DC,6,101 V St. SW,Akridge / National Real Estate Development,,Retail,Under Construction,40000.0,,650000000.0,Q1 25,2025,38.864802,-77.012899,2025.0,1.0,2025-03-15
+Northern Bus Garage Reconstruction Project,DC,4,4615 14th St. NW,WMATA,,Retail,Under Construction,27500.0,,500000000.0,Q2 27,2025,38.947554,-77.032352,2027.0,2.0,2027-06-15
+The Yards DC Urby,DC,8,110 N St. SE,Brookfield Properties / Urby,,Retail,Under Construction,26000.0,,0.0,Q1 25,2025,38.874279,-77.005206,2025.0,1.0,2025-03-15
+The Edmonson,DC,8,1130 Sumner Rd. SE,Preservation of Affordable Housing / DC Housing Authority,,Retail,Under Construction,20000.0,,0.0,Q4 26,2025,38.861368,-76.99779,2026.0,4.0,2026-12-15
+The Langston,DC,1,1840 7th St. NW,Quadrangle Development / Capstone Development / Howard University,,Retail,Under Construction,15400.0,,112000000.0,Q1 25,2025,38.914781,-77.022191,2025.0,1.0,2025-03-15
+111 Massachusetts Avenue,DC,6,111 Massachusetts Ave. NW,Georgetown University,,Retail,Under Construction,13200.0,,168000000.0,Q3 25,2025,38.89967,-77.013174,2025.0,3.0,2025-09-15
+600 5th Street,DC,2,600 5th St. NW,Stonebridge Associates / Rockefeller Group,,Retail,Under Construction,12600.0,,370000000.0,Q4 25,2025,38.897837,-77.019472,2025.0,4.0,2025-12-15
+East River Park (Northeast Heights - East Parcels),DC,7,Minnesota Ave. & Benning Rd. NE,Standard Real Estate Investments,,Retail,Pipeline,127400.0,,325000000.0,2027,2025,38.893692,-76.948405,2027.0,,2027-06-15
+The Portals,DC,6,1250 Maryland Ave. SW,Lowe,,Retail,Pipeline,53000.0,,0.0,2027,2025,38.883695,-77.029431,2027.0,,2027-06-15
+Reservation 13 (Bundle 2),DC,7,19th St. Massachusetts Ave. Independence Ave. SE,Frontier Development & Hospitality Group / A. Wash & Associates,,Retail,Pipeline,60000.0,,0.0,,2025,38.885662,-76.974267,,,
+Fletcher Johnson @ The Park,DC,7,4650 Benning Rd. SE,Gragg Cardona Partners / Marshall Heights CDO / Foundation Housing / H2 Design Build,,Retail,Pipeline,50000.0,,400000000.0,,2025,38.883961,-76.933812,,,
+Bond Bread and Washington Railway & Electric Company (WRECO),DC,1,2112 & 2146 Georgia Ave. NW,EDENS / Menkiti Group / Fivesquares Development / Howard University,,Retail,Pipeline,50000.0,,0.0,,2025,38.918814,-77.022445,,,
+Saint Elizabeths East (Parcel 7),DC,8,Saint Elizabeths East Campus,St. Elizabeths Legacy Partners / Menkiti Group / DMPED,,Retail,Pipeline,29300.0,,0.0,2027,2025,38.846047,-76.995065,2027.0,,2027-06-15
+Reservation 13 (Bundle 1),DC,7,19th St. Massachusetts Ave. Independence Ave. SE,Donatelli Development / Blue Skye Development & Construction,,Retail,Pipeline,25000.0,,700000000.0,,2025,38.886176,-76.97539,,,
+2000 14th Street,DC,1,2000 14th St. NW,Reeves CMC Venture (Capri Investment Group / MRP Realty / CSG Urban Partners) / DMPED,,Retail,Pipeline,22500.0,,300000000.0,2030,2025,38.917444,-77.032404,2030.0,,2030-06-15
+The Lady Bird,DC,3,4330 48th St. NW,Mill Creek Residential Trust,,Retail,Pipeline,16500.0,,160000000.0,2027,2025,38.945742,-77.09504,2027.0,,2027-06-15
+Brookland Lanes,DC,5,934 Michigan Ave. NE,Urban Investment Partners,,Retail,Pipeline,21700.0,,126000000.0,2027,2025,38.935358,-76.993581,2027.0,,2027-06-15
+McCourt School of Public Policy,DC,6,125 E St. NW,Georgetown University,,Other,Completed,142000.0,,0.0,Q3 24,2025,38.896304,-77.013265,2024.0,3.0,2024-09-15
+John Francis Education Campus,DC,2,2425 N St. NW,Department of General Services / DC Public Schools,,Other,Completed,126000.0,,97000000.0,Q3 24,2025,38.907469,-77.052321,2024.0,3.0,2024-09-15
+Conway School of Nursing,DC,5,7th St. & Michigan Ave. NE,Catholic University,,Other,Completed,102000.0,,85000000.0,Q2 24,2025,38.933081,-76.997139,2024.0,2.0,2024-06-15
+Dorothy Height Elementary School Modernization,DC,4,1300 Allison St. NW,Department of General Services / DC Public Schools,,Other,Completed,93000.0,,65500000.0,Q3 24,2025,38.9447,-77.030541,2024.0,3.0,2024-09-15
+Myrtilla Miner Building,DC,1,2400 6th St. NW,Howard University,,Other,Completed,80000.0,,50000000.0,Q4 24,2025,38.923769,-77.021789,2024.0,4.0,2024-12-15
+Garfield Elementary School Modernization,DC,8,2435 Alabama Ave. SE,Department of General Services / DC Public Schools,,Other,Completed,76000.0,,60500000.0,Q3 24,2025,38.851733,-76.970805,2024.0,3.0,2024-09-15
+Whitlock Elementary School Modernization,DC,7,533 48th Place NE,Department of General Services / DC Public Schools,,Other,Completed,73000.0,,45000000.0,Q3 24,2025,38.897002,-76.933701,2024.0,3.0,2024-09-15
+Joy Evans Therapeutic Recreation Center,DC,7,3030 G St. SE,Department of General Services / Department of Parks and Recreation,,Other,Completed,37000.0,,40400000.0,Q4 24,2025,38.880914,-76.96326,2024.0,4.0,2024-12-15
+Alice Deal Middle School Classroom Addition,DC,3,3815 Fort Dr. NW,Department of General Services / DC Public Schools,,Other,Completed,23300.0,,18600000.0,Q3 24,2025,38.95339,-77.075579,2024.0,3.0,2024-09-15
+Reservoir Park Recreation Center,DC,5,10 Lower Service Court NW,Department of General Services / Vision McMillan Partners,,Other,Completed,17500.0,,137670000.0,Q2 24,2025,38.923186,-77.010072,2024.0,2.0,2024-06-15
+Cedar Hill Regional Medical Center,DC,8,1200 Pecan St. SE,Universal Health Services / Department of General Services,,Other,Under Construction,407000.0,,434000000.0,Q2 25,2025,38.850685,-76.994729,2025.0,2.0,2025-06-15
+Henle Village Redevelopment,DC,2,1595 Tondorf Rd. NW,Georgetown University,,Other,Under Construction,243900.0,,0.0,Q3 25,2025,38.910455,-77.073382,2025.0,3.0,2025-09-15
+111 Massachusetts Avenue,DC,6,111 Massachusetts Ave. NW,Georgetown University,,Other,Under Construction,240100.0,,150000000.0,Q3 25,2025,38.89967,-77.013174,2025.0,3.0,2025-09-15
+MacArthur High School Modernization,DC,3,4530 MacArthur Blvd. NW,Department of General Services / DC Public Schools,,Other,Under Construction,120000.0,,85000000.0,Q3 26,2025,38.907762,-77.086167,2026.0,3.0,2026-09-15
+Truesdell Elementary School,DC,4,800 Ingraham St. NW,Department of General Services / DC Public Schools,,Other,Under Construction,105000.0,,72000000.0,Q3 25,2025,38.953913,-77.024708,2025.0,3.0,2025-09-15
+Alan & Amy Meltzer Center for Athletic Performance,DC,3,American University Campus,American University,,Other,Under Construction,91500.0,,85000000.0,Q4 25,2025,38.938294,-77.091031,2025.0,4.0,2025-12-15
+4301 Harewood Road,DC,5,4301 Harewood Rd. NE,Washington Latin Public Charter School / Washington Yu Ying Public Charter School,,Other,Under Construction,90000.0,,27000000.0,Q3 26,2025,38.942512,-77.006967,2026.0,3.0,2026-09-15
+Neval Thomas Elementary School Modernization,DC,7,650 Anacostia Ave. NE,Department of General Services / DC Public Schools,,Other,Under Construction,80030.0,,78800000.0,Q3 26,2025,38.901439,-76.95199,2026.0,3.0,2026-09-15
+Spingarn High School (DCIA),DC,5,2500 Benning Rd. NE,Department of General Services Department of Employment Services,,Other,Under Construction,50000.0,,64000000.0,Q4 25,2025,38.899095,-76.970987,2025.0,4.0,2025-12-15
+New Fort Dupont Ice Arena,DC,7,3779 Ely Place SE,Department of General Services,,Other,Under Construction,43600.0,,39130000.0,Q2 25,2025,38.882831,-76.950928,2025.0,2.0,2025-06-15
+Reservoir District (Medical Buildings),DC,5,North Capitol St. & Michigan Ave. NW,Vision McMillan Partners (Jair Lynch Real Estate Partners / Trammell Crow Company),,Other,Pipeline,860000.0,,0.0,,2025,38.925951,-77.010179,,,
+DC Correctional Treatment Facility Annex,DC,7,1901 D St. SE,Government of the District of Columbia,,Other,Pipeline,473900.0,,477000000.0,2031-35,2025,38.883047,-76.974837,,,
+Howard University Hospital,DC,1,2041 Georgia Ave. NW,Howard University,,Other,Pipeline,421800.0,,650000000.0,,2025,38.919871,-77.020055,,,
+National Research Center for Health Disparities,DC,1,2300 Georgia Ave. NW,Howard University / Capstone Development / Quadrangle Development / EDENS,,Other,Pipeline,378000.0,,215000000.0,,2025,38.920158,-77.022481,,,
+Daniel Tsai Hall (New Law Building),DC,6,120 F St. NW,Georgetown University,,Other,Pipeline,165000.0,,0.0,2028,2025,38.896888,-77.013387,2028.0,,2028-06-15
+Crummell Community Center,DC,5,1900 Gallaudet St. NE,Department of General Services,,Other,Pipeline,50000.0,,0.0,2027,2025,38.913558,-76.986199,2027.0,,2027-06-15
+Jelleff Recreation Center,DC,2,3265 S St. NW,Department of General Services / Department of Parks and Recreation,,Other,Pipeline,25000.0,,28800000.0,2027,2025,38.915607,-77.066145,2027.0,,2027-06-15
+Ward 7 Emergency Department,DC,7,Benning Rd. & C St. NE,Universal Health Services,,Other,Pipeline,10000.0,,23000000.0,2026,2025,38.885588,-76.935223,2026.0,,2026-06-15
+11th Street Bridge Park,DC,8,11th Street Bridge,Building Bridges Across the River / DC Department of Transportation,,Other,Pipeline,,,92000000.0,2027,2025,38.871298,-76.990471,2027.0,,2027-06-15
+Cobb Park,DC,6,200 H St. NW,Department of General Services / Department of Parks and Recreation,,Other,Pipeline,,,2100000.0,2025,2025,38.899856,-77.014308,2025.0,,2025-06-15
+Upton Place on Wisconsin,DC,3,4000 Wisconsin Ave. NW & 3990 Upton St. NW,Donohoe Development / AIMCO,,Multifamily,Completed,748000.0,689.0,290000000.0,Q1 24,2025,38.94169,-77.076897,2024.0,1.0,2024-03-15
+Annex on 12th,DC,6,300 12th St. SW,Carmel Partners,,Multifamily,Completed,423000.0,562.0,0.0,Q4 24,2025,38.885543,-77.027749,2024.0,4.0,2024-12-15
+Vermeer,DC,6,113 Potomac Ave. SW,Toll Brothers,,Multifamily,Completed,509000.0,501.0,259000000.0,Q4 24,2025,38.870201,-77.011838,2024.0,4.0,2024-12-15
+The Westerly,DC,6,350 Maple Dr. SW,Hoffman & Associates / Paramount Development Corp. / Affordable Housing Developers / CityPartners / DMPED,,Multifamily,Completed,385000.0,449.0,179000000.0,Q1 24,2025,38.878393,-77.017095,2024.0,1.0,2024-03-15
+The Iris,DC,6,1133 North Capitol St. NE,MRP Realty / Ares Capital Corp. / CSG Urban Partners / Taylor Adams Associates,,Multifamily,Completed,360000.0,430.0,130000000.0,Q2 24,2025,38.905188,-77.008606,2024.0,2.0,2024-06-15
+The Florian,DC,5,1 Florida Ave. NE,Aria Development Group,,Multifamily,Completed,300000.0,388.0,0.0,Q3 24,2025,38.910237,-77.008394,2024.0,3.0,2024-09-15
+The Glade on Laurel,DC,4,6896 Laurel St. NW,Douglas Development Corporation,,Multifamily,Completed,267000.0,353.0,107000000.0,Q4 24,2025,38.973759,-77.013442,2024.0,4.0,2024-12-15
+Reynard at the Parks,DC,4,1100 Dahlia St. NW,Urban Atlantic,,Multifamily,Completed,300000.0,345.0,100000000.0,Q3 24,2025,38.975099,-77.027261,2024.0,3.0,2024-09-15
+J.Coopers Row,DC,6,1319 South Capitol St. SW,Jefferson Apartment Group,,Multifamily,Completed,270000.0,320.0,130000000.0,Q2 24,2025,38.873874,-77.009523,2024.0,2.0,2024-06-15
+The Crosby,DC,6,300 K St. NW,Quadrangle Development / The Wilkes Company,,Multifamily,Completed,290900.0,302.0,160000000.0,Q2 24,2025,38.902243,-77.015461,2024.0,2.0,2024-06-15
+The Stacks (Phase I),DC,6,101 V St. SW,Akridge / National Real Estate Development,,Multifamily,Under Construction,786000.0,1100.0,650000000.0,Q1 25,2025,38.864802,-77.012899,2025.0,1.0,2025-03-15
+Wardman Park Redevelopment,DC,3,2650 Woodley Rd. NW,Carmel Partners,,Multifamily,Under Construction,952000.0,900.0,500000000.0,2025,2025,38.923894,-77.054587,2025.0,,2025-06-15
+The Bridge District (Phase I),DC,8,632 Howard Rd. SE,Redbrick LMD,,Multifamily,Under Construction,660000.0,757.0,350000000.0,Q1 25,2025,38.86513,-77.000747,2025.0,1.0,2025-03-15
+Reservoir District,DC,5,North Capitol St. & Michigan Ave. NW,Vision McMillan Partners (Jair Lynch Real Estate Partners / Trammell Crow Company),,Multifamily,Under Construction,925000.0,730.0,720000000.0,2029,2025,38.923912,-77.010582,2029.0,,2029-06-15
+The Yards DC Urby,DC,8,110 N St. SE,Brookfield Properties / Urby,,Multifamily,Under Construction,354000.0,466.0,0.0,Q1 25,2025,38.874279,-77.005206,2025.0,1.0,2025-03-15
+Worthington Woods,DC,8,4336-50 Livingstown Rd SE & 4401-4550 3rd St. SE,Anacostia Economic Development Corporation / Montgomery Housing Partnership,,Multifamily,Under Construction,235200.0,394.0,132000000.0,Q4 25,2025,38.825025,-77.002211,2025.0,4.0,2025-12-15
+Modera H Street,DC,5,801 17th St. NE,Mill Creek Residential Trust / Bridge Investment Group / BNY Mellon,,Multifamily,Under Construction,243750.0,325.0,0.0,Q1 25,2025,38.900763,-76.97813,2025.0,1.0,2025-03-15
+Residences at Mazza,DC,3,5300 Wisconsin Ave. NW,Tishman Speyer,,Multifamily,Under Construction,243750.0,321.0,150000000.0,Q2 25,2025,38.959718,-77.085767,2025.0,2.0,2025-06-15
+1125 15th Street,DC,2,1125 15th St. NW,Willow Bridge Property Company ,,Multifamily,Under Construction,267900.0,264.0,199570000.0,Q1 26,2025,38.904469,-77.034104,2026.0,1.0,2026-03-15
+Edgewood 611,DC,5,611 Edgewood Terrace NE,Enterprise,,Multifamily,Under Construction,156000.0,258.0,121000000.0,Q3 25,2025,38.923115,-76.997877,2025.0,3.0,2025-09-15
+Reservation 13 (Bundle 1),DC,7,19th St. Massachusetts Ave. Independence Ave. SE,Donatelli Development / Blue Skye Development & Construction,,Multifamily,Pipeline,1036500.0,1000.0,700000000.0,2033,2025,38.886176,-76.97539,2033.0,,2033-06-15
+Fletcher Johnson @ The Park,DC,7,4650 Benning Rd. SE,Gragg Cardona Partners / Marshall Heights CDO / Foundation Housing / H2 Design Build,,Multifamily,Pipeline,793000.0,879.0,400000000.0,,2025,38.883961,-76.933812,,,
+East River Park (Northeast Heights - East Parcels),DC,7,Minnesota Ave. & Benning Rd. NE,Standard Real Estate Investments,,Multifamily,Pipeline,724000.0,855.0,325000000.0,2027,2025,38.893692,-76.948405,2027.0,,2027-06-15
+Martin's View Redevelopment,DC,8,4337 – 4347 Martin Luther King Jr. Ave. SW; 4353 – 4363 Martin Luther King Jr Ave. SW; 201 – 211 Elmira St. SW; 200 – 210 Elmira St. SW,Kaye Stern Properties / Bensahel Capital,,Multifamily,Pipeline,554000.0,821.0,0.0,2030,2025,38.826372,-77.013443,2030.0,,2030-06-15
+2 Patterson Street,DC,6,2 Patterson St. NE,Monument Realty / Morningstar Community Development / Community Housing Partners,,Multifamily,Pipeline,435000.0,660.0,0.0,2028,2025,38.90682,-77.008519,2028.0,,2028-06-15
+The Bridge District (Phase II),DC,8,633 Howard Rd. SE,Redbrick LMD,,Multifamily,Pipeline,520000.0,645.0,0.0,2028,2025,38.864632,-77.000789,2028.0,,2028-06-15
+1001 6th Street,DC,6,1001 6th St. NW / 501 K St. NW,BXP / Steuart Investment Company,,Multifamily,Pipeline,500000.0,539.0,0.0,2028,2025,38.902785,-77.019434,2028.0,,2028-06-15
+The Geneva,DC,2,1825 & 1875 Connecticut Ave. NW,Post Brothers,,Multifamily,Pipeline,875500.0,525.0,700000000.0,2028,2025,38.915103,-77.045721,2028.0,,2028-06-15
+850 South Capitol Street,DC,6,850 South Capitol St. SE,WC Smith,,Multifamily,Pipeline,540400.0,520.0,260000000.0,2030,2025,38.880557,-77.008179,2030.0,,2030-06-15
+450 5th Street,DC,2,450 5th St. NW,The Georgetown Company,,Multifamily,Pipeline,385000.0,500.0,0.0,,2025,38.895608,-77.019298,,,
+Salamander Washington D.C.,DC,6,1330 Maryland Ave. SW,Salamander Resort & Hotel,,Hotel,Completed,424000.0,373.0,35000000.0,Q4 24,2025,38.883602,-77.030449,2024.0,4.0,2024-12-15
+Arlo DC,DC,6,333 G St. & 704 3rd St. NW,Quadrum Global,,Hotel,Completed,235600.0,445.0,0.0,Q4 24,2025,38.898462,-77.015552,2024.0,4.0,2024-12-15
+Hotel AKA Washington Circle,DC,2,1 Washington Circle NW,Electra America Hospitality Group,,Hotel,Completed,80000.0,151.0,30000000.0,Q2 24,2025,38.903398,-77.049772,2024.0,2.0,2024-06-15
+Folger Shakespeare Library North Hall,DC,6,201 East Capitol St. SE,Folger Shakespeare Library / JFW,,Hotel,Completed,12000.0,,80500000.0,Q2 24,2025,38.889433,-77.002768,2024.0,2.0,2024-06-15
+The Westerly,DC,6,350 Maple Drive SW,Hoffman & Associates / Paramount Development Corp. / Affordable Housing Developers / CityPartners / DMPED,,Hotel,Completed,9283.0,,179000000.0,Q1 24,2025,38.878393,-77.017095,2024.0,1.0,2024-03-15
+Grand Hyatt Renovation,DC,2,1000 H St. NW,Host Hotels & Resorts,,Hotel,Completed,,902.0,27000000.0,Q4 24,2025,38.899341,-77.026488,2024.0,4.0,2024-12-15
+Capital Hilton Renovation,DC,2,1001 16th St. NW,Ashford Hospitality Trust,,Hotel,Completed,,559.0,0.0,Q1 24,2025,38.90317,-77.035928,2024.0,1.0,2024-03-15
+Le Meridien Madison,DC,2,1177 15th St. NW,Crescent Real Estate,,Hotel,Completed,,356.0,15000000.0,Q3 24,2025,38.905379,-77.034097,2024.0,3.0,2024-09-15
+Four Seasons Hotel Renovation,DC,2,2800 Pennsylvania Ave. NW,Strategic Hotels & Resorts,,Hotel,Completed,,63.0,20000000.0,Q4 24,2025,38.90445,-77.057226,2024.0,4.0,2024-12-15
+Capital One Arena Modernization,DC,2,601 F St. NW,Monumental Sports & Entertainment / Government of the District of Columbia,,Hotel,Under Construction,1200000.0,,800000000.0,Q3 27,2025,38.89794,-77.020955,2027.0,3.0,2027-09-15
+Smithsonian National Air and Space Museum,DC,2,The National Mall,Smithsonian,,Hotel,Under Construction,687000.0,,900000000.0,Q4 26,2025,38.888205,-77.019848,2026.0,4.0,2026-12-15
+1776 K Street,DC,2,1776 K St. NW,Palmetto Hospitality of Washington DC,,Hotel,Under Construction,214300.0,278.0,0.0,Q1 26,2025,38.902181,-77.041236,2026.0,1.0,2026-03-15
+Base Camp,DC,2,1600 M St. NW,National Geographic Society,,Hotel,Under Construction,110000.0,,0.0,Q4 26,2025,38.905123,-77.037293,2026.0,4.0,2026-12-15
+citizenM - Georgetown,DC,2,3401 K St. NW,citizenM,,Hotel,Under Construction,80000.0,230.0,0.0,Q2 25,2025,38.904138,-77.068113,2025.0,2.0,2025-06-15
+The Milken Center for Advancing the American Dream,DC,2,1501 - 1505 Pennsylvania Ave. NW & 730 15th St. NW,Akridge / Milken Family Foundation,,Hotel,Under Construction,70000.0,,0.0,Q3 25,2025,38.899124,-77.033909,2025.0,3.0,2025-09-15
+Mint House,DC,2,1010 Vermont Ave. NW,Altus Realty Partners / McLean Partners,,Hotel,Under Construction,66000.0,85.0,50000000.0,Q2 25,2025,38.903075,-77.033817,2025.0,2.0,2025-06-15
+The Sixty D.C.,DC,2,1337 Connecticut Ave. NW,Valor Development,,Hotel,Under Construction,50000.0,73.0,39000000.0,Q2 25,2025,38.908286,-77.042228,2025.0,2.0,2025-06-15
+Ford's Theatre Expansion,DC,2,512 - 514 10th St. NW,Ford's Theatre Society,,Hotel,Under Construction,34600.0,,40000000.0,Q1 25,2025,38.896607,-77.026303,2025.0,1.0,2025-03-15
+The Canal House of Georgetown,DC,2,1023 31st St. NW,Douglas Development Corporation,,Hotel,Under Construction,31000.0,106.0,38000000.0,Q1 25,2025,38.903265,-77.060821,2025.0,1.0,2025-03-15
+National Museum of the U.S. Navy,DC,8,Washington Navy Yard,Navy History and Heritage Command,,Hotel,Pipeline,240000.0,,475000000.0,2027,2025,38.875889,-76.998252,2027.0,,2027-06-15
+DC Archives & Records Center,DC,3,4200 Connecticut Ave. NW,Department of General Services,,Hotel,Pipeline,185000.0,,72000000.0,2016,2025,38.943756,-77.066236,2016.0,,2016-06-15
+Bond Bread and Washington Railway & Electric Company (WRECO),DC,1,2112 & 2146 Georgia Ave. NW,EDENS / Menkiti Group / Fivesquares Development / Howard University,,Hotel,Pipeline,124600.0,180.0,0.0,,2025,38.918814,-77.022445,,,
+2000 14th Street,DC,1,2000 14th St. NW,Reeves CMC Venture (Capri Investment Group / MRP Realty / CSG Urban Partners) / DMPED,,Hotel,Pipeline,120800.0,116.0,300000000.0,2030,2025,38.917444,-77.032404,2030.0,,2030-06-15
+1271 5th Street,DC,5,1271 5th St. NE,EDENS,,Hotel,Pipeline,73300.0,125.0,0.0,,2025,38.907759,-76.998153,,,
+The Bazaar House by José Andrés,DC,2,3000 M St. NW,Thor Equities,,Hotel,Pipeline,72500.0,67.0,0.0,2027,2025,38.905001,-77.059359,2027.0,,2027-06-15
+923 - 927 5th Street,DC,6,923 - 927 5th St. NW,Kline Operations,,Hotel,Pipeline,70000.0,152.0,0.0,,2025,38.902086,-77.018663,,,
+601 Indiana Avenue,DC,2,601 Indiana Ave. NW,Calco Hospitality,,Hotel,Pipeline,62000.0,122.0,0.0,,2025,38.894641,-77.020261,,,
+Bezos Learning Center at the National Air and Space Museum,DC,2,600 Independence Ave. SW,Smithsonian,,Hotel,Pipeline,50000.0,,130000000.0,2027,2025,38.88817,-77.018294,2027.0,,2027-06-15
+11th Street Bridge Park,DC,8,11th Street Bridge,Building Bridges Across the River / DC Department of Transportation,,Hotel,Pipeline,,,92000000.0,2027,2025,38.871298,-76.990471,2027.0,,2027-06-15
+Center for the American Dream & Milken Foundation Building,DC,6,1505 PENNSYLVANIA AVENUE SE,Akridge / Milken Family Foundation,,Hotel,Under Construction,69000.0,,,Q1 21,2019,,,2021.0,1.0,2021-03-15
+9 1/2 Street Initiative (Grimke School),DC,1,912 U STREET NW,Community Three,,Hotel,Pipeline,12000.0,,45000000.0,2020-23,2019,,,,,
+D.C. United Stadium,DC,6,100 POTOMAC AVENUE SW,DC United / DC Government,,Hotel,Completed,421000.0,,400000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+CityCenterDC (Conrad Hotel),DC,2,950 NEW YORK AVENUE NW,Hines / Qatari Diar,,Hotel,Completed,358000.0,360.0,270000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+W Hotel,DC,2,515 15TH STREET NW,Marriott,,Hotel,Completed,187000.0,324.0,50000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Saint Elizabeths East (New Hospital),DC,8,Saint Elizabeths East Campus,DC Government,"Cunningham + Quill Architects, PLLC",Other,Pipeline,322000.0,,300000000.0,2022,2019,,,2022.0,,2022-06-15
+55 H Street,DC,6,"55 H St., NW",Georgetown University,,Other,Pipeline,220000.0,,,,2019,,,,,
+Banneker Academic High School,DC,6,"925 Rhode Island Ave., NW",Department of General Services / DC Public Schools,,Other,Pipeline,175000.0,,152000000.0,2021,2019,,,2021.0,,2021-06-15
+Skyland Town Center (Ph II B),DC,7,"Alabama Ave. & Naylor Rd., SE",Rappaport / WC Smith / Washington East,,Other,Pipeline,120000.0,,,2022,2019,,,2022.0,,2022-06-15
+West Elementary School,DC,4,"1335 Farragut St., NW",Department of General Services / DC Public Schools,,Other,Pipeline,88600.0,,77500000.0,2021,2019,,,2021.0,,2021-06-15
+Eastern Market Park,DC,6,"701 Pennsylvania Ave., SE",Department of General Services / Department of Parks & Recreation,,Other,Pipeline,,,14000000.0,2021,2019,,,2021.0,,2021-06-15
+Franklin Park,DC,2,"13th, 14th, I, & K Sts., NW",Department of General Services / National Park Service,,Other,Pipeline,,,18000000.0,2020,2019,,,2020.0,,2020-06-15
+The Batley,DC,5,"1270 4th St., NE",EDENS / Trammell Crow Residential / Level 2 Development,,Multifamily,Completed,,432.0,150000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Novel South Capitol,DC,6,"2 I St., SE",Crescent Development / RCP Development Company,,Multifamily,Completed,,355.0,,Q1 19,2019,,,2019.0,1.0,2019-03-15
+RESA at Tyber Place,DC,6,"22 M St., NE",Skanska USA Commercial Development,,Multifamily,Completed,,326.0,112000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Trellis House,DC,1,"907 Barry Place, NW",Gateway Investment Partners / RISE / Howard University,,Multifamily,Completed,,319.0,70000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+The Highline at Union Market,DC,5,"320 Florida Ave., NE",Level 2 Development / Federal Capital Partners / Clark Enterprises / W5 Group,,Multifamily,Completed,,318.0,101300000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+The Sonnet,DC,1,"1441 U St., NW",High Street Residential,,Multifamily,Completed,,288.0,150000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+The Jamison,DC,5,"3750 Jamison St., NE",Fort Lincoln New Town Corporation,,Multifamily,Completed,,236.0,70000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Arcade Sunshine,DC,1,"713 - 735 Lamont St., NW",Holladay Corporation,,Multifamily,Completed,,225.0,,Q1 19,2019,,,2019.0,1.0,2019-03-15
+City Ridge,DC,3,"3900 Wisconsin Ave., NW",Roadside Development / North America Sekisui House,,Multifamily,Under Construction,,687.0,700000000.0,Q2 22,2019,,,2022.0,2.0,2022-06-15
+Eckington Yards,DC,5,"1625 Eckington Pl. & 1500 Harry Thomas Way, NE",The JBG Companies,,Multifamily,Under Construction,,681.0,265000000.0,Q3 21,2019,,,2021.0,3.0,2021-09-15
+The Gantry,DC,5,"300 Morse St., NE",Kettler /  Carmel Partners,,Multifamily,Under Construction,,550.0,,Q3 21,2019,,,2021.0,3.0,2021-09-15
+Riverpoint,DC,6,"2100 2nd St., SW",Akridge / Western Development Corp. / Jefferson Apartment Grp. / Orr Partners,,Multifamily,Under Construction,,481.0,220000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+1900 Half Street,DC,6,"1900 Half St., SW",Douglas Development Corporation,,Multifamily,Under Construction,,453.0,190000000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+The Wren,DC,1,"965 Florida Ave., NW",MRP Realty / JBG Smith / Ellis Development Group,,Multifamily,Under Construction,,433.0,152600000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+AVEC,DC,6,"901 H St., NE",Rappaport / WC Smith / Lustine Realty Company,,Multifamily,Under Construction,,419.0,200000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Crossing DC,DC,6,"949 1st St., SE",Tishman Speyer,,Multifamily,Under Construction,,418.0,,Q1 20,2019,,,2020.0,1.0,2020-03-15
+Upton Place,DC,3,4000 Wisconsin Ave. NW,Donohoe Companies / Holladay Corporation,,Multifamily,Pipeline,,689.0,,2023,2019,,,2023.0,,2023-06-15
+McMillan Sand Filtration Site,DC,5,"North Capitol St. & Michigan Ave., NW",Jair Lynch Real Estate Partners / Trammell Crow Company / EYA,,Multifamily,Pipeline,,660.0,720000000.0,2023,2019,,,2023.0,,2023-06-15
+Armature Works,DC,6,"1200 3rd St., NE",Trammell Crow Company / High Street Residential / MetLife,,Multifamily,Pipeline,,635.0,400000000.0,2022,2019,,,2022.0,,2022-06-15
+Museum Place,DC,6,"65 I St., SW",Lowe,,Multifamily,Pipeline,,489.0,200000000.0,2022,2019,,,2022.0,,2022-06-15
+Storey Park,DC,6,"1005 1st St., NE",Four Points / Perseus Realty / Buccini Pollin Group,,Multifamily,Pipeline,,472.0,330000000.0,2022,2019,,,2022.0,,2022-06-15
+Waterfront Station II,DC,6,"1000 4th St., SW",Hoffman & Associates / Paramount Development / CityPartners / Affordable Housing Developers,,Multifamily,Pipeline,,456.0,157000000.0,2022,2019,,,2022.0,,2022-06-15
+Bond Bread,DC,1,"2114 Georgia Ave., NW",Fivesquares Development / EDENS / Menkiti Group / Howard University,,Multifamily,Pipeline,,450.0,150000000.0,,2019,,,,,
+1200 5th Street,DC,6,"1200 5th St., NW",MidCity,,Multifamily,Pipeline,,363.0,,2023,2019,,,2023.0,,2023-06-15
+Eckington Yards,DC,5,"1625 Eckington Pl. & 1500 Harry Thomas Way, NE",The JBG Companies,,Multifamily,Under Construction,,681.0,265000000.0,Q3 21,2019,,,2021.0,3.0,2021-09-15
+Shops at Penn Hill (Phase I),DC,7,"3200 Pennsylvania Ave., SE",Jair Lynch Real Estate Partners,,Retail,Completed,65000.0,,25000000.0,2019,2019,,,2019.0,,2019-06-15
+CityCenterDC (Conrad Hotel),DC,2,"950 New York Ave., NW",Hines / Qatari Diar,,Retail,Completed,30000.0,,270000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+The Batley,DC,5,"1270 4th St., NE",EDENS / Level 2 Development / Trammell Crow Residential,,Retail,Completed,29042.0,,150000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Liz,DC,2,"1701 14th St., NW",Fivesquares Development / Streetscape Partners / Whitman-Walker Health,,Retail,Completed,26000.0,,,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Carnegie Library,DC,2,"800 Mount Vernon Pl., NW",Apple / EventsDC,,Retail,Completed,18896.0,,30000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Union Place (Phase II),DC,6,"200 K St., NE",Toll Brothers,,Retail,Completed,16500.0,,170000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Penn Eleven,DC,6,"1101 - 1117 Pennsylvania Ave., SE",Perseus Realty / Westbrook Partners,,Retail,Completed,16000.0,,25000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+The Sonnet,DC,1,"1441 U St., NW",High Street Residential,,Retail,Completed,15552.0,,150000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Maple View Flats,DC,8,"2228 - 2252 Martin Luther King Jr. Ave., SE",Chapman Development / DHCD,,Retail,Completed,15000.0,,50000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+City Ridge,DC,3,"3900 Wisconsin Ave., NW",Roadside Development / North America Sekisui House,,Retail,Under Construction,194000.0,,700000000.0,Q2 22,2019,,,2022.0,2.0,2022-06-15
+Skyland Town Center (Phase A),DC,7,"Alabama Ave. & Naylor Rd., SE",Rappaport / WC Smith / Washington East,,Retail,Under Construction,117000.0,,175000000.0,Q3 20,2019,,,2020.0,3.0,2020-09-15
+1515 New York Avenue,DC,5,"1515 New York Ave., NE",Douglas Development Corporation,,Retail,Under Construction,92828.0,,27000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+McMillan Sand Filtration Site,DC,5,"North Capitol St. & Michigan Ave., NW",Jair Lynch Real Estate Partners / Trammell Crow Company / EYA / DMPED,Perkins Eastman DC / MV+A Architects / Shalom Baranes Associates,Multifamily,Pipeline,,660.0,720000000.0,,2019,,,,,
+Ballpark East,DC,6,"1201 Half St., SE",The JBG Companies,"Eric Colbert & Associates, PC / ODA Architecture",Multifamily,Pipeline,,438.0,0.0,2019,2019,,,2019.0,,2019-06-15
+The Griffith,DC,1,"965 Florida Ave., NW",MRP Realty / Ellis Development Group /  Fundrise / JBG,Hord Coplan Macht Inc / PGN Architects PLLC,Multifamily,Pipeline,,428.0,120000000.0,2020,2019,,,2020.0,,2020-06-15
+300 M,DC,6,"300 M St., NE",The Wilkes Company,WDG Architecture / Hickok Cole Architects,Multifamily,Pipeline,,425.0,132000000.0,2018,2019,,,2018.0,,2018-06-15
+901 H Street,DC,6,"901 H St., NE",Rappaport / WC Smith / Lustine Realty Co.,Torti Gallas and Partners,Multifamily,Pipeline,,419.0,150000000.0,2019,2019,,,2019.0,,2019-06-15
+The Portals (Ph V),DC,6,"1331 Maryland Ave., SW",Republic Properties Corporation,Robert A M Stern Architects / WDG Architecture,Multifamily,Pipeline,,393.0,185000000.0,2019,2019,,,2019.0,,2019-06-15
+RESA at Tyber Place,DC,6,"22 M St., NE",Skanska,"Design Collective, Inc",Multifamily,Pipeline,,326.0,75000000.0,2018,2019,,,2018.0,,2018-06-15
+Reservation 13 (Ph I),DC,7,"19th & Massachusetts Ave., SE",Donatelli Development / Blue Skye Development & Construction,GTM Architects,Multifamily,Pipeline,,353.0,80000000.0,2019,2019,,,2019.0,,2019-06-15
+Washington College of Law,DC,3,"Tenley Campus (4300 Nebraska Ave., NW)",American University,SmithGroupJJR,Other,Completed,385100.0,,129000000.0,,2019,,,,,
+Ballou Senior High School,DC,8,"3401 4th St., SE",DC Public Schools / Department of General Services,Bowie Gridley Architects / Perkins+Will,Other,Completed,365000.0,,143000000.0,,2019,,,,,
+Theodore Roosevelt High School,DC,4,"4301 13th St., NW",DC Public Schools / Department of General Services,Perkins Eastman DC,Other,Completed,328000.0,,136000000.0,,2019,,,,,
+District House,DC,2,"2121 H St., NW",George Washington University,Ayers Saint Gross,Other,Completed,322500.0,,130000000.0,,2019,,,,,
+John R. Thompson Jr. Intercollegiate Athletic Center,DC,2,Georgetown University,Georgetown University,Populous / Bowie Gridley Architects,Other,Completed,144000.0,,62000000.0,,2019,,,,,
+KIPP DC,DC,5,"1405 Brentwood Parkway, NE",KIPP DC,Studios Architecture,Other,Completed,125000.0,,45000000.0,,2019,,,,,
+Lafayette Elementary School,DC,4,"5701 BRd. Branch Rd., NW",DC Public Schools / Department of General Services,Hartman-Cox Architects / Grimm + Parker & Associates,Other,Completed,120000.0,,79000000.0,,2019,,,,,
+Stuart-Hobson Middle School,DC,6,"410 E St., NE",DC Public Schools / Department of General Services,Hughes Group Architects,Other,Completed,116000.0,,41000000.0,,2019,,,,,
+River Terrace Elementary School,DC,7,"420 34th St., NE",DC Public Schools / Department of General Services,Fanning Howey / Bryant Mitchell Architects,Other,Completed,110500.0,,36000000.0,,2019,,,,,
+New Sibley,DC,3,"5255 Loughboro Rd., NW",Sibley Memorial Hospital,Wilmot Sanz Inc,Other,Under Construction,470000.0,,242000000.0,,2019,,,,,
+Duke Ellington School of the Arts,DC,2,"3500 R St., NW",DC Public Schools / Department of General Services,cox graae + spack architects / Lance Bailey & Associates Inc,Other,Under Construction,258072.0,,177000000.0,,2019,,,,,
+Marie Reed Elementary School,DC,1,"2201 18th St., NW",DC Public Schools / Department of General Services,Quinn Evans Architects,Other,Under Construction,140000.0,,62000000.0,,2019,,,,,
+Corcoran Gallery of Art,DC,2,"500 17th St., NW",George Washington University,Leo A Daly,Other,Under Construction,100000.0,,80000000.0,2018,2019,,,2018.0,,2018-06-15
+Watkins Elementary School,DC,6,"420 12th St., SE",DC Public Schools / Department of General Services,Perkins Eastman DC,Other,Under Construction,70826.0,,39000000.0,,2019,,,,,
+MSSD Residence Hall,DC,5,"800 Florida Ave., NE",Gallaudet University,Gaudreau Architects / Dangermond Keane Architecture,Other,Under Construction,70000.0,,28000000.0,,2019,,,,,
+The Conway Center,DC,7,"4430 Benning Rd., NE",SOME,Wiencek + Associates,Other,Under Construction,37659.0,,90000000.0,,2019,,,,,
+Procter Hall,DC,3,"3609 Woodley Rd., NW",National Cathedral School,Hartman-Cox Architects,Other,Under Construction,28000.0,,13000000.0,,2019,,,,,
+McMillan Sand Filtration Site,DC,5,"North Capitol St. & Michigan Ave., NW",Jair Lynch Real Estate Partners / Trammell Crow Company / EYA / DMPED,Perkins Eastman DC / MV+A Architects / Shalom Baranes Associates,Other,Pipeline,1000000.0,,720000000.0,2019,2019,,,2019.0,,2019-06-15
+Georgetown University Hospital Pavilion,DC,2,"3800 Reservoir Rd., NW",MedStar Georgetown University Hospital / Trammell Crow,HKS PC / Shalom Baranes Associates,Other,Pipeline,477000.0,,567000000.0,2020,2019,,,2020.0,,2020-06-15
+Bancroft Elementary School,DC,1,"1755 Newton St., NW",DC Public Schools / Department of General Services,Ayers Saint Gross,Other,Pipeline,146000.0,,55000000.0,2018,2019,,,2018.0,,2018-06-15
+The Parks at Walter Reed,DC,4,"6800 Georgia Ave., NW",Hines / Urban Atlantic / Triden Development Group / DMPED,Torti Gallas and Partners,Other,Pipeline,145000.0,,1000000000.0,,2019,,,,,
+Skyland Town Center (Phase I),DC,7,"Alabama Ave. & Naylor Rd., SE",Rappaport / WC Smith / Harrison-Malone / Washington East Foundation / DMPED,Torti Gallas and Partners,Retail,Pipeline,100419.0,,150000000.0,2019,2019,,,2019.0,,2019-06-15
+Anthem Row,DC,2,"800 K St., NW",The Meridian Group,Hickok Cole Architects,Retail,Pipeline,70000.0,,,2017,2019,,,2017.0,,2017-06-15
+The Griffith,DC,1,"965 Florida Ave., NW",MRP Realty / Ellis Development Group /  Fundrise / JBG,Hord Coplan Macht Inc / PGN Architects PLLC,Retail,Pipeline,51540.0,,120000000.0,2020,2019,,,2020.0,,2020-06-15
+700 Penn,DC,6,"700 Pennsylvania Avenue, SE",Stanton Development / Eastbanc / Jarvis Company / Dantes Partners / Clark Enterprises,Esocoff & Associates Architects,Retail,Completed,60000.0,,226700000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+Midtown Center,DC,2,"1150 15th Street, NW",Carr Properties,WDG Architecture / SHoP,Retail,Completed,44000.0,,350000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+Agora,DC,6,"800 New Jersey Avenue, SE",WC Smith,SK+I Architectural Design Group,Retail,Completed,39000.0,,141000000.0,Q1 18,2019,,,2018.0,1.0,2018-03-15
+Edison,DC,5,"1240 4th St., NE",EDENS / LCOR / Sang Oh & Company Inc.,SK+I Architectural Design Group,Retail,Completed,27410.0,,55000000.0,Q3 17,2019,,,2017.0,3.0,2017-09-15
+200 Massachusetts Avenue,DC,2,"200 Massachusetts Avenue, NW",Property Group Partners,Kevin Roche John Dinkeloo & Associates LLC,Retail,Completed,25250.0,,200000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+1221 Van,DC,6,"1211 Van Street, SE",JBG Smith,"Morris Adjmi Architects / Eric Colbert & Associates, PC",Retail,Completed,23585.0,,100000000.0,Q1 18,2019,,,2018.0,1.0,2018-03-15
+The Line DC,DC,1,"1770 Euclid Street, NW",Foxhall Partners / Friedman Capital Advisors / Sydell Group,OPX,Retail,Completed,20903.0,,100000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+Skyland Town Center (Ph I - Block 2),DC,7,"Alabama Avenue & Naylor Road, SE",Rappaport / WC Smith / Washington East Foundation,Torti Gallas and Partners,Retail,Under Construction,117000.0,,175000000.0,Q3 20,2019,,,2020.0,3.0,2020-09-15
+1515 New York Avenue,DC,5,"1515 New York Avenue, NE",Douglas Development Corporation,Bignell Watkins Hasser Architects,Retail,Under Construction,92828.0,,27000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+655 New York Avenue,DC,6,"655 New York Avenue, NW",Douglas Development Corporation / Brookfield Office Properties,,Retail,Under Construction,80551.0,,185000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+Riverpoint,DC,6,"2100 2nd Street, SW",Akridge / Western Development / Redbrick LMD / Orr Partners / Jefferson Apartment Group,Antunovich Associates,Retail,Under Construction,70441.0,,220000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+Anthem Row,DC,2,"800 K Street, NW",The Meridian Group,Hickok Cole Architects,Retail,Under Construction,70000.0,,142000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+Beckert's Park,DC,6,"415 14th Street, SE",Foulger-Pratt / Safeway,BKV Group,Retail,Under Construction,68000.0,,138000000.0,Q1 20,2019,,,2020.0,1.0,2020-03-15
+1250,DC,6,"1250 Half Street, SE",Jair Lynch Real Estate Partners,Hord Coplan Macht Inc ,Retail,Under Construction,60000.0,,265000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Avenue, NW",Property Group Partners,Kevin Roche John Dinkeloo & Associates LLC,Retail,Under Construction,58372.0,,275000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+AVEC,DC,6,"901 H Street, NE",Rappaport / WC Smith / Lustine Realty Co.,Torti Gallas and Partners,Retail,Under Construction,53469.0,,200000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+The Parks at Walter Reed,DC,4,"6800 Georgia Ave., NW",Urban Atlantic / Hines / Triden Development / DMPED,Torti Gallas Urban,Retail,Pipeline,170000.0,,1000000000.0,2020-2032,2019,,,,,
+3900 Wisconsin Avenue,DC,3,"3900 Wisconsin Avenue, NW",Roadside Development / Sekisui House,Shalom Baranes Associates,Retail,Pipeline,153000.0,,,2022,2019,,,2022.0,,2022-06-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,ODA Architecture / WDG Architecture / Rafael Vinoly Architects PC / Morris Adjmi Architects / Studios Architecture / Hollwich Kushner / Perkins Eastman DC / SHoP,Retail,Pipeline,119559.0,,1200000000.0,2022,2019,,,2022.0,,2022-06-15
+Bryant Street,DC,5,"680 Rhode Island Ave., NE",MRP Realty / B&R Associates LP,SK+I Architectural Design Group,Retail,Pipeline,490.0,,,2020,2019,,,2020.0,,2020-06-15
+The Wharf (Phase I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Multifamily,Completed,,870.0,1326000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+Agora,DC,6,"800 New Jersey Avenue, SE",WC Smith,SK+I Architectural Design Group,Multifamily,Completed,,334.0,141000000.0,Q1 18,2019,,,2018.0,1.0,2018-03-15
+The Lydian,DC,6,"400 K Street, NW",Quadrangle Development / The Wilkes Company,"Davis, Carter, Scott ",Multifamily,Completed,,324.0,138000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+Trellis House,DC,1,"907 Barry Place, NW",RISE / Gateway Investment Partners / Howard University,Niles Bolton Associates,Multifamily,Completed,,319.0,70000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Atlantic Apartment Homes,DC,8,"4321 3rd Street, SE",WinnDevelopment,The Architectural Team,Multifamily,Completed,,303.0,69000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+Brookland Press,DC,5,"806 Channing Place, NE",Douglas Development,"Eric Colbert & Associates, PC / GTM Architects / Parker Rodriguez",Multifamily,Completed,,295.0,55726000.0,Q3 17,2019,,,2017.0,3.0,2017-09-15
+1221 Van,DC,6,"1211 Van Street, SE",JBG Smith,"Morris Adjmi Architects / Eric Colbert & Associates, PC",Multifamily,Completed,,291.0,100000000.0,Q1 18,2019,,,2018.0,1.0,2018-03-15
+Riverpoint,DC,6,"2100 2nd Street, SW",Akridge / Western Development / Redbrick LMD / Orr Partners / Jefferson Apartment Group,Antunovich Associates,Multifamily,Under Construction,,485.0,220000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+West Half,DC,6,"1201 Half Street, SE",JBG Smith,"Eric Colbert & Associates, PC / ODA Architecture",Multifamily,Under Construction,,465.0,200000000.0,Q1 20,2019,,,2020.0,1.0,2020-03-15
+1250,DC,6,"1250 Half Street, SE",Jair Lynch Real Estate Partners / MacFarlane Partners,Hord Coplan Macht Inc ,Multifamily,Under Construction,,439.0,265000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+901 H Street,DC,6,"901 H St., NE",Rappaport / WC Smith / Lustine Realty Co.,Torti Gallas and Partners,Retail,Pipeline,51500.0,,150000000.0,2019,2019,,,2019.0,,2019-06-15
+Lacebark Alley,DC,6,"51 N St., 50 Patterson St. & 1250 1st St., NE",The JBG Companies /  Brandywine Realty Trust,Shalom Baranes Associates / Cooper Carry,Retail,Pipeline,30000.0,,275000000.0,2018,2019,,,2018.0,,2018-06-15
+3220 Prospect,DC,2,"3220 Prospect St., NW",McCaffery Interests,,Retail,Pipeline,28246.0,,,2018,2019,,,2018.0,,2018-06-15
+Park Chelsea,DC,6,"880 New Jersey Ave., SE",WC Smith,Esocoff & Associates Architects,Multifamily,Completed,,429.0,150000000.0,,2019,,,,,
+Hecht Warehouse District,DC,5,"1401 New York Ave., NE",Douglas Development Corp.,Antunovich Associates,Multifamily,Completed,,353.0,120000000.0,,2019,,,,,
+Fort Totten Square,DC,4,"South Dakota Ave. & Riggs Rd., NE",Lowe Enterprises / The JBG Companies,Hickok Cole Architects,Multifamily,Completed,,345.0,120000000.0,,2019,,,,,
+Arris,DC,6,"1331 4th St., SE",Forest City Washington,Robert A M Stern Architects / WDG Architecture,Multifamily,Completed,,327.0,100000000.0,,2019,,,,,
+Atlantic Plumbing DC,DC,1,"2112 8th St., NW",The JBG Companies / Walton Street Capital,"Morris Adjmi Architects / Eric Colbert & Associates, PC",Multifamily,Completed,,310.0,100000000.0,,2019,,,,,
+Anthology,DC,6,"625 H St., NE",Jair Lynch Real Estate Partners,Hord Coplan Macht Inc,Multifamily,Completed,,307.0,100000000.0,,2019,,,,,
+Dock 79,DC,6,"100 Potomac Ave., SE",MRP Realty / FRP Development Corp.,SK+I Architectural Design Group,Multifamily,Completed,,305.0,100000000.0,,2019,,,,,
+5333 Connecticut Avenue,DC,3,"5333 Connecticut Ave., NW",Cafritz Interests,"Eric Colbert & Associates, PC",Multifamily,Completed,,262.0,61000000.0,,2019,,,,,
+The Wharf (Phase I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Hotel,Completed,630000.0,690.0,1326000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+D.C. United Stadium,DC,6,"100 Potomac Avenue, SW",D.C. United / DC Government,Populous / Marshall | Moya Design,Hotel,Completed,421000.0,,400000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Eaton by DC,DC,2,"1201 K Street, NW",Pacific Eagle Holdings,,Hotel,Completed,172000.0,209.0,0.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+The Line DC,DC,1,"1770 Euclid Street, NW",Foxhall Partners / Friedman Capital Advidors / Sydell Group,OPX,Hotel,Completed,172041.0,227.0,100000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+The Darcy,DC,2,"1515 Rhode Island Avenue, NW",KHP Capital Partners,,Hotel,Completed,87600.0,226.0,0.0,Q2 17,2019,,,2017.0,2.0,2017-06-15
+99 M Street,DC,6,"1st & M Street, SE",Skanska USA,Gensler,Office,Completed,220000.0,,116000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+700 Penn,DC,6,"700 Pennsylvania Avenue, SE",Stanton Development / Eastbanc / Jarvis Company / Dantes Partners / Clark Enterprises,Esocoff & Associates Architects,Office,Completed,150000.0,,226700000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+U.S. Department of Commerce - Herbert Hoover Building (Ph IV),DC,2,"1401 Constitution Avenue, NW",General Services Administration,Gensler,Office,Completed,109825.0,,83000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+901 4th Street,DC,6,"901 4th Street, NW",The Bar Association of the District of Columbia,Hartman-Cox Architects,Office,Completed,89700.0,,70000000.0,Q1 18,2019,,,2018.0,1.0,2018-03-15
+655 New York Avenue,DC,6,"655 New York Avenue, NW",Douglas Development Corporation / Brookfield Office Properties,Shalom Baranes Associates,Office,Under Construction,653474.0,,185000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Avenue, NW",Property Group Partners,REX Architecture PC,Office,Under Construction,507764.0,,275000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+2050 M Street,DC,2,"2050 M Street, NW",Tishman Speyer,Kevin Roche John Dinkeloo & Associates LLC,Office,Under Construction,353200.0,,,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Harry S. Truman Building Modernization (Ph IC),DC,2,"2201 C St., NW",,,Office,Under Construction,290536.0,,97000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Center Building (DHS HQ),DC,8,St. Elizabeths West Campus,General Services Administration,Shalom Baranes Associates,Office,Under Construction,284000.0,,155000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+One Freedom Plaza,DC,2,"1301 Pennsylvania Avenue, NW",Quadrangle Development,JAHN,Office,Under Construction,270040.0,,0.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+1900 N,DC,2,"1900 N Street, NW",JBG Smith,Kohn Pedersen Fox & Associates,Office,Under Construction,259000.0,,225000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+L'Enfant Plaza Office - Southeast,DC,6,"500 L'Enfant Plaza, SW",JBG Smith,JAHN,Office,Under Construction,215185.0,,75000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+2100 Pennsylvania Avenue,DC,2,"2100 Pennsylvania Avenue, NW",Boston Properties / George Washington University,WDG Architecture / Pelli Clarke Pelli Architects,Office,Pipeline,423562.0,,,2022,2019,,,2022.0,,2022-06-15
+Market Terminal,DC,5,"300, 325, 350 Morse St., NE",Douglas Development Corporation / Kettler / Carr Enterprises,Gensler,Office,Pipeline,339042.0,,,2020,2019,,,2020.0,,2020-06-15
+Penn Quarter Place,DC,2,"600 E Street, NW",S.C. Herman & Associates,Dep Designs,Office,Pipeline,325000.0,,,2020,2019,,,2020.0,,2020-06-15
+Maury Elementary School,DC,6,"1250 Constitution Ave., NE",Department of General Services / DC Public Schools,,Other,Completed,52800.0,,52000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Whittle School & Studios,DC,3,"4000 Connecticut Ave., NW",The 601 W Companies / Whittle School & Studios,,Other,Under Construction,620000.0,,185000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Medstar Georgetown University Hospital Pavilion,DC,2,"3800 Reservoir Rd., NW",MedStar Georgetown University Hospital / Trammell Crow Company,,Other,Under Construction,497000.0,,560000000.0,Q1 22,2019,,,2022.0,1.0,2022-03-15
+Children's National Research & Innovation Campus,DC,4,"7144 13th Pl., NW",Children's National Medical Center,,Other,Under Construction,400000.0,,250000000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+Harriet Tubman Quadrangle,DC,1,"2455 4th St., NW",Provident Group / Howard University,,Other,Under Construction,158000.0,,45000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Jefferson Academy,DC,6,"801 7th St., SW",Department of General Services / DC Public Schools,,Other,Under Construction,109000.0,,77900000.0,Q3 20,2019,,,2020.0,3.0,2020-09-15
+Georgetown Day School Tenleytown Campus,DC,3,"4203 Davenport St., NW",Georgetown Day School,,Other,Under Construction,88613.0,,,Q3 20,2019,,,2020.0,3.0,2020-09-15
+Thaddeus Stevens School,DC,2,"1050 21st St., NW",Akridge / Argos Group / Department of General Services / DC Public Schools,,Other,Under Construction,40000.0,,20000000.0,Q3 20,2019,,,2020.0,3.0,2020-09-15
+Bread for the City,DC,8,"17th & Good Hope Rd., SE",Bread for the City,,Other,Under Construction,27650.0,,26000000.0,2020/21,2019,,,,,
+Southwest Library,DC,6,"900 Wesley Pl., SW",DC Public Library,,Other,Under Construction,20792.0,,18000000.0,Q1 21,2019,,,2021.0,1.0,2021-03-15
+555 Pennsylvania Avenue,DC,2,"555 Pennsylvania Ave., NW",John Hopkins University,,Other,Pipeline,400000.0,,200000000.0,2023,2019,,,2023.0,,2023-06-15
+The Wren,DC,1,"965 Florida Avenue, NW",MRP Realty / Ellis Development Group / JBG Smith,Hord Coplan Macht Inc / PGN Architects PLLC,Multifamily,Under Construction,,433.0,120000000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+Milton Gottesman Jewish Day School of the Nation's Capital,DC,4,"6045 16th St., NW",Jewish Primary Day School,,Other,Completed,60000.0,,22000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Anthem Row,DC,2,"800 K St., NW",The Meridian Group,,Retail,Under Construction,70000.0,,142000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Beckert's Park,DC,6,"415 14th St., SE",Foulger-Pratt / Safeway,,Retail,Under Construction,68000.0,,138000000.0,Q1 20,2019,,,2020.0,1.0,2020-03-15
+Eckington Yards,DC,5,"1625 Eckington Pl. & 1500 Harry Thomas Way, NE",The JBG Companies,,Retail,Under Construction,67264.0,,265000000.0,Q3 21,2019,,,2021.0,3.0,2021-09-15
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Ave., NW",Property Group Partners,,Retail,Under Construction,58372.0,,275000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+East River Park,DC,7,"Minnesota Ave. & Benning Rd., NE",Cedar Realty Trust,,Retail,Pipeline,119500.0,,,,2019,,,,,
+Upton Place,DC,3,4000 Wisconsin Ave. NW,Donohoe Companies / Holladay Corporation,,Retail,Pipeline,100000.0,,,2023,2019,,,2023.0,,2023-06-15
+ART Place at Fort Totten (Phase II),DC,5,Fort Totten Metrorail Station,Morris & Gwendolyn Cafritz Foundation,,Retail,Pipeline,94914.0,,,2022,2019,,,2022.0,,2022-06-15
+McMillan Sand Filtration Site,DC,5,"North Capitol St & Michigan Ave., NW",Jair Lynch Real Estate Partners / Trammell Crow Company / EYA,,Retail,Pipeline,80000.0,,720000000.0,2023,2019,,,2023.0,,2023-06-15
+Armature Works,DC,6,"1200 3rd St., NE",Trammell Crow Company / High Street Residential / MetLife,,Retail,Pipeline,60000.0,,400000000.0,2022,2019,,,2022.0,,2022-06-15
+Barry Farm,DC,8,"Martin L. King Jr. Ave. & Summer Rd., SE",Preservation of Affordable Housing / A&R Development / DC Housing Authority,,Retail,Pipeline,50000.0,,500000000.0,2021,2019,,,2021.0,,2021-06-15
+Storey Park,DC,6,"1005 1st St., NE",Four Points / Perseus Realty / Buccini Pollin Group,,Retail,Pipeline,27313.0,,330000000.0,2022,2019,,,2022.0,,2022-06-15
+500 Penn Street,DC,5,"500 Penn St., NE",EDENS / UDR,,Retail,Pipeline,22714.0,,150000000.0,2022,2019,,,2022.0,,2022-06-15
+The Lady Bird,DC,3,"4330 48th St., NW",Valor Development,,Retail,Pipeline,16500.0,,127000000.0,2022,2019,,,2022.0,,2022-06-15
+Eckington Yards,DC,5,"1625 Eckington Pl. & 1500 Harry Thomas Way, NE",The JBG Companies,,Retail,Under Construction,67264.0,,265000000.0,,2019,,,,,
+Hilton Washington D.C. National Mall,DC,6,480 L'ENFANT PLAZA SW,"L'Enfant DC Hotel, LLC / Stanford Hotels Group",,Hotel,Completed,0.0,367.0,49000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+National Air and Space Museum,DC,2,NATIONAL AIR AND SPACE MUSEUM,Smithsonian,,Hotel,Under Construction,687000.0,,976000000.0,2025,2019,,,2025.0,,2025-06-15
+ART Place at Fort Totten (Ph I),DC,5,"5180 South Dakota Ave., NE",Morris & Gwendolyn Cafritz Foundation,EE&K / MV+A Architects / Shalom Baranes Associates,Multifamily,Under Construction,,520.0,125000000.0,,2019,,,,,
+AVA NoMa,DC,6,"55 M St., NE",AvalonBay,"KTGY Group, Inc",Multifamily,Under Construction,,438.0,145000000.0,,2019,,,,,
+Shapiro Residences,DC,5,"1270 4th St., NE",Level 2 Development / EDENS,Shalom Baranes Associates,Multifamily,Under Construction,,430.0,150000000.0,,2019,,,,,
+Camden NoMa (Ph II),DC,6,"61 Pierce St., NE",Camden Property Trust,WDG Architecture,Multifamily,Under Construction,,405.0,130000000.0,,2019,,,,,
+909 Half Street,DC,6,"20 K St., SE",Ruben Companies / Related Companies,"Davis, Carter, Scott / Morris Adjmi Architects",Multifamily,Under Construction,,383.0,100000000.0,,2019,,,,,
+Eliot on 4th,DC,6,"1001 4th St., SW",Forest City Washington / Vornado Realty Trust,Perkins Eastman DC,Multifamily,Under Construction,,365.0,100000000.0,,2019,,,,,
+33 N Street,DC,6,"33 N St., NE",Wood Partners,Hickok Cole Architects,Multifamily,Under Construction,,346.0,150000000.0,,2019,,,,,
+Agora,DC,6,"800 New Jersey Ave., SE",WC Smith,SK+I Architectural Design Group,Multifamily,Under Construction,,334.0,141000000.0,,2019,,,,,
+F1rst,DC,6,"1st & N Streets, SE",McCaffery Interests / Grosvenor Americas / Clark Enterprises Inc.,Hickok Cole Architects ,Hotel,Completed,127200.0,170.0,150000000.0,Q2 17,2019,,,2017.0,2.0,2017-06-15
+Pod Hotel,DC,2,"627 - 631 H Street, NW",Modus Hotels / Monument Realty / Cafritz Interests,"Davis, Carter, Scott",Hotel,Completed,61400.0,245.0,60000000.0,Q1 17,2019,,,2017.0,1.0,2017-03-15
+Hotel Hive,DC,2,"2224 F St., NW",Abdo Development,Abdo Development / Akseizer Design Group,Hotel,Completed,25000.0,83.0,0.0,Q1 17,2019,,,2017.0,1.0,2017-03-15
+CityCenterDC (Conrad Hotel),DC,2,"950 New York Avenue, NW",Hines / Qatari Diar,Herzog & de Meuron / HKS PC,Hotel,Under Construction,358000.0,360.0,270000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+Columbia Place,DC,2,"901 L Street, NW",Quadrangle Dev. / Capstone Dev. / Marriott,Cooper Carry,Hotel,Under Construction,350000.0,504.0,225000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+W Hotel,DC,2,"515 15th Street, NW",Marriott,Perkins Eastman DC / Studio GAIA,Hotel,Under Construction,187000.0,325.0,50000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+International Spy Museum,DC,6,"900 L'Enfant Plaza, SW",JBG Smith,Hickok Cole Architects / Rogers Stirk Harbour + Partners,Hotel,Under Construction,140000.0,,162000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+555 E Street,DC,6,"555 E Street, SW",CityPartners / Potomac Investment Properties / Adams Investment Group / Paramount Dev. / DC Strategy Group,Fxfowle Architects,Hotel,Under Construction,130000.0,252.0,120000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+Entertainment and Sports Arena,DC,8,"1110 Oak Drive, SE",Events DC / DC Government,Michael Marshall Design / ROSSETTI,Hotel,Under Construction,116500.0,,68000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+Thompson D.C. Hotel,DC,6,"227 Tingey Street, SE",Forest City / JW Capital Partners / Geolo Capital,Studios Architecture,Hotel,Under Construction,114800.0,225.0,0.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+Moxy Hotel,DC,2,"1011 K St., NW",Douglas Development Corporation,FILLAT + Architecture ,Hotel,Under Construction,64988.0,200.0,35000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+The Reach,DC,2,"2700 F Street, NW",John F. Kennedy Center for the Performing Arts,Steven Holl Architects,Hotel,Under Construction,72000.0,,175000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+National Air and Space Museum,DC,2,The National Mall,Smithsonian,Quinn Evans Architects,Hotel,Pipeline,687000.0,,976000000.0,2025,2019,,,2025.0,,2025-06-15
+Storey Park,DC,6,"1005 1st Street, NE",Perseus Realty / Four Points / Greencourt Capital,HKS PC,Hotel,Pipeline,184436.0,235.0,330000000.0,2021,2019,,,2021.0,,2021-06-15
+411 New York Avenue,DC,5,"411 New York Avenue, NE",Brook Rose Development / D.B. Lee Development Inc.,BBGM,Hotel,Pipeline,111440.0,178.0,0.0,,2019,,,,,
+3900 Wisconsin Avenue,DC,3,"3900 Wisconsin Avenue, NW",Roadside Development / Sekisui House,Shalom Baranes Associates,Hotel,Pipeline,100000.0,150.0,0.0,2022,2019,,,2022.0,,2022-06-15
+601 K Street,DC,6,"601 K Street, NW",Douglas Development Corporation,FILLAT + Architecture ,Hotel,Pipeline,96755.0,234.0,47000000.0,2020,2019,,,2020.0,,2020-06-15
+Cambria Hotel & Suites,DC,6,"1535 Half St., SW",Donohoe Companies ,BBGM,Hotel,Pipeline,81000.0,154.0,0.0,2022,2019,,,2022.0,,2022-06-15
+Press House at Union District,DC,6,"301 N Street, NE",Foulger-Pratt,AA Studio / Torti Gallas and Partners,Hotel,Pipeline,80366.0,175.0,180000000.0,2020,2019,,,2020.0,,2020-06-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,ODA Architecture / WDG Architecture / Rafael Vinoly Architects PC / Morris Adjmi Architects / Studios Architecture / Hollwich Kushner / Perkins Eastman DC / SHoP,Hotel,Pipeline,80000.0,116.0,1200000000.0,2022,2019,,,2022.0,,2022-06-15
+Eckington Yards,DC,5,"1625 Eckington Place & 1500 Harry Thomas Way, NE",JBG Smith / The Boundary Companies,"Eric Colbert & Associates, PC",Retail,Pipeline,67264.0,,,2020,2019,,,2020.0,,2020-06-15
+200 Massachusetts Avenue,DC,2,"200 Massachusetts Ave., NW",Property Group Partners / Center Place Holdings,Kevin Roche John Dinkeloo & Associates LLC,Office,Under Construction,381746.0,,200000000.0,,2019,,,,,
+600 Massachusetts Avenue,DC,2,"600 Massachusetts Ave., NW",Gould Property Company / Oxford Properties Group,CORE,Office,Under Construction,381592.0,,206000000.0,,2019,,,,,
+Harry S. Truman Building Modernization (Ph IC),DC,2,"2201 C St., NW",General Services Administration,Westlake Reed Leskosky,Office,Under Construction,290536.0,,97000000.0,,2019,,,,,
+The Shay,DC,1,"1921 & 1924 8th St., NW",The JBG Companies,Miller Hull / BKV Group,Multifamily,Completed,,242.0,50000000.0,,2019,,,,,
+Murch Elementary School,DC,3,"4810 36th St., NW",DC Public Schools / Department of General Services,R. McGhee & Associates / Hord Coplan Macht Inc,Other,Pipeline,112700.0,,83000000.0,2018,2019,,,2018.0,,2018-06-15
+Garrison Elementary School,DC,2,"1200 S St., NW",DC Public Schools / Department of General Services,Newman Architects / BELL Architects,Other,Pipeline,60200.0,,24000000.0,2017,2019,,,2017.0,,2017-06-15
+Hyde-Addison Elementary School Addition,DC,2,"3246 P St., NW",DC Public Schools / Department of General Services,BLOC Atlantic / Shinberg Levinas,Other,Pipeline,30100.0,,22000000.0,2018,2019,,,2018.0,,2018-06-15
+Eagle Center (Phase III),DC,8,"3400 Wheeler Rd., SE",Eagle Academy Public Charter School,Shinberg Levinas,Other,Pipeline,20000.0,,,,2019,,,,,
+The Watergate,DC,2,"2650 Virginia Ave., NW",Euro Capital Properties,BBGM,Hotel,Completed,277000.0,336.0,125000000.0,,2019,,,,,
+Hyatt Place DC Capitol / National Mall,DC,6,"400 E St., SW",DC Strategy Group / Paramount /  CityPartners / Potomac Investment Prop.,WDG Arhictecture / Nelson Architects,Hotel,Completed,170665.0,214.0,65000000.0,,2019,,,,,
+Homewood Suites & Hampton Inn,DC,5,"501 New York Ave., NE",Baywood Hotels,BBGM,Hotel,Completed,160000.0,230.0,,,2019,,,,,
+Hyatt Place Hotel,DC,2,"2121 M St., NW",Renaissance Centro,"Jonathan Nehmer + Associates, Inc. ",Hotel,Completed,109000.0,168.0,37000000.0,,2019,,,,,
+"Hampton Inn & Suites Washington, DC Ballpark",DC,6,"1265 1st St., SE",Buccini Pollin Group,BBGM,Hotel,Completed,98000.0,168.0,,,2019,,,,,
+Capitol Quarter Community Building,DC,6,"1000 5th St., SE",DC Housing Authority,Torti Gallas and Partners,Hotel,Completed,21000.0,,11000000.0,,2019,,,,,
+Ridge Road Recreation Center,DC,7,"800 Ridge Rd., SE",Department of Parks and Recreation,cox graae + spack architects,Hotel,Completed,18000.0,,16000000.0,,2019,,,,,
+900 16th Street,DC,2,"900 16th St., NW",The JBG Companies,Cooper Carry,Hotel,Completed,11722.0,,,,2019,,,,,
+The Wharf (Ph I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Hotel,Under Construction,645500.0,690.0,1200000000.0,,2019,,,,,
+Museum of the Bible,DC,6,"300 D St., SW",Museum of the Bible,SmithGroupJJR,Hotel,Under Construction,430000.0,,400000000.0,,2019,,,,,
+National Museum of African-American History & Culture,DC,2,1400 Constitution Ave NW,Smithsonian Institution,Davis Brody Bond Aedas LLP / Adjaye Associates / SmithGroupJJR / Freelon Group  ,Hotel,Under Construction,400000.0,,385000000.0,,2019,,,,,
+CityCenterDC (Conrad Hotel),DC,2,"950 New York Ave., NW",Hines / Qatari Diar,Herzog & de Meuron / HKS PC,Hotel,Under Construction,382000.0,360.0,270000000.0,,2019,,,,,
+D.C. United Stadium,DC,6,"100 Potomac Ave., SW",DC Government / D.C. United,Populous / Marshall | Moya Design,Hotel,Under Construction,358126.0,,287000000.0,,2019,,,,,
+Columbia Place,DC,2,"901 L St., NW",Capstone Development / Marriott / Quadrangle Development,Cooper Carry,Hotel,Under Construction,350000.0,504.0,225000000.0,,2019,,,,,
+The Line DC,DC,1,"1780 Columbia Rd., NW",Sydell Group / Foxhall Partners / Friedman Capital Advisors,OPX,Hotel,Under Construction,176671.0,227.0,100000000.0,,2019,,,,,
+International Spy Museum,DC,6,"900 L'Enfant Plaza, SW",The JBG Companies / International Spy Museum,Hickok Cole Architects / Rogers Stirk Harbour + Partners,Hotel,Under Construction,140000.0,,162000000.0,,2019,,,,,
+Homewood Suites,DC,6,"50 M St., SE",Englewood LLC / C/G Investments,Cooper Carry,Hotel,Under Construction,135200.0,195.0,60000000.0,,2019,,,,,
+SLS Lux Hotel & Residences,DC,6,"901 5th St., NW",Peebles Corporation / MacFarlane Partners,WDG Architecture,Hotel,Pipeline,137950.0,198.0,135000000.0,2019,2019,,,2019.0,,2019-06-15
+555 E Street,DC,6,"555 E St., SW",CityPartners / Potomac Investment Prop.,Fxfowle Architects,Hotel,Pipeline,131500.0,190.0,120000000.0,2019,2019,,,2019.0,,2019-06-15
+Latham Hotel,DC,2,"3000 M St., NW",Thor Equities,Shalom Baranes Associates,Hotel,Pipeline,99555.0,82.0,,2019,2019,,,2019.0,,2019-06-15
+Press House at Union District,DC,6,"301 N St., NE",Foulger-Pratt,AA Studio / Torti Gallas and Partners,Hotel,Pipeline,80366.0,175.0,150000000.0,2019,2019,,,2019.0,,2019-06-15
+ShowPlace Icon,DC,6,"N Pl. & 1 1/2 St., SE",Forest City Washington,RTKL Associates,Hotel,Pipeline,66400.0,,,2018,2019,,,2018.0,,2018-06-15
+Beacon Center,DC,4,"6100 Georgia Ave., NW",Community Builders / Emory United Methodist Church,"Torti Gallas Urban, Inc.",Hotel,Pipeline,58000.0,,36000000.0,2018,2019,,,2018.0,,2018-06-15
+Cleveland Park Library,DC,3,"3310 Connecticut Ave., NW",DC Public Library,Perkins Eastman DC,Hotel,Pipeline,26710.0,,20000000.0,2018,2019,,,2018.0,,2018-06-15
+Center Building (DHS HQ),DC,8,St. Elizabeths West Campus,General Services Administration,Shalom Baranes Associates,Office,Under Construction,284000.0,,155000000.0,,2019,,,,,
+One Freedom Plaza,DC,2,"1301 Pennsylvania Ave., NW",Quadrangle Development,JAHN,Office,Under Construction,270040.0,,,,2019,,,,,
+2112 Pennsylvania Avenue,DC,2,"2110 Pennsylvania Ave., NW",Skanska / GWU,Gensler,Office,Under Construction,243500.0,,125000000.0,,2019,,,,,
+44 & 88 M Street at Tyber Place,DC,6,"44 & 88 M St., NE",Skanska USA,"Davis, Carter, Scott",Office,Pipeline,540100.0,,200000000.0,,2019,,,,,
+Lacebark Alley,DC,6,"51 N St., 50 Patterson St. & 1250 1st St., NE",The JBG Companies / Brandywine Realty Trust,Shalom Baranes Associates / Cooper Carry,Office,Pipeline,366161.0,,275000000.0,2018,2019,,,2018.0,,2018-06-15
+2050 M Street,DC,2,"2050 M St., NW",Tishman Speyer,REX Architecture PC,Office,Pipeline,359040.0,,,2019,2019,,,2019.0,,2019-06-15
+Anthem Row,DC,2,"800 K St., NW",The Meridian Group,Hickok Cole Architects,Office,Pipeline,200000.0,,,,2019,,,,,
+2100 L Street,DC,2,"2100 L St., NW",Akridge / Argos Group,WDG Architecture / Jan Hendrix / Martinez & Johnson,Office,Pipeline,182000.0,,147000000.0,2019,2019,,,2019.0,,2019-06-15
+DC Water HQ,DC,6,"125 O St., SE",DC Water,SmithGroupJJR,Office,Pipeline,151300.0,,60000000.0,2017,2019,,,2017.0,,2017-06-15
+1101 16th Street,DC,2,"1101 16th St., NW",Akridge,HOK,Office,Pipeline,100000.0,,95000000.0,,2019,,,,,
+1701 Rhode Island Avenue,DC,2,"1701 Rhode Island Ave., NW",Akridge,Hickok Cole Architects,Office,Pipeline,100000.0,,88000000.0,2018,2019,,,2018.0,,2018-06-15
+Hecht Warehouse District (Hecht Building),DC,5,"1401 New York Ave., NE",Douglas Development Corp.,Antunovich Associates,Retail,Completed,201934.0,,120000000.0,,2019,,,,,
+The Shops at Dakota Crossing  (Lowe's),DC,5,"2425 Market St., NE",Ft. Lincoln New Town Corp. / Trammell Crow / CSG Urban Partners,Bignell Watkins Hasser Architects,Retail,Completed,130000.0,,20000000.0,,2019,,,,,
+Manhattan Laundry,DC,1,"1328 - 1346 Florida Ave., NW",Douglas Development Corp.,BLDG Architects,Retail,Completed,30000.0,,,,2019,,,,,
+The Shay,DC,1,"1921 & 1924 8th St., NW",The JBG Companies,Miller Hull / BKV Group,Retail,Completed,28000.0,,50000000.0,,2019,,,,,
+Arris,DC,6,"1331 4th St., SE",Forest City Washington,Robert A M Stern Architects / WDG Architecture,Retail,Completed,20000.0,,100000000.0,,2019,,,,,
+Dock 79,DC,6,"100 Potomac Ave., SE",MRP Realty / FRP Development Corp.,MRP Realty / FRP Development Corp.,Retail,Completed,18650.0,,100000000.0,,2019,,,,,
+601 Massachusetts Avenue,DC,6,"601 Massachusetts Ave., NW",Boston Properties,Duda Paine Architects,Retail,Completed,18300.0,,150000000.0,,2019,,,,,
+Tenley View,DC,3,"4600 Wisconsin Ave., NW",Douglas Development Corp.,Shalom Baranes Associates,Retail,Completed,17400.0,,,,2019,,,,,
+The Wharf (Ph I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Retail,Under Construction,190000.0,,1200000000.0,,2019,,,,,
+The Shops at Dakota Crossing  (Ph III),DC,5,"New York & South Dakota Aves., NE",Ft. Lincoln New Town Corp. / Trammell Crow / CSG Urban Partners,Bignell Watkins Hasser Architects,Retail,Under Construction,135000.0,,60000000.0,,2019,,,,,
+ART Place at Fort Totten (Ph I),DC,5,"5180 South Dakota Ave., NE",Morris & Gwendolyn Cafritz Foundation,EE&K / MV+A Architects / Shalom Baranes Associates,Retail,Under Construction,104701.0,,125000000.0,,2019,,,,,
+Hecht Warehouse District (Pappas Building),DC,5,"1401 Okie St., NE",Douglas Development Corp.,Antunovich Associates,Retail,Under Construction,95335.0,,9000000.0,,2019,,,,,
+655 New York Avenue,DC,6,"655 New York Ave., NW",Douglas Development Corp. / Brookfield,Shalom Baranes Associates,Retail,Under Construction,80551.0,,185000000.0,,2019,,,,,
+700 Penn,DC,6,"700 Pennsylvania Ave., SE",Stanton Development / Eastbanc / Dantes Partners,Esocoff & Associates Architects,Retail,Under Construction,60000.0,,227000000.0,,2019,,,,,
+Apollo,DC,6,"610 H St., NE",Insight Property Group,SK+I Architectural Design Group,Retail,Under Construction,59000.0,,195000000.0,,2019,,,,,
+Midtown Center,DC,2,"1150 15th St., NW",Carr Properties,WDG Architecture / SHoP,Retail,Under Construction,40000.0,,375000000.0,,2019,,,,,
+Agora,DC,6,"800 New Jersey Ave., SE",WC Smith,SK+I Architectural Design Group,Retail,Under Construction,39000.0,,141000000.0,,2019,,,,,
+Capitol Gateway Marketplace,DC,7,"58th & East Capitol Sts., NE",A&R Development /  DC Housing Authority,Bowman / Lessard Design,Retail,Pipeline,162200.0,,100000000.0,,2019,,,,,
+McMillan Sand Filtration Site,DC,5,"North Capitol St. & Michigan Ave., NW",Jair Lynch Real Estate Partners / Trammell Crow Company / EYA / DMPED,Perkins Eastman DC / MV+A Architects / Shalom Baranes Associates,Retail,Pipeline,125000.0,,720000000.0,2019,2019,,,2019.0,,2019-06-15
+Armature Works,DC,6,"1200 3rd Street, NE",Trammell Crow Company / High Street Residential,Shalom Baranes / Leo A Daly,Retail,Pipeline,42000.0,,,2021,2019,,,2021.0,,2021-06-15
+Saint Elizabeths East (Phase I),DC,8,Saint Elizabeths East Campus,Redbrick / Gragg Cardona Partners / Flaherty & Collins / AEDC / DMPED,"Cunningham + Quill Architects, PLLC",Retail,Pipeline,30000.0,,300000000.0,2025,2019,,,2025.0,,2025-06-15
+Storey Park,DC,6,"1005 1st Street, NE",Perseus Realty / Four Points / Greencourt Capital,HKS PC,Retail,Pipeline,27313.0,,330000000.0,2021,2019,,,2021.0,,2021-06-15
+Waterfront Station II,DC,6,"1000 4th Street, SW",PN Hoffman / Paramount Dev. / ER Bacon Dev. / CityPartners / Affordable Housing Dev. / DMPED,Torti Gallas and Partners,Retail,Pipeline,20807.0,,157000000.0,2022,2019,,,2022.0,,2022-06-15
+Press House at Union District,DC,6,"301 N Street, NE",Foulger-Pratt,Torti Gallas and Partners / AA Studio,Retail,Pipeline,27282.0,,180000000.0,2020,2019,,,2020.0,,2020-06-15
+The Wharf (Phase I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Retail,Completed,190000.0,,1326000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+The Modern at Fort Totten,DC,5,"5180 South Dakota Avenue, NE",Morris & Gwendolyn Cafritz Foundation,EE&K / MV+A Architects / Shalom Baranes Associates,Retail,Completed,104701.0,,135000000.0,Q3 17,2019,,,2017.0,3.0,2017-09-15
+Eaton by DC,DC,2,1201 K STREET NW,Pacific Eagle Holdings,,Hotel,Completed,172000.0,209.0,,Q3 18,2019,,,2018.0,3.0,2018-09-15
+International Spy Museum,DC,6,700 L'ENFANT PLAZA SW,International Spy Museum / JBG Smith,,Hotel,Completed,140000.0,,162000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Entertainment and Sports Arena,DC,8,1100 OAK DRIVE SE,Events DC / DC Government,,Hotel,Completed,116500.0,,68080000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Moxy Hotel,DC,2,1011 K STREET NW,Douglas Development Corporation,,Hotel,Completed,64988.0,200.0,40000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+601 Massachusetts Avenue,DC,6,"601 Massachusetts Ave., NW",Boston Properties,Duda Paine Architects,Office,Completed,460500.0,,150000000.0,,2019,,,,,
+National Square,DC,6,"500 D St., SW",Trammell Crow Company,Gensler,Office,Completed,342000.0,,140000000.0,,2019,,,,,
+2001 M Street,DC,2,"2001 M St., NW",Brookfield,Lehman-Smith McLeish,Office,Completed,270000.0,,,,2019,,,,,
+Department of the Interior (Phase VI),DC,2,"1849 C St., NW",General Services Administration,Shalom Baranes Associates,Office,Completed,221357.0,,60000000.0,,2019,,,,,
+Republic Square (Phase II),DC,6,"660 North Capitol St., NW",Republic Properties Corporation,Leo A Daly,Office,Completed,197000.0,,65000000.0,,2019,,,,,
+900 16th Street,DC,2,"900 16th St., NW",The JBG Companies,Cooper Carry,Office,Completed,120000.0,,,,2019,,,,,
+1785 Massachusetts Avenue,DC,2,"1785 Massachusetts Ave., NW",American Enterprise Institute,Hartman-Cox Architects,Office,Completed,92000.0,,46000000.0,,2019,,,,,
+MPD Sixth District Headquarters,DC,7,"5002 Hayes St., NE",Department of General Services,Sorg & Associates,Office,Completed,80000.0,,25000000.0,,2019,,,,,
+LIUNA (addition),DC,2,"905 16th St., NW",Laborers International Union of North America,Gensler,Office,Completed,55505.0,,,,2019,,,,,
+Manhattan Laundry,DC,1,"1328 - 1346 Florida Ave., NW",Douglas Development Corporation,BLDG Architects,Office,Completed,55000.0,,,,2019,,,,,
+Midtown Center,DC,2,"1150 15th St., NW",Carr Properties,WDG Architecture / SHoP,Office,Under Construction,820000.0,,375000000.0,,2019,,,,,
+655 New York Avenue,DC,6,"655 New York Ave., NW",Douglas Development Corp. / Brookfield,Shalom Baranes Associates,Office,Under Construction,653474.0,,185000000.0,,2019,,,,,
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Ave., NW",Property Group Partners / Center Place Holdings,Kevin Roche John Dinkeloo & Associates LLC,Office,Under Construction,516665.0,,275000000.0,,2019,,,,,
+1700M,DC,2,"1700 M Street, NW",Vornado Realty Trust,Studios Architecture,Office,Pipeline,315435.0,,,2021,2019,,,2021.0,,2021-06-15
+Reunion Square (Building 4),DC,8,"Shannon Place & W Street, SE",Four Points / Curtis Development,Hickok Cole Architects,Office,Pipeline,281242.0,,,2021,2019,,,2021.0,,2021-06-15
+250 M at Canal Park,DC,6,"250 M St., SE",WC Smith,Hickok Cole Architects,Office,Pipeline,175000.0,,125000000.0,2022,2019,,,2022.0,,2022-06-15
+300 7th Street,DC,6,"300 7th St., SW",Urban Atlantic,,Office,Pipeline,143414.0,,,,2019,,,,,
+Columbia Place,DC,2,901 L STREET NW,Quadrangle Development / Capstone Development / Marriott,,Hotel,Completed,350000.0,504.0,225000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+11th Street Bridge Park,DC,8,11th Street Bridge,Building Bridges Across the River / DC Department of Transportation,,Other,Pipeline,,,74000000.0,2023,2019,,,2023.0,,2023-06-15
+Modern on M,DC,6,"6th & M Sts., SW",Mill Creek Residential Trust,,Multifamily,Completed,,276.0,75000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+Bryant Street (Phase I),DC,5,"680 Rhode Island Ave., NE",MRP Realty / FRP Development Corp,,Multifamily,Under Construction,,487.0,,Q1 21,2019,,,2021.0,1.0,2021-03-15
+Sursum Corda Redevelopment (Ph I),DC,6,"North Capitol St., M St., 1st St., L St., NW",Toll Brothers,,Multifamily,Pipeline,,562.0,,2021/22,2019,,,,,
+655 New York Avenue,DC,6,"655 New York Ave., NW",Douglas Development Corporation / Brookfield Properties,,Retail,Completed,80551.0,,185000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Press House at Union District,DC,6,"301 N St., NE",Foulger-Pratt,AA Studio / Torti Gallas and Partners,Multifamily,Pipeline,,372.0,150000000.0,2019,2019,,,2019.0,,2019-06-15
+Paul Public Charter School,DC,4,"5800 8th St., NW",Jair Lynch Real Estate Partners,Shinberg Levinas,Other,Completed,166000.0,,22000000.0,,2019,,,,,
+AU East Campus,DC,3,"3501 Nebraska Ave., NW",American University,Stantec Architecture,Other,Under Construction,243000.0,,115000000.0,,2019,,,,,
+THE ARC (Ph III),DC,8,"18th St. & Mississippi Ave., SE",WC Smith / Building Bridges Across the River,Sanchez Palmer,Other,Under Construction,13725.0,,34000000.0,,2019,,,,,
+Ballpark East,DC,6,"1201 Half St., SE",The JBG Companies,"Eric Colbert & Associates, PC / ODA Architecture",Retail,Pipeline,61000.0,,,,2019,,,,,
+Consumer Financial Protection Bureau HQ Modernization,DC,2,"1700 G Street, NW",General Services Administration,RTKL Associates / SOM,Retail,Completed,21596.0,,139000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+Shops at Penn Hill (Phase I),DC,7,"3200 Pennsylvania Avenue, SE",Jair Lynch Real Estate Partners,Mushinksy Voelzke Associates,Retail,Under Construction,65000.0,,15000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+The Belgard,DC,6,"33 N Street, NE",Wood Partners / MacFarlane Partners,Hickok Cole Architects,Multifamily,Completed,,346.0,150000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+Plaza West,DC,6,"1035 4th Street, NW",MissionFirst Development / The Henson Development Company Inc. ,Hickok Cole Architects,Multifamily,Completed,,233.0,90100000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+Half Street,DC,6,"Half & N Sts., SE",Jair Lynch Real Estate Partners / MacFarlane Partners,R.D. Jones & Associates / Hord Coplan Macht Inc,Retail,Pipeline,50000.0,,152000000.0,2018,2019,,,2018.0,,2018-06-15
+Park Van Ness,DC,3,"4455 Connecticut Ave., NW","Saul Centers, Inc.",Torti Gallas and Partners,Multifamily,Completed,,271.0,75000000.0,,2019,,,,,
+Corcoran Gallery of Art,DC,2,"500 17th Street, NW",George Washington University,Leo A Daly,Hotel,Completed,35000.0,,80000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Four Constitution Square,DC,6,"150 M Street, NE","StonebridgeCarras, LLC",HOK,Office,Under Construction,505000.0,,250000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,ODA Architecture / WDG Architecture / Rafael Vinoly Architects PC / Morris Adjmi Architects / Studios Architecture / Hollwich Kushner / Perkins Eastman DC / SHoP,Office,Pipeline,547504.0,,1200000000.0,2022,2019,,,2022.0,,2022-06-15
+1270 4th Street,DC,5,"1270 4th Street, NE",Level 2 Development / EDENS / Trammell Crow Residential,Shalom Baranes Associates,Multifamily,Under Construction,,432.0,150000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+AVEC,DC,6,"901 H Street, NE",Rappaport / WC Smith / Lustine Realty Co.,Torti Gallas and Partners,Multifamily,Under Construction,,419.0,200000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+The Garrett,DC,6,"150 Eye Street, SE",WC Smith,Kohn Pedersen Fox & Associates,Multifamily,Under Construction,,375.0,170000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+1331,DC,6,"1331 Maryland Avenue, SW",Republic Properties Corporation,WDG Architecture / Robert A M Stern Architects,Multifamily,Under Construction,,373.0,220000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Novel South Capitol,DC,6,"2 I Street, SE",Crescent Development / RCP Development Company,SK+I Architectural Design Group,Multifamily,Under Construction,,355.0,,Q1 19,2019,,,2019.0,1.0,2019-03-15
+Eckington Yards,DC,5,"1625 Eckington Place & 1500 Harry Thomas Way, NE",JBG Smith / The Boundary Companies,"Eric Colbert & Associates, PC",Multifamily,Pipeline,,695.0,,2020,2019,,,2020.0,,2020-06-15
+3900 Wisconsin Avenue,DC,3,"3900 Wisconsin Avenue, NW",Roadside Development / Sekisui House,Shalom Baranes Associates,Multifamily,Pipeline,,652.0,,2022,2019,,,2022.0,,2022-06-15
+Bryant Street,DC,5,"680 Rhode Island Ave., NE",MRP Realty / B&R Associates LP,SK+I Architectural Design Group,Multifamily,Pipeline,,490.0,,2020,2019,,,2020.0,,2020-06-15
+Waterfront Station II,DC,6,"1000 4th Street, SW",PN Hoffman / Paramount Dev. / ER Bacon Dev. / CityPartners / Affordable Housing Dev. / DMPED,Torti Gallas and Partners,Multifamily,Pipeline,,456.0,157000000.0,2022,2019,,,2022.0,,2022-06-15
+Press House at Union District,DC,6,"301 N Street, NE",Foulger-Pratt,Torti Gallas and Partners / AA Studio,Multifamily,Pipeline,,356.0,180000000.0,2020,2019,,,2020.0,,2020-06-15
+The Wharf (Phase II),DC,6,"300 M Street, NE",Hoffman-Madison Waterfront,ODA Architecture / WDG Architecture / Rafael Vinoly Architects PC / Morris Adjmi Architects / Studios Architecture / Hollwich Kushner / Perkins Eastman DC / SHoP,Multifamily,Pipeline,,425.0,147000000.0,2021,2019,,,2021.0,,2021-06-15
+The Alice and Eugene Ford Senior Building,DC,6,"1900 Half Street, SW",MidCity,Torti Gallas and Partners,Multifamily,Pipeline,,415.0,,2021,2019,,,2021.0,,2021-06-15
+Saint Elizabeths East (Phase I),DC,8,Saint Elizabeths East Campus,Redbrick / Gragg Cardona Partners / Flaherty & Collins / AEDC / DMPED,"Cunningham + Quill Architects, PLLC",Multifamily,Pipeline,,312.0,300000000.0,2020,2019,,,2020.0,,2020-06-15
+Midtown Center,DC,2,"1150 15th Street, NW",Carr Properties,WDG Architecture / SHoP,Office,Completed,821000.0,,350000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+Alexander Court,DC,2,"2001 K Street, NW",Rockrose Development,FOX Architects / Pelli Clark Pelli Architects,Office,Completed,780000.0,,,Q2 18,2019,,,2018.0,2.0,2018-06-15
+The Wharf (Phase I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Office,Completed,500000.0,,1326000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+200 Massachusetts Avenue,DC,2,"200 Massachusetts Avenue, NW",Property Group Partners,Kevin Roche John Dinkeloo & Associates LLC,Office,Completed,381746.0,,200000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+2112 Pennsylvania Avenue,DC,2,"2112 Pennsylvania Avenue, NW",Skanska USA,Gensler,Office,Completed,230000.0,,126000000.0,Q2 18,2019,,,2018.0,2.0,2018-06-15
+555 E Street (CitizenM),DC,6,"555 E St., SW",CityPartners / Paramount Development Corp. / Potomac Investment Properties / Adams Investment Group / DC Strategy Group, ,Hotel,Completed,130000.0,252.0,120000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+AC Hotel,DC,2,"1112 19th St., NW",OTO Development, ,Hotel,Completed,125700.0,219.0,41000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+Thompson D.C. Hotel,DC,6,"227 Tingey St., SE",Brookfield Properties / JW Capital Partners / Geolo Capital, ,Hotel,Completed,114800.0,225.0,0.0,Q1 20,2021,,,2020.0,1.0,2020-03-15
+Yotel,DC,6,"415 New Jersey Ave., NW",BLDG Management / Metrovest Equities, ,Hotel,Completed,103000.0,373.0,45000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+AC Hotel Washington D.C. Convention Center,DC,6,"601 K St., NW",Douglas Development Corporation, ,Hotel,Completed,96800.0,234.0,47000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+The Reach,DC,2,"2700 F St., NW",The John F. Kennedy Center for the Performing Arts, ,Hotel,Completed,72000.0,0.0,175000000.0,Q3 19,2021,,,2019.0,3.0,2019-09-15
+National Children's Museum,DC,2,"1300 Pennsylvania Ave., NW",National Children's Museum, ,Hotel,Completed,33000.0,0.0,15000000.0,Q1 20,2021,,,2020.0,1.0,2020-03-15
+Franklin School (Planet Word),DC,2,"13th & K Sts., NW",Franklin School Development LLC / DMPED, ,Hotel,Completed,26300.0,0.0,35000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+ART Place at Fort Totten (Phase II),DC,5,"5300 South Dakota Ave., NE",Morris & Gwendolyn Cafritz Foundation, ,Hotel,Under Construction,201000.0,0.0,0.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+NoMa CNTR,DC,6,"1005 1st St., NE",Perseus TDC / Four Points / Buccini Pollin Group / Sunwater Management, ,Hotel,Under Construction,184400.0,235.0,330000000.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+H. Carl Moultrie Courthouse,DC,2,"500 Indiana Ave., NW",DC Superior Court, ,Office,Under Construction,176000.0,0.0,97000000.0,2021,2021,,,2021.0,,2021-06-15
+699 14th Street,DC,2,"699 14th St., NW",Lincoln Property Company / Cara Real Estate, ,Office,Under Construction,149000.0,0.0,0.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+The Milken Center for Advancing the American Dream,DC,2,"1501 - 1505 Pennsylvania Ave., NW & 730 15th St., NW",Akridge / Milken Family Foundation, ,Office,Under Construction,132000.0,0.0,0.0,2024,2021,,,2024.0,,2024-06-15
+2100 M Street,DC,2,"2100 M St., NW",Meadow Partners / Network Realty Partners, ,Office,Pipeline,369100.0,0.0,0.0,2022,2021,,,2022.0,,2022-06-15
+600 5th Street,DC,2,"600 5th St., NW",Stonebridge Associates / Rockefeller Group, ,Office,Pipeline,355000.0,0.0,300000000.0,2025,2021,,,2025.0,,2025-06-15
+Saint Elizabeths East (Parcel 17),DC,8,Saint Elizabeths East Campus,Redbrick LMD / Gragg Cardona Partners, ,Office,Pipeline,267000.0,0.0,170000000.0,2023,2021,,,2023.0,,2023-06-15
+Northeast Heights,DC,7,"Minnesota Ave. & Benning Rd., NE",Cedar Realty Trust / Trammell Crow Company, ,Office,Pipeline,265000.0,0.0,420000000.0,2022-28,2021,,,,,
+Reunion Square (Building 4),DC,8,"Shannon Place & W St., SE",Four Points / Curtis Development, ,Office,Pipeline,230000.0,0.0,0.0,2023,2021,,,2023.0,,2023-06-15
+Cannon House Office Building Renewal (Ph III),DC,6,"27 Independence Ave., SE",Architect of the Capitol, ,Office,Pipeline,206500.0,0.0,188000000.0,2022,2021,,,2022.0,,2022-06-15
+300 7th Street,DC,6,"300 7th St., SW",Jair Lynch Real Estate Partners, ,Office,Pipeline,203400.0,0.0,122000000.0, ,2021,,,,,
+615 H Street,DC,2,"615 H St., NW",Monument Realty, ,Office,Pipeline,69000.0,0.0,55000000.0, ,2021,,,,,
+Howard University Hospital (Phase I),DC,1,"501 Bryant St., NW",Howard University, ,Other,Pipeline,478000.0,0.0,450000000.0,2026,2021,,,2026.0,,2026-06-15
+Saint Elizabeths East (New Hospital),DC,8,"2730 Martin Luther King, Jr. Ave., SE",Government of the District of Columbia, ,Other,Pipeline,322000.0,0.0,326000000.0,2024,2021,,,2024.0,,2024-06-15
+3999 8th Street,DC,8,"3999 8th St., SE & 700 Yuma St., SE",KIPP DC, ,Other,Pipeline,158000.0,0.0,105000000.0,2022,2021,,,2022.0,,2022-06-15
+Skyland Town Center (Block 1),DC,7,"Alabama Ave. & Naylor Rd., SE",Rappaport / WC Smith, ,Other,Pipeline,131300.0,0.0,72000000.0,2023,2021,,,2023.0,,2023-06-15
+New Fort Dupont Ice Arena,DC,7,"3779 Ely Place, SE",Department of General Services, ,Other,Pipeline,78000.0,0.0,25000000.0,2023,2021,,,2023.0,,2023-06-15
+Smothers Elementary School Modernization,DC,7,"4400 Brooks St., NE",Department of General Services, ,Other,Pipeline,66100.0,0.0,55000000.0,2022,2021,,,2022.0,,2022-06-15
+400 I Street,DC,6,"400 Eye St., SW",Bozzuto / Dantes Partners / Westminster Presbyterian Church, ,Other,Pipeline,18513.0,0.0,0.0,2024,2021,,,2024.0,,2024-06-15
+11th Street Bridge Park,DC,8,11th St. Bridge,Building Bridges Across the River / DC Department of Transportation, ,Other,Pipeline,0.0,0.0,74000000.0,2024,2021,,,2024.0,,2024-06-15
+Banneker Academic High School,DC,6,"10th & R Sts., NW",Department of General Services / DC Public Schools, ,Other,Under Construction,175000.0,0.0,152000000.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+Capitol Hill Montessori at Logan,DC,6,"215 G St., NE",Department of General Services / DC Public Schools, ,Other,Under Construction,100000.0,0.0,70000000.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+West Elementary School,DC,4,"1335 Farragut St., NW",Department of General Services / DC Public Schools, ,Other,Under Construction,88600.0,0.0,71000000.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+KIPP School (Phase III),DC,7,"4801 Benning Rd., SE",KIPP DC, ,Other,Under Construction,84000.0,0.0,21000000.0,Q2 21,2021,,,2021.0,2.0,2021-06-15
+Eaton Elementary School Modernization,DC,3,"3301 Lowell St., NW",Department of General Services / DC Public Schools, ,Other,Under Construction,52600.0,0.0,67000000.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+Southwest Library,DC,6,"900 Wesley Place, SW",DC Public Library, ,Other,Under Construction,22000.0,0.0,18000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+Lafayette Recreation Center,DC,4,"5900 33rd St., NW",Department of General Services / Department of Parks & Recreation, ,Other,Under Construction,3300.0,0.0,6000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+Franklin Park,DC,2,"13th, 14th, I, & K Sts., NW",Department of General Services / National Park Service, ,Other,Under Construction,0.0,0.0,18000000.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+1145 19th Street,DC,2,"1145 19th St., NW",The RMR Group Inc., ,Other,Completed,130000.0,0.0,26000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Eliot-Hine Middle School Modernization,DC,6,"1830 Constitution Ave., NE",Department of General Services / DC Public Schools, ,Other,Completed,143500.0,0.0,84000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+Jefferson Academy,DC,6,"801 7th St., SW",Department of General Services / DC Public Schools, ,Other,Completed,109000.0,0.0,78000000.0,Q2 20,2021,,,2020.0,2.0,2020-06-15
+Georgetown Day School Tenleytown Campus,DC,3,"4203 Davenport St., NW",Georgetown Day School, ,Other,Completed,88600.0,0.0,0.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+CW Harris Elementary School,DC,7,"301 53rd St., SE",Department of General Services / DC Public Schools, ,Other,Completed,84000.0,0.0,52000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Houston Elementary School Modernization,DC,7,"1100 50th Place, NE",Department of General Services / DC Public Schools, ,Other,Completed,82500.0,0.0,55000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Thaddeus Stevens School,DC,2,"1050 21st St., NW",Akridge / Argos Group / Department of General Services / DC Public Schools, ,Other,Completed,40000.0,0.0,20000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Shepherd Park Community Center,DC,4,"7800 14th St., NW",Department of General Services / Department of Parks and Recreation, ,Other,Completed,20000.0,0.0,13000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Northeast Heights,DC,7,"3924 - 3968 Minnesota Ave., NE",Cedar Realty Trust / Trammell Crow Company, ,Multifamily,Pipeline,0.0,1355.0,0.0,2022-28,2021,,,,,
+100 V Street (Phase I),DC,6,"1st, 2nd, T & V Sts., SW",Akridge, ,Multifamily,Pipeline,0.0,1100.0,0.0,2023,2021,,,2023.0,,2023-06-15
+Columbian Quarter (Phase I),DC,8,"Suitland Parkway & Howard Rd., SE",Redbrick LMD, ,Multifamily,Pipeline,0.0,725.0,260000000.0,2023,2021,,,2023.0,,2023-06-15
+Upton Place,DC,3,4000 Wisconsin Ave. NW,Donohoe Companies, ,Multifamily,Pipeline,0.0,689.0,0.0,2024,2021,,,2024.0,,2024-06-15
+113 Potomac Avenue,DC,6,"113 Potomac Ave., SW",Toll Brothers, ,Multifamily,Pipeline,0.0,520.0,250000000.0,2023,2021,,,2023.0,,2023-06-15
+Bond Bread,DC,1,"2114 Georgia Ave., NW",EDENS / Menkiti Group / Fivesquares Development / Howard University, ,Multifamily,Pipeline,0.0,450.0,275000000.0,2025,2021,,,2025.0,,2025-06-15
+Waterfront Station II,DC,6,"1000 4th St., SW",Hoffman & Associates / CityPartners / Affordable Housing Developers / Paramount Development Corp. / DMPED, ,Multifamily,Pipeline,0.0,449.0,165000000.0,2023,2021,,,2023.0,,2023-06-15
+The Yards (Parcel I),DC,6,"Canal & N Sts., SE",Brookfield Properties, ,Multifamily,Pipeline,0.0,379.0,0.0,2023,2021,,,2023.0,,2023-06-15
+400 I Street,DC,6,"400 Eye St., SW",Bozzuto / Dantes Partners / Westminster Presbyterian Church, ,Multifamily,Pipeline,0.0,222.0,0.0,2024,2021,,,2024.0,,2024-06-15
+Crossing DC (Phase I),DC,6,"949 1st St., SE",Tishman Speyer, ,Multifamily,Completed,0.0,512.0,0.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+Armature Works,DC,6,"1200 3rd St., NE",Trammell Crow Company / High Street Residential / MetLife, ,Hotel,Under Construction,147000.0,204.0,400000000.0,Q1 22,2021,,,2022.0,1.0,2022-03-15
+Holiday Inn Express,DC,6,"303 - 317 K St., NW",Habte Sequar, ,Hotel,Under Construction,118000.0,247.0,93000000.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+The Milken Center for Advancing the American Dream,DC,2,"1501 - 1505 Pennsylvania Ave., NW & 730 15th St., NW",Akridge / Milken Family Foundation, ,Hotel,Under Construction,70000.0,0.0,0.0,2024,2021,,,2024.0,,2024-06-15
+Banneker Hotel,DC,2,"1315 16th Street, NW",Greystar Development / J.P. Morgan Asset Management / Oxford Properties Group, ,Hotel,Under Construction,0.0,144.0,0.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+World War I Memorial,DC,2,Pershing Park,Doughboy Foundation / U.S. WWI Centennial Commission, ,Hotel,Under Construction,0.0,0.0,42000000.0,Q4 21,2021,,,2021.0,4.0,2021-12-15
+Latham Hotel,DC,2,"3000 M St., NW",Thor Equities, ,Hotel,Pipeline,140000.0,256.0,0.0,2024,2021,,,2024.0,,2024-06-15
+Bond Bread,DC,1,"2114 Georgia Ave., NW",EDENS / Menkiti Group / Fivesquares Development / Howard University, ,Hotel,Pipeline,135000.0,180.0,275000000.0,2025,2021,,,2025.0,,2025-06-15
+100 V Street (Phase I),DC,6,"1st, 2nd, T & V Sts., SW",Akridge, ,Hotel,Pipeline,66100.0,180.0,0.0,2023,2021,,,2023.0,,2023-06-15
+45 Q Street,DC,6,"45 Q St., SW",D.B. Lee Development & Construction, ,Hotel,Pipeline,62000.0,190.0,0.0, ,2021,,,,,
+Waterfront Station II,DC,6,"1000 4th St., SW",Hoffman & Associates / CityPartners / Affordable Housing Developers / Paramount Development Corp. / DMPED, ,Hotel,Pipeline,9300.0,0.0,165000000.0,2023,2021,,,2023.0,,2023-06-15
+Arlo DC,DC,2,"333 G St. & 704 3rd St., NW",Quadrum Global, ,Hotel,Pipeline,0.0,421.0,0.0, ,2021,,,,,
+citizenM Hotel,DC,6,"1222 1st St., NE",Altus Realty Partners, ,Hotel,Pipeline,0.0,290.0,0.0,2022,2021,,,2022.0,,2022-06-15
+National Museum of the U.S. Navy,DC,6,Washington Navy Yard,Navy History and Heritage Command, ,Hotel,Pipeline,0.0,0.0,450000000.0,2025,2021,,,2025.0,,2025-06-15
+Sentinel Square III,DC,6,"45 L St., NE",Trammell Crow Company, ,Office,Completed,545000.0,0.0,250000000.0,Q2 20,2021,,,2020.0,2.0,2020-06-15
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Ave., NW",Property Group Partners, ,Office,Completed,508000.0,0.0,275000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+2050 M Street,DC,2,"2050 M St., NW",Tishman Speyer, ,Office,Completed,353200.0,0.0,0.0,Q1 20,2021,,,2020.0,1.0,2020-03-15
+1901 L Street,DC,2,"1901 L St., NW",The Meridian Group, ,Office,Completed,202000.0,0.0,0.0,Q1 20,2021,,,2020.0,1.0,2020-03-15
+2100 L Street,DC,2,"2100 L St., NW",Akridge / Argos Group, ,Office,Completed,182000.0,0.0,47000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+888 16th Street,DC,2,"888 16th St., NW",Trammell Crow Company / Meadow Partners, ,Office,Completed,150000.0,0.0,0.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+Shops at Penn Branch (Phase I),DC,7,"3200 Pennsylvania Ave., SE",Jair Lynch Real Estate Partners, ,Office,Completed,17000.0,0.0,25000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+2100 Pennsylvania Avenue,DC,2,"2100 Pennsylvania Ave., NW",Boston Properties / George Washington University, ,Office,Under Construction,423600.0,0.0,360000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+Signal House,DC,5,"1255 Union St., NE",Carr Properties, ,Office,Under Construction,214000.0,0.0,135000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+250 M at Canal Park,DC,6,"250 M St., SE",WC Smith, ,Office,Under Construction,180600.0,0.0,132000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+AC Hotel,DC,2,1112 19TH STREET NW,OTO Development,,Hotel,Under Construction,125650.0,219.0,41000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Holiday Inn Express,DC,6,317 K STREET NW,Habte Sequar,,Hotel,Under Construction,118000.0,247.0,93000000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+Thompson D.C. Hotel,DC,6,227 TINGEY STREET SE,Brookfield Properties / JW Capital Partners / Geolo Capital,,Hotel,Under Construction,114800.0,225.0,,Q1 20,2019,,,2020.0,1.0,2020-03-15
+AC Hotel,DC,6,601 K STREET NW,Douglas Development Corporation,,Hotel,Under Construction,96755.0,234.0,47000000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+Pendry Hotel,DC,6,660 WATER STREET SW,Hoffman & Associates / Madison Marquette,,Hotel,Under Construction,80000.0,116.0,1200000000.0,Q3 22,2019,,,2022.0,3.0,2022-09-15
+The Reach,DC,2,2700 F STREET NW,The John F. Kennedy Center for the Performing Arts,,Hotel,Under Construction,72000.0,,175000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Center for the American Dream & Milken Foundation Building,DC,2,730 15TH STREET NW,Akridge / Milken Family Foundation,,Hotel,Under Construction,69000.0,,,Q1 21,2019,,,2021.0,1.0,2021-03-15
+ART Place at Fort Totten (Phase II),DC,5,FORT TOTTEN METRO STATION ENTRANCE - SOUTH SIDE OF GALLOWAY STREET NE,Morris & Gwendolyn Cafritz Foundation,,Hotel,Pipeline,201064.0,,,2022,2019,,,2022.0,,2022-06-15
+Storey Park,DC,6,1005 1ST STREET NE,Four Points / Perseus Realty / Buccini Pollin Group,,Hotel,Pipeline,184436.0,235.0,330000000.0,2022,2019,,,2022.0,,2022-06-15
+Armature Works,DC,6,1200 3RD STREET NE,Trammell Crow Company / High Street Residential / MetLife,,Hotel,Pipeline,147000.0,204.0,400000000.0,2022,2019,,,2022.0,,2022-06-15
+Cambria Hotel,DC,6,69 Q STREET SW,Donohoe Companies,,Hotel,Pipeline,77500.0,154.0,58000000.0,2021,2019,,,2021.0,,2021-06-15
+Meininger Hotel,DC,6,35 NEW YORK AVENUE NE,Altus Realty Partners,,Hotel,Pipeline,75000.0,154.0,,2021,2019,,,2021.0,,2021-06-15
+Nationals Park Entertainment Venue,DC,6,NATIONALS PARK BASEBALL STADIUM,Washington Nationals,,Hotel,Pipeline,35000.0,,,,2019,,,,,
+9 1/2 Street Initiative (Grimke School),DC,1,1925 VERMONT AVENUE NW,Community Three,,Hotel,Pipeline,12000.0,,45000000.0,2020-23,2019,,,,,
+World War I Memorial,DC,2,,U.S. WWI Centennial Commission,,Hotel,Pipeline,0.0,,42000000.0,2021,2019,,,2021.0,,2021-06-15
+Four Constitution Square,DC,6,"150 M St., NE",Stonebridge Associates / Walton Street Capital,,Office,Completed,505000.0,,250000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+Center Building (DHS HQ),DC,8,St. Elizabeths West Campus,General Services Administration,,Office,Completed,276000.0,,267800000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+One Freedom Plaza,DC,2,"1301 Pennsylvania Ave., NW",Quadrangle Development,,Office,Completed,270040.0,,,Q1 19,2019,,,2019.0,1.0,2019-03-15
+500 L'Enfant Plaza,DC,6,"500 L'Enfant Plaza, SW",JBG Smith,,Office,Completed,215200.0,,75000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+1441 L Street,DC,2,"1441 L St., NW",S.C. Herman & Associates,,Office,Completed,207000.0,,36000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+DC Water HQ,DC,6,"125 O St., SE",DC Water,,Office,Completed,151300.0,,60000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+2100 K Street,DC,2,"2100 K St., NW",Blake Real Estate,,Office,Completed,150000.0,,,Q1 19,2019,,,2019.0,1.0,2019-03-15
+U.S. Department of Commerce - Herbert Hoover Building (Ph IV),DC,2,"1401 Constitution Ave., NW",General Services Administration,,Office,Completed,109800.0,,83000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+1701 Rhode Island Avenue,DC,2,"1701 Rhode Island Ave., NW",Akridge,,Office,Completed,100000.0,,90000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+1101 16th Street,DC,2,"1101 16th St., NW",Akridge,,Office,Completed,100000.0,,95000000.0,Q1 19,2019,,,2019.0,1.0,2019-03-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman & Associates / Madison Marquette,,Office,Under Construction,547504.0,,1200000000.0,Q3 22,2019,,,2022.0,3.0,2022-09-15
+Sentinel Square III,DC,6,"45 L St., NE",Trammell Crow Company,,Office,Under Construction,545000.0,,250000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+2100 Pennsylvania Avenue,DC,2,"2100 Pennsylvania Ave., NW",Boston Properties / George Washington University,,Office,Under Construction,423562.0,,360000000.0,Q2 22,2019,,,2022.0,2.0,2022-06-15
+1900 N,DC,2,"1900 N St., NW",JBG Smith,,Office,Under Construction,259000.0,,230000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Signal House,DC,5,"350 Morse St., NE",Carr Enterprises,,Office,Under Construction,214000.0,,135000000.0,Q1 21,2019,,,2021.0,1.0,2021-03-15
+Cannon House Office Building Renewal (Ph I),DC,6,"27 Independence Ave., SE",Architect of the Capitol,,Office,Under Construction,206500.0,,188000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Cannon House Office Building Renewal (Ph II),DC,6,"27 Independence Ave., SE",Architect of the Capitol,,Office,Under Construction,206500.0,,188000000.0,Q4 20,2019,,,2020.0,4.0,2020-12-15
+900 New York Avenue,DC,2,"900 New York Ave., NW",Gould Property Company / Oxford Properties Group,,Office,Pipeline,575000.0,,250000000.0,,2019,,,,,
+1700M,DC,2,"1700 M St., NW",JBG Smith,,Office,Pipeline,315435.0,,,2021/22,2019,,,,,
+The Yards (Parcel G),DC,6,"1275 New Jersey Ave., SE",Brookfield Properties,,Office,Pipeline,290422.0,,,,2019,,,,,
+Reunion Square (Building 4),DC,8,"Shannon Place & W St., SE",Four Points / Curtis Development,,Office,Pipeline,281242.0,,,2022,2019,,,2022.0,,2022-06-15
+25 M,DC,6,"25 M St., SE",Akridge / Brandywine Realty Trust,,Office,Pipeline,223000.0,,85000000.0,,2019,,,,,
+Saint Elizabeths East (Phase I),DC,8,Saint Elizabeths East Campus,Redbrick LMD / Gragg Cardona Partners / DMPED,"Cunningham + Quill Architects, PLLC",Office,Pipeline,220000.0,,200000000.0,2022,2019,,,2022.0,,2022-06-15
+300 7th Street,DC,6,"300 7th St., SW",Jair Lynch Real Estate Partners,,Office,Pipeline,203414.0,,121549000.0,2021/22,2019,,,,,
+Saint Elizabeths East Parcel 15,DC,8,Saint Elizabeths East Campus,Redbrick LMD / Gragg Cardona Partners,"Cunningham + Quill Architects, PLLC",Office,Pipeline,200000.0,,218600000.0,2023,2019,,,2023.0,,2023-06-15
+Embassy of Australia,DC,2,"1601 Massachusetts Ave., NW",Commonwealth of Australia,,Office,Pipeline,133244.0,,237000000.0,2022,2019,,,2022.0,,2022-06-15
+Calvin Coolidge Senior High School,DC,4,"6315 5th St., NW",Department of General Services / DC Public Schools,,Other,Completed,286300.0,,163000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Murch Elementary School,DC,3,"4810 36th St., NW",Department of General Services / DC Public Schools,,Other,Completed,112700.0,,83300000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Corcoran Gallery of Art,DC,2,"500 17th St., NW",George Washington University,,Other,Completed,100000.0,,80000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Kimball Elementary School,DC,7,"3375 Minnesota Ave., SE",Department of General Services / DC Public Schools,,Other,Completed,83400.0,,53500000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Lawrence E. Boone Elementary School,DC,8,"2200 Minnesota Ave., SE",Department of General Services / DC Public Schools,,Other,Completed,68000.0,,47000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+Beacon Center,DC,4,"6100 Georgia Ave., NW",The Community Builders / Emory United Methodist Church,,Other,Completed,58000.0,,42500000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+Riverpoint,DC,6,"2100 2nd St., SW",Akridge / Western Development / Orr Partners / Jefferson Apartment Group, ,Multifamily,Completed,0.0,481.0,220000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+West Half,DC,6,"1201 Half St., SE",JBG Smith, ,Multifamily,Completed,0.0,465.0,228000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Watermark,DC,6,"1900 Half St., SW",Douglas Development Corporation, ,Multifamily,Completed,0.0,453.0,190000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+AVEC,DC,6,"901 H St., NE",Rappaport / Lustine Family / WC Smith, ,Multifamily,Completed,0.0,419.0,200000000.0,Q2 20,2021,,,2020.0,2.0,2020-06-15
+The Garrett,DC,6,"150 Eye St., SE",WC Smith, ,Multifamily,Completed,0.0,373.0,170000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+Beckert’s Park,DC,6,"415 14th St., SE",Foulger-Pratt / Safeway, ,Multifamily,Completed,0.0,325.0,138000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+The Kelvin,DC,6,"1250 Half St., SE",Jair Lynch Real Estate Partners, ,Multifamily,Completed,0.0,312.0,155000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Illume (Phase I & II),DC,6,"809 & 853 New Jersey Ave., SE",Greystar Development / J.P. Morgan Asset Management / Oxford Properties Group, ,Multifamily,Under Construction,0.0,756.0,0.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+Eckington Yards,DC,5,"1625 Eckington Pl. & 1500 Harry Thomas Way, NE",The JBG Companies / LCOR, ,Multifamily,Under Construction,0.0,681.0,265000000.0,Q2 21,2021,,,2021.0,2.0,2021-06-15
+Armature Works,DC,6,"1200 3rd St., NE",Trammell Crow Company / High Street Residential / MetLife, ,Multifamily,Under Construction,0.0,635.0,400000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+Sursum Corda Redevelopment (Phase I),DC,6,"North Capitol St., M St., 1st St., L St., NW",Toll Brothers, ,Multifamily,Under Construction,0.0,562.0,226000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+NoMa CNTR,DC,6,"1005 1st St., NE",Perseus TDC / Four Points / Buccini Pollin Group / Sunwater Management, ,Multifamily,Under Construction,0.0,500.0,330000000.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+Museum Place,DC,6,"65 I St., SW",Lowe, ,Multifamily,Under Construction,0.0,492.0,200000000.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+Bryant Street (Phase I),DC,5,"680 Rhode Island Ave., NE",MRP Realty / FRP Development Corp, ,Multifamily,Under Construction,0.0,487.0,0.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+300 M,DC,6,"300 M St., NE",LCOR, ,Multifamily,Under Construction,0.0,457.0,212000000.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+Northeast Heights,DC,7,"3924 - 3968 Minnesota Ave., NE",Cedar Realty Trust / Trammell Crow Company, ,Retail,Pipeline,194600.0,0.0,420000000.0,2022-28,2021,,,,,
+Upton Place,DC,3,4000 Wisconsin Ave. NW,Donohoe Companies, ,Retail,Pipeline,100000.0,0.0,0.0,2024,2021,,,2024.0,,2024-06-15
+Skyland Town Center (Block 3),DC,7,"Alabama Ave. & Naylor Rd., SE",Rappaport / WC Smith, ,Retail,Pipeline,42400.0,0.0,17000000.0,2022,2021,,,2022.0,,2022-06-15
+113 Potomac Avenue,DC,6,"113 Potomac Ave., SW",Toll Brothers, ,Retail,Pipeline,41000.0,0.0,250000000.0,2023,2021,,,2023.0,,2023-06-15
+North Building,DC,5,"1329 5th St., NE",EDENS / Gables Residential, ,Retail,Pipeline,23100.0,0.0,140000000.0,2023,2021,,,2023.0,,2023-06-15
+Waterfront Station II,DC,6,"1000 4th St., SW",Hoffman & Associates / CityPartners / Affordable Housing Developers / Paramount Development Corp. / DMPED, ,Retail,Pipeline,19700.0,0.0,165000000.0,2023,2021,,,2023.0,,2023-06-15
+The Yards (Parcel I),DC,6,"Canal & N Sts., SE",Brookfield Properties, ,Retail,Pipeline,16000.0,0.0,0.0,2023,2021,,,2023.0,,2023-06-15
+"The Clara on Martin Luther King, Jr. Ave",DC,8,"2313 Martin Luther King Jr. Ave, SE",Banneker Ventures / Masjid Muhammad, ,Retail,Pipeline,14000.0,0.0,43000000.0,2022,2021,,,2022.0,,2022-06-15
+City Ridge,DC,3,"3900 Wisconsin Ave., NW",Roadside / North America Sekisui House, ,Retail,Under Construction,196000.0,0.0,715000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+Crest at Skyland Town Center,DC,7,"Alabama Ave. & Naylor Rd., SE",Rappaport / WC Smith / Washington East, ,Retail,Under Construction,117000.0,0.0,199000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman & Associates / Madison Marquette, ,Retail,Under Construction,95000.0,0.0,1150000000.0,Q3 22,2021,,,2022.0,3.0,2022-09-15
+Eckington Yards,DC,5,"1625 Eckington Pl. & 1500 Harry Thomas Way, NE",The JBG Companies / LCOR, ,Retail,Under Construction,67300.0,0.0,265000000.0,Q2 21,2021,,,2021.0,2.0,2021-06-15
+Armature Works,DC,6,"1200 3rd St., NE",Trammell Crow Company / High Street Residential / MetLife, ,Retail,Under Construction,60000.0,0.0,400000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+The Hartley,DC,4,"6900 Georgia Ave., NW",Hines / Urban Atlantic / Triden Development / Bridge Investment Group, ,Retail,Under Construction,60000.0,0.0,0.0,Q1 22,2021,,,2022.0,1.0,2022-03-15
+NoMa CNTR,DC,6,"1005 1st St., NE",Perseus TDC / Four Points / Buccini Pollin Group / Sunwater Management, ,Retail,Under Construction,39900.0,0.0,330000000.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+Press House at Union District,DC,6,"301 - 331 N St., NE",Foulger-Pratt, ,Retail,Under Construction,27282.0,0.0,180000000.0,Q2 21,2021,,,2021.0,2.0,2021-06-15
+Hecht Warehouse (1515 New York Avenue),DC,5,"1515 New York Ave., NE",Douglas Development Corporation, ,Retail,Completed,93000.0,0.0,27000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+RiverPoint,DC,6,"2100 2nd St., SW",Akridge / Western Development / Orr Partners / Jefferson Apartment Group, ,Retail,Completed,70400.0,0.0,220000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+Beckert’s Park,DC,6,"415 14th St., SE",Foulger-Pratt / Safeway, ,Retail,Completed,68000.0,0.0,138000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Shops at Penn Branch (Phase I),DC,7,"3200 Pennsylvania Ave., SE",Jair Lynch Real Estate Partners, ,Retail,Completed,65000.0,0.0,25000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Ave., NW",Property Group Partners, ,Retail,Completed,58400.0,0.0,275000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+The Wren,DC,1,"965 Florida Ave., NW",MRP Realty / JBG Smith / Ellis Development Group, ,Retail,Completed,49200.0,0.0,153000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Hecht Warehouse District (Pappas Building),DC,5,"1401 Okie St., NE",Douglas Development Corporation, ,Retail,Completed,46800.0,0.0,9000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+AVEC,DC,6,"901 H St., NE",Rappaport / Lustine Family / WC Smith, ,Retail,Completed,43700.0,0.0,200000000.0,Q2 20,2021,,,2020.0,2.0,2020-06-15
+West Half,DC,6,"1201 Half St., SE",JBG Smith, ,Retail,Completed,42000.0,0.0,228000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+McMillan Sand Filtration Site,DC,5,"North Capitol St. & Michigan Ave., NW",Jair Lynch Real Estate Partners / Trammell Crow Company / EYA,,Other,Pipeline,1017500.0,,720000000.0,2023,2019,,,2023.0,,2023-06-15
+The Kelvin,DC,6,"1250 Half St., SE",Jair Lynch Real Estate Partners,,Retail,Under Construction,59000.0,,155000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+citizenM,DC,6,555 E STREET SW,DC Strategy Group / Paramount / CityPartners / Potomac Investment Properties / Adams Investment Group,,Hotel,Under Construction,130000.0,252.0,120000000.0,Q2 20,2019,,,2020.0,2.0,2020-06-15
+AC Hotel,DC,2,"1112 19th Street, NW",OTO Development,WDG Architecture,Hotel,Under Construction,125650.0,219.0,41000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Armature Works,DC,6,"1200 3rd Street, NE",Trammell Crow Company / High Street Residential,Shalom Baranes Associates / Leo A Daly,Hotel,Pipeline,147000.0,204.0,0.0,2021,2019,,,2021.0,,2021-06-15
+CFPB HQ Modernization,DC,2,"1700 G St., NW",General Services Administration,RTKL Associates / SOM,Office,Under Construction,503000.0,,139000000.0,,2019,,,,,
+Fillmore School,DC,2,"1801 35th St., NW",S&R Foundation,Barnes Vanze Architects,Other,Pipeline,37426.0,,,2018,2019,,,2018.0,,2018-06-15
+Homewood Suites,DC,2,"465 New York Ave., NW","Magna Hospitality / IBG Partners, LLC",BBGM,Hotel,Completed,103000.0,160.0,,,2019,,,,,
+"Trump International Hotel, The Old Post Office",DC,2,"1100 Pennsylvania Ave., NW",Trump Hotel Collection,WDG Arhictecture / Beyer Blinder Belle Architects & Planners LLP,Hotel,Under Construction,536000.0,263.0,200000000.0,,2019,,,,,
+Martin Luther King Jr. Library,DC,2,"9th & G Sts., NW",DC Public Library,Mecanoo / Martinez & Johnson,Hotel,Pipeline,425000.0,,198000000.0,2020,2019,,,2020.0,,2020-06-15
+Lacebark Alley,DC,6,"51 N St., 50 Patterson St. & 1250 1st St., NE",The JBG Companies / Brandywine Realty Trust,Shalom Baranes Associates / Cooper Carry / David M. Schwarz Architects,Hotel,Pipeline,33000.0,,275000000.0,2018,2019,,,2018.0,,2018-06-15
+1 M Street,DC,6,"1 M St., SE",Monument Realty,HOK,Office,Pipeline,116000.0,,,2018,2019,,,2018.0,,2018-06-15
+Fort Totten Square,DC,4,"South Dakota Ave. & Riggs Rd., NE",Lowe Enterprises / The JBG Companies,Hickok Cole Architects,Retail,Completed,130000.0,,120000000.0,,2019,,,,,
+Atlantic Plumbing DC,DC,1,"2112 8th St., NW",The JBG Companies / Walton Street Capital,"Morris Adjmi Architects / Eric Colbert & Associates, PC",Retail,Completed,19000.0,,100000000.0,,2019,,,,,
+Uline Arena,DC,6,"1140 3rd St., NE",Douglas Development Corp.,Antunovich Associates,Retail,Under Construction,73074.0,,125000000.0,,2019,,,,,
+The Wharf (Ph I),DC,6,Southwest Waterfront,Hoffman-Madison Waterfront,BBGM / Handel Architects / FOX Architects / Kohn Pedersen Fox & Associates / MTFA Architecture / SK+I Architectural Design Group / SmithGroupJJR / WDG Architecture / Perkins Eastman DC,Multifamily,Under Construction,,870.0,1200000000.0,,2019,,,,,
+Capital View Library,DC,7,"5001 Central Ave., SE",DC Public Library,R. McGhee & Associates,Hotel,Pipeline,20000.0,,5000000.0,2017,2019,,,2017.0,,2017-06-15
+111 Massachusetts Avenue,DC,6,111 Massachusetts Avenue,Douglas Development Corporation /,Studios Architecture,Office,Pipeline,318708.0,,74000000.0,2023,2019,,,2023.0,,2023-06-15
+Square 696 (Phase I),DC,6,"88 K Street, SE",Tishman Speyer,Handel Arhictects,Multifamily,Under Construction,,400.0,,Q1 20,2019,,,2020.0,1.0,2020-03-15
+The Parks at Walter Reed (The Brooks & The Vale),DC,4,"6800 Georgia Ave., NW",Urban Atlantic / Hines / Triden Development,Torti Gallas Urban,Multifamily,Pipeline,,390.0,140000000.0,2020,2019,,,2020.0,,2020-06-15
+Consumer Financial Protection Bureau HQ Modernization,DC,2,"1700 G Street, NW",General Services Administration,RTKL Associates / SOM,Office,Completed,481404.0,,139000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+Hotel Zena,DC,2,"1155 14th St., NW",Pebblebrook Hotel Trust, ,Hotel,Completed,106300.0,191.0,25000000.0,Q4 20,2021,,,2020.0,4.0,2020-12-15
+National Air and Space Museum,DC,2,The National Mall,Smithsonian, ,Hotel,Under Construction,687000.0,0.0,900000000.0,2024,2021,,,2024.0,,2024-06-15
+80 M Street (addition),DC,6,"80 M St., SE",Columbia Property Trust, ,Office,Under Construction,112000.0,0.0,0.0,Q4 21,2021,,,2021.0,4.0,2021-12-15
+5 M Street,DC,6,"5 M St., SW",JBG Smith, ,Office,Pipeline,226000.0,0.0,0.0, ,2021,,,,,
+MLK Gateway II,DC,8,"1909 Martin L King Jr Ave., SE",Menkiti Group, ,Office,Pipeline,60000.0,0.0,0.0,2022,2021,,,2022.0,,2022-06-15
+New Residence Hall,DC,5,Catholic University,Catholic University, ,Other,Pipeline,104000.0,0.0,35000000.0,2023,2021,,,2023.0,,2023-06-15
+Children's National Research & Innovation Campus,DC,4,"7144 13th Place, NW",Children's National Medical Center, ,Other,Under Construction,380000.0,0.0,250000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+Martin Luther King Jr. Library,DC,2,"9th & G Sts., NW",Jair Lynch Real Estate Partners / DC Public Library, ,Other,Completed,400000.0,0.0,212000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Bread for the City,DC,8,"17th & Good Hope Rd., SE",Bread for the City, ,Other,Completed,27700.0,0.0,26000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+1313 L Street,DC,2,"1313 L St., NW",Lincoln Property Company, ,Multifamily,Pipeline,0.0,222.0,0.0,2023,2021,,,2023.0,,2023-06-15
+Cambria Hotel,DC,6,"69 Q St., SW",Donohoe Companies, ,Hotel,Under Construction,77500.0,154.0,58000000.0,Q1 21,2021,,,2021.0,1.0,2021-03-15
+Parcel F1,DC,6,"N Place & 1 1/2 St., SE",Brookfield Properties, ,Hotel,Pipeline,66400.0,0.0,0.0,2024,2021,,,2024.0,,2024-06-15
+280 12th Street,DC,6,"280 12th St., SW",Pacific Star Capital, ,Hotel,Pipeline,0.0,163.0,0.0, ,2021,,,,,
+1900 N,DC,2,"1900 N St., NW",JBG Smith, ,Office,Completed,259000.0,0.0,230000000.0,Q4 19,2021,,,2019.0,4.0,2019-12-15
+1 M Street,DC,6,"1 M St., SE",Monument Realty, ,Office,Completed,129500.0,0.0,0.0,Q1 20,2021,,,2020.0,1.0,2020-03-15
+1275 New Jersey Avenue,DC,6,"1275 New Jersey Ave., SE",Brookfield Properties, ,Office,Under Construction,296200.0,0.0,0.0,Q4 21,2021,,,2021.0,4.0,2021-12-15
+Virgin Hotel,DC,5,411 NEW YORK AVENUE NE,Brook Rose Development / D. B. Lee Development,,Hotel,Pipeline,111440.0,178.0,,,2019,,,,,
+655 New York Avenue,DC,6,"655 New York Ave., NW",Douglas Development Corporation / Brookfield Properties,,Office,Completed,653500.0,,185000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+2050 M Street,DC,2,"2050 M St., NW",Tishman Speyer,,Office,Under Construction,353200.0,,,Q4 19,2019,,,2019.0,4.0,2019-12-15
+1901 L Street,DC,2,"1901 L St., NW",The Meridian Group,,Office,Under Construction,202000.0,,,Q4 19,2019,,,2019.0,4.0,2019-12-15
+South Building (Union Market),DC,5,"1309 5th St., NE",EDENS,,Office,Pipeline,222255.0,,92000000.0,,2019,,,,,
+Bancroft Elementary School,DC,1,"1755 Newton St., NW",Department of General Services / DC Public Schools,,Other,Completed,146000.0,,76000000.0,Q3 18,2019,,,2018.0,3.0,2018-09-15
+The Wren,DC,1,"965 Florida Ave., NW",MRP Realty / JBG Smith / Ellis Development Group, ,Multifamily,Completed,0.0,433.0,153000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+City Ridge,DC,3,"3900 Wisconsin Ave., NW",Roadside / North America Sekisui House, ,Multifamily,Under Construction,0.0,690.0,715000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+The Gantry (Building A-1),DC,5,"300 Morse St., NE",Kettler / Carmel Partners, ,Multifamily,Under Construction,0.0,450.0,0.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+Saint Elizabeths East (Parcel 13),DC,8,Saint Elizabeths East Campus,Neighborhood Development Company / MCG Capital / DMPED, ,Retail,Pipeline,21000.0,0.0,0.0,2024,2021,,,2024.0,,2024-06-15
+Bryant Street (Phase I),DC,5,"680 Rhode Island Ave., NE",MRP Realty / FRP Development Corp, ,Retail,Under Construction,40400.0,0.0,0.0,Q3 21,2021,,,2021.0,3.0,2021-09-15
+The Kelvin,DC,6,"1250 Half St., SE",Jair Lynch Real Estate Partners, ,Retail,Completed,59000.0,0.0,155000000.0,Q3 20,2021,,,2020.0,3.0,2020-09-15
+Union Place (Phase II),DC,6,"200 K St., NE",Toll Brothers,,Multifamily,Completed,,525.0,170000000.0,Q2 19,2019,,,2019.0,2.0,2019-06-15
+West Half,DC,6,"1201 Half St., SE",JBG Smith,,Multifamily,Under Construction,,465.0,228400000.0,Q1 20,2019,,,2020.0,1.0,2020-03-15
+300 M,DC,6,"300 M St., NE",The Wilkes Company,,Multifamily,Pipeline,,425.0,158000000.0,2022,2019,,,2022.0,,2022-06-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman & Associates / Madison Marquette,,Retail,Under Construction,119559.0,,1200000000.0,Q3 22,2019,,,2022.0,3.0,2022-09-15
+Highline at Union Market,DC,5,"320 Florida Ave., NE",Level 2 Development /  Clark Enterprises,"Eric Colbert & Associates, PC",Multifamily,Pipeline,,317.0,101000000.0,2019,2019,,,2019.0,,2019-06-15
+St. Paul's College Seminary & Residence,DC,5,"3025 4th St., NE",Elm Street Development / Boundary Companies,,Other,Pipeline,102000.0,,,,2019,,,,,
+The Modern at Fort Totten,DC,5,"5180 South Dakota Avenue, NE",Morris & Gwendolyn Cafritz Foundation,EE&K / MV+A Architects / Shalom Baranes Associates,Multifamily,Completed,,520.0,135000000.0,Q3 17,2019,,,2017.0,3.0,2017-09-15
+Museum of the Bible,DC,6,"300 D Street, SW",Museum of the Bible,SmithGroupJJR,Hotel,Completed,430000.0,,504000000.0,Q4 17,2019,,,2017.0,4.0,2017-12-15
+Martin Luther King Jr. Library,DC,2,"9th & G Sts., NW",Jair Lynch Real Estate Partners / DC Public Library,,Other,Under Construction,400000.0,,211600000.0,Q3 20,2019,,,2020.0,3.0,2020-09-15
+Riverpoint,DC,6,"2100 2nd St., SW",Akridge / Western Development Corp. / Jefferson Apartment Grp. / Orr Partners,,Retail,Under Construction,70441.0,,220000000.0,Q1 20,2019,,,2020.0,1.0,2020-03-15
+Apollo,DC,6,"610 H St., NE",Insight Property Group,SK+I Architectural Design Group,Multifamily,Under Construction,,431.0,195000000.0,,2019,,,,,
+SLS Lux Hotel & Residences,DC,6,"901 5th Street, NW",Peebles Corporation / MacFarlane Partners,WDG Architecture,Hotel,Pipeline,142500.0,175.0,135000000.0,2020,2019,,,2020.0,,2020-06-15
+Renwick Gallery,DC,2,"1661 Pennsylvania Ave., NW",Smithsonian,Westlake Reed Leskosky,Hotel,Completed,34000.0,,30000000.0,,2019,,,,,
+Four Constitution Square,DC,6,"150 M St., NE",StonebridgeCarras / Walton Street Capital,HOK,Office,Pipeline,505000.0,,250000000.0,2018,2019,,,2018.0,,2018-06-15
+National Law Enforcement Museum,DC,2,E STREET NW FROM 4TH STREET NW TO 5TH STREET NW,NLEOMF,,Hotel,Completed,55000.0,,103000000.0,Q4 18,2019,,,2018.0,4.0,2018-12-15
+Saint Elizabeths East (Phase I),DC,8,Saint Elizabeths East Campus,Redbrick / Gragg Cardona Partners / Flaherty & Collins / AEDC / DMPED,"Cunningham + Quill Architects, PLLC",Office,Pipeline,170000.0,,300000000.0,2019,2019,,,2019.0,,2019-06-15
+Sentinel Square (Phase III),DC,6,"45 L Street, NE",Trammell Crow Company,SmithGroupJJR,Office,Under Construction,545000.0,,250000000.0,Q1 20,2019,,,2020.0,1.0,2020-03-15
+Storey Park,DC,6,"1005 1st Street, NE",Perseus Realty / Four Points / Greencourt Capital,HKS PC,Multifamily,Pipeline,,472.0,330000000.0,2021,2019,,,2021.0,,2021-06-15
+City Ridge,DC,3,"3900 Wisconsin Ave., NW",Roadside, ,Office,Under Construction,170000.0,0.0,715000000.0,Q2 22,2021,,,2022.0,2.0,2022-06-15
+555 Pennsylvania Avenue,DC,2,"555 Pennsylvania Ave., NW",John Hopkins University, ,Other,Pipeline,400000.0,0.0,200000000.0,2023,2021,,,2023.0,,2023-06-15
+Medstar Georgetown University Hospital Pavilion,DC,2,"3800 Reservoir Rd., NW",MedStar Georgetown University Hospital / Trammell Crow Company, ,Other,Under Construction,497000.0,0.0,560000000.0,Q1 23,2021,,,2023.0,1.0,2023-03-15
+The Wharf (Phase II) - Pendry Hotel,DC,6,Southwest Waterfront,Hoffman & Associates / Madison Marquette, ,Hotel,Under Construction,80000.0,131.0,1150000000.0,Q3 22,2021,,,2022.0,3.0,2022-09-15
+1050 17th Street,DC,2,"1050 17th St., NW",The Lenkin Company, ,Office,Completed,148600.0,0.0,0.0,Q2 20,2021,,,2020.0,2.0,2020-06-15
+The Wharf (Phase II),DC,6,Southwest Waterfront,Hoffman & Associates / Madison Marquette, ,Office,Under Construction,547000.0,0.0,1150000000.0,Q3 22,2021,,,2022.0,3.0,2022-09-15
+MOB Hotel,DC,5,400 FLORIDA AVENUE NE,Ranger Properties,,Hotel,Pipeline,65903.0,155.0,,,2019,,,,,
+250 Massachusetts Avenue,DC,2,"250 Massachusetts Ave., NW",Property Group Partners,,Office,Under Construction,507764.0,,275000000.0,Q4 19,2019,,,2019.0,4.0,2019-12-15
+Sibley Memorial Hospital Tower,DC,3,"5255 Loughboro Rd., NW",Sibley Memorial Hospital,,Other,Completed,127000.0,,35000000.0,Q3 19,2019,,,2019.0,3.0,2019-09-15
+Parc Riverside (Phase II),DC,6,"1010 Half St., SE",Toll Brothers, ,Multifamily,Completed,0.0,308.0,103000000.0,Q2 20,2021,,,2020.0,2.0,2020-06-15
+Saint Elizabeths East (Parcel 17),DC,8,Saint Elizabeths East Campus,Redbrick LMD / Gragg Cardona Partners / DMPED, ,Retail,Pipeline,31000.0,0.0,170000000.0,2023,2021,,,2023.0,,2023-06-15
+ART Place at Fort Totten (Phase II),DC,5,"5300 South Dakota Ave., NE",Morris & Gwendolyn Cafritz Foundation, ,Retail,Under Construction,95000.0,0.0,0.0,Q4 22,2021,,,2022.0,4.0,2022-12-15
+Bond Bread,DC,1,"2114 Georgia Ave., NW",Fivesquares Development / EDENS / Menkiti Group / Howard University,,Retail,Pipeline,74000.0,,150000000.0,,2019,,,,,
+Press House at Union District,DC,6,301 N STREET NE,Foulger-Pratt,,Hotel,Under Construction,80366.0,175.0,180000000.0,Q2 21,2019,,,2021.0,2.0,2021-06-15
+ATL-Ind-001,Atlanta,11,Virginia-Highland,New City Properties,,Industrial,Completed,877572.0,,312000000.0,Q1 19,2019,33.71300469093906,-84.4322862818962,2019.0,1.0,2019-03-15
+ATL-Hot-002,Atlanta,12,Inman Park,Holder Properties,,Hotel,Pipeline,109123.0,211.0,224000000.0,Q1 18,2018,33.70622574294252,-84.371677003352,2018.0,1.0,2018-03-15
+ATL-Ret-003,Atlanta,12,Beltline Westside,Lincoln Property,,Retail,Under Construction,444374.0,,89000000.0,Q3 25,2025,33.80808805132687,-84.34659082125924,2025.0,3.0,2025-09-15
+ATL-Ret-004,Atlanta,10,West Midtown,Pope & Land,,Retail,Completed,68625.0,,383000000.0,Q1 23,2024,33.72978836810198,-84.41056329912246,2023.0,1.0,2023-03-15
+ATL-Hot-005,Atlanta,10,Old Fourth Ward,Holder Properties,,Hotel,Completed,258461.0,140.0,33000000.0,Q1 26,2025,33.75732650100372,-84.33529525371952,2026.0,1.0,2026-03-15
+ATL-Ind-006,Atlanta,5,Atlantic Station,Selig Enterprises,,Industrial,Under Construction,183667.0,,93000000.0,Q3 21,2022,33.80585083536243,-84.32936261331916,2021.0,3.0,2021-09-15
+ATL-Mul-007,Atlanta,10,Inman Park,Carter,,Multifamily,Pipeline,431364.0,373.0,383000000.0,Q2 23,2023,33.78129125015337,-84.35863237351414,2023.0,2.0,2023-06-15
+ATL-Ret-008,Atlanta,11,Beltline Eastside,Pope & Land,,Retail,Completed,218943.0,,127000000.0,Q4 20,2020,33.71219165228549,-84.31993741126061,2020.0,4.0,2020-12-15
+ATL-Mix-009,Atlanta,4,Inman Park,Paces Properties,,Mixed-Use,Under Construction,520651.0,187.0,462000000.0,Q3 18,2019,33.67959017683385,-84.32189822013032,2018.0,3.0,2018-09-15
+ATL-Ind-010,Atlanta,12,Castleberry Hill,Tishman Speyer,,Industrial,Pipeline,377746.0,,214000000.0,Q2 25,2025,33.69134085112408,-84.34880176286535,2025.0,2.0,2025-06-15
+ATL-Mul-011,Atlanta,3,Inman Park,Carter,,Multifamily,Pipeline,347138.0,605.0,226000000.0,Q2 21,2021,33.68354550594781,-84.46046137993204,2021.0,2.0,2021-06-15
+ATL-Oth-012,Atlanta,9,Sandy Springs,Portman Holdings,,Other,Pipeline,220078.0,,379000000.0,Q4 19,2020,33.764342148537786,-84.39311201795445,2019.0,4.0,2019-12-15
+ATL-Off-013,Atlanta,3,Atlantic Station,Portman Holdings,,Office,Pipeline,855934.0,,458000000.0,Q3 26,2025,33.77155388777277,-84.45015165222466,2026.0,3.0,2026-09-15
+ATL-Ind-014,Atlanta,11,Ponce City,Third & Urban,,Industrial,Completed,632342.0,,88000000.0,Q2 22,2023,33.81502045429517,-84.32871702882612,2022.0,2.0,2022-06-15
+ATL-Mul-015,Atlanta,5,Old Fourth Ward,Portman Holdings,,Multifamily,Completed,394019.0,431.0,459000000.0,Q1 20,2021,33.74717691328463,-84.45010116394866,2020.0,1.0,2020-03-15
+ATL-Oth-016,Atlanta,3,Inman Park,Paces Properties,,Other,Pipeline,403730.0,,94000000.0,Q1 19,2019,33.74675847413066,-84.45692599704506,2019.0,1.0,2019-03-15
+ATL-Mul-017,Atlanta,12,West Midtown,Tishman Speyer,,Multifamily,Pipeline,585603.0,316.0,342000000.0,Q4 26,2025,33.81762615888035,-84.34715756853828,2026.0,4.0,2026-12-15
+ATL-Mul-018,Atlanta,10,Old Fourth Ward,Portman Holdings,,Multifamily,Completed,143441.0,353.0,372000000.0,Q4 25,2025,33.70495157392505,-84.41390631005642,2025.0,4.0,2025-12-15
+ATL-Ind-019,Atlanta,9,Old Fourth Ward,Hines,,Industrial,Pipeline,170674.0,,258000000.0,Q2 18,2018,33.813867202080985,-84.3304583359594,2018.0,2.0,2018-06-15
+ATL-Ret-020,Atlanta,4,Decatur,Paces Properties,,Retail,Under Construction,399245.0,,107000000.0,Q2 26,2025,33.81868227849291,-84.37663310506797,2026.0,2.0,2026-06-15
+ATL-Off-021,Atlanta,11,Inman Park,Selig Enterprises,,Office,Completed,421507.0,,41000000.0,Q4 19,2019,33.73677257968319,-84.39327605311414,2019.0,4.0,2019-12-15
+ATL-Hot-022,Atlanta,3,West Midtown,Paces Properties,,Hotel,Completed,190367.0,198.0,457000000.0,Q1 23,2024,33.699433425350534,-84.3962218323467,2023.0,1.0,2023-03-15
+ATL-Off-023,Atlanta,2,Decatur,Jamestown,,Office,Completed,103045.0,,218000000.0,Q1 25,2025,33.77334318303976,-84.38150592990395,2025.0,1.0,2025-03-15
+ATL-Hot-024,Atlanta,5,Decatur,Pope & Land,,Hotel,Under Construction,270260.0,130.0,156000000.0,Q2 25,2025,33.695341939424246,-84.46765513946377,2025.0,2.0,2025-06-15
+ATL-Hot-025,Atlanta,12,Beltline Eastside,Portman Holdings,,Hotel,Completed,141158.0,197.0,309000000.0,Q4 26,2025,33.71647325207913,-84.31300650160495,2026.0,4.0,2026-12-15
+ATL-Hot-026,Atlanta,11,Sandy Springs,Jamestown,,Hotel,Under Construction,89821.0,360.0,71000000.0,Q2 26,2025,33.6818178344385,-84.43826800624309,2026.0,2.0,2026-06-15
+ATL-Oth-027,Atlanta,5,Old Fourth Ward,Selig Enterprises,,Other,Pipeline,344734.0,,170000000.0,Q1 21,2022,33.68211734487918,-84.36282029368441,2021.0,1.0,2021-03-15
+ATL-Ret-028,Atlanta,2,Midtown,Paces Properties,,Retail,Pipeline,88617.0,,298000000.0,Q4 22,2023,33.776470435673595,-84.4200004672322,2022.0,4.0,2022-12-15
+ATL-Off-029,Atlanta,4,Beltline Eastside,Hines,,Office,Completed,580458.0,,234000000.0,Q2 19,2019,33.71143206636007,-84.31867849952101,2019.0,2.0,2019-06-15
+ATL-Mix-030,Atlanta,11,Buckhead,Carter,,Mixed-Use,Under Construction,741390.0,384.0,69000000.0,Q3 26,2025,33.753630510816365,-84.36114188740599,2026.0,3.0,2026-09-15
+ATL-Off-031,Atlanta,4,Inman Park,Selig Enterprises,,Office,Under Construction,335577.0,,268000000.0,Q2 26,2025,33.714081003433265,-84.4342992552309,2026.0,2.0,2026-06-15
+ATL-Hot-032,Atlanta,6,Decatur,Carter,,Hotel,Pipeline,108390.0,424.0,144000000.0,Q1 22,2022,33.7367721236102,-84.42373116416445,2022.0,1.0,2022-03-15
+ATL-Ret-033,Atlanta,9,Midtown,Lincoln Property,,Retail,Pipeline,314076.0,,292000000.0,Q4 25,2025,33.670547151937335,-84.4559609823882,2025.0,4.0,2025-12-15
+ATL-Ret-034,Atlanta,6,Old Fourth Ward,Selig Enterprises,,Retail,Completed,41930.0,,351000000.0,Q2 24,2024,33.718321335988826,-84.32416296180119,2024.0,2.0,2024-06-15
+ATL-Off-035,Atlanta,3,Decatur,Pope & Land,,Office,Completed,700810.0,,461000000.0,Q4 23,2023,33.78891641778297,-84.31987778838888,2023.0,4.0,2023-12-15
+ATL-Hot-036,Atlanta,5,Downtown,Pope & Land,,Hotel,Pipeline,234160.0,500.0,65000000.0,Q2 18,2018,33.81793054176774,-84.33964237777006,2018.0,2.0,2018-06-15
+ATL-Hot-037,Atlanta,4,Old Fourth Ward,Portman Holdings,,Hotel,Pipeline,176619.0,202.0,108000000.0,Q4 18,2019,33.79965385689551,-84.39435148245137,2018.0,4.0,2018-12-15
+ATL-Hot-038,Atlanta,11,Sandy Springs,New City Properties,,Hotel,Under Construction,96396.0,495.0,490000000.0,Q3 23,2024,33.7136599988355,-84.36536292182278,2023.0,3.0,2023-09-15
+ATL-Off-039,Atlanta,2,Castleberry Hill,Tishman Speyer,,Office,Under Construction,237241.0,,383000000.0,Q3 19,2019,33.7618943573982,-84.3106319083387,2019.0,3.0,2019-09-15
+ATL-Mix-040,Atlanta,5,Midtown,Holder Properties,,Mixed-Use,Under Construction,735656.0,311.0,10000000.0,Q4 23,2023,33.687503325444695,-84.32407924273421,2023.0,4.0,2023-12-15
+ATL-Oth-041,Atlanta,10,Beltline Eastside,Selig Enterprises,,Other,Completed,210956.0,,378000000.0,Q2 26,2025,33.73800758394,-84.3161800822446,2026.0,2.0,2026-06-15
+ATL-Mul-042,Atlanta,4,Beltline Westside,Selig Enterprises,,Multifamily,Under Construction,429643.0,518.0,356000000.0,Q3 26,2025,33.72118926477719,-84.3564466537289,2026.0,3.0,2026-09-15
+ATL-Ind-043,Atlanta,4,Beltline Westside,Pope & Land,,Industrial,Pipeline,525800.0,,320000000.0,Q3 20,2021,33.75666995410172,-84.46793504964845,2020.0,3.0,2020-09-15
+ATL-Ind-044,Atlanta,12,Downtown,Selig Enterprises,,Industrial,Completed,563246.0,,155000000.0,Q4 23,2024,33.73974556788877,-84.43380777584174,2023.0,4.0,2023-12-15
+ATL-Oth-045,Atlanta,4,Decatur,Jamestown,,Other,Completed,68961.0,,22000000.0,Q3 27,2025,33.79994775432587,-84.3478178979935,2027.0,3.0,2027-09-15
+ATL-Off-046,Atlanta,11,Castleberry Hill,Jamestown,,Office,Pipeline,690967.0,,366000000.0,Q4 21,2022,33.80495803113996,-84.45634748333048,2021.0,4.0,2021-12-15
+ATL-Hot-047,Atlanta,7,Old Fourth Ward,Carter,,Hotel,Pipeline,187918.0,175.0,275000000.0,Q4 25,2025,33.77396928177789,-84.46711282909791,2025.0,4.0,2025-12-15
+ATL-Hot-048,Atlanta,8,Castleberry Hill,Holder Properties,,Hotel,Pipeline,123626.0,333.0,228000000.0,Q2 18,2019,33.69033425688913,-84.39365708200029,2018.0,2.0,2018-06-15
+ATL-Mix-049,Atlanta,9,Atlantic Station,Selig Enterprises,,Mixed-Use,Completed,266889.0,293.0,150000000.0,Q4 26,2025,33.741011161159506,-84.34771571415992,2026.0,4.0,2026-12-15
+ATL-Hot-050,Atlanta,3,Downtown,Jamestown,,Hotel,Under Construction,182942.0,239.0,365000000.0,Q3 19,2019,33.72273560585941,-84.32511570675355,2019.0,3.0,2019-09-15
+ATL-Ret-051,Atlanta,1,Old Fourth Ward,Tishman Speyer,,Retail,Under Construction,237510.0,,473000000.0,Q1 21,2022,33.734215899146655,-84.38118221751938,2021.0,1.0,2021-03-15
+ATL-Mix-052,Atlanta,7,Sandy Springs,Tishman Speyer,,Mixed-Use,Pipeline,703655.0,244.0,392000000.0,Q1 27,2025,33.74531675720918,-84.31716133481055,2027.0,1.0,2027-03-15
+ATL-Ind-053,Atlanta,7,Beltline Eastside,Selig Enterprises,,Industrial,Pipeline,611945.0,,418000000.0,Q2 26,2025,33.70410746153943,-84.39826624383254,2026.0,2.0,2026-06-15
+ATL-Hot-054,Atlanta,2,Inman Park,Tishman Speyer,,Hotel,Completed,126913.0,418.0,453000000.0,Q4 20,2020,33.754459780725206,-84.32289138198612,2020.0,4.0,2020-12-15
+ATL-Hot-055,Atlanta,7,West Midtown,Pope & Land,,Hotel,Under Construction,196396.0,294.0,139000000.0,Q1 20,2021,33.72137642671068,-84.39524810799738,2020.0,1.0,2020-03-15
+ATL-Mix-056,Atlanta,11,Buckhead,Pope & Land,,Mixed-Use,Pipeline,120324.0,326.0,30000000.0,Q4 19,2019,33.67733369731892,-84.31569284921889,2019.0,4.0,2019-12-15
+ATL-Mix-057,Atlanta,11,Buckhead,Third & Urban,,Mixed-Use,Completed,309044.0,60.0,248000000.0,Q2 18,2019,33.76841370505379,-84.42983280929778,2018.0,2.0,2018-06-15
+ATL-Ind-058,Atlanta,3,West Midtown,Cousins Properties,,Industrial,Pipeline,275939.0,,23000000.0,Q3 22,2022,33.76594283080965,-84.31380244094382,2022.0,3.0,2022-09-15
+ATL-Mul-059,Atlanta,2,Virginia-Highland,Pope & Land,,Multifamily,Under Construction,287961.0,303.0,445000000.0,Q4 27,2025,33.68115943645489,-84.35750169345073,2027.0,4.0,2027-12-15
+ATL-Ind-060,Atlanta,9,Beltline Westside,Selig Enterprises,,Industrial,Under Construction,934904.0,,45000000.0,Q1 27,2025,33.82641509624235,-84.34277834458224,2027.0,1.0,2027-03-15
+ATL-Oth-061,Atlanta,6,Inman Park,Paces Properties,,Other,Pipeline,465422.0,,88000000.0,Q1 23,2024,33.7362093985347,-84.38956772720154,2023.0,1.0,2023-03-15
+ATL-Hot-062,Atlanta,6,Sandy Springs,Jamestown,,Hotel,Completed,382915.0,375.0,152000000.0,Q3 20,2021,33.79294263205946,-84.39362019653848,2020.0,3.0,2020-09-15
+ATL-Hot-063,Atlanta,6,Downtown,Paces Properties,,Hotel,Completed,358765.0,412.0,191000000.0,Q4 21,2022,33.77591015527128,-84.41417654081738,2021.0,4.0,2021-12-15
+ATL-Mix-064,Atlanta,9,Old Fourth Ward,Cousins Properties,,Mixed-Use,Completed,393243.0,355.0,378000000.0,Q3 22,2022,33.78118940005316,-84.42379702787902,2022.0,3.0,2022-09-15
+ATL-Hot-065,Atlanta,2,West Midtown,Jamestown,,Hotel,Under Construction,309609.0,430.0,364000000.0,Q2 25,2025,33.78289478503564,-84.39629207206616,2025.0,2.0,2025-06-15
+ATL-Ret-066,Atlanta,6,Virginia-Highland,Paces Properties,,Retail,Under Construction,268124.0,,166000000.0,Q3 22,2023,33.757555672801644,-84.41299881693661,2022.0,3.0,2022-09-15
+ATL-Mul-067,Atlanta,4,Old Fourth Ward,Holder Properties,,Multifamily,Under Construction,458160.0,297.0,151000000.0,Q1 21,2021,33.71948767104096,-84.34913902981775,2021.0,1.0,2021-03-15
+ATL-Ind-068,Atlanta,3,West Midtown,Portman Holdings,,Industrial,Pipeline,205409.0,,283000000.0,Q3 27,2025,33.80222053813233,-84.42060056587758,2027.0,3.0,2027-09-15
+ATL-Ret-069,Atlanta,11,Sandy Springs,Pope & Land,,Retail,Under Construction,48587.0,,62000000.0,Q1 22,2022,33.75753743468778,-84.35641321713437,2022.0,1.0,2022-03-15
+ATL-Mix-070,Atlanta,5,Sandy Springs,Paces Properties,,Mixed-Use,Completed,592198.0,295.0,430000000.0,Q3 18,2018,33.73947500770176,-84.4385018127376,2018.0,3.0,2018-09-15
+ATL-Off-071,Atlanta,3,Decatur,Third & Urban,,Office,Under Construction,127680.0,,53000000.0,Q4 24,2024,33.76132338503533,-84.35816783707904,2024.0,4.0,2024-12-15
+ATL-Ret-072,Atlanta,8,Atlantic Station,Hines,,Retail,Pipeline,337885.0,,229000000.0,Q4 19,2020,33.7643802952656,-84.36905306360045,2019.0,4.0,2019-12-15
+ATL-Mul-073,Atlanta,5,Inman Park,Cousins Properties,,Multifamily,Completed,399622.0,201.0,132000000.0,Q1 27,2025,33.82061443205206,-84.43475393506824,2027.0,1.0,2027-03-15
+ATL-Ret-074,Atlanta,5,Midtown,Jamestown,,Retail,Under Construction,102068.0,,371000000.0,Q1 26,2025,33.66942811561646,-84.39591940726118,2026.0,1.0,2026-03-15
+ATL-Mul-075,Atlanta,7,Buckhead,New City Properties,,Multifamily,Completed,440387.0,339.0,341000000.0,Q1 25,2025,33.81682576711721,-84.34194751573652,2025.0,1.0,2025-03-15
+ATL-Ret-076,Atlanta,8,Buckhead,Paces Properties,,Retail,Pipeline,57439.0,,165000000.0,Q2 22,2023,33.67854208632222,-84.34117942940281,2022.0,2.0,2022-06-15
+ATL-Ind-077,Atlanta,7,Virginia-Highland,Lincoln Property,,Industrial,Pipeline,624783.0,,138000000.0,Q3 24,2024,33.75539705001569,-84.39795858182855,2024.0,3.0,2024-09-15
+ATL-Off-078,Atlanta,11,Sandy Springs,Hines,,Office,Pipeline,757053.0,,30000000.0,Q2 19,2019,33.80275337822499,-84.37596814252481,2019.0,2.0,2019-06-15
+ATL-Mix-079,Atlanta,11,Sandy Springs,Paces Properties,,Mixed-Use,Completed,644173.0,383.0,250000000.0,Q4 20,2021,33.73975670470723,-84.42349494840921,2020.0,4.0,2020-12-15
+ATL-Mul-080,Atlanta,12,Atlantic Station,Hines,,Multifamily,Pipeline,248326.0,786.0,493000000.0,Q3 24,2025,33.68573598153321,-84.4422680235746,2024.0,3.0,2024-09-15
+ATL-Hot-081,Atlanta,9,Sandy Springs,Portman Holdings,,Hotel,Pipeline,298459.0,145.0,455000000.0,Q1 26,2025,33.71932274514723,-84.41627619419585,2026.0,1.0,2026-03-15
+ATL-Oth-082,Atlanta,11,Atlantic Station,Pope & Land,,Other,Completed,48418.0,,114000000.0,Q4 25,2025,33.69901320662313,-84.41011530253574,2025.0,4.0,2025-12-15
+ATL-Mul-083,Atlanta,1,Inman Park,Third & Urban,,Multifamily,Completed,566367.0,394.0,373000000.0,Q2 26,2025,33.739098575211585,-84.35627999534046,2026.0,2.0,2026-06-15
+ATL-Ret-084,Atlanta,8,Buckhead,Selig Enterprises,,Retail,Completed,309538.0,,265000000.0,Q1 22,2022,33.73427850996639,-84.43204789448708,2022.0,1.0,2022-03-15
+ATL-Ind-085,Atlanta,8,Ponce City,Carter,,Industrial,Under Construction,535673.0,,107000000.0,Q3 22,2022,33.802555831292274,-84.31116085878347,2022.0,3.0,2022-09-15
+ATL-Oth-086,Atlanta,6,Decatur,New City Properties,,Other,Under Construction,472998.0,,430000000.0,Q2 26,2025,33.680169612737,-84.34437197877169,2026.0,2.0,2026-06-15
+ATL-Off-087,Atlanta,8,Ponce City,Paces Properties,,Office,Under Construction,665448.0,,180000000.0,Q3 22,2022,33.761787741421344,-84.36240947951121,2022.0,3.0,2022-09-15
+ATL-Oth-088,Atlanta,10,Beltline Westside,Jamestown,,Other,Under Construction,258731.0,,32000000.0,Q4 26,2025,33.81825636091445,-84.32886373068256,2026.0,4.0,2026-12-15
+ATL-Mul-089,Atlanta,8,Midtown,Carter,,Multifamily,Pipeline,282416.0,779.0,312000000.0,Q4 25,2025,33.795782985711995,-84.3636769597759,2025.0,4.0,2025-12-15
+ATL-Mul-090,Atlanta,7,Sandy Springs,Selig Enterprises,,Multifamily,Completed,132277.0,638.0,48000000.0,Q4 19,2019,33.81467066843144,-84.46554438433357,2019.0,4.0,2019-12-15
+ATL-Hot-091,Atlanta,11,Sandy Springs,New City Properties,,Hotel,Under Construction,386767.0,454.0,498000000.0,Q3 22,2023,33.73259733182173,-84.4551495487073,2022.0,3.0,2022-09-15
+ATL-Mul-092,Atlanta,4,Virginia-Highland,Cousins Properties,,Multifamily,Under Construction,403726.0,170.0,60000000.0,Q1 25,2025,33.70656323889632,-84.35849606809506,2025.0,1.0,2025-03-15
+ATL-Mix-093,Atlanta,5,Beltline Eastside,Lincoln Property,,Mixed-Use,Under Construction,274446.0,203.0,84000000.0,Q4 19,2019,33.81354784992808,-84.46064144501165,2019.0,4.0,2019-12-15
+ATL-Ret-094,Atlanta,2,Castleberry Hill,Tishman Speyer,,Retail,Pipeline,316709.0,,359000000.0,Q4 26,2025,33.77808805941644,-84.4391908982158,2026.0,4.0,2026-12-15
+ATL-Ret-095,Atlanta,11,Midtown,Pope & Land,,Retail,Under Construction,141733.0,,471000000.0,Q2 25,2025,33.7427839861368,-84.42736362569384,2025.0,2.0,2025-06-15
+ATL-Mul-096,Atlanta,11,Beltline Westside,Holder Properties,,Multifamily,Under Construction,118724.0,552.0,243000000.0,Q2 26,2025,33.82023770158955,-84.30997572876505,2026.0,2.0,2026-06-15
+ATL-Mix-097,Atlanta,10,West Midtown,Holder Properties,,Mixed-Use,Under Construction,503380.0,297.0,21000000.0,Q2 22,2023,33.68606452278758,-84.40698171237479,2022.0,2.0,2022-06-15
+ATL-Mix-098,Atlanta,10,Virginia-Highland,Paces Properties,,Mixed-Use,Under Construction,108491.0,339.0,407000000.0,Q3 24,2024,33.80741078363157,-84.34347014147679,2024.0,3.0,2024-09-15
+ATL-Mix-099,Atlanta,11,Buckhead,Selig Enterprises,,Mixed-Use,Pipeline,329642.0,375.0,30000000.0,Q3 21,2021,33.699421118284334,-84.42789971199302,2021.0,3.0,2021-09-15
+ATL-Mul-100,Atlanta,6,Virginia-Highland,Tishman Speyer,,Multifamily,Completed,383863.0,473.0,112000000.0,Q1 25,2025,33.78617756287028,-84.4535786598806,2025.0,1.0,2025-03-15
+ATL-Ret-101,Atlanta,5,Sandy Springs,Paces Properties,,Retail,Under Construction,298319.0,,392000000.0,Q3 26,2025,33.74928716196238,-84.42439562388603,2026.0,3.0,2026-09-15
+ATL-Mix-102,Atlanta,9,Beltline Eastside,Cousins Properties,,Mixed-Use,Under Construction,591081.0,88.0,17000000.0,Q1 23,2024,33.69152112240094,-84.31335996648596,2023.0,1.0,2023-03-15
+ATL-Mul-103,Atlanta,11,Beltline Eastside,Cousins Properties,,Multifamily,Pipeline,318438.0,477.0,129000000.0,Q1 26,2025,33.7766525410998,-84.36042547242384,2026.0,1.0,2026-03-15
+ATL-Hot-104,Atlanta,12,West Midtown,Selig Enterprises,,Hotel,Under Construction,379858.0,213.0,69000000.0,Q3 18,2019,33.772624380902315,-84.36633537241954,2018.0,3.0,2018-09-15
+ATL-Ret-105,Atlanta,9,Downtown,Tishman Speyer,,Retail,Under Construction,179574.0,,199000000.0,Q1 18,2018,33.82834837996081,-84.44942072308399,2018.0,1.0,2018-03-15
+ATL-Ind-106,Atlanta,11,Buckhead,Paces Properties,,Industrial,Pipeline,715870.0,,218000000.0,Q4 26,2025,33.78776304236245,-84.44327633561443,2026.0,4.0,2026-12-15
+ATL-Mul-107,Atlanta,2,Inman Park,Lincoln Property,,Multifamily,Pipeline,193911.0,554.0,471000000.0,Q3 18,2019,33.740151337564654,-84.43022197788305,2018.0,3.0,2018-09-15
+ATL-Ind-108,Atlanta,2,Inman Park,Jamestown,,Industrial,Pipeline,517479.0,,337000000.0,Q1 23,2024,33.713141030537855,-84.31308689985018,2023.0,1.0,2023-03-15
+ATL-Oth-109,Atlanta,2,Sandy Springs,Pope & Land,,Other,Pipeline,432506.0,,116000000.0,Q1 18,2018,33.7223614650292,-84.30978865536937,2018.0,1.0,2018-03-15
+ATL-Oth-110,Atlanta,5,Sandy Springs,Carter,,Other,Completed,192259.0,,286000000.0,Q2 21,2021,33.792898972448775,-84.34181699931558,2021.0,2.0,2021-06-15
+ATL-Mul-111,Atlanta,10,Beltline Eastside,Portman Holdings,,Multifamily,Completed,426584.0,126.0,145000000.0,Q1 20,2020,33.69008851672991,-84.41068123532536,2020.0,1.0,2020-03-15
+ATL-Off-112,Atlanta,6,Ponce City,Third & Urban,,Office,Completed,601640.0,,241000000.0,Q4 20,2021,33.68718388908585,-84.45783071389647,2020.0,4.0,2020-12-15
+ATL-Oth-113,Atlanta,8,Inman Park,Portman Holdings,,Other,Completed,401284.0,,255000000.0,Q1 21,2022,33.79431631935687,-84.32928305475843,2021.0,1.0,2021-03-15
+ATL-Mix-114,Atlanta,6,Castleberry Hill,Carter,,Mixed-Use,Completed,213206.0,301.0,74000000.0,Q4 24,2024,33.78298421038354,-84.39703002730192,2024.0,4.0,2024-12-15
+ATL-Mul-115,Atlanta,2,Decatur,Holder Properties,,Multifamily,Completed,279703.0,711.0,446000000.0,Q3 27,2025,33.75388909398902,-84.39540553318793,2027.0,3.0,2027-09-15
+ATL-Ind-116,Atlanta,8,Beltline Westside,Tishman Speyer,,Industrial,Pipeline,550961.0,,58000000.0,Q2 26,2025,33.74124878655445,-84.43144102810167,2026.0,2.0,2026-06-15
+ATL-Mul-117,Atlanta,2,Buckhead,Cousins Properties,,Multifamily,Completed,428708.0,361.0,231000000.0,Q3 24,2025,33.72888816374969,-84.443577772037,2024.0,3.0,2024-09-15
+ATL-Off-118,Atlanta,11,Buckhead,Tishman Speyer,,Office,Under Construction,633397.0,,457000000.0,Q2 23,2024,33.67859695647534,-84.3149400601845,2023.0,2.0,2023-06-15
+ATL-Ind-119,Atlanta,3,Inman Park,Paces Properties,,Industrial,Completed,401601.0,,443000000.0,Q1 24,2024,33.76506561459595,-84.4117366102891,2024.0,1.0,2024-03-15
+ATL-Off-120,Atlanta,9,Decatur,Third & Urban,,Office,Pipeline,170465.0,,355000000.0,Q3 23,2024,33.7910169011099,-84.37614399930698,2023.0,3.0,2023-09-15
+ATL-Ind-121,Atlanta,1,Downtown,Hines,,Industrial,Pipeline,738577.0,,400000000.0,Q1 26,2025,33.817653486559195,-84.33528627360646,2026.0,1.0,2026-03-15
+ATL-Mul-122,Atlanta,2,Downtown,Holder Properties,,Multifamily,Pipeline,83201.0,285.0,25000000.0,Q3 23,2024,33.808178033045834,-84.37738862483819,2023.0,3.0,2023-09-15
+ATL-Off-123,Atlanta,5,Virginia-Highland,Lincoln Property,,Office,Pipeline,444468.0,,315000000.0,Q2 26,2025,33.73617319900232,-84.41345664291691,2026.0,2.0,2026-06-15
+ATL-Off-124,Atlanta,5,Atlantic Station,Selig Enterprises,,Office,Under Construction,215056.0,,258000000.0,Q2 18,2018,33.78970974066,-84.46003800121073,2018.0,2.0,2018-06-15
+ATL-Oth-125,Atlanta,7,Buckhead,Hines,,Other,Pipeline,163218.0,,357000000.0,Q4 25,2025,33.70349103445404,-84.38602459107183,2025.0,4.0,2025-12-15
+ATL-Oth-126,Atlanta,1,Old Fourth Ward,Hines,,Other,Completed,43811.0,,402000000.0,Q3 25,2025,33.704282949680405,-84.31048869466862,2025.0,3.0,2025-09-15
+ATL-Ret-127,Atlanta,3,Downtown,Tishman Speyer,,Retail,Pipeline,192030.0,,370000000.0,Q3 22,2023,33.68819749499289,-84.38841834742188,2022.0,3.0,2022-09-15
+ATL-Ret-128,Atlanta,1,Atlantic Station,Cousins Properties,,Retail,Under Construction,57788.0,,304000000.0,Q3 26,2025,33.73253138787957,-84.34927338762009,2026.0,3.0,2026-09-15
+ATL-Hot-129,Atlanta,3,Decatur,Third & Urban,,Hotel,Under Construction,395618.0,313.0,435000000.0,Q4 27,2025,33.71532243289372,-84.40319483086961,2027.0,4.0,2027-12-15
+ATL-Ind-130,Atlanta,9,Buckhead,Tishman Speyer,,Industrial,Under Construction,557925.0,,391000000.0,Q1 23,2024,33.80411749757035,-84.42906936402836,2023.0,1.0,2023-03-15
+ATL-Mul-131,Atlanta,6,Beltline Eastside,Holder Properties,,Multifamily,Pipeline,488482.0,272.0,427000000.0,Q3 21,2021,33.681220700395684,-84.3666840532851,2021.0,3.0,2021-09-15
+ATL-Ret-132,Atlanta,11,Buckhead,Carter,,Retail,Pipeline,96778.0,,262000000.0,Q1 21,2021,33.70995491552028,-84.44024015640927,2021.0,1.0,2021-03-15
+ATL-Hot-133,Atlanta,3,Atlantic Station,Cousins Properties,,Hotel,Under Construction,355956.0,429.0,236000000.0,Q4 27,2025,33.7706477310497,-84.3680765152893,2027.0,4.0,2027-12-15
+ATL-Ind-134,Atlanta,8,Atlantic Station,Portman Holdings,,Industrial,Completed,720148.0,,198000000.0,Q3 22,2023,33.677987539234095,-84.38682609835364,2022.0,3.0,2022-09-15
+ATL-Mix-135,Atlanta,10,Ponce City,Pope & Land,,Mixed-Use,Pipeline,775981.0,96.0,468000000.0,Q1 22,2023,33.76740134214649,-84.38686914922657,2022.0,1.0,2022-03-15
+ATL-Off-136,Atlanta,8,Buckhead,Pope & Land,,Office,Under Construction,387145.0,,375000000.0,Q2 25,2025,33.76580093345121,-84.38778123170036,2025.0,2.0,2025-06-15
+ATL-Off-137,Atlanta,9,Ponce City,Third & Urban,,Office,Completed,91043.0,,196000000.0,Q2 26,2025,33.70863899577573,-84.39795867611053,2026.0,2.0,2026-06-15
+ATL-Mul-138,Atlanta,2,Beltline Eastside,Cousins Properties,,Multifamily,Pipeline,294312.0,446.0,357000000.0,Q4 22,2023,33.77762363528954,-84.45962151719425,2022.0,4.0,2022-12-15
+ATL-Hot-139,Atlanta,6,West Midtown,Selig Enterprises,,Hotel,Pipeline,375988.0,176.0,349000000.0,Q3 22,2022,33.72233792576969,-84.37476167766617,2022.0,3.0,2022-09-15
+ATL-Hot-140,Atlanta,11,Virginia-Highland,Holder Properties,,Hotel,Pipeline,222310.0,386.0,477000000.0,Q1 20,2020,33.72926868896901,-84.34133408674184,2020.0,1.0,2020-03-15
+ATL-Oth-141,Atlanta,4,Beltline Eastside,Pope & Land,,Other,Under Construction,286594.0,,108000000.0,Q4 19,2019,33.72689249541549,-84.40998437296288,2019.0,4.0,2019-12-15
+ATL-Ret-142,Atlanta,11,Beltline Eastside,Pope & Land,,Retail,Pipeline,60456.0,,77000000.0,Q2 20,2020,33.71632673626474,-84.34190077221258,2020.0,2.0,2020-06-15
+ATL-Oth-143,Atlanta,12,Atlantic Station,Portman Holdings,,Other,Under Construction,105064.0,,196000000.0,Q2 24,2024,33.697935354746996,-84.3571446974622,2024.0,2.0,2024-06-15
+ATL-Ind-144,Atlanta,4,Ponce City,Jamestown,,Industrial,Under Construction,740255.0,,424000000.0,Q4 21,2022,33.71458846921014,-84.34823415710474,2021.0,4.0,2021-12-15
+ATL-Mix-145,Atlanta,5,Decatur,Tishman Speyer,,Mixed-Use,Pipeline,485709.0,397.0,280000000.0,Q2 25,2025,33.820540827239064,-84.31048963303495,2025.0,2.0,2025-06-15
+ATL-Hot-146,Atlanta,6,Ponce City,Cousins Properties,,Hotel,Pipeline,377017.0,170.0,443000000.0,Q2 20,2021,33.8086803072095,-84.45965123147825,2020.0,2.0,2020-06-15
+ATL-Oth-147,Atlanta,7,Buckhead,Jamestown,,Other,Under Construction,63974.0,,462000000.0,Q3 19,2019,33.791098692846674,-84.42435339206538,2019.0,3.0,2019-09-15
+ATL-Mul-148,Atlanta,6,Old Fourth Ward,Portman Holdings,,Multifamily,Under Construction,107921.0,505.0,486000000.0,Q4 18,2018,33.74932113835092,-84.43027550818185,2018.0,4.0,2018-12-15
+ATL-Off-149,Atlanta,12,Sandy Springs,Carter,,Office,Pipeline,194283.0,,250000000.0,Q2 23,2024,33.67512851057873,-84.32121661254196,2023.0,2.0,2023-06-15
+ATL-Hot-150,Atlanta,2,Decatur,Hines,,Hotel,Completed,101537.0,109.0,164000000.0,Q1 27,2025,33.70994782854993,-84.33440590411483,2027.0,1.0,2027-03-15
+ATL-Off-151,Atlanta,2,Sandy Springs,Paces Properties,,Office,Pipeline,490218.0,,284000000.0,Q2 18,2018,33.771232277147654,-84.36835030906545,2018.0,2.0,2018-06-15
+ATL-Off-152,Atlanta,4,Castleberry Hill,Tishman Speyer,,Office,Completed,803448.0,,350000000.0,Q2 26,2025,33.6919722944394,-84.39932177710347,2026.0,2.0,2026-06-15
+ATL-Ind-153,Atlanta,7,Sandy Springs,Paces Properties,,Industrial,Completed,170966.0,,335000000.0,Q3 19,2019,33.821544588477686,-84.38094688641152,2019.0,3.0,2019-09-15
+ATL-Hot-154,Atlanta,10,Virginia-Highland,Pope & Land,,Hotel,Under Construction,68515.0,282.0,78000000.0,Q3 23,2023,33.795163202604726,-84.41283160109386,2023.0,3.0,2023-09-15
+ATL-Off-155,Atlanta,12,Atlantic Station,Selig Enterprises,,Office,Completed,724020.0,,425000000.0,Q3 23,2024,33.697014260328274,-84.34333718504348,2023.0,3.0,2023-09-15
+ATL-Ret-156,Atlanta,1,Beltline Eastside,Hines,,Retail,Pipeline,39390.0,,213000000.0,Q4 19,2019,33.715950811388005,-84.46099099589455,2019.0,4.0,2019-12-15
+ATL-Mix-157,Atlanta,1,Sandy Springs,Selig Enterprises,,Mixed-Use,Under Construction,365618.0,68.0,149000000.0,Q4 26,2025,33.78952654701102,-84.43742345108258,2026.0,4.0,2026-12-15
+ATL-Off-158,Atlanta,6,Downtown,Paces Properties,,Office,Pipeline,469453.0,,264000000.0,Q4 23,2024,33.787929232883144,-84.3248580008072,2023.0,4.0,2023-12-15
+ATL-Mul-159,Atlanta,9,West Midtown,Lincoln Property,,Multifamily,Completed,500032.0,184.0,50000000.0,Q3 26,2025,33.78533301189482,-84.45537167903113,2026.0,3.0,2026-09-15
+ATL-Mul-160,Atlanta,6,Atlantic Station,Portman Holdings,,Multifamily,Pipeline,313788.0,717.0,455000000.0,Q3 22,2023,33.78382606580987,-84.44133683646946,2022.0,3.0,2022-09-15
+ATL-Mul-161,Atlanta,11,Inman Park,Tishman Speyer,,Multifamily,Under Construction,223946.0,754.0,272000000.0,Q4 27,2025,33.825804364671086,-84.31633529942351,2027.0,4.0,2027-12-15
+ATL-Mix-162,Atlanta,2,Old Fourth Ward,Pope & Land,,Mixed-Use,Pipeline,249715.0,361.0,197000000.0,Q1 20,2020,33.777494219519276,-84.39789234800959,2020.0,1.0,2020-03-15
+ATL-Mul-163,Atlanta,8,Decatur,Cousins Properties,,Multifamily,Pipeline,397243.0,257.0,80000000.0,Q1 24,2025,33.77764992910615,-84.31618823531751,2024.0,1.0,2024-03-15
+ATL-Oth-164,Atlanta,1,Virginia-Highland,Carter,,Other,Under Construction,184828.0,,275000000.0,Q4 23,2023,33.77292971787297,-84.42806213550506,2023.0,4.0,2023-12-15
+ATL-Hot-165,Atlanta,12,Atlantic Station,Jamestown,,Hotel,Completed,197246.0,496.0,79000000.0,Q1 26,2025,33.71064636338239,-84.39659630201511,2026.0,1.0,2026-03-15
+ATL-Mix-166,Atlanta,11,Beltline Eastside,Holder Properties,,Mixed-Use,Completed,281043.0,277.0,291000000.0,Q4 19,2020,33.82856198464369,-84.33831788506278,2019.0,4.0,2019-12-15
+ATL-Oth-167,Atlanta,6,Ponce City,Jamestown,,Other,Completed,466358.0,,112000000.0,Q3 22,2022,33.69420083989121,-84.35446979340634,2022.0,3.0,2022-09-15
+ATL-Mix-168,Atlanta,9,Downtown,Third & Urban,,Mixed-Use,Completed,618019.0,63.0,43000000.0,Q2 20,2021,33.726743443911104,-84.37643561486136,2020.0,2.0,2020-06-15
+ATL-Mul-169,Atlanta,3,Beltline Eastside,Selig Enterprises,,Multifamily,Completed,355615.0,520.0,240000000.0,Q4 24,2024,33.79206632805995,-84.33626569607867,2024.0,4.0,2024-12-15
+ATL-Hot-170,Atlanta,7,Ponce City,Portman Holdings,,Hotel,Completed,127284.0,499.0,275000000.0,Q3 26,2025,33.75720855097747,-84.37395424153571,2026.0,3.0,2026-09-15
+ATL-Ret-171,Atlanta,9,West Midtown,Cousins Properties,,Retail,Under Construction,104917.0,,110000000.0,Q2 22,2023,33.72062572018473,-84.35450685879533,2022.0,2.0,2022-06-15
+ATL-Ind-172,Atlanta,9,Inman Park,Carter,,Industrial,Pipeline,231250.0,,492000000.0,Q3 26,2025,33.769003577831775,-84.36969147547069,2026.0,3.0,2026-09-15
+ATL-Oth-173,Atlanta,10,Midtown,Portman Holdings,,Other,Completed,365365.0,,33000000.0,Q2 20,2021,33.76891666998939,-84.3236798570095,2020.0,2.0,2020-06-15
+ATL-Ind-174,Atlanta,8,Inman Park,New City Properties,,Industrial,Under Construction,782759.0,,338000000.0,Q3 27,2025,33.70272934075231,-84.37645804760864,2027.0,3.0,2027-09-15
+ATL-Mul-175,Atlanta,3,Atlantic Station,Tishman Speyer,,Multifamily,Under Construction,501888.0,515.0,247000000.0,Q2 25,2025,33.716589419428765,-84.45632431591915,2025.0,2.0,2025-06-15
+ATL-Ret-176,Atlanta,7,Downtown,Pope & Land,,Retail,Under Construction,183883.0,,273000000.0,Q2 23,2024,33.8068376122932,-84.41690937717652,2023.0,2.0,2023-06-15
+ATL-Oth-177,Atlanta,3,Buckhead,Portman Holdings,,Other,Under Construction,146740.0,,494000000.0,Q3 19,2019,33.74363561072651,-84.42520453208733,2019.0,3.0,2019-09-15
+ATL-Hot-178,Atlanta,4,Decatur,Carter,,Hotel,Under Construction,190165.0,181.0,273000000.0,Q4 27,2025,33.799156455430314,-84.3185997543601,2027.0,4.0,2027-12-15
+ATL-Hot-179,Atlanta,4,Old Fourth Ward,Third & Urban,,Hotel,Under Construction,320765.0,111.0,34000000.0,Q3 25,2025,33.68340785520701,-84.40508125054188,2025.0,3.0,2025-09-15
+ATL-Off-180,Atlanta,5,Ponce City,Portman Holdings,,Office,Completed,676543.0,,230000000.0,Q4 22,2023,33.81017431621891,-84.36331839409766,2022.0,4.0,2022-12-15
+ATL-Ret-181,Atlanta,10,Ponce City,Jamestown,,Retail,Under Construction,420480.0,,293000000.0,Q3 22,2022,33.7335206515383,-84.4607612168782,2022.0,3.0,2022-09-15
+ATL-Mul-182,Atlanta,3,Buckhead,Tishman Speyer,,Multifamily,Under Construction,344375.0,561.0,416000000.0,Q4 19,2019,33.79130465835316,-84.42324469158017,2019.0,4.0,2019-12-15
+ATL-Mul-183,Atlanta,1,Midtown,Carter,,Multifamily,Pipeline,475819.0,247.0,180000000.0,Q3 26,2025,33.7008492610484,-84.38654039740398,2026.0,3.0,2026-09-15
+ATL-Mix-184,Atlanta,3,Beltline Westside,Third & Urban,,Mixed-Use,Pipeline,256175.0,360.0,441000000.0,Q4 25,2025,33.81190107073248,-84.44563504227642,2025.0,4.0,2025-12-15
+ATL-Mul-185,Atlanta,8,Sandy Springs,Portman Holdings,,Multifamily,Under Construction,345979.0,621.0,179000000.0,Q3 27,2025,33.75417437278014,-84.35460163097034,2027.0,3.0,2027-09-15
+ATL-Ind-186,Atlanta,10,Atlantic Station,Hines,,Industrial,Pipeline,712056.0,,410000000.0,Q4 19,2019,33.718228453393884,-84.32419726332984,2019.0,4.0,2019-12-15
+ATL-Mix-187,Atlanta,3,Sandy Springs,Selig Enterprises,,Mixed-Use,Completed,153849.0,348.0,26000000.0,Q2 27,2025,33.74587180539431,-84.38412282678006,2027.0,2.0,2027-06-15
+ATL-Oth-188,Atlanta,12,Old Fourth Ward,Tishman Speyer,,Other,Pipeline,29928.0,,406000000.0,Q2 19,2020,33.73956617058956,-84.40099515229294,2019.0,2.0,2019-06-15
+ATL-Oth-189,Atlanta,11,Atlantic Station,New City Properties,,Other,Under Construction,390029.0,,170000000.0,Q1 25,2025,33.691093197725635,-84.4348253272046,2025.0,1.0,2025-03-15
+ATL-Ret-190,Atlanta,10,Atlantic Station,Jamestown,,Retail,Completed,306404.0,,152000000.0,Q3 25,2025,33.725685918183174,-84.34448163453621,2025.0,3.0,2025-09-15
+ATL-Oth-191,Atlanta,6,Atlantic Station,Lincoln Property,,Other,Pipeline,176035.0,,488000000.0,Q2 22,2023,33.792387883054026,-84.35521585010615,2022.0,2.0,2022-06-15
+ATL-Mix-192,Atlanta,6,Decatur,Pope & Land,,Mixed-Use,Completed,227794.0,343.0,158000000.0,Q3 22,2023,33.77725955932521,-84.4072489303401,2022.0,3.0,2022-09-15
+ATL-Off-193,Atlanta,4,Old Fourth Ward,New City Properties,,Office,Under Construction,413188.0,,487000000.0,Q1 22,2023,33.816841541102384,-84.36304447191186,2022.0,1.0,2022-03-15
+ATL-Oth-194,Atlanta,1,Inman Park,New City Properties,,Other,Completed,77266.0,,336000000.0,Q2 22,2022,33.76750832550632,-84.37410712022867,2022.0,2.0,2022-06-15
+ATL-Ret-195,Atlanta,1,Ponce City,Carter,,Retail,Under Construction,236688.0,,344000000.0,Q1 18,2018,33.72184697975798,-84.39241537487442,2018.0,1.0,2018-03-15
+ATL-Hot-196,Atlanta,11,Castleberry Hill,Jamestown,,Hotel,Pipeline,210599.0,264.0,388000000.0,Q2 25,2025,33.71466645460832,-84.45853398620136,2025.0,2.0,2025-06-15
+ATL-Ind-197,Atlanta,7,Decatur,Paces Properties,,Industrial,Completed,538184.0,,489000000.0,Q2 18,2018,33.810159195706376,-84.43987380679378,2018.0,2.0,2018-06-15
+ATL-Ind-198,Atlanta,5,Atlantic Station,Selig Enterprises,,Industrial,Pipeline,109717.0,,278000000.0,Q1 22,2023,33.71674275370594,-84.37155472551906,2022.0,1.0,2022-03-15
+ATL-Hot-199,Atlanta,11,West Midtown,Holder Properties,,Hotel,Completed,203045.0,198.0,17000000.0,Q4 20,2021,33.79841022051889,-84.41509054450692,2020.0,4.0,2020-12-15
+ATL-Ind-200,Atlanta,7,Ponce City,Lincoln Property,,Industrial,Completed,695361.0,,215000000.0,Q3 23,2024,33.77690418238316,-84.43709419396461,2023.0,3.0,2023-09-15
+ATL-Ind-201,Atlanta,5,Beltline Westside,Jamestown,,Industrial,Under Construction,247442.0,,395000000.0,Q2 19,2019,33.74539265575839,-84.31826793807979,2019.0,2.0,2019-06-15
+ATL-Mul-202,Atlanta,1,Inman Park,Cousins Properties,,Multifamily,Under Construction,385377.0,686.0,167000000.0,Q3 23,2023,33.67082971747107,-84.36341066126877,2023.0,3.0,2023-09-15
+ATL-Ret-203,Atlanta,6,Castleberry Hill,Jamestown,,Retail,Completed,381910.0,,500000000.0,Q3 24,2025,33.68778651933517,-84.3214191382639,2024.0,3.0,2024-09-15
+ATL-Ret-204,Atlanta,12,Ponce City,Paces Properties,,Retail,Pipeline,258539.0,,420000000.0,Q2 25,2025,33.788637573944136,-84.37108176830576,2025.0,2.0,2025-06-15
+ATL-Ind-205,Atlanta,9,Atlantic Station,New City Properties,,Industrial,Pipeline,813390.0,,195000000.0,Q2 21,2021,33.78975832795598,-84.32829839064196,2021.0,2.0,2021-06-15
+ATL-Off-206,Atlanta,10,Ponce City,Carter,,Office,Completed,114758.0,,177000000.0,Q1 27,2025,33.80160384863335,-84.32353789436164,2027.0,1.0,2027-03-15
+ATL-Mix-207,Atlanta,9,Atlantic Station,Pope & Land,,Mixed-Use,Completed,221886.0,398.0,242000000.0,Q4 26,2025,33.7018642376863,-84.37469637144945,2026.0,4.0,2026-12-15
+ATL-Ret-208,Atlanta,12,Midtown,Tishman Speyer,,Retail,Under Construction,259493.0,,428000000.0,Q4 26,2025,33.7592257896158,-84.3785924481602,2026.0,4.0,2026-12-15
+ATL-Off-209,Atlanta,2,Atlantic Station,Portman Holdings,,Office,Under Construction,97489.0,,219000000.0,Q1 21,2021,33.73679158156458,-84.35593841950445,2021.0,1.0,2021-03-15
+ATL-Ret-210,Atlanta,7,Buckhead,Selig Enterprises,,Retail,Pipeline,216325.0,,457000000.0,Q4 20,2021,33.827857055772945,-84.40680326098378,2020.0,4.0,2020-12-15
+ATL-Oth-211,Atlanta,12,Old Fourth Ward,Portman Holdings,,Other,Completed,82197.0,,162000000.0,Q3 20,2020,33.69755578064066,-84.38203864217633,2020.0,3.0,2020-09-15
+ATL-Hot-212,Atlanta,3,West Midtown,Jamestown,,Hotel,Pipeline,338886.0,294.0,401000000.0,Q4 26,2025,33.80073766998013,-84.4283980738394,2026.0,4.0,2026-12-15
+ATL-Off-213,Atlanta,4,Old Fourth Ward,Cousins Properties,,Office,Completed,694793.0,,314000000.0,Q4 18,2018,33.791568554802225,-84.32659894050475,2018.0,4.0,2018-12-15
+ATL-Off-214,Atlanta,9,Old Fourth Ward,Pope & Land,,Office,Completed,306622.0,,81000000.0,Q1 25,2025,33.78748657255678,-84.40363754387026,2025.0,1.0,2025-03-15
+ATL-Oth-215,Atlanta,4,West Midtown,Carter,,Other,Pipeline,447706.0,,276000000.0,Q2 22,2023,33.81562352529945,-84.37582234630716,2022.0,2.0,2022-06-15
+ATL-Ret-216,Atlanta,11,Inman Park,Tishman Speyer,,Retail,Pipeline,164259.0,,263000000.0,Q3 24,2024,33.678753221937086,-84.31623675919573,2024.0,3.0,2024-09-15
+ATL-Off-217,Atlanta,3,West Midtown,Tishman Speyer,,Office,Completed,873975.0,,396000000.0,Q4 23,2024,33.752914089582845,-84.35659065483055,2023.0,4.0,2023-12-15
+ATL-Oth-218,Atlanta,8,Midtown,New City Properties,,Other,Under Construction,465299.0,,223000000.0,Q2 25,2025,33.705055127740785,-84.33079340182832,2025.0,2.0,2025-06-15
+ATL-Oth-219,Atlanta,8,Sandy Springs,Lincoln Property,,Other,Completed,223643.0,,284000000.0,Q2 26,2025,33.70785736257434,-84.4354661227104,2026.0,2.0,2026-06-15
+ATL-Ind-220,Atlanta,2,Old Fourth Ward,Pope & Land,,Industrial,Pipeline,381502.0,,380000000.0,Q1 21,2021,33.72934687599382,-84.37120488857875,2021.0,1.0,2021-03-15
+ATL-Ind-221,Atlanta,1,Old Fourth Ward,Jamestown,,Industrial,Pipeline,602681.0,,70000000.0,Q2 26,2025,33.70242225416836,-84.32287474759464,2026.0,2.0,2026-06-15
+ATL-Ind-222,Atlanta,9,Beltline Eastside,Pope & Land,,Industrial,Under Construction,829417.0,,204000000.0,Q2 25,2025,33.76570424545261,-84.43527789712354,2025.0,2.0,2025-06-15
+ATL-Hot-223,Atlanta,2,Decatur,Holder Properties,,Hotel,Under Construction,221702.0,233.0,399000000.0,Q3 26,2025,33.726543138876934,-84.32675008762207,2026.0,3.0,2026-09-15
+ATL-Mix-224,Atlanta,12,Downtown,Portman Holdings,,Mixed-Use,Under Construction,488712.0,210.0,293000000.0,Q2 23,2023,33.73522882729258,-84.3779960436057,2023.0,2.0,2023-06-15
+ATL-Oth-225,Atlanta,10,Sandy Springs,Jamestown,,Other,Under Construction,174765.0,,291000000.0,Q4 27,2025,33.69338582562946,-84.41522155424354,2027.0,4.0,2027-12-15
+ATL-Ind-226,Atlanta,8,Downtown,Holder Properties,,Industrial,Under Construction,900441.0,,96000000.0,Q3 23,2024,33.80045471035078,-84.31335867723995,2023.0,3.0,2023-09-15
+ATL-Ret-227,Atlanta,9,Midtown,Cousins Properties,,Retail,Pipeline,116494.0,,34000000.0,Q4 26,2025,33.8157039023511,-84.3812581031438,2026.0,4.0,2026-12-15
+ATL-Mix-228,Atlanta,4,Ponce City,Paces Properties,,Mixed-Use,Under Construction,244170.0,372.0,40000000.0,Q4 18,2018,33.70602934273239,-84.35485286980744,2018.0,4.0,2018-12-15
+ATL-Oth-229,Atlanta,1,Midtown,New City Properties,,Other,Pipeline,365654.0,,150000000.0,Q4 27,2025,33.74705670144049,-84.46694202288126,2027.0,4.0,2027-12-15
+ATL-Oth-230,Atlanta,2,Buckhead,New City Properties,,Other,Completed,283305.0,,133000000.0,Q1 22,2022,33.799105155346226,-84.36015472766093,2022.0,1.0,2022-03-15
+ATL-Ret-231,Atlanta,6,Beltline Westside,Paces Properties,,Retail,Pipeline,447407.0,,134000000.0,Q3 27,2025,33.72571057613769,-84.34081018686665,2027.0,3.0,2027-09-15
+ATL-Ind-232,Atlanta,2,Beltline Westside,Tishman Speyer,,Industrial,Under Construction,817269.0,,292000000.0,Q3 21,2021,33.801489932594144,-84.45510129302295,2021.0,3.0,2021-09-15
+ATL-Hot-233,Atlanta,10,Sandy Springs,Cousins Properties,,Hotel,Pipeline,149854.0,142.0,480000000.0,Q1 18,2019,33.74897734289805,-84.39857445568454,2018.0,1.0,2018-03-15
+ATL-Off-234,Atlanta,2,Inman Park,Hines,,Office,Pipeline,775916.0,,298000000.0,Q2 21,2021,33.81100868912552,-84.39191995397677,2021.0,2.0,2021-06-15
+ATL-Ind-235,Atlanta,12,Sandy Springs,Tishman Speyer,,Industrial,Completed,991737.0,,163000000.0,Q2 18,2018,33.719317550916266,-84.31416492961985,2018.0,2.0,2018-06-15
+ATL-Ret-236,Atlanta,7,Decatur,Holder Properties,,Retail,Completed,317111.0,,414000000.0,Q2 27,2025,33.802544089614685,-84.40573494282123,2027.0,2.0,2027-06-15
+ATL-Ind-237,Atlanta,6,Castleberry Hill,Pope & Land,,Industrial,Pipeline,156304.0,,498000000.0,Q3 19,2019,33.68462972597729,-84.43085695929686,2019.0,3.0,2019-09-15
+ATL-Oth-238,Atlanta,8,Old Fourth Ward,Lincoln Property,,Other,Pipeline,35532.0,,491000000.0,Q3 24,2025,33.77045967158476,-84.34263229776313,2024.0,3.0,2024-09-15
+ATL-Hot-239,Atlanta,4,Virginia-Highland,Cousins Properties,,Hotel,Completed,367167.0,438.0,147000000.0,Q2 24,2025,33.72981163416588,-84.34445321533846,2024.0,2.0,2024-06-15
+ATL-Ret-240,Atlanta,1,West Midtown,Paces Properties,,Retail,Under Construction,407792.0,,399000000.0,Q2 24,2024,33.73133951606355,-84.41028796350176,2024.0,2.0,2024-06-15
+ATL-Mul-241,Atlanta,2,Midtown,Cousins Properties,,Multifamily,Under Construction,125768.0,291.0,293000000.0,Q2 19,2020,33.73795672255617,-84.37888239484461,2019.0,2.0,2019-06-15
+ATL-Off-242,Atlanta,12,Ponce City,Jamestown,,Office,Pipeline,453951.0,,276000000.0,Q3 27,2025,33.67097449838143,-84.4017903888371,2027.0,3.0,2027-09-15
+ATL-Ret-243,Atlanta,2,Downtown,Tishman Speyer,,Retail,Under Construction,92792.0,,225000000.0,Q2 24,2024,33.71202703416483,-84.42505491245613,2024.0,2.0,2024-06-15
+ATL-Mul-244,Atlanta,10,Castleberry Hill,Jamestown,,Multifamily,Under Construction,269333.0,357.0,64000000.0,Q1 25,2025,33.820075567301025,-84.35265608760712,2025.0,1.0,2025-03-15
+ATL-Ret-245,Atlanta,8,Beltline Eastside,Tishman Speyer,,Retail,Pipeline,227456.0,,314000000.0,Q1 22,2023,33.72215475444986,-84.36876924994006,2022.0,1.0,2022-03-15
+ATL-Ret-246,Atlanta,3,Beltline Westside,Lincoln Property,,Retail,Under Construction,336256.0,,386000000.0,Q3 22,2023,33.82056462752258,-84.43586376180767,2022.0,3.0,2022-09-15
+ATL-Ind-247,Atlanta,6,Buckhead,Third & Urban,,Industrial,Completed,441716.0,,313000000.0,Q2 25,2025,33.72916884837186,-84.33736087753074,2025.0,2.0,2025-06-15
+ATL-Oth-248,Atlanta,5,Sandy Springs,Holder Properties,,Other,Completed,401269.0,,429000000.0,Q1 20,2021,33.742859555653304,-84.35466127179903,2020.0,1.0,2020-03-15
+ATL-Mix-249,Atlanta,12,Beltline Westside,Pope & Land,,Mixed-Use,Under Construction,245939.0,374.0,47000000.0,Q4 24,2024,33.717453222801716,-84.42757093041104,2024.0,4.0,2024-12-15
+ATL-Hot-250,Atlanta,9,Midtown,Pope & Land,,Hotel,Under Construction,365263.0,305.0,369000000.0,Q4 27,2025,33.75449878419234,-84.32024067935897,2027.0,4.0,2027-12-15
+ATL-Mix-251,Atlanta,10,Inman Park,Selig Enterprises,,Mixed-Use,Pipeline,214682.0,177.0,214000000.0,Q1 26,2025,33.77421626313293,-84.41119858888824,2026.0,1.0,2026-03-15
+ATL-Mix-252,Atlanta,8,Beltline Eastside,Tishman Speyer,,Mixed-Use,Under Construction,211090.0,55.0,405000000.0,Q4 23,2023,33.68477704937308,-84.43247982727209,2023.0,4.0,2023-12-15
+ATL-Ind-253,Atlanta,7,Buckhead,Cousins Properties,,Industrial,Pipeline,461724.0,,82000000.0,Q2 27,2025,33.82863243606635,-84.39075662648136,2027.0,2.0,2027-06-15
+ATL-Mul-254,Atlanta,8,Virginia-Highland,Holder Properties,,Multifamily,Under Construction,318725.0,311.0,173000000.0,Q3 22,2022,33.75237837276808,-84.4122719525383,2022.0,3.0,2022-09-15
+ATL-Off-255,Atlanta,11,Buckhead,Selig Enterprises,,Office,Completed,899541.0,,486000000.0,Q1 22,2023,33.78272463836084,-84.46438638156751,2022.0,1.0,2022-03-15
+ATL-Ind-256,Atlanta,4,Decatur,Tishman Speyer,,Industrial,Pipeline,678719.0,,104000000.0,Q2 21,2022,33.69462171379446,-84.37842416760162,2021.0,2.0,2021-06-15
+ATL-Ret-257,Atlanta,10,Beltline Westside,Tishman Speyer,,Retail,Completed,35305.0,,370000000.0,Q4 24,2025,33.78698213912738,-84.32670442009292,2024.0,4.0,2024-12-15
+ATL-Ret-258,Atlanta,9,Downtown,Lincoln Property,,Retail,Under Construction,414435.0,,110000000.0,Q3 21,2021,33.78160155893413,-84.34063871185475,2021.0,3.0,2021-09-15
+ATL-Hot-259,Atlanta,10,Beltline Westside,Third & Urban,,Hotel,Completed,316630.0,370.0,188000000.0,Q3 19,2020,33.82354662399186,-84.41785534239177,2019.0,3.0,2019-09-15
+ATL-Mul-260,Atlanta,11,Downtown,Lincoln Property,,Multifamily,Completed,506633.0,789.0,132000000.0,Q2 25,2025,33.78195813775136,-84.42040882644811,2025.0,2.0,2025-06-15
+ATL-Mul-261,Atlanta,10,Beltline Westside,Tishman Speyer,,Multifamily,Completed,275719.0,244.0,259000000.0,Q2 19,2019,33.75073197911795,-84.4010817430062,2019.0,2.0,2019-06-15
+ATL-Ind-262,Atlanta,6,Sandy Springs,Paces Properties,,Industrial,Pipeline,681868.0,,37000000.0,Q2 26,2025,33.695698483812386,-84.4217864361521,2026.0,2.0,2026-06-15
+ATL-Mix-263,Atlanta,7,Inman Park,Paces Properties,,Mixed-Use,Under Construction,608149.0,119.0,373000000.0,Q1 23,2024,33.700220558661485,-84.40656893186113,2023.0,1.0,2023-03-15
+ATL-Mix-264,Atlanta,5,Midtown,Hines,,Mixed-Use,Completed,275377.0,92.0,285000000.0,Q4 25,2025,33.7594636478792,-84.34065905766361,2025.0,4.0,2025-12-15
+ATL-Mul-265,Atlanta,5,Decatur,New City Properties,,Multifamily,Under Construction,376563.0,607.0,287000000.0,Q4 20,2020,33.75695618952609,-84.44988624075329,2020.0,4.0,2020-12-15
+ATL-Mix-266,Atlanta,5,Sandy Springs,Portman Holdings,,Mixed-Use,Under Construction,672892.0,161.0,144000000.0,Q4 18,2018,33.827364116460274,-84.45161336977961,2018.0,4.0,2018-12-15
+ATL-Mul-267,Atlanta,12,Castleberry Hill,Selig Enterprises,,Multifamily,Under Construction,533661.0,220.0,94000000.0,Q4 19,2020,33.79310106398093,-84.43008863114133,2019.0,4.0,2019-12-15
+ATL-Oth-268,Atlanta,9,West Midtown,Third & Urban,,Other,Pipeline,446523.0,,96000000.0,Q2 20,2021,33.70211083532028,-84.45850274661771,2020.0,2.0,2020-06-15
+ATL-Mul-269,Atlanta,3,Decatur,Pope & Land,,Multifamily,Under Construction,380278.0,373.0,480000000.0,Q3 22,2022,33.8213835752702,-84.385693601864,2022.0,3.0,2022-09-15
+ATL-Off-270,Atlanta,4,Decatur,Selig Enterprises,,Office,Under Construction,785499.0,,260000000.0,Q2 22,2023,33.80757260719859,-84.4280516412899,2022.0,2.0,2022-06-15
+ATL-Ret-271,Atlanta,7,Ponce City,Holder Properties,,Retail,Under Construction,349154.0,,365000000.0,Q3 27,2025,33.73527601429841,-84.39568132439194,2027.0,3.0,2027-09-15
+ATL-Mul-272,Atlanta,12,Atlantic Station,Selig Enterprises,,Multifamily,Pipeline,251593.0,695.0,367000000.0,Q4 25,2025,33.66939569362272,-84.34413835352997,2025.0,4.0,2025-12-15
+ATL-Mul-273,Atlanta,5,Beltline Eastside,New City Properties,,Multifamily,Pipeline,194205.0,539.0,76000000.0,Q4 19,2020,33.80097562362177,-84.38884560839112,2019.0,4.0,2019-12-15
+ATL-Oth-274,Atlanta,11,Decatur,Paces Properties,,Other,Completed,488794.0,,73000000.0,Q3 25,2025,33.77820830817492,-84.46025451821573,2025.0,3.0,2025-09-15
+ATL-Mix-275,Atlanta,11,West Midtown,Carter,,Mixed-Use,Under Construction,578693.0,50.0,57000000.0,Q4 20,2020,33.82769411821131,-84.39955211186133,2020.0,4.0,2020-12-15
+ATL-Ind-276,Atlanta,1,Beltline Westside,Selig Enterprises,,Industrial,Under Construction,186424.0,,381000000.0,Q3 23,2023,33.728495002823486,-84.3233919569863,2023.0,3.0,2023-09-15
+ATL-Ind-277,Atlanta,8,Buckhead,Carter,,Industrial,Pipeline,787326.0,,125000000.0,Q4 21,2021,33.683591869954704,-84.45277061152329,2021.0,4.0,2021-12-15
+ATL-Oth-278,Atlanta,12,Downtown,Paces Properties,,Other,Completed,24227.0,,127000000.0,Q1 25,2025,33.78029553716609,-84.33726255569388,2025.0,1.0,2025-03-15
+ATL-Hot-279,Atlanta,3,Inman Park,Selig Enterprises,,Hotel,Completed,114107.0,260.0,45000000.0,Q1 19,2020,33.72780987033962,-84.42011914761409,2019.0,1.0,2019-03-15
+ATL-Oth-280,Atlanta,11,Virginia-Highland,Carter,,Other,Under Construction,339983.0,,325000000.0,Q1 27,2025,33.77300323410525,-84.39758409267523,2027.0,1.0,2027-03-15

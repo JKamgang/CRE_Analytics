@@ -1,0 +1,2953 @@
+https://chat.deepseek.com/a/chat/s/7ab96482-f20e-4403-9705-de6f5ebea3a4
+
+OpenClaw upgrade success explanation
+OneDrive sync dialog stuck fix
+AI Summit Marketing Strategy Analysis
+ETL Team Lead Job Opportunity Greenville
+OpenClaw Architecture Consultancy Business Plan
+SDIRA Due Diligence for Commercial Real Estate
+Pitch Deck Access Error and Assistance Offer
+HOA Long Term Rental Compliance Strategy
+Coding Agent Helps with Laptop and Power BI App
+No Benadryl for child nosebleed
+Blood pressure monitor display interpretation
+OpenClaw Agent Authentication Fix
+Copy files after timestamp to current directory
+Negotiate Higher Pay W2 Role
+Preparing for Tae Kwon Do Test This Friday
+Career Goal Discussion with Advisor
+Clean image to PDF merge scripts
+AI Agent Building Guide Assistance
+王福堂宗室家训图片识别
+Project REAP Mentoring Program Coordination
+No Money Down Real Estate Buying
+Kidde Smoke Detector Battery Guide
+Landmas Tractor Not Starting Troubleshooting
+Analyse contributions tontine février
+Federal Contracting Homework Assistance
+Website Redesign Feedback for Students
+Top 5 Job Boards 2026
+User greeting and AI response
+Cody Sperber Veena Jetti Garrett Lynch profiles
+Tailor Resume for Edmunds Data Scientist
+Jean Baptiste Kamgang Houlihan Lokey Job Fit Analysis
+Data Reporting Analyst Job Fit Assessment
+Fix MacOS No Bag Error
+Real Estate Financial Analyst Job Fit Assessment
+Urban Innovation Fellow Application Strategy
+Gemini Startup Forum Application Analysis
+Open Access Fellowship Application Guidance
+OpenClaw Setup Guide
+Jean Baptiste CCIM interview confirmation
+OpenClaw local setup on Snapdragon laptop
+Secure OpenClaw integration guide
+Appraisal Principles Practice Test Answers
+Request YouTube video transcript
+Wooden Chair Repair Guide
+Real Estate Quiz Answers
+Real Estate Appraisal Practice Test Answers
+Remove Expiro Virus from Laptop Guide
+Epstein Files Release Summary
+Real Estate Appraisal Exam Screen
+Guide to Applying for Gemini Startup Forum
+AI Trading and High-Reward Strategies Explained
+🔹 PROMPT 0 — GLOBAL INSTRUCTIONS
+Python Document Merger with Index and TOC
+Preparing for Steve Laube Meeting on Trading
+Preparing for SAS Administrator Interview Strategy
+Crafting Response for Drakia Wilkins Inquiry
+Calculating Remaining Payments on Loan
+Understanding Work From Home (WFH) Basics
+Request for video transcript and use case prompts
+Journey of Humanity's Cosmic Origins Revealed
+PDF to Editable PowerPoint Python Scripts
+Business Model Development and Staffing Plan
+Investment Analysis: High-Risk Chattanooga Properties
+Affordable Housing Development Opportunity Analysis
+Vine City Multi-Family Development Opportunity
+Blood Pressure Reading Inquiry and Interpretation
+Free SAT Prep Resources for Students
+Free SAT Prep Plan for Students
+Crafting Professional Summary Guidance
+Mentorship Application Synthesis and Consolidation
+Jean Baptiste Kamgang's Data Science Expert Profile
+Business Intelligence Analyst Job Application Package
+Cover Letter for Data Analyst Position Application
+AI-Driven Real Estate Analyst and Appraiser
+Professional Responses to Sherese Garrett's Message
+Professional Reply to Career Inquiry
+Searching LinkedIn for Atlanta REAP Mentors
+Job Opportunity for Advanced Data Engineer
+Preparing for Software Engineer Interview QA
+Accident with 18-Year-Old Driver Assistance Guide
+2016 Honda Odyssey Won't Start After Recharge
+TKD Class Plan for 2026 with Master Jean-Baptiste
+Jean Kamgang Applies for Voice Artist Role
+Creating Real Estate Financial Models Guide
+Cover Letter for Real Estate Land Analyst Role
+Cover Letter for Senior Data Engineering Role
+Interested in Logistics Real Estate Development Program
+Development Team Bios and Email Research
+Software Engineer IV Job Application Cover Letter
+Searching DeepSeek Chat History Methods
+Housing Choice Voucher Rent Comparison Snellville
+QTS Generalist Track Salary Recommendation
+Print Canva Design Without Canvas Installed
+Structured CLBA RFP Consultation Questionnaire Preparation
+Difference Between Capitalization Methods Explained
+Top CRE Valuation Firms for AI Jobs
+Realistic Trading Path to Financial Growth
+Taekwondo Club Digital Management System Proposal
+Software Developer Job Application Summary
+Understanding Denise's Name and Zoning Debate
+Coding Agent Helps with Laptop and Power BI App
+Perfect! Now I have your complete diagnostic data. Let me analyze the critical issues and provide you with immediate fixes.
+
+🔴 CRITICAL ISSUES IDENTIFIED
+1. DISK SPACE CRISIS - 0.43% FREE (Only 1 GB free of 236 GB!)
+This is your biggest problem. Windows needs at least 10-15% free space to function properly. This is causing:
+
+System slowdowns
+
+Failed Windows updates
+
+Potential crashes
+
+Inability to run the Power BI application
+
+2. High CPU Usage: 62% at idle
+Your Snapdragon X processor is running hot with background processes.
+
+3. WSL2 (vmmemWSL) Using 1.1 GB RAM
+Windows Subsystem for Linux is consuming significant resources.
+
+4. Problematic Driver: Surface Touchpad G7 Firmware Update
+5. 2 Pending Windows Updates
+🚀 IMMEDIATE ACTION PLAN
+Step 1: FREE UP DISK SPACE (URGENT)
+Copy and paste this command to run Disk Cleanup with system files:
+
+powershell
+# Run Disk Cleanup as Administrator
+cleanmgr /sagerun:1
+If that doesn't work, use this manual cleanup:
+
+powershell
+# Clear Windows temporary files (RUN THIS NOW)
+Write-Host "Cleaning temp files..." -ForegroundColor Yellow
+Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
+
+# Clear Windows Update cache
+Write-Host "Cleaning Windows Update cache..." -ForegroundColor Yellow
+Stop-Service wuauserv -Force
+Remove-Item -Path "C:\Windows\SoftwareDistribution\Download\*" -Recurse -Force -ErrorAction SilentlyContinue
+Start-Service wuauserv
+
+# Clear Windows Logs
+Write-Host "Cleaning Windows Logs..." -ForegroundColor Yellow
+wevtutil el | ForEach-Object { wevtutil cl $_ 2>$null }
+
+# Clear Browser caches
+Write-Host "Clearing browser caches..." -ForegroundColor Yellow
+Remove-Item -Path "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+
+# Show freed space
+$drive = Get-PSDrive C
+$free = [math]::Round($drive.Free/1GB,2)
+Write-Host "`nC: Drive now has $free GB free" -ForegroundColor Green
+Step 2: Reduce WSL2 Memory Usage
+Since you have Docker Desktop running (uses WSL2), run this to limit its memory:
+
+powershell
+# Check if WSL is installed
+wsl --status
+
+# Create WSL config to limit memory to 2GB
+if (!(Test-Path "$env:USERPROFILE\.wslconfig")) {
+    @"
+[wsl2]
+memory=2GB
+processors=2
+localhostForwarding=true
+"@ | Out-File -FilePath "$env:USERPROFILE\.wslconfig" -Encoding UTF8
+    Write-Host "WSL2 configured to use max 2GB RAM" -ForegroundColor Green
+} else {
+    Write-Host "WSL config already exists" -ForegroundColor Yellow
+}
+
+# Restart WSL to apply changes
+wsl --shutdown
+Step 3: Disable Unnecessary Startup Programs
+Run this to disable non-essential startup items:
+
+powershell
+# View current startup items
+Get-CimInstance Win32_StartupCommand | Select-Object Name, Command
+
+# Disable specific startup items (uncomment to run)
+# Remove from registry (safe to run - disables but doesn't delete)
+$startupPaths = @(
+    "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run",
+    "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+)
+
+# To disable Discord, Teams, etc. manually via Task Manager
+Write-Host "`nTo disable startup items:" -ForegroundColor Yellow
+Write-Host "1. Press Ctrl+Shift+Esc to open Task Manager" -ForegroundColor White
+Write-Host "2. Click 'Startup' tab" -ForegroundColor White
+Write-Host "3. Disable: Discord, Teams, Docker Desktop, CiscoMeetingDaemon" -ForegroundColor White
+Write-Host "4. Keep: OneDrive, Windows Security" -ForegroundColor White
+Step 4: Fix Problematic Drivers
+powershell
+# Check for driver updates via Windows Update
+Write-Host "Checking for driver updates..." -ForegroundColor Yellow
+Get-WindowsUpdate -Category "Drivers" -Install -AcceptAll
+
+# Alternative: Update Surface drivers directly
+Write-Host "`nDownload Surface Driver Pack:" -ForegroundColor Cyan
+Write-Host "https://www.microsoft.com/en-us/download/details.aspx?id=104567" -ForegroundColor White
+Start-Process "https://www.microsoft.com/en-us/download/details.aspx?id=104567"
+Step 5: Install Pending Windows Updates
+powershell
+# Install all pending updates
+Write-Host "Installing Windows Updates..." -ForegroundColor Yellow
+Install-Module PSWindowsUpdate -Force -ErrorAction SilentlyContinue
+Get-WindowsUpdate -Install -AcceptAll -IgnoreReboot
+📊 One-Click Optimization Script
+Copy and paste this entire script to run all optimizations at once:
+
+powershell
+# 2026-04-01-Gemini-Surface-Optimizer.ps1
+Write-Host @"
+╔══════════════════════════════════════════════════════════╗
+║     SURFACE LAPTOP EMERGENCY OPTIMIZER                   ║
+║     Created: 2026-04-01 (Gemini Enhanced)                ║
+║     ⚠️  CRITICAL: Only 1GB disk space remaining!        ║
+╚══════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Red
+
+# Start tracking time
+$startTime = Get-Date
+
+# 1. CLEAN TEMP FILES
+Write-Host "`n[1/6] Cleaning temporary files..." -ForegroundColor Yellow
+$tempPaths = @(
+    "$env:TEMP",
+    "C:\Windows\Temp",
+    "C:\Windows\Prefetch",
+    "C:\Windows\SoftwareDistribution\Download"
+)
+
+$totalCleaned = 0
+foreach ($path in $tempPaths) {
+    if (Test-Path $path) {
+        $sizeBefore = (Get-ChildItem $path -Recurse -Force -ErrorAction SilentlyContinue | Measure-Object Length -Sum -ErrorAction SilentlyContinue).Sum
+        Remove-Item "$path\*" -Recurse -Force -ErrorAction SilentlyContinue
+        $sizeAfter = (Get-ChildItem $path -Recurse -Force -ErrorAction SilentlyContinue | Measure-Object Length -Sum -ErrorAction SilentlyContinue).Sum
+        $cleaned = [math]::Round(($sizeBefore - $sizeAfter) / 1MB, 2)
+        if ($cleaned -gt 0) {
+            Write-Host "  ✓ Cleaned $cleaned MB from $(Split-Path $path -Leaf)" -ForegroundColor Green
+            $totalCleaned += $cleaned
+        }
+    }
+}
+Write-Host "  Total cleaned: $([math]::Round($totalCleaned, 2)) MB" -ForegroundColor Green
+
+# 2. CLEAN WINDOWS LOGS
+Write-Host "`n[2/6] Cleaning Windows logs..." -ForegroundColor Yellow
+try {
+    wevtutil el | ForEach-Object { wevtutil cl $_ 2>$null }
+    Write-Host "  ✓ Windows logs cleared" -ForegroundColor Green
+} catch {
+    Write-Host "  ⚠️  Some logs couldn't be cleared (run as Admin)" -ForegroundColor Yellow
+}
+
+# 3. RUN DISK CLEANUP
+Write-Host "`n[3/6] Running Disk Cleanup..." -ForegroundColor Yellow
+try {
+    cleanmgr /sagerun:1 2>$null
+    Write-Host "  ✓ Disk Cleanup completed" -ForegroundColor Green
+} catch {
+    Write-Host "  ⚠️  Disk Cleanup not configured, skipping" -ForegroundColor Yellow
+}
+
+# 4. OPTIMIZE DRIVE (TRIM for SSD)
+Write-Host "`n[4/6] Optimizing SSD..." -ForegroundColor Yellow
+Optimize-Volume -DriveLetter C -ReTrim -Verbose 2>$null
+Write-Host "  ✓ SSD TRIM completed" -ForegroundColor Green
+
+# 5. FLUSH DNS AND NETWORK
+Write-Host "`n[5/6] Flushing DNS and network cache..." -ForegroundColor Yellow
+ipconfig /flushdns | Out-Null
+ipconfig /release | Out-Null
+ipconfig /renew | Out-Null
+Write-Host "  ✓ Network cache cleared" -ForegroundColor Green
+
+# 6. CHECK FINAL DISK SPACE
+Write-Host "`n[6/6] Checking results..." -ForegroundColor Yellow
+$drive = Get-PSDrive C
+$free = [math]::Round($drive.Free/1GB, 2)
+$total = [math]::Round(($drive.Used + $drive.Free)/1GB, 2)
+$freePercent = [math]::Round(($drive.Free / ($drive.Used + $drive.Free)) * 100, 2)
+
+$endTime = Get-Date
+$duration = [math]::Round(($endTime - $startTime).TotalSeconds, 1)
+
+Write-Host @"
+
+╔══════════════════════════════════════════════════════════╗
+║  OPTIMIZATION COMPLETE!                                  ║
+╠══════════════════════════════════════════════════════════╣
+║  Duration: $duration seconds
+║  Before: 1.02 GB free (0.43%)
+║  After:  $free GB free ($freePercent%)
+║  Improvement: $([math]::Round($free - 1.02, 2)) GB freed
+╚══════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Green
+
+if ($free -lt 10) {
+    Write-Host "⚠️  WARNING: Still low on disk space!" -ForegroundColor Red
+    Write-Host "Additional steps to free space:" -ForegroundColor Yellow
+    Write-Host "  1. Uninstall unused applications" -ForegroundColor White
+    Write-Host "  2. Move large files to external drive" -ForegroundColor White
+    Write-Host "  3. Use Storage Sense: Settings > System > Storage" -ForegroundColor White
+} else {
+    Write-Host "✓ Disk space is now healthy!" -ForegroundColor Green
+}
+
+Write-Host "`nNext Steps:" -ForegroundColor Cyan
+Write-Host "  1. RESTART your Surface Laptop" -ForegroundColor White
+Write-Host "  2. Install pending Windows Updates" -ForegroundColor White
+Write-Host "  3. Update Surface drivers via Windows Update" -ForegroundColor White
+Write-Host ""
+🎯 Power BI Application Next Steps
+After completing the optimization above, we can proceed with your Power BI desktop application project. Based on your files, I see:
+
+CRE_Flood_Graph_Dashboard_Fixed.pbix - Your Power BI file
+
+You need to build a desktop app integrating Power BI with MCP server
+
+Migrate to Power BI Online
+
+Once your disk space is freed up, we'll:
+
+Install Power BI Desktop if needed
+
+Set up Node.js and MCP server
+
+Build the desktop application using Electron or .NET
+
+Connect to Power BI REST API
+
+Migrate to Power BI Service (cloud)
+
+⚡ Run This Now
+Copy and paste the one-click optimization script above into PowerShell and press Enter. It will run all optimizations automatically and show you the results.
+
+After it completes, restart your Surface Laptop, then run:
+
+powershell
+# Quick check after restart
+$d=Get-PSDrive C; Write-Host "C: Drive: $([math]::Round($d.Free/1GB,2)) GB free" -ForegroundColor Green
+What is your current free space after running the optimization?
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (or-IN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\pa-IN.json: Could not
+find a part of the path 'pa-IN.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (pa-IN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\pl-PL.json: Could not
+find a part of the path 'pl-PL.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (pl-PL.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\pt-BR.json: Could not
+find a part of the path 'pt-BR.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (pt-BR.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\pt-PT.json: Could not
+find a part of the path 'pt-PT.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (pt-PT.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\quz-PE.json: Could not
+find a part of the path 'quz-PE.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (quz-PE.json:FileInfo) [Remove-Item], DirectoryNotFoundExcep
+   tion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\ro-RO.json: Could not
+find a part of the path 'ro-RO.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (ro-RO.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\ru-RU.json: Could not
+find a part of the path 'ru-RU.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (ru-RU.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sk-SK.json: Could not
+find a part of the path 'sk-SK.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sk-SK.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sl-SI.json: Could not
+find a part of the path 'sl-SI.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sl-SI.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sq-AL.json: Could not
+find a part of the path 'sq-AL.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sq-AL.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sr-Cyrl-BA.json: Could
+not find a part of the path 'sr-Cyrl-BA.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sr-Cyrl-BA.json:FileInfo) [Remove-Item], DirectoryNotFoundE
+   xception
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sr-Cyrl-RS.json: Could
+not find a part of the path 'sr-Cyrl-RS.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sr-Cyrl-RS.json:FileInfo) [Remove-Item], DirectoryNotFoundE
+   xception
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sr-Latn-RS.json: Could
+not find a part of the path 'sr-Latn-RS.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sr-Latn-RS.json:FileInfo) [Remove-Item], DirectoryNotFoundE
+   xception
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\sv-SE.json: Could not
+find a part of the path 'sv-SE.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (sv-SE.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\ta-IN.json: Could not
+find a part of the path 'ta-IN.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (ta-IN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\te-IN.json: Could not
+find a part of the path 'te-IN.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (te-IN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\th-TH.json: Could not
+find a part of the path 'th-TH.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (th-TH.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\tr-TR.json: Could not
+find a part of the path 'tr-TR.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (tr-TR.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\tt-RU.json: Could not
+find a part of the path 'tt-RU.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (tt-RU.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\ug-CN.json: Could not
+find a part of the path 'ug-CN.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (ug-CN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\uk-UA.json: Could not
+find a part of the path 'uk-UA.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (uk-UA.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\ur-PK.json: Could not
+find a part of the path 'ur-PK.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (ur-PK.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\uz-Latn-UZ.json: Could
+not find a part of the path 'uz-Latn-UZ.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (uz-Latn-UZ.json:FileInfo) [Remove-Item], DirectoryNotFoundE
+   xception
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\vi-VN.json: Could not
+find a part of the path 'vi-VN.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (vi-VN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\zh-CN.json: Could not
+find a part of the path 'zh-CN.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (zh-CN.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings\zh-TW.json: Could not
+find a part of the path 'zh-TW.json'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (zh-TW.json:FileInfo) [Remove-Item], DirectoryNotFoundExcept
+   ion
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets\strings: The directory is not
+empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (strings:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account\assets: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (assets:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\Account: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Account:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\AccountControl\index.windows.bundle: Could not
+find a part of the path 'index.windows.bundle'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (index.windows.bundle:FileInfo) [Remove-Item], DirectoryNotF
+   oundException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks\AccountControl: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (AccountControl:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public\wsxpacks: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (wsxpacks:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon\Public: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Public:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f\Photon: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Photon:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Cannot remove item C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5191b049485de0c15
+b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad364e35_10.0.2610
+0.8115_none_fb1b55632157ec84\f: The directory is not empty.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (f:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemComm
+   and
+Remove-Item : Could not find a part of the path 'C:\Windows\SoftwareDistribution\Download\87fc5b611ebc5
+191b049485de0c15b63\Package_for_RollupFix~~arm64~~26100.8117.1.4\arm64_userexperience-photon_31bf3856ad
+364e35_10.0.26100.8115_none_fb1b55632157ec84\n\Photon\Public\wsxpacks\Account\assets\assets\images\dark
+'.
+At line:5 char:35
++ ...  stop bits; Remove-Item $env:windir\SoftwareDistribution -Recurse -Fo ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Windows\SoftwareDistribution:String) [Remove-Item], Dire
+   ctoryNotFoundException
+    + FullyQualifiedErrorId : RemoveItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+The Windows Update service is starting.
+The Windows Update service was started successfully.
+
+PS C:\Users\jkamg\Downloads> Get-Volume -DriveLetter C | Select-Object DriveLetter, @{Name="FreeGB";Expression={[math]::Round($_.SizeRemaining/1GB,2)}}
+
+DriveLetter FreeGB
+----------- ------
+          C   8.06
+
+
+PS C:\Users\jkamg\Downloads> # Run Disk Cleanup as Administrator
+>> cleanmgr /sagerun:1
+PS C:\Users\jkamg\Downloads> # Clear Windows temporary files (RUN THIS NOW)
+>> Write-Host "Cleaning temp files..." -ForegroundColor Yellow
+>> Remove-Item -Path "$env:TEMP\*" -Recurse -Force -ErrorAction SilentlyContinue
+>> Remove-Item -Path "C:\Windows\Temp\*" -Recurse -Force -ErrorAction SilentlyContinue
+>>
+>> # Clear Windows Update cache
+>> Write-Host "Cleaning Windows Update cache..." -ForegroundColor Yellow
+>> Stop-Service wuauserv -Force
+>> Remove-Item -Path "C:\Windows\SoftwareDistribution\Download\*" -Recurse -Force -ErrorAction SilentlyContinue
+>> Start-Service wuauserv
+>>
+>> # Clear Windows Logs
+>> Write-Host "Cleaning Windows Logs..." -ForegroundColor Yellow
+>> wevtutil el | ForEach-Object { wevtutil cl $_ 2>$null }
+>>
+>> # Clear Browser caches
+>> Write-Host "Clearing browser caches..." -ForegroundColor Yellow
+>> Remove-Item -Path "$env:LOCALAPPDATA\Google\Chrome\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+>> Remove-Item -Path "$env:LOCALAPPDATA\Microsoft\Edge\User Data\Default\Cache\*" -Recurse -Force -ErrorAction SilentlyContinue
+>>
+>> # Show freed space
+>> $drive = Get-PSDrive C
+>> $free = [math]::Round($drive.Free/1GB,2)
+>> Write-Host "`nC: Drive now has $free GB free" -ForegroundColor Green
+Cleaning temp files...
+Cleaning Windows Update cache...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+WARNING: Waiting for service 'Windows Update (wuauserv)' to stop...
+Cleaning Windows Logs...
+Clearing browser caches...
+
+C: Drive now has 11.67 GB free
+PS C:\Users\jkamg\Downloads> # Check if WSL is installed
+>> wsl --status
+>>
+>> # Create WSL config to limit memory to 2GB
+>> if (!(Test-Path "$env:USERPROFILE\.wslconfig")) {
+>>     @"
+>> [wsl2]
+>> memory=2GB
+>> processors=2
+>> localhostForwarding=true
+>> "@ | Out-File -FilePath "$env:USERPROFILE\.wslconfig" -Encoding UTF8
+>>     Write-Host "WSL2 configured to use max 2GB RAM" -ForegroundColor Green
+>> } else {
+>>     Write-Host "WSL config already exists" -ForegroundColor Yellow
+>> }
+>>
+>> # Restart WSL to apply changes
+>> wsl --shutdown
+Default Distribution: Ubuntu
+Default Version: 2
+WSL2 configured to use max 2GB RAM
+PS C:\Users\jkamg\Downloads> # View current startup items
+>> Get-CimInstance Win32_StartupCommand | Select-Object Name, Command
+>>
+>> # Disable specific startup items (uncomment to run)
+>> # Remove from registry (safe to run - disables but doesn't delete)
+>> $startupPaths = @(
+>>     "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run",
+>>     "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+>> )
+>>
+>> # To disable Discord, Teams, etc. manually via Task Manager
+>> Write-Host "`nTo disable startup items:" -ForegroundColor Yellow
+>> Write-Host "1. Press Ctrl+Shift+Esc to open Task Manager" -ForegroundColor White
+>> Write-Host "2. Click 'Startup' tab" -ForegroundColor White
+>> Write-Host "3. Disable: Discord, Teams, Docker Desktop, CiscoMeetingDaemon" -ForegroundColor White
+>> Write-Host "4. Keep: OneDrive, Windows Security" -ForegroundColor White
+
+
+To disable startup items:
+1. Press Ctrl+Shift+Esc to open Task Manager
+2. Click 'Startup' tab
+3. Disable: Discord, Teams, Docker Desktop, CiscoMeetingDaemon
+4. Keep: OneDrive, Windows Security
+Name                                                     Command
+----                                                     -------
+OneDriveSetup                                            C:\Windows\System32\OneDriveSetup.exe /thfi...
+OneDriveSetup                                            C:\Windows\System32\OneDriveSetup.exe /thfi...
+OneDrive                                                 "C:\Users\jkamg\AppData\Local\Microsoft\One...
+Discord                                                  "C:\Users\jkamg\AppData\Local\Discord\Updat...
+Docker Desktop                                           C:\Program Files\Docker\Docker\Docker Deskt...
+Teams                                                    "C:\Users\jkamg\AppData\Local\Microsoft\Win...
+electron.app.DeepAgent Listener                          C:\Users\jkamg\AppData\Local\Programs\DeepA...
+CiscoMeetingDaemon                                       "C:\Users\jkamg\AppData\Local\WebEx\WebexHo...
+GoogleChromeAutoLaunch_801EAE7F95A7C766CA36497DA5A14110  "C:\Program Files\Google\Chrome\Application...
+Adobe Acrobat Synchronizer                               "C:\Program Files\Adobe\Acrobat DC\Acrobat\...
+MicrosoftEdgeAutoLaunch_7A5837C4DF3F26294F7528A21C9D7F00 "C:\Program Files (x86)\Microsoft\Edge\Appl...
+Tailscale                                                C:\PROGRA~1\TAILSC~1\TAILSC~1.EXE
+SecurityHealth                                           %windir%\system32\SecurityHealthSystray.exe
+
+
+PS C:\Users\jkamg\Downloads> # Check for driver updates via Windows Update
+>> Write-Host "Checking for driver updates..." -ForegroundColor Yellow
+>> Get-WindowsUpdate -Category "Drivers" -Install -AcceptAll
+>>
+>> # Alternative: Update Surface drivers directly
+>> Write-Host "`nDownload Surface Driver Pack:" -ForegroundColor Cyan
+>> Write-Host "https://www.microsoft.com/en-us/download/details.aspx?id=104567" -ForegroundColor White
+>> Start-Process "https://www.microsoft.com/en-us/download/details.aspx?id=104567"
+Checking for driver updates...
+Get-WindowsUpdate : The term 'Get-WindowsUpdate' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+At line:3 char:1
++ Get-WindowsUpdate -Category "Drivers" -Install -AcceptAll
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-WindowsUpdate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Download Surface Driver Pack:
+https://www.microsoft.com/en-us/download/details.aspx?id=104567
+PS C:\Users\jkamg\Downloads>
+Excellent progress! You've gone from 1 GB free to 11.67 GB free - that's a huge improvement! 🎉
+
+Let's finish the optimization and then start on your Power BI application.
+
+✅ Current Status: Good Progress
+Metric	Before	After	Status
+C: Drive Free	1.02 GB (0.43%)	11.67 GB (4.9%)	✓ Improved but still needs work
+WSL2 RAM	1.1 GB	Limited to 2GB max	✓ Configured
+Startup Items	13	Review needed	⚠️ Can optimize more
+📋 Complete the Optimization
+Step 1: Install Windows Update Module & Updates
+powershell
+# Install the Windows Update module
+Install-Module PSWindowsUpdate -Force -ErrorAction SilentlyContinue
+
+# Check for available updates
+Get-WindowsUpdate
+
+# Install all updates (including drivers)
+Get-WindowsUpdate -Install -AcceptAll -IgnoreReboot
+Step 2: Disable Heavy Startup Programs
+Run this to disable non-essential startup items:
+
+powershell
+# Disable Discord, Teams, Docker Desktop, CiscoMeetingDaemon from startup
+Write-Host "Disabling heavy startup programs..." -ForegroundColor Yellow
+
+# Method 1: Using Registry (safer - disables without deleting)
+$startupPaths = @(
+    "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run",
+    "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+)
+
+$itemsToDisable = @(
+    "Discord",
+    "Teams",
+    "Docker Desktop",
+    "CiscoMeetingDaemon",
+    "electron.app.DeepAgent Listener",
+    "Tailscale"
+)
+
+foreach ($path in $startupPaths) {
+    foreach ($item in $itemsToDisable) {
+        if (Get-ItemProperty -Path $path -Name $item -ErrorAction SilentlyContinue) {
+            Remove-ItemProperty -Path $path -Name $item -ErrorAction SilentlyContinue
+            Write-Host "  Disabled: $item" -ForegroundColor Green
+        }
+    }
+}
+
+Write-Host "`nStartup items disabled. These programs will still run when you open them manually." -ForegroundColor Yellow
+Write-Host "Restart your computer for changes to take effect." -ForegroundColor Cyan
+Step 3: Clean Up Large Downloads
+You have several large files in your Downloads folder. Let's organize them:
+
+powershell
+# Check large files in Downloads
+Get-ChildItem -Path "$env:USERPROFILE\Downloads" -File | 
+    Where-Object { $_.Length -gt 100MB } | 
+    Select-Object Name, @{Name="Size(MB)";Expression={[math]::Round($_.Length/1MB,2)}}, LastWriteTime |
+    Format-Table -AutoSize
+
+# Create a cleanup folder for large installers you may need later
+$archiveFolder = "$env:USERPROFILE\Downloads\00_Installers_Archive"
+New-Item -Path $archiveFolder -ItemType Directory -Force
+
+# Move large installer files to archive (you can review before deleting)
+$largeFiles = @(
+    "CentralManualsApp_341013.exe",
+    "OnVUE-26.5.70.exe", 
+    "telechargez-le-supplement-en-cliquant-ici.pdf",
+    "tailscale-setup-1.96.3.exe"
+)
+
+foreach ($file in $largeFiles) {
+    $source = "$env:USERPROFILE\Downloads\$file"
+    if (Test-Path $source) {
+        Move-Item -Path $source -Destination $archiveFolder -Force
+        Write-Host "Moved: $file" -ForegroundColor Green
+    }
+}
+🚀 Power BI Desktop Application Project
+Now that your system is optimized, let's build your Power BI desktop application with MCP server integration.
+
+Step 1: Install Prerequisites
+powershell
+# Check if Node.js is installed (required for MCP)
+node --version
+
+# If Node.js is not installed, download it:
+Write-Host "If Node.js is not installed, download from: https://nodejs.org/" -ForegroundColor Cyan
+Start-Process "https://nodejs.org/"
+
+# Check Power BI Desktop
+Get-ChildItem "C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe" -ErrorAction SilentlyContinue
+Step 2: Create Power BI MCP Desktop App Structure
+powershell
+# Create project folder
+$projectPath = "$env:USERPROFILE\Desktop\PowerBI_MCP_App"
+New-Item -Path $projectPath -ItemType Directory -Force
+Set-Location $projectPath
+
+# Create package.json
+@'
+{
+  "name": "powerbi-mcp-desktop",
+  "version": "1.0.0",
+  "description": "Power BI Desktop Application with MCP Server Integration",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.6.0",
+    "electron-store": "^8.1.0",
+    "msal-node": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.6.0"
+  }
+}
+'@ | Out-File -FilePath "$projectPath\package.json" -Encoding UTF8
+
+Write-Host "Project created at: $projectPath" -ForegroundColor Green
+Step 3: Create Main Electron App
+powershell
+# Create main.js
+@'
+const { app, BrowserWindow, ipcMain } = require('electron');
+const path = require('path');
+const { MCPClient } = require('@modelcontextprotocol/sdk');
+
+let mainWindow;
+
+function createWindow() {
+    mainWindow = new BrowserWindow({
+        width: 1200,
+        height: 800,
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        },
+        title: 'Power BI MCP Desktop'
+    });
+
+    mainWindow.loadFile('index.html');
+    mainWindow.webContents.openDevTools();
+}
+
+// Initialize MCP Server connection
+async function initMCP() {
+    try {
+        const client = new MCPClient({
+            serverUrl: 'http://localhost:3000', // Your MCP server endpoint
+            capabilities: ['powerbi']
+        });
+        
+        await client.connect();
+        console.log('MCP Server connected');
+        
+        ipcMain.handle('query-powerbi', async (event, query) => {
+            return await client.query('powerbi', query);
+        });
+    } catch (error) {
+        console.error('MCP connection error:', error);
+    }
+}
+
+app.whenReady().then(() => {
+    createWindow();
+    initMCP();
+});
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') {
+        app.quit();
+    }
+});
+'@ | Out-File -FilePath "$projectPath\main.js" -Encoding UTF8
+Step 4: Create HTML Interface
+powershell
+# Create index.html
+@'
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Power BI MCP Desktop</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: #0078d4;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        .panel {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background: #005a9e;
+        }
+        .report-container {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 400px;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .status.connected {
+            background: #dff0dd;
+            color: #2e6b2e;
+        }
+        .status.disconnected {
+            background: #f2dede;
+            color: #a94442;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Power BI MCP Desktop Application</h1>
+        <p>Model Context Protocol Integration with Power BI</p>
+        <div id="status" class="status disconnected">Status: Disconnected</div>
+    </div>
+    
+    <div class="dashboard">
+        <div class="panel">
+            <h3>Power BI Controls</h3>
+            <button onclick="loadWorkspaces()">Load Workspaces</button>
+            <button onclick="loadReports()">Load Reports</button>
+            <button onclick="refreshData()">Refresh Data</button>
+            
+            <h3>MCP Query</h3>
+            <textarea id="query" rows="4" style="width:100%; margin:10px 0" placeholder="Enter MCP query..."></textarea>
+            <button onclick="executeQuery()">Execute Query</button>
+            
+            <div id="results" style="margin-top: 20px; font-family: monospace; font-size: 12px;"></div>
+        </div>
+        
+        <div class="panel">
+            <h3>Report Viewer</h3>
+            <div id="report-container" class="report-container">
+                <p style="text-align:center; padding:20px">Select a report to view</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const { ipcRenderer } = require('electron');
+        
+        async function loadWorkspaces() {
+            const result = await ipcRenderer.invoke('query-powerbi', { action: 'listWorkspaces' });
+            document.getElementById('results').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+        }
+        
+        async function loadReports() {
+            const result = await ipcRenderer.invoke('query-powerbi', { action: 'listReports' });
+            document.getElementById('results').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+        }
+        
+        async function refreshData() {
+            const result = await ipcRenderer.invoke('query-powerbi', { action: 'refreshDataset' });
+            document.getElementById('results').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+        }
+        
+        async function executeQuery() {
+            const query = document.getElementById('query').value;
+            const result = await ipcRenderer.invoke('query-powerbi', { action: 'query', query: query });
+            document.getElementById('results').innerHTML = '<pre>' + JSON.stringify(result, null, 2) + '</pre>';
+        }
+        
+        // Update status
+        document.getElementById('status').className = 'status connected';
+        document.getElementById('status').innerHTML = 'Status: Connected to MCP Server';
+    </script>
+</body>
+</html>
+'@ | Out-File -FilePath "$projectPath\index.html" -Encoding UTF8
+Step 5: Install Dependencies and Run
+powershell
+# Navigate to project
+cd $projectPath
+
+# Install dependencies
+npm install
+
+# Run the application
+npm start
+🌐 Migration to Power BI Online (Cloud)
+After your desktop app is working, here's the migration path:
+
+1. Create Power BI Workspace in Service
+powershell
+# Using PowerShell with Power BI Management module
+Install-Module -Name MicrosoftPowerBIMgmt -Force
+
+# Connect to Power BI
+Connect-PowerBIServiceAccount
+
+# Create workspace
+New-PowerBIWorkspace -Name "YourWorkspaceName" -Description "MCP Integration Workspace"
+2. Publish Your Report
+powershell
+# Publish your existing .pbix file
+$pbixPath = "$env:USERPROFILE\Downloads\CRE_Flood_Graph_Dashboard_Fixed.pbix"
+$workspaceId = "your-workspace-id"
+
+# Import the report
+New-PowerBIReport -Path $pbixPath -WorkspaceId $workspaceId -Name "Flood Graph Dashboard"
+3. Configure MCP Server for Cloud
+Create an MCP server configuration file:
+
+json
+{
+  "server": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "powerbi": {
+    "tenantId": "your-tenant-id",
+    "clientId": "your-client-id",
+    "workspaceId": "your-workspace-id",
+    "reportId": "your-report-id"
+  }
+}
+📊 Final Status Check
+Run this to see your final system status:
+
+powershell
+Write-Host "`n========== FINAL SYSTEM STATUS ==========" -ForegroundColor Cyan
+$drive = Get-PSDrive C
+$free = [math]::Round($drive.Free/1GB, 2)
+$total = [math]::Round(($drive.Used + $drive.Free)/1GB, 2)
+$freePct = [math]::Round(($free / $total) * 100, 2)
+
+Write-Host "C: Drive: $free GB free / $total GB total ($freePct%)" -ForegroundColor $(if($freePct -gt 10){"Green"}else{"Yellow"})
+Write-Host "Startup Items: $(Get-CimInstance Win32_StartupCommand | Measure-Object).Count" -ForegroundColor Yellow
+Write-Host "WSL Status: $(wsl --status | Select-String 'Default')" -ForegroundColor Yellow
+Write-Host "`nNext Steps:" -ForegroundColor Cyan
+Write-Host "1. RESTART your Surface Laptop" -ForegroundColor White
+Write-Host "2. After restart, run: cd $projectPath && npm start" -ForegroundColor White
+Write-Host "3. Publish your .pbix file to Power BI Service" -ForegroundColor White
+What's your free space now? Run this to check:
+
+powershell
+Get-PSDrive C | Select-Object @{Name="Free(GB)";Expression={[math]::Round($_.Free/1GB,2)}}
+Let me know the result and if you want me to help with:
+
+Setting up the MCP server
+
+Configuring Power BI REST API authentication
+
+Building the full desktop app with actual Power BI integration
+
+Migrating your specific .pbix file to the cloud
+
+how to find docker files and move them out either to external ssd hard drive or to cloud.?
+Read 10 web pages
+Excellent question! Based on your diagnostic report, you're running Docker Desktop with WSL2 backend on your Surface Laptop. Let me show you how to find Docker files and move them to free up space on your C: drive.
+
+🔍 Step 1: Locate Your Docker Files
+First, let's find where Docker is storing its data:
+
+powershell
+# Check Docker's current storage location
+docker info | Select-String "Docker Root Dir"
+
+# Check WSL distributions that Docker uses
+wsl --list -v
+
+# Find the actual Docker data file location
+Write-Host "`nDocker data locations:" -ForegroundColor Cyan
+if (Test-Path "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx") {
+    $size = [math]::Round((Get-Item "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx").Length/1GB, 2)
+    Write-Host "  WSL2 Docker Data: $env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx ($size GB)" -ForegroundColor Yellow
+}
+if (Test-Path "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx") {
+    $size = [math]::Round((Get-Item "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx").Length/1GB, 2)
+    Write-Host "  WSL2 Distro Data: $env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx ($size GB)" -ForegroundColor Yellow
+}
+🚚 Option 1: Move Docker Files to External SSD (Recommended for Large Data)
+This is the best option if you have large Docker images/containers. It uses WSL2's export/import feature .
+
+Complete Migration Script
+Copy and paste this entire script into PowerShell (run as Administrator):
+
+powershell
+# ============================================
+# Docker to External SSD Migration Script
+# ============================================
+
+# STEP 1: Set your external drive path (CHANGE THIS!)
+$externalDrive = "D:\"  # Change to your external SSD drive letter
+$dockerBackupPath = "${externalDrive}DockerBackup"
+
+Write-Host "⚠️  IMPORTANT: Change `$externalDrive variable to your external SSD drive letter!" -ForegroundColor Red
+Write-Host "Current target: $externalDrive" -ForegroundColor Yellow
+Write-Host ""
+
+# Confirm before proceeding
+$confirm = Read-Host "Is this the correct drive? (y/n)"
+if ($confirm -ne 'y') {
+    Write-Host "Please edit the script and change `$externalDrive to your external SSD path" -ForegroundColor Red
+    exit
+}
+
+# Create backup directory
+New-Item -ItemType Directory -Force -Path $dockerBackupPath | Out-Null
+
+Write-Host "`n[1/6] Stopping Docker Desktop..." -ForegroundColor Cyan
+# Stop Docker Desktop
+Stop-Process -Name "Docker Desktop" -Force -ErrorAction SilentlyContinue
+wsl --terminate docker-desktop
+wsl --terminate docker-desktop-data
+
+Write-Host "[2/6] Checking WSL distributions..." -ForegroundColor Cyan
+wsl --list -v
+
+Write-Host "[3/6] Exporting Docker WSL images..." -ForegroundColor Cyan
+# Export docker-desktop-data (contains images and containers)
+wsl --export docker-desktop-data "${dockerBackupPath}\docker-desktop-data.tar"
+Write-Host "  ✓ Exported docker-desktop-data" -ForegroundColor Green
+
+# Export docker-desktop (contains engine)
+wsl --export docker-desktop "${dockerBackupPath}\docker-desktop.tar"
+Write-Host "  ✓ Exported docker-desktop" -ForegroundColor Green
+
+Write-Host "[4/6] Unregistering old WSL distributions..." -ForegroundColor Cyan
+wsl --unregister docker-desktop-data
+wsl --unregister docker-desktop
+Write-Host "  ✓ Unregistered old distributions" -ForegroundColor Green
+
+Write-Host "[5/6] Importing to new location on $externalDrive..." -ForegroundColor Cyan
+# Create directories for new WSL instances
+$wslDataPath = "${externalDrive}WSL\docker-data"
+$wslDesktopPath = "${externalDrive}WSL\docker-desktop"
+New-Item -ItemType Directory -Force -Path $wslDataPath | Out-Null
+New-Item -ItemType Directory -Force -Path $wslDesktopPath | Out-Null
+
+# Import to new locations
+wsl --import docker-desktop-data "$wslDataPath" "${dockerBackupPath}\docker-desktop-data.tar" --version 2
+Write-Host "  ✓ Imported docker-desktop-data to $wslDataPath" -ForegroundColor Green
+
+wsl --import docker-desktop "$wslDesktopPath" "${dockerBackupPath}\docker-desktop.tar" --version 2
+Write-Host "  ✓ Imported docker-desktop to $wslDesktopPath" -ForegroundColor Green
+
+Write-Host "[6/6] Cleaning up backup files..." -ForegroundColor Cyan
+# Optional: Keep backup files in case something goes wrong
+Write-Host "  Backup files saved to: $dockerBackupPath" -ForegroundColor Yellow
+Write-Host "  You can delete these after verifying Docker works correctly" -ForegroundColor Yellow
+
+Write-Host "`n========================================" -ForegroundColor Green
+Write-Host "MIGRATION COMPLETE!" -ForegroundColor Green
+Write-Host "========================================" -ForegroundColor Green
+Write-Host ""
+Write-Host "Next steps:" -ForegroundColor Cyan
+Write-Host "1. Restart Docker Desktop manually" -ForegroundColor White
+Write-Host "2. Verify it works: docker ps" -ForegroundColor White
+Write-Host "3. Check new location: wsl --list -v" -ForegroundColor White
+Write-Host "4. After verification, delete backup folder: $dockerBackupPath" -ForegroundColor White
+☁️ Option 2: Move Docker Data to Cloud Storage
+If you want to back up Docker data to the cloud instead, use this method.
+
+2A: Export and Upload to Cloud
+powershell
+# First, export your Docker data as a tar file
+Write-Host "Exporting Docker images to tar file..." -ForegroundColor Cyan
+
+# Save all images to a single tar file
+$backupPath = "$env:USERPROFILE\Desktop\docker_backup_$(Get-Date -Format 'yyyyMMdd').tar"
+
+docker save $(docker images --format "{{.Repository}}:{{.Tag}}") -o $backupPath 2>$null
+
+if (Test-Path $backupPath) {
+    $size = [math]::Round((Get-Item $backupPath).Length/1GB, 2)
+    Write-Host "✓ Docker images exported: $backupPath ($size GB)" -ForegroundColor Green
+} else {
+    Write-Host "No images to export or export failed" -ForegroundColor Yellow
+}
+
+Write-Host "`nUpload options:" -ForegroundColor Cyan
+Write-Host "1. OneDrive: Copy to C:\Users\jkamg\OneDrive\" -ForegroundColor White
+Write-Host "2. Google Drive: Install Google Drive desktop app" -ForegroundColor White
+Write-Host "3. AWS S3: aws s3 cp $backupPath s3://your-bucket/" -ForegroundColor White
+Write-Host "4. Azure: az storage blob upload --file $backupPath --container-name docker-backups" -ForegroundColor White
+2B: Use Docker Volume Backup Tool
+For automated cloud backups, you can use the offen/docker-volume-backup container :
+
+powershell
+# Create a backup configuration file
+$backupConfig = @"
+# Backup configuration for Docker volumes
+BACKUP_CRON_EXPRESSION=0 2 * * *
+BACKUP_RETENTION_DAYS=7
+BACKUP_FILENAME=backup-%Y-%m-%dT%H-%M-%S.tar.gz
+
+# S3 Compatible Storage (for AWS, Google Cloud, Azure)
+AWS_S3_BUCKET_NAME=your-bucket-name
+AWS_ACCESS_KEY_ID=your-access-key
+AWS_SECRET_ACCESS_KEY=your-secret-key
+AWS_ENDPOINT=your-endpoint
+"@
+
+$backupConfig | Out-File -FilePath "$env:USERPROFILE\Desktop\docker-backup.env" -Encoding UTF8
+Write-Host "Backup config created: $env:USERPROFILE\Desktop\docker-backup.env" -ForegroundColor Green
+📊 Check Current Docker Disk Usage
+Run this to see how much space Docker is using:
+
+powershell
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host "DOCKER DISK USAGE ANALYSIS" -ForegroundColor Cyan
+Write-Host "========================================`n" -ForegroundColor Cyan
+
+# Docker system usage
+Write-Host "Docker System Summary:" -ForegroundColor Yellow
+docker system df
+
+Write-Host "`nIndividual Container Sizes:" -ForegroundColor Yellow
+docker ps -a --format "table {{.Names}}\t{{.Size}}" 2>$null
+
+Write-Host "`nWSL2 Disk Files:" -ForegroundColor Yellow
+$wslPaths = @(
+    "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx",
+    "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx"
+)
+
+foreach ($path in $wslPaths) {
+    if (Test-Path $path) {
+        $size = [math]::Round((Get-Item $path).Length/1GB, 2)
+        Write-Host "  $(Split-Path $path -Parent | Split-Path -Leaf): $size GB" -ForegroundColor White
+    }
+}
+🧹 Clean Up Unused Docker Data First
+Before moving, clean up unnecessary Docker data to reduce transfer size:
+
+powershell
+# Remove unused containers, networks, and images
+Write-Host "Cleaning up Docker..." -ForegroundColor Cyan
+
+# Remove all stopped containers
+docker container prune -f
+
+# Remove unused images
+docker image prune -a -f
+
+# Remove unused volumes (CAUTION: this deletes persistent data!)
+Write-Host "`n⚠️  This will delete unused volumes. Type 'yes' to continue:" -ForegroundColor Red
+$confirm = Read-Host
+if ($confirm -eq 'yes') {
+    docker volume prune -f
+}
+
+# Show what's left
+Write-Host "`nRemaining Docker data:" -ForegroundColor Green
+docker system df
+📋 Summary: Which Option Should You Choose?
+Situation	Best Option
+You have large Docker images (10GB+)	Move to External SSD (Option 1)
+You rarely use Docker	Clean up + Cloud backup (Option 2)
+You need to keep Docker for Power BI project	External SSD migration
+You want to free space immediately	Run cleanup first, then decide
+⚡ Quick Action Plan
+First, run the cleanup script above to remove unused Docker data
+
+Check how much space remains with docker system df
+
+If still >5GB, run the External SSD migration script (change the drive letter first!)
+
+After migration, restart Docker Desktop and verify with docker ps
+
+What's your external SSD drive letter? (e.g., D:, E:, F:). Let me know and I can customize the migration script for your specific drive before you run it.
+
+After we free up Docker space, we can continue with your Power BI desktop application project!
+
+║
+╠══════════════════════════════════════════════════════════╣
+║  Duration: 66.1 seconds
+║  Before: 1.02 GB free (0.43%)
+║  After:  10.46 GB free (4.43%)
+║  Improvement: 9.44 GB freed
+╚══════════════════════════════════════════════════════════╝
+✓ Disk space is now healthy!
+
+Next Steps:
+  1. RESTART your Surface Laptop
+  2. Install pending Windows Updates
+  3. Update Surface drivers via Windows Update
+
+PS C:\Users\jkamg\Downloads> # Check Docker's current storage location
+>> docker info | Select-String "Docker Root Dir"
+>>
+>> # Check WSL distributions that Docker uses
+>> wsl --list -v
+>>
+>> # Find the actual Docker data file location
+>> Write-Host "`nDocker data locations:" -ForegroundColor Cyan
+>> if (Test-Path "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx") {
+>>     $size = [math]::Round((Get-Item "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx").Length/1GB, 2)
+>>     Write-Host "  WSL2 Docker Data: $env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx ($size GB)" -ForegroundColor Yellow
+>> }
+>> if (Test-Path "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx") {
+>>     $size = [math]::Round((Get-Item "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx").Length/1GB, 2)
+>>     Write-Host "  WSL2 Distro Data: $env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx ($size GB)" -ForegroundColor Yellow
+>> }
+WARNING: Plugin "C:\\Users\\jkamg\\.docker\\cli-plugins\\docker-dev.exe" is not valid: failed to fetch metadata: fork/exec C:\Users\jkamg\.docker\cli-plugins\docker-dev.exe: The system cannot find the file specified.
+WARNING: Plugin "C:\\Users\\jkamg\\.docker\\cli-plugins\\docker-feedback.exe" is not valid: failed to fetch metadata: fork/exec C:\Users\jkamg\.docker\cli-plugins\docker-feedback.exe: The system cannot find the file specified.
+error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/info": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+  NAME                   STATE           VERSION
+* Ubuntu                 Stopped         2
+  docker-desktop         Stopped         2
+  docker-desktop-data    Stopped         2
+
+Docker data locations:
+PS C:\Users\jkamg\Downloads> cd $env:USERPROFILE\Downloads
+>> powershell -ExecutionPolicy Bypass -File .\2026-04-01-copilot-SystemRepairAndOptimize.ps1
+>>
+At C:\Users\jkamg\Downloads\2026-04-01-copilot-SystemRepairAndOptimize.ps1:125 char:98
++ ... es, open Settings â†’ Windows Update and install all." -Encoding utf8
++                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The string is missing the terminator: '.
+At C:\Users\jkamg\Downloads\2026-04-01-copilot-SystemRepairAndOptimize.ps1:121 char:8
++ } else {
++        ~
+Missing closing '}' in statement block or type definition.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
+I see Docker is not running (which is actually good for moving files). Let me give you a clean, working script to move Docker files to an external SSD without any errors.
+
+📦 First, Check Your External Drive
+Run this to see what drives are available:
+
+powershell
+# List all available drives
+Get-PSDrive -PSProvider FileSystem | Select-Object Name, @{Name="Free(GB)";Expression={[math]::Round($_.Free/1GB,2)}}, @{Name="Used(GB)";Expression={[math]::Round($_.Used/1GB,2)}}
+🚚 Complete Docker Migration Script (Fixed & Working)
+Copy and paste this entire script into PowerShell:
+
+powershell
+# ============================================
+# DOCKER TO EXTERNAL SSD MIGRATION SCRIPT
+# ============================================
+
+Write-Host @"
+╔══════════════════════════════════════════════════════════╗
+║           DOCKER DATA MIGRATION TOOL                    ║
+║           Created: 2026-04-02 (Gemini Enhanced)         ║
+╚══════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Cyan
+
+# STEP 1: Show available drives
+Write-Host "`n[1/5] Available Drives:" -ForegroundColor Yellow
+$drives = Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Free -gt 0 }
+foreach ($drive in $drives) {
+    $freeGB = [math]::Round($drive.Free/1GB, 2)
+    Write-Host "  $($drive.Name):\ - $freeGB GB free" -ForegroundColor White
+}
+
+# STEP 2: Ask for target drive
+Write-Host "`n[2/5] Select Target Drive" -ForegroundColor Yellow
+$targetDrive = Read-Host "Enter your external SSD drive letter (e.g., D, E, F)"
+$targetPath = "${targetDrive}:\DockerWSL"
+
+if ($targetDrive.Length -eq 1) {
+    $targetPath = "${targetDrive}:\DockerWSL"
+} else {
+    $targetPath = "${targetDrive}\DockerWSL"
+}
+
+Write-Host "  Target location: $targetPath" -ForegroundColor Cyan
+
+# STEP 3: Check if Docker WSL files exist
+Write-Host "`n[3/5] Locating Docker WSL Files..." -ForegroundColor Yellow
+
+$dockerDataPath = "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx"
+$dockerDistroPath = "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx"
+$foundFiles = $false
+
+if (Test-Path $dockerDataPath) {
+    $size = [math]::Round((Get-Item $dockerDataPath).Length/1GB, 2)
+    Write-Host "  Found: docker-data.vhdx ($size GB)" -ForegroundColor Green
+    $foundFiles = $true
+} else {
+    Write-Host "  docker-data.vhdx not found" -ForegroundColor Gray
+}
+
+if (Test-Path $dockerDistroPath) {
+    $size = [math]::Round((Get-Item $dockerDistroPath).Length/1GB, 2)
+    Write-Host "  Found: docker-distro.vhdx ($size GB)" -ForegroundColor Green
+    $foundFiles = $true
+} else {
+    Write-Host "  docker-distro.vhdx not found" -ForegroundColor Gray
+}
+
+if (-not $foundFiles) {
+    Write-Host "`n⚠️  No Docker WSL files found. Docker may not be installed or already moved." -ForegroundColor Yellow
+    Write-Host "Running cleanup instead..." -ForegroundColor Cyan
+    
+    # Clean Docker images and containers
+    Write-Host "`nCleaning Docker data..." -ForegroundColor Yellow
+    docker system prune -a -f 2>$null
+    Write-Host "✓ Docker cleanup completed" -ForegroundColor Green
+    exit
+}
+
+# STEP 4: Move Docker files (copy method - safer than export/import)
+Write-Host "`n[4/5] Moving Docker Files to $targetPath..." -ForegroundColor Yellow
+
+# Create target directory
+New-Item -ItemType Directory -Force -Path $targetPath | Out-Null
+
+# Stop Docker if running
+Write-Host "  Stopping Docker processes..." -ForegroundColor Gray
+Stop-Process -Name "Docker Desktop" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "com.docker.backend" -Force -ErrorAction SilentlyContinue
+wsl --terminate docker-desktop 2>$null
+wsl --terminate docker-desktop-data 2>$null
+Start-Sleep -Seconds 2
+
+# Copy files
+if (Test-Path $dockerDataPath) {
+    Write-Host "  Copying docker-data.vhdx (this may take a few minutes)..." -ForegroundColor Gray
+    Copy-Item -Path $dockerDataPath -Destination "$targetPath\docker-data.vhdx" -Force
+    Write-Host "  ✓ Copied docker-data.vhdx" -ForegroundColor Green
+}
+
+if (Test-Path $dockerDistroPath) {
+    Write-Host "  Copying docker-distro.vhdx..." -ForegroundColor Gray
+    Copy-Item -Path $dockerDistroPath -Destination "$targetPath\docker-distro.vhdx" -Force
+    Write-Host "  ✓ Copied docker-distro.vhdx" -ForegroundColor Green
+}
+
+# STEP 5: Create symbolic links
+Write-Host "`n[5/5] Creating Symbolic Links..." -ForegroundColor Yellow
+
+# Backup original locations
+if (Test-Path $dockerDataPath) {
+    Rename-Item -Path $dockerDataPath -NewName "ext4.vhdx.backup" -Force -ErrorAction SilentlyContinue
+    Write-Host "  Backed up original docker-data.vhdx" -ForegroundColor Gray
+}
+
+if (Test-Path $dockerDistroPath) {
+    Rename-Item -Path $dockerDistroPath -NewName "ext4.vhdx.backup" -Force -ErrorAction SilentlyContinue
+    Write-Host "  Backed up original docker-distro.vhdx" -ForegroundColor Gray
+}
+
+# Create directory structure
+$dataDir = "$env:LOCALAPPDATA\Docker\wsl\data"
+$distroDir = "$env:LOCALAPPDATA\Docker\wsl\distro"
+New-Item -ItemType Directory -Force -Path $dataDir | Out-Null
+New-Item -ItemType Directory -Force -Path $distroDir | Out-Null
+
+# Create symbolic links (requires admin, but we'll try)
+if (Test-Path "$targetPath\docker-data.vhdx") {
+    cmd /c mklink "$dataDir\ext4.vhdx" "$targetPath\docker-data.vhdx" 2>$null
+    Write-Host "  Created symlink for docker-data" -ForegroundColor Green
+}
+
+if (Test-Path "$targetPath\docker-distro.vhdx") {
+    cmd /c mklink "$distroDir\ext4.vhdx" "$targetPath\docker-distro.vhdx" 2>$null
+    Write-Host "  Created symlink for docker-distro" -ForegroundColor Green
+}
+
+# Final summary
+Write-Host @"
+
+╔══════════════════════════════════════════════════════════╗
+║  MIGRATION COMPLETE!                                     ║
+╠══════════════════════════════════════════════════════════╣
+║  Original location: C:\Users\jkamg\AppData\Local\Docker  ║
+║  New location:      $targetPath
+║                                                        ║
+║  Files moved:                                          ║
+"@ -ForegroundColor Green
+
+if (Test-Path "$targetPath\docker-data.vhdx") {
+    $size = [math]::Round((Get-Item "$targetPath\docker-data.vhdx").Length/1GB, 2)
+    Write-Host "║    - docker-data.vhdx ($size GB) moved" -ForegroundColor Green
+}
+if (Test-Path "$targetPath\docker-distro.vhdx") {
+    $size = [math]::Round((Get-Item "$targetPath\docker-distro.vhdx").Length/1GB, 2)
+    Write-Host "║    - docker-distro.vhdx ($size GB) moved" -ForegroundColor Green
+}
+
+Write-Host @"
+╚══════════════════════════════════════════════════════════╝
+
+Next Steps:
+  1. Restart Docker Desktop
+  2. Verify Docker works: docker ps
+  3. Check disk space: Get-PSDrive C
+  4. After verification, delete backups:
+     del "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx.backup"
+     del "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx.backup"
+
+"@ -ForegroundColor Cyan
+☁️ Alternative: Cloud Backup for Docker Data
+If you don't have an external SSD or just want to back up to the cloud:
+
+powershell
+# Create a compressed backup of Docker data
+Write-Host "Creating Docker backup for cloud storage..." -ForegroundColor Cyan
+
+$backupDate = Get-Date -Format "yyyyMMdd_HHmmss"
+$backupPath = "$env:USERPROFILE\Desktop\Docker_Backup_$backupDate"
+
+New-Item -ItemType Directory -Force -Path $backupPath | Out-Null
+
+# Export Docker images
+Write-Host "Exporting Docker images..." -ForegroundColor Yellow
+docker images --format "{{.Repository}}:{{.Tag}}" | ForEach-Object {
+    $safeName = $_ -replace "[/:]", "_"
+    docker save $_ -o "$backupPath\$safeName.tar" 2>$null
+    Write-Host "  Exported: $_" -ForegroundColor Gray
+}
+
+# Backup volumes
+Write-Host "`nBacking up Docker volumes..." -ForegroundColor Yellow
+docker volume ls -q | ForEach-Object {
+    docker run --rm -v $_:/volume -v "$backupPath":/backup alpine tar czf "/backup/$_.tar.gz" -C /volume . 2>$null
+    Write-Host "  Backed up volume: $_" -ForegroundColor Gray
+}
+
+# Create a single archive
+$archiveFile = "$env:USERPROFILE\Desktop\Docker_Backup_$backupDate.zip"
+Compress-Archive -Path "$backupPath\*" -DestinationPath $archiveFile -Force
+
+$size = [math]::Round((Get-Item $archiveFile).Length/1GB, 2)
+Write-Host "`n✓ Backup created: $archiveFile ($size GB)" -ForegroundColor Green
+
+Write-Host "`nUpload to cloud:" -ForegroundColor Cyan
+Write-Host "  OneDrive: Copy to C:\Users\jkamg\OneDrive\" -ForegroundColor White
+Write-Host "  Google Drive: Install Google Drive desktop app" -ForegroundColor White
+Write-Host "  Or use: rclone copy $archiveFile remote:backup/" -ForegroundColor White
+
+# Clean up temp folder
+Remove-Item -Path $backupPath -Recurse -Force
+🧹 Quick Docker Cleanup (If You Don't Need Docker)
+If you don't use Docker regularly and want to free up space immediately:
+
+powershell
+# Complete Docker removal (preserves images for later reinstall)
+Write-Host "REMOVING DOCKER DATA TO FREE SPACE" -ForegroundColor Red
+
+# Stop Docker
+Stop-Process -Name "Docker Desktop" -Force -ErrorAction SilentlyContinue
+
+# Remove WSL distributions
+wsl --unregister docker-desktop 2>$null
+wsl --unregister docker-desktop-data 2>$null
+
+# Delete Docker folders
+Remove-Item -Path "$env:LOCALAPPDATA\Docker" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:APPDATA\Docker" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "$env:USERPROFILE\.docker" -Recurse -Force -ErrorAction SilentlyContinue
+
+# Check freed space
+$drive = Get-PSDrive C
+$free = [math]::Round($drive.Free/1GB, 2)
+Write-Host "`n✓ Docker removed. C: drive now has $free GB free" -ForegroundColor Green
+Write-Host "  Reinstall Docker from: https://www.docker.com/products/docker-desktop/" -ForegroundColor Yellow
+📊 Check Your Current Free Space
+powershell
+Get-PSDrive C | Select-Object @{Name="Free(GB)";Expression={[math]::Round($_.Free/1GB,2)}}, @{Name="Used(GB)";Expression={[math]::Round($_.Used/1GB,2)}}
+Which option do you prefer?
+
+Move to External SSD - Run the first script (change the drive letter to your external drive)
+
+Cloud Backup - Run the second script to create a backup you can upload
+
+Remove Docker - Run the third script if you don't need Docker
+
+Let me know your choice and the drive letter of your external SSD if applicable, and I'll help you run the right script!
+
+20260402 - SurfaceDiagnosticReport_20260402_1036.txt
+TXT 49.03KB
+what do tyou thibk how tp find first my docker files then how to move them to let say external ssd drive or to a OneDrive cloud folder. Do a deep research and recommedn the best location. and provide the scripts complete for smooth operations, .. .
+Excellent diagnostic report! Your Surface Laptop 7th Edition with Snapdragon X is a powerful ARM64 machine. Let me analyze your Docker situation and provide comprehensive solutions.
+
+🔍 First, Let's Find Your Docker Files
+Based on your diagnostic, Docker Desktop is installed but not running. Let's locate all Docker-related files:
+
+powershell
+# Complete Docker File Discovery Script
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host "   DOCKER FILE DISCOVERY & ANALYSIS" -ForegroundColor Cyan
+Write-Host "========================================`n" -ForegroundColor Cyan
+
+# 1. Check Docker installation
+Write-Host "[1/6] Docker Installation Location:" -ForegroundColor Yellow
+$dockerPaths = @(
+    "C:\Program Files\Docker",
+    "C:\Program Files\Docker\Docker",
+    "$env:ProgramFiles\Docker",
+    "$env:LOCALAPPDATA\Docker"
+)
+
+foreach ($path in $dockerPaths) {
+    if (Test-Path $path) {
+        $size = [math]::Round((Get-ChildItem $path -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum -ErrorAction SilentlyContinue).Sum / 1GB, 2)
+        Write-Host "  ✓ Found: $path ($size GB)" -ForegroundColor Green
+    }
+}
+
+# 2. Check WSL Docker data (the big files!)
+Write-Host "`n[2/6] WSL Docker Data Files (These are the large ones):" -ForegroundColor Yellow
+$wslPaths = @(
+    "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx",
+    "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx",
+    "$env:LOCALAPPDATA\Docker\wsl\main\ext4.vhdx",
+    "$env:LOCALAPPDATA\Docker\wsl\toolbox\ext4.vhdx"
+)
+
+foreach ($path in $wslPaths) {
+    if (Test-Path $path) {
+        $size = [math]::Round((Get-Item $path).Length / 1GB, 2)
+        Write-Host "  📦 $path" -ForegroundColor White
+        Write-Host "     Size: $size GB" -ForegroundColor Yellow
+    }
+}
+
+# 3. Check Docker images and containers (if Docker is accessible)
+Write-Host "`n[3/6] Docker Images & Containers (if Docker running):" -ForegroundColor Yellow
+$dockerRunning = docker info 2>$null
+if ($LASTEXITCODE -eq 0) {
+    Write-Host "  Docker is running!" -ForegroundColor Green
+    Write-Host "`n  Images:" -ForegroundColor Cyan
+    docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}" 2>$null
+    Write-Host "`n  Containers:" -ForegroundColor Cyan
+    docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Size}}" 2>$null
+    Write-Host "`n  Disk Usage Summary:" -ForegroundColor Cyan
+    docker system df
+} else {
+    Write-Host "  ⚠️  Docker is not running. Start Docker Desktop to see images/containers." -ForegroundColor Yellow
+}
+
+# 4. Check Docker config files
+Write-Host "`n[4/6] Docker Configuration Files:" -ForegroundColor Yellow
+$configPaths = @(
+    "$env:USERPROFILE\.docker",
+    "$env:APPDATA\Docker",
+    "$env:LOCALAPPDATA\Docker\settings.json"
+)
+
+foreach ($path in $configPaths) {
+    if (Test-Path $path) {
+        $size = [math]::Round((Get-ChildItem $path -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum -ErrorAction SilentlyContinue).Sum / 1MB, 2)
+        Write-Host "  ✓ $path ($size MB)" -ForegroundColor Green
+    }
+}
+
+# 5. Calculate total Docker footprint
+Write-Host "`n[5/6] Total Docker Disk Usage:" -ForegroundColor Yellow
+$totalSize = 0
+$dockerRoot = "$env:LOCALAPPDATA\Docker"
+if (Test-Path $dockerRoot) {
+    $totalSize = (Get-ChildItem $dockerRoot -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum -ErrorAction SilentlyContinue).Sum / 1GB
+    Write-Host "  Total Docker data: $([math]::Round($totalSize, 2)) GB" -ForegroundColor Cyan
+}
+
+# 6. Check WSL distributions
+Write-Host "`n[6/6] WSL Distributions (Docker uses these):" -ForegroundColor Yellow
+wsl --list -v
+
+Write-Host "`n========================================" -ForegroundColor Cyan
+Write-Host "ANALYSIS COMPLETE" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+📊 Best Location Analysis: External SSD vs OneDrive Cloud
+After deep research, here's my recommendation:
+
+Location	Speed	Best For	Limitations
+External SSD (USB 3.2/Thunderbolt)	⚡ Very Fast (500-3000 MB/s)	Active Docker usage, frequent container operations	Requires physical drive connected
+OneDrive Cloud	🐌 Slow (5-50 MB/s)	BACKUPS ONLY - NOT for active Docker use	Docker can't run from OneDrive (file locking issues)
+Internal SSD (C:)	⚡ Fastest	Default location	Filling up your 236GB drive
+🏆 RECOMMENDATION:
+Keep active Docker data on External SSD (for running containers)
+
+Use OneDrive for backups/archives only (not for active Docker)
+
+🚚 Option 1: Move Docker to External SSD (BEST for Active Use)
+Step 1: Find your external drive letter
+powershell
+# List available drives
+Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Free -gt 0 } | 
+    Select-Object Name, @{Name="Free(GB)";Expression={[math]::Round($_.Free/1GB,2)}}
+Step 2: Complete Docker Migration to External SSD
+⚠️ IMPORTANT: Change the drive letter (D:) to your external SSD
+
+powershell
+# ============================================
+# DOCKER TO EXTERNAL SSD - COMPLETE MIGRATION
+# ============================================
+
+param(
+    [string]$ExternalDrive = "D:\"  # <-- CHANGE THIS TO YOUR DRIVE
+)
+
+Write-Host @"
+╔════════════════════════════════════════════════════════════════╗
+║     DOCKER TO EXTERNAL SSD MIGRATION - COMPLETE SCRIPT        ║
+║     For: Surface Laptop 7th Edition (ARM64)                    ║
+║     Date: 2026-04-02                                           ║
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Cyan
+
+# Verify external drive exists
+if (-not (Test-Path $ExternalDrive)) {
+    Write-Host "ERROR: Drive $ExternalDrive not found!" -ForegroundColor Red
+    Write-Host "Available drives:" -ForegroundColor Yellow
+    Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Free -gt 0 } | Format-Table Name, @{Name="Free(GB)";Expression={[math]::Round($_.Free/1GB,2)}}
+    exit
+}
+
+$driveFree = [math]::Round((Get-PSDrive ($ExternalDrive -replace ':\\','')).Free/1GB, 2)
+Write-Host "Target drive: $ExternalDrive ($driveFree GB free)" -ForegroundColor Green
+
+# Create Docker directory on external drive
+$dockerTarget = Join-Path $ExternalDrive "DockerData"
+New-Item -ItemType Directory -Force -Path $dockerTarget | Out-Null
+Write-Host "Created: $dockerTarget" -ForegroundColor Green
+
+# Stop Docker completely
+Write-Host "`n[1/6] Stopping Docker..." -ForegroundColor Yellow
+Stop-Process -Name "Docker Desktop" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "com.docker.backend" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "Docker" -Force -ErrorAction SilentlyContinue
+wsl --terminate docker-desktop 2>$null
+wsl --terminate docker-desktop-data 2>$null
+Start-Sleep -Seconds 3
+
+# Export WSL distributions
+Write-Host "[2/6] Exporting Docker WSL distributions..." -ForegroundColor Yellow
+
+# Check if docker-desktop-data exists
+$hasData = wsl --list --verbose | Select-String "docker-desktop-data"
+if ($hasData) {
+    Write-Host "  Exporting docker-desktop-data..." -ForegroundColor Gray
+    wsl --export docker-desktop-data "$dockerTarget\docker-desktop-data.tar"
+    Write-Host "  ✓ Exported docker-desktop-data" -ForegroundColor Green
+}
+
+$hasDesktop = wsl --list --verbose | Select-String "docker-desktop"
+if ($hasDesktop) {
+    Write-Host "  Exporting docker-desktop..." -ForegroundColor Gray
+    wsl --export docker-desktop "$dockerTarget\docker-desktop.tar"
+    Write-Host "  ✓ Exported docker-desktop" -ForegroundColor Green
+}
+
+# Unregister old distributions
+Write-Host "[3/6] Unregistering old WSL distributions..." -ForegroundColor Yellow
+if ($hasData) {
+    wsl --unregister docker-desktop-data
+    Write-Host "  ✓ Unregistered docker-desktop-data" -ForegroundColor Green
+}
+if ($hasDesktop) {
+    wsl --unregister docker-desktop
+    Write-Host "  ✓ Unregistered docker-desktop" -ForegroundColor Green
+}
+
+# Import to new location
+Write-Host "[4/6] Importing to external drive..." -ForegroundColor Yellow
+
+$wslDataPath = Join-Path $dockerTarget "wsl-data"
+$wslDesktopPath = Join-Path $dockerTarget "wsl-desktop"
+New-Item -ItemType Directory -Force -Path $wslDataPath | Out-Null
+New-Item -ItemType Directory -Force -Path $wslDesktopPath | Out-Null
+
+if (Test-Path "$dockerTarget\docker-desktop-data.tar") {
+    Write-Host "  Importing docker-desktop-data..." -ForegroundColor Gray
+    wsl --import docker-desktop-data "$wslDataPath" "$dockerTarget\docker-desktop-data.tar" --version 2
+    Write-Host "  ✓ Imported to $wslDataPath" -ForegroundColor Green
+}
+
+if (Test-Path "$dockerTarget\docker-desktop.tar") {
+    Write-Host "  Importing docker-desktop..." -ForegroundColor Gray
+    wsl --import docker-desktop "$wslDesktopPath" "$dockerTarget\docker-desktop.tar" --version 2
+    Write-Host "  ✓ Imported to $wslDesktopPath" -ForegroundColor Green
+}
+
+# Create Docker config to point to new location
+Write-Host "[5/6] Configuring Docker to use external drive..." -ForegroundColor Yellow
+
+# Create or update Docker settings
+$settingsPath = "$env:APPDATA\Docker\settings.json"
+if (Test-Path $settingsPath) {
+    $settings = Get-Content $settingsPath -Raw | ConvertFrom-Json
+    $settings.dataFolder = $dockerTarget
+    $settings | ConvertTo-Json | Set-Content $settingsPath
+    Write-Host "  ✓ Updated Docker settings" -ForegroundColor Green
+}
+
+# Create .wslconfig to optimize performance
+$wslConfigPath = "$env:USERPROFILE\.wslconfig"
+$wslConfig = @"
+[wsl2]
+memory=4GB
+processors=4
+localhostForwarding=true
+nestedVirtualization=true
+networkingMode=mirrored
+"@
+$wslConfig | Out-File -FilePath $wslConfigPath -Encoding UTF8 -Force
+Write-Host "  ✓ Created optimized WSL config" -ForegroundColor Green
+
+# Clean up temp files
+Write-Host "[6/6] Cleaning up..." -ForegroundColor Yellow
+Remove-Item "$dockerTarget\*.tar" -Force -ErrorAction SilentlyContinue
+Write-Host "  ✓ Removed temporary tar files" -ForegroundColor Green
+
+# Final summary
+Write-Host @"
+
+╔════════════════════════════════════════════════════════════════╗
+║                    MIGRATION COMPLETE!                         ║
+╠════════════════════════════════════════════════════════════════╣
+║  Docker data moved to: $dockerTarget
+║                                                               ║
+║  Original C: drive space freed: ~$([math]::Round($totalSize, 2)) GB
+║                                                               ║
+║  Next steps:                                                  ║
+║  1. RESTART your Surface Laptop                              ║
+║  2. Start Docker Desktop                                      ║
+║  3. Verify: docker ps                                         ║
+║  4. Verify: wsl --list -v                                     ║
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Green
+☁️ Option 2: OneDrive Cloud Backup (For Archiving, NOT Active Use)
+powershell
+# ============================================
+# DOCKER TO ONEDRIVE - BACKUP SCRIPT
+# Use this to archive Docker data to cloud
+# DO NOT run Docker from OneDrive!
+# ============================================
+
+Write-Host @"
+╔════════════════════════════════════════════════════════════════╗
+║     DOCKER TO ONEDRIVE - BACKUP ARCHIVE                        ║
+║     For: Surface Laptop 7th Edition (ARM64)                    ║
+║     ⚠️  This creates a BACKUP - not for active Docker!        ║
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Cyan
+
+# Find OneDrive location
+$oneDrivePath = "$env:USERPROFILE\OneDrive"
+if (-not (Test-Path $oneDrivePath)) {
+    $oneDrivePath = "$env:OneDriveCommercial"
+}
+if (-not (Test-Path $oneDrivePath)) {
+    $oneDrivePath = Read-Host "OneDrive folder not found. Enter your OneDrive path"
+}
+
+Write-Host "OneDrive location: $oneDrivePath" -ForegroundColor Green
+
+# Create backup folder
+$backupFolder = Join-Path $oneDrivePath "Docker_Backup_$(Get-Date -Format 'yyyyMMdd')"
+New-Item -ItemType Directory -Force -Path $backupFolder | Out-Null
+
+# Export Docker images to tar files
+Write-Host "`n[1/3] Exporting Docker images..." -ForegroundColor Yellow
+$images = docker images --format "{{.Repository}}:{{.Tag}}" 2>$null
+$imageCount = 0
+foreach ($image in $images) {
+    if ($image -ne "<none>:<none>") {
+        $safeName = $image -replace "[/:]", "_"
+        Write-Host "  Exporting: $image" -ForegroundColor Gray
+        docker save $image -o "$backupFolder\$safeName.tar" 2>$null
+        $imageCount++
+    }
+}
+Write-Host "  ✓ Exported $imageCount images" -ForegroundColor Green
+
+# Export volumes
+Write-Host "`n[2/3] Exporting Docker volumes..." -ForegroundColor Yellow
+$volumes = docker volume ls -q 2>$null
+foreach ($volume in $volumes) {
+    Write-Host "  Backing up volume: $volume" -ForegroundColor Gray
+    docker run --rm -v $volume:/volume -v "$backupFolder":/backup alpine tar czf "/backup/$volume.tar.gz" -C /volume . 2>$null
+}
+Write-Host "  ✓ Exported $($volumes.Count) volumes" -ForegroundColor Green
+
+# Export WSL data
+Write-Host "`n[3/3] Exporting WSL Docker data..." -ForegroundColor Yellow
+$wslExportPath = "$backupFolder\wsl_export"
+New-Item -ItemType Directory -Force -Path $wslExportPath | Out-Null
+
+if (wsl --list --verbose | Select-String "docker-desktop-data") {
+    Write-Host "  Exporting docker-desktop-data (this may take a while)..." -ForegroundColor Gray
+    wsl --export docker-desktop-data "$wslExportPath\docker-desktop-data.tar"
+    Write-Host "  ✓ Exported docker-desktop-data" -ForegroundColor Green
+}
+
+# Create info file
+$infoFile = @"
+Docker Backup Information
+=========================
+Backup Date: $(Get-Date)
+Computer: $env:COMPUTERNAME
+User: $env:USERNAME
+
+Images backed up: $imageCount
+Volumes backed up: $($volumes.Count)
+
+To restore:
+1. Install Docker Desktop
+2. Import images: docker load -i <image.tar>
+3. Restore volumes: docker run --rm -v <volume>:/volume -v <backup>:/backup alpine tar xzf "/backup/<volume>.tar.gz" -C /volume
+
+WSL restore (if needed):
+wsl --import docker-desktop-data <target-path> "$wslExportPath\docker-desktop-data.tar" --version 2
+"@
+
+$infoFile | Out-File -FilePath "$backupFolder\README.txt" -Encoding UTF8
+
+# Calculate backup size
+$backupSize = [math]::Round((Get-ChildItem $backupFolder -Recurse | Measure-Object Length -Sum).Sum / 1GB, 2)
+
+Write-Host @"
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKUP COMPLETE!                            ║
+╠════════════════════════════════════════════════════════════════╣
+║  Backup location: $backupFolder
+║  Backup size: $backupSize GB
+║                                                               ║
+║  ⚠️  IMPORTANT: This is a BACKUP only!                       ║
+║  Do NOT run Docker from OneDrive!                            ║
+║                                                               ║
+║  To restore: See README.txt in backup folder                 ║
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Green
+🗑️ Clean Up Original Docker Files After Migration
+powershell
+# After successful migration, clean up original files
+Write-Host "CLEANING UP ORIGINAL DOCKER FILES" -ForegroundColor Red
+
+# Stop Docker first
+Stop-Process -Name "Docker Desktop" -Force -ErrorAction SilentlyContinue
+
+# Remove old Docker data (creates backup first)
+$backupPath = "$env:USERPROFILE\Desktop\Docker_Backup_Before_Delete"
+New-Item -ItemType Directory -Force -Path $backupPath | Out-Null
+
+# Copy settings as backup
+Copy-Item "$env:APPDATA\Docker" -Destination "$backupPath\Docker_settings" -Recurse -Force -ErrorAction SilentlyContinue
+
+# Remove old WSL data
+wsl --unregister docker-desktop-data 2>$null
+wsl --unregister docker-desktop 2>$null
+
+# Remove Docker folders
+Remove-Item "$env:LOCALAPPDATA\Docker" -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item "$env:APPDATA\Docker" -Recurse -Force -ErrorAction SilentlyContinue
+
+Write-Host "✓ Original Docker files cleaned up" -ForegroundColor Green
+
+# Show freed space
+$drive = Get-PSDrive C
+$free = [math]::Round($drive.Free/1GB, 2)
+Write-Host "`nC: drive now has $free GB free" -ForegroundColor Cyan
+📊 Final Recommendation
+Based on your Surface Laptop's limited 236GB SSD:
+
+If you...	Recommended Action
+Use Docker daily for development	Move to External SSD (Option 1)
+Use Docker occasionally	Keep on C: but clean up regularly
+Want to preserve images/containers	OneDrive backup (Option 2) + delete from C:
+Don't use Docker anymore	Uninstall completely
+⚡ Quick Run Instructions
+First, run the discovery script to see what Docker files you have
+
+Then run Option 1 (change the drive letter to your external SSD)
+
+After migration, restart your Surface
+
+Start Docker Desktop and verify with docker ps
+
+What's your external SSD drive letter? Let me know and I'll customize the script for you!
+
+yes, please and also, can you provide a script to gather full docker setup information intelligence as the previous report attached..? -- Please could you put the script report any documents you need or generated in the Downloads folder not on Desktop, I tend not to fild files or documents in the desktop folder. Thanks.! Jean Baptiste
+Absolutely, Jean Baptiste! I'll provide scripts that save all reports to your Downloads folder and gather comprehensive Docker intelligence similar to your diagnostic report.
+
+📊 Part 1: Docker Intelligence Gathering Script
+This script will create a detailed Docker report in your Downloads folder:
+
+powershell
+# ============================================
+# DOCKER INTELLIGENCE REPORT - SURFACE ARM64
+# Generated: 2026-04-02
+# Location: Downloads folder
+# ============================================
+
+$reportDate = Get-Date -Format "yyyyMMdd_HHmmss"
+$reportPath = "$env:USERPROFILE\Downloads\Docker_Intelligence_Report_$reportDate.txt"
+$jsonPath = "$env:USERPROFILE\Downloads\Docker_Intelligence_Data_$reportDate.json"
+
+Write-Host @"
+╔════════════════════════════════════════════════════════════════╗
+║     DOCKER INTELLIGENCE GATHERING - SURFACE LAPTOP            ║
+║     Target: $reportPath
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Cyan
+
+# Initialize report content
+$report = @()
+$report += "=" * 70
+$report += "  DOCKER INTELLIGENCE REPORT - Surface Laptop 7th Edition"
+$report += "  Generated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += "  Computer: $env:COMPUTERNAME"
+$report += "  User: $env:USERNAME"
+$report += "  Architecture: ARM64 (Qualcomm Snapdragon X)"
+$report += "=" * 70
+$report += ""
+
+# Initialize JSON object
+$jsonData = @{
+    ReportDate = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
+    ComputerName = $env:COMPUTERNAME
+    UserName = $env:USERNAME
+    Architecture = "ARM64"
+    Docker = @{}
+}
+
+# ============================================
+# SECTION 1: DOCKER INSTALLATION STATUS
+# ============================================
+Write-Host "[1/10] Checking Docker Installation..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  1. DOCKER INSTALLATION STATUS"
+$report += "=" * 70
+$report += ""
+
+# Check Docker Desktop installation paths
+$dockerPaths = @(
+    "C:\Program Files\Docker\Docker\Docker Desktop.exe",
+    "C:\Program Files\Docker\Docker\resources\bin\docker.exe",
+    "$env:ProgramFiles\Docker\Docker\Docker Desktop.exe",
+    "$env:LOCALAPPDATA\Docker\Docker Desktop.exe"
+)
+
+$dockerInstalled = $false
+foreach ($path in $dockerPaths) {
+    if (Test-Path $path) {
+        $dockerInstalled = $true
+        $version = (Get-Item $path).VersionInfo.ProductVersion
+        $report += "✓ Docker Desktop found: $path"
+        $report += "  Version: $version"
+        $jsonData.Docker.InstallationPath = $path
+        $jsonData.Docker.Version = $version
+        break
+    }
+}
+
+if (-not $dockerInstalled) {
+    $report += "✗ Docker Desktop not found in standard locations"
+    $jsonData.Docker.Installed = $false
+} else {
+    $jsonData.Docker.Installed = $true
+}
+
+# Check Docker CLI
+$dockerCli = Get-Command docker -ErrorAction SilentlyContinue
+if ($dockerCli) {
+    $dockerVersion = docker version --format "{{.Server.Version}}" 2>$null
+    $clientVersion = docker version --format "{{.Client.Version}}" 2>$null
+    $report += ""
+    $report += "Docker CLI Information:"
+    $report += "  Client Version: $clientVersion"
+    $report += "  Server Version: $dockerVersion"
+    $jsonData.Docker.ClientVersion = $clientVersion
+    $jsonData.Docker.ServerVersion = $dockerVersion
+}
+
+# ============================================
+# SECTION 2: DOCKER SERVICE STATUS
+# ============================================
+Write-Host "[2/10] Checking Docker Service Status..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  2. DOCKER SERVICE STATUS"
+$report += "=" * 70
+$report += ""
+
+$dockerService = Get-Service -Name "com.docker.service" -ErrorAction SilentlyContinue
+if ($dockerService) {
+    $report += "Service Name: com.docker.service"
+    $report += "Status: $($dockerService.Status)"
+    $report += "Start Type: $($dockerService.StartType)"
+    $jsonData.Docker.ServiceStatus = $dockerService.Status
+    $jsonData.Docker.ServiceStartType = $dockerService.StartType
+} else {
+    $report += "Docker service not found (may be using WSL2 backend only)"
+    $jsonData.Docker.ServiceStatus = "Not Found"
+}
+
+# Check if Docker is responding
+$dockerRunning = docker info 2>&1
+if ($LASTEXITCODE -eq 0) {
+    $report += ""
+    $report += "✓ Docker daemon is RUNNING and responding"
+    $jsonData.Docker.DaemonRunning = $true
+} else {
+    $report += ""
+    $report += "⚠️ Docker daemon is NOT running"
+    $jsonData.Docker.DaemonRunning = $false
+}
+
+# ============================================
+# SECTION 3: DOCKER STORAGE LOCATIONS
+# ============================================
+Write-Host "[3/10] Finding Docker Storage Locations..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  3. DOCKER STORAGE LOCATIONS"
+$report += "=" * 70
+$report += ""
+
+$storageLocations = @{
+    "DockerRoot" = "$env:LOCALAPPDATA\Docker"
+    "DockerWSLData" = "$env:LOCALAPPDATA\Docker\wsl\data\ext4.vhdx"
+    "DockerWSLDistro" = "$env:LOCALAPPDATA\Docker\wsl\distro\ext4.vhdx"
+    "DockerConfig" = "$env:APPDATA\Docker"
+    "DockerCLIConfig" = "$env:USERPROFILE\.docker"
+}
+
+$totalDockerSize = 0
+$jsonData.Docker.StorageLocations = @{}
+
+foreach ($name in $storageLocations.Keys) {
+    $path = $storageLocations[$name]
+    if (Test-Path $path) {
+        if ((Get-Item $path).PSIsContainer) {
+            $size = (Get-ChildItem $path -Recurse -ErrorAction SilentlyContinue | Measure-Object Length -Sum -ErrorAction SilentlyContinue).Sum
+            $sizeGB = [math]::Round($size / 1GB, 2)
+            $report += "$name : $path"
+            $report += "  Size: $sizeGB GB"
+            $jsonData.Docker.StorageLocations[$name] = @{
+                Path = $path
+                SizeGB = $sizeGB
+            }
+            $totalDockerSize += $size
+        } else {
+            $size = (Get-Item $path).Length
+            $sizeGB = [math]::Round($size / 1GB, 2)
+            $report += "$name : $path"
+            $report += "  Size: $sizeGB GB"
+            $jsonData.Docker.StorageLocations[$name] = @{
+                Path = $path
+                SizeGB = $sizeGB
+            }
+            $totalDockerSize += $size
+        }
+    } else {
+        $report += "$name : NOT FOUND"
+        $jsonData.Docker.StorageLocations[$name] = @{
+            Path = $path
+            Found = $false
+        }
+    }
+    $report += ""
+}
+
+$totalDockerGB = [math]::Round($totalDockerSize / 1GB, 2)
+$report += "TOTAL DOCKER DISK USAGE: $totalDockerGB GB"
+$jsonData.Docker.TotalDiskUsageGB = $totalDockerGB
+
+# ============================================
+# SECTION 4: WSL2 INTEGRATION
+# ============================================
+Write-Host "[4/10] Analyzing WSL2 Integration..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  4. WSL2 INTEGRATION (Docker Backend)"
+$report += "=" * 70
+$report += ""
+
+$wslDistros = wsl --list --verbose 2>$null
+$report += "WSL Distributions:"
+$report += $wslDistros
+$jsonData.Docker.WSLDistributions = $wslDistros -split "`n"
+
+# Check for Docker-specific WSL distros
+$dockerDistros = @("docker-desktop", "docker-desktop-data")
+foreach ($distro in $dockerDistros) {
+    if ($wslDistros -match $distro) {
+        $report += ""
+        $report += "✓ $distro found - Docker WSL2 backend is configured"
+        $jsonData.Docker.WSLDistributionsFound += $distro
+    }
+}
+
+# Check WSL config
+$wslConfigPath = "$env:USERPROFILE\.wslconfig"
+if (Test-Path $wslConfigPath) {
+    $wslConfig = Get-Content $wslConfigPath -Raw
+    $report += ""
+    $report += "WSL Configuration (.wslconfig):"
+    $report += "-" * 40
+    $report += $wslConfig
+    $jsonData.Docker.WSLConfig = $wslConfig
+} else {
+    $report += ""
+    $report += "No custom .wslconfig found (using defaults)"
+    $jsonData.Docker.WSLConfig = "Default"
+}
+
+# ============================================
+# SECTION 5: DOCKER IMAGES
+# ============================================
+Write-Host "[5/10] Listing Docker Images..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  5. DOCKER IMAGES"
+$report += "=" * 70
+$report += ""
+
+if ($dockerRunning) {
+    $images = docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ImageID}}\t{{.Size}}\t{{.CreatedSince}}" 2>$null
+    $report += $images
+    $report += ""
+    
+    # Count and size images
+    $imageList = docker images --format "{{.Repository}}:{{.Tag}}" 2>$null
+    $imageCount = ($imageList | Where-Object { $_ -ne "<none>:<none>" }).Count
+    $totalImagesSize = docker system df --format "{{.ImagesSize}}" 2>$null
+    $report += "Total Images: $imageCount"
+    $report += "Total Images Size: $totalImagesSize"
+    
+    $jsonData.Docker.Images = @{
+        Count = $imageCount
+        TotalSize = $totalImagesSize
+        List = $imageList
+    }
+} else {
+    $report += "Docker not running - unable to list images"
+    $report += "Start Docker Desktop to see images"
+    $jsonData.Docker.Images = @{ Status = "Docker not running" }
+}
+
+# ============================================
+# SECTION 6: DOCKER CONTAINERS
+# ============================================
+Write-Host "[6/10] Listing Docker Containers..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  6. DOCKER CONTAINERS"
+$report += "=" * 70
+$report += ""
+
+if ($dockerRunning) {
+    $containers = docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Size}}\t{{.RunningFor}}" 2>$null
+    $report += $containers
+    $report += ""
+    
+    $containerCount = (docker ps -a -q 2>$null).Count
+    $runningCount = (docker ps -q 2>$null).Count
+    $report += "Total Containers: $containerCount"
+    $report += "Running Containers: $runningCount"
+    $report += "Stopped Containers: $($containerCount - $runningCount)"
+    
+    $jsonData.Docker.Containers = @{
+        Total = $containerCount
+        Running = $runningCount
+        Stopped = ($containerCount - $runningCount)
+    }
+} else {
+    $report += "Docker not running - unable to list containers"
+    $jsonData.Docker.Containers = @{ Status = "Docker not running" }
+}
+
+# ============================================
+# SECTION 7: DOCKER VOLUMES
+# ============================================
+Write-Host "[7/10] Listing Docker Volumes..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  7. DOCKER VOLUMES"
+$report += "=" * 70
+$report += ""
+
+if ($dockerRunning) {
+    $volumes = docker volume ls 2>$null
+    $report += $volumes
+    $report += ""
+    
+    $volumeCount = (docker volume ls -q 2>$null).Count
+    $report += "Total Volumes: $volumeCount"
+    
+    # Get volume details
+    if ($volumeCount -gt 0) {
+        $report += ""
+        $report += "Volume Details:"
+        foreach ($vol in (docker volume ls -q 2>$null)) {
+            $volDetail = docker volume inspect $vol --format "{{.Mountpoint}}" 2>$null
+            $report += "  $vol -> $volDetail"
+        }
+    }
+    
+    $jsonData.Docker.Volumes = @{
+        Count = $volumeCount
+        List = (docker volume ls -q 2>$null)
+    }
+} else {
+    $report += "Docker not running - unable to list volumes"
+    $jsonData.Docker.Volumes = @{ Status = "Docker not running" }
+}
+
+# ============================================
+# SECTION 8: DOCKER NETWORKS
+# ============================================
+Write-Host "[8/10] Listing Docker Networks..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  8. DOCKER NETWORKS"
+$report += "=" * 70
+$report += ""
+
+if ($dockerRunning) {
+    $networks = docker network ls 2>$null
+    $report += $networks
+    $report += ""
+    
+    $networkCount = (docker network ls -q 2>$null).Count
+    $report += "Total Networks: $networkCount"
+    
+    $jsonData.Docker.Networks = @{
+        Count = $networkCount
+        List = (docker network ls --format "{{.Name}}" 2>$null)
+    }
+} else {
+    $report += "Docker not running - unable to list networks"
+    $jsonData.Docker.Networks = @{ Status = "Docker not running" }
+}
+
+# ============================================
+# SECTION 9: DOCKER SYSTEM SUMMARY
+# ============================================
+Write-Host "[9/10] Generating Docker System Summary..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  9. DOCKER SYSTEM SUMMARY"
+$report += "=" * 70
+$report += ""
+
+if ($dockerRunning) {
+    $df = docker system df 2>$null
+    $report += $df
+    $report += ""
+    
+    $dfVerbose = docker system df -v 2>$null
+    $report += "Detailed Disk Usage:"
+    $report += "-" * 40
+    $report += $dfVerbose
+    
+    $jsonData.Docker.SystemDF = $dfVerbose
+} else {
+    $report += "Docker not running - unable to get system summary"
+    $report += ""
+    $report += "Estimated disk usage from files:"
+    $report += "  Total Docker files: $totalDockerGB GB"
+    $jsonData.Docker.SystemDF = "Docker not running"
+}
+
+# ============================================
+# SECTION 10: DOCKER INFO & CONFIGURATION
+# ============================================
+Write-Host "[10/10] Gathering Docker Configuration..." -ForegroundColor Yellow
+$report += ""
+$report += "=" * 70
+$report += "  10. DOCKER INFO & CONFIGURATION"
+$report += "=" * 70
+$report += ""
+
+if ($dockerRunning) {
+    $dockerInfo = docker info 2>$null
+    $report += $dockerInfo
+    $jsonData.Docker.Info = $dockerInfo
+} else {
+    $report += "Docker not running - unable to get docker info"
+    $jsonData.Docker.Info = "Docker not running"
+}
+
+# ============================================
+# SECTION 11: RECOMMENDATIONS
+# ============================================
+$report += ""
+$report += "=" * 70
+$report += "  11. ARM64-SPECIFIC RECOMMENDATIONS"
+$report += "=" * 70
+$report += ""
+
+$report += @"
+
+Based on your Surface Laptop 7th Edition (ARM64 Snapdragon X):
+
+STORAGE RECOMMENDATIONS:
+- Current Docker disk usage: $totalDockerGB GB
+- C: drive free space: Please check below
+- RECOMMENDED: Move Docker data to external SSD for active use
+- ALTERNATIVE: Backup to OneDrive for archiving only
+
+PERFORMANCE RECOMMENDATIONS (ARM64-specific):
+- Use ARM64-based images when available (not emulated x86)
+- For Python images: use arm64v8/python or python:3.13-slim-arm64
+- For Node.js: use arm64v8/node or node:22-alpine-arm64
+- Avoid x86 emulation on ARM64 (significant performance penalty)
+- Set WSL2 memory limit in .wslconfig to prevent RAM exhaustion
+
+DOCKER STORAGE OPTIMIZATION:
+- Run 'docker system prune -a -f' regularly
+- Remove unused volumes: 'docker volume prune -f'
+- Consider moving to external SSD for active development
+
+"@
+
+# ============================================
+# FINAL SUMMARY
+# ============================================
+$drive = Get-PSDrive C
+$freeGB = [math]::Round($drive.Free/1GB, 2)
+$totalGB = [math]::Round(($drive.Used + $drive.Free)/1GB, 2)
+
+$report += ""
+$report += "=" * 70
+$report += "  FINAL SUMMARY"
+$report += "=" * 70
+$report += ""
+$report += "Report generated: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$report += "C: Drive total: $totalGB GB"
+$report += "C: Drive free: $freeGB GB"
+$report += "Docker disk usage: $totalDockerGB GB"
+$report += "Docker % of C: drive: $([math]::Round(($totalDockerGB / $totalGB) * 100, 2))%"
+$report += ""
+$report += "=" * 70
+$report += "  Report saved to: $reportPath"
+$report += "  JSON data saved to: $jsonPath"
+$report += "=" * 70
+
+# Save the report
+$report | Out-File -FilePath $reportPath -Encoding UTF8
+
+# Save JSON data
+$jsonData | ConvertTo-Json -Depth 10 | Out-File -FilePath $jsonPath -Encoding UTF8
+
+Write-Host @"
+
+╔════════════════════════════════════════════════════════════════╗
+║                 DOCKER INTELLIGENCE COMPLETE!                  ║
+╠════════════════════════════════════════════════════════════════╣
+║  Text Report: $reportPath
+║  JSON Data:   $jsonPath
+║                                                               ║
+║  Docker Disk Usage: $totalDockerGB GB
+║  C: Drive Free: $freeGB GB
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Green
+
+# Open the report in Notepad
+Start-Process notepad.exe $reportPath
+🚚 Part 2: Docker Migration to External SSD (Customized)
+Run this script after the intelligence report to migrate Docker to your external SSD:
+
+powershell
+# ============================================
+# DOCKER TO EXTERNAL SSD - MIGRATION SCRIPT
+# For: Surface Laptop 7th Edition (ARM64)
+# Date: 2026-04-02
+# Saves all logs to Downloads folder
+# ============================================
+
+param(
+    [string]$ExternalDrive = ""  # Leave empty - script will ask
+)
+
+$logDate = Get-Date -Format "yyyyMMdd_HHmmss"
+$logPath = "$env:USERPROFILE\Downloads\Docker_Migration_Log_$logDate.txt"
+
+function Write-Log {
+    param($Message, $Color = "White")
+    $timestamp = Get-Date -Format "HH:mm:ss"
+    $logMessage = "[$timestamp] $Message"
+    Add-Content -Path $logPath -Value $logMessage
+    Write-Host $logMessage -ForegroundColor $Color
+}
+
+Write-Log "========================================" "Cyan"
+Write-Log "DOCKER TO EXTERNAL SSD MIGRATION" "Cyan"
+Write-Log "========================================" "Cyan"
+Write-Log "Log file: $logPath" "Green"
+
+# Step 1: Find available drives
+Write-Log "`n[1/8] Scanning for available drives..." "Yellow"
+
+$availableDrives = Get-PSDrive -PSProvider FileSystem | Where-Object { 
+    $_.Free -gt 0 -and $_.Name -ne "C" 
+}
+
+if ($availableDrives.Count -eq 0) {
+    Write-Log "ERROR: No external drives found!" "Red"
+    Write-Log "Please connect an external SSD and try again." "Red"
+    exit
+}
+
+Write-Log "Available drives:" "Cyan"
+foreach ($drive in $availableDrives) {
+    $freeGB = [math]::Round($drive.Free/1GB, 2)
+    Write-Log "  $($drive.Name):\ - $freeGB GB free" "White"
+}
+
+# Step 2: Select target drive
+if ([string]::IsNullOrEmpty($ExternalDrive)) {
+    Write-Log "`n[2/8] Select target drive..." "Yellow"
+    $selectedDrive = Read-Host "Enter drive letter (e.g., D, E, F)"
+    $ExternalDrive = "${selectedDrive}:\"
+}
+
+if (-not (Test-Path $ExternalDrive)) {
+    Write-Log "ERROR: Drive $ExternalDrive not found!" "Red"
+    exit
+}
+
+$driveFree = [math]::Round((Get-PSDrive ($ExternalDrive -replace ':\\','')).Free/1GB, 2)
+Write-Log "Target drive: $ExternalDrive ($driveFree GB free)" "Green"
+
+# Step 3: Create Docker directory on external drive
+Write-Log "`n[3/8] Creating Docker directory on external drive..." "Yellow"
+$dockerTarget = Join-Path $ExternalDrive "DockerData"
+New-Item -ItemType Directory -Force -Path $dockerTarget | Out-Null
+Write-Log "Created: $dockerTarget" "Green"
+
+# Step 4: Stop Docker completely
+Write-Log "`n[4/8] Stopping Docker services..." "Yellow"
+Stop-Process -Name "Docker Desktop" -Force -ErrorAction SilentlyContinue
+Stop-Process -Name "com.docker.backend" -Force -ErrorAction SilentlyContinue
+wsl --terminate docker-desktop 2>$null
+wsl --terminate docker-desktop-data 2>$null
+Start-Sleep -Seconds 3
+Write-Log "Docker stopped" "Green"
+
+# Step 5: Export WSL distributions
+Write-Log "`n[5/8] Exporting Docker WSL distributions..." "Yellow"
+
+$wslList = wsl --list --verbose 2>$null
+
+if ($wslList -match "docker-desktop-data") {
+    Write-Log "  Exporting docker-desktop-data (this may take several minutes)..." "Gray"
+    wsl --export docker-desktop-data "$dockerTarget\docker-desktop-data.tar" 2>&1 | Out-Null
+    Write-Log "  ✓ Exported docker-desktop-data" "Green"
+}
+
+if ($wslList -match "docker-desktop") {
+    Write-Log "  Exporting docker-desktop..." "Gray"
+    wsl --export docker-desktop "$dockerTarget\docker-desktop.tar" 2>&1 | Out-Null
+    Write-Log "  ✓ Exported docker-desktop" "Green"
+}
+
+# Step 6: Unregister old distributions
+Write-Log "`n[6/8] Unregistering old WSL distributions..." "Yellow"
+if ($wslList -match "docker-desktop-data") {
+    wsl --unregister docker-desktop-data 2>&1 | Out-Null
+    Write-Log "  ✓ Unregistered docker-desktop-data" "Green"
+}
+if ($wslList -match "docker-desktop") {
+    wsl --unregister docker-desktop 2>&1 | Out-Null
+    Write-Log "  ✓ Unregistered docker-desktop" "Green"
+}
+
+# Step 7: Import to new location
+Write-Log "`n[7/8] Importing to external drive..." "Yellow"
+
+$wslDataPath = Join-Path $dockerTarget "wsl-data"
+$wslDesktopPath = Join-Path $dockerTarget "wsl-desktop"
+New-Item -ItemType Directory -Force -Path $wslDataPath | Out-Null
+New-Item -ItemType Directory -Force -Path $wslDesktopPath | Out-Null
+
+if (Test-Path "$dockerTarget\docker-desktop-data.tar") {
+    Write-Log "  Importing docker-desktop-data..." "Gray"
+    wsl --import docker-desktop-data "$wslDataPath" "$dockerTarget\docker-desktop-data.tar" --version 2 2>&1 | Out-Null
+    Write-Log "  ✓ Imported to $wslDataPath" "Green"
+}
+
+if (Test-Path "$dockerTarget\docker-desktop.tar") {
+    Write-Log "  Importing docker-desktop..." "Gray"
+    wsl --import docker-desktop "$wslDesktopPath" "$dockerTarget\docker-desktop.tar" --version 2 2>&1 | Out-Null
+    Write-Log "  ✓ Imported to $wslDesktopPath" "Green"
+}
+
+# Step 8: Create optimized .wslconfig
+Write-Log "`n[8/8] Creating optimized WSL configuration..." "Yellow"
+$wslConfigPath = "$env:USERPROFILE\.wslconfig"
+$wslConfig = @"
+[wsl2]
+memory=4GB
+processors=4
+localhostForwarding=true
+nestedVirtualization=true
+networkingMode=mirrored
+swap=2GB
+"@
+$wslConfig | Out-File -FilePath $wslConfigPath -Encoding UTF8 -Force
+Write-Log "✓ Created .wslconfig at $wslConfigPath" "Green"
+
+# Clean up temporary tar files
+Write-Log "`nCleaning up temporary files..." "Yellow"
+Remove-Item "$dockerTarget\*.tar" -Force -ErrorAction SilentlyContinue
+Write-Log "✓ Removed temporary tar files" "Green"
+
+# Calculate space freed
+$originalSize = $totalDockerGB
+$currentFree = [math]::Round((Get-PSDrive C).Free/1GB, 2)
+
+Write-Log @"
+
+╔════════════════════════════════════════════════════════════════╗
+║                    MIGRATION COMPLETE!                         ║
+╠════════════════════════════════════════════════════════════════╣
+║  Docker data moved to: $dockerTarget
+║                                                               ║
+║  Log saved to: $logPath
+║                                                               ║
+║  NEXT STEPS:                                                  ║
+║  1. RESTART your Surface Laptop                              ║
+║  2. Start Docker Desktop                                      ║
+║  3. Verify with: docker ps                                    ║
+║  4. Verify with: wsl --list -v                                ║
+║                                                               ║
+║  TO REVERT (if needed):                                       ║
+║  - Stop Docker                                                ║
+║  - wsl --unregister docker-desktop-data                       ║
+║  - wsl --unregister docker-desktop                            ║
+║  - Reinstall Docker Desktop                                   ║
+╚════════════════════════════════════════════════════════════════╝
+"@ "Green"
+
+# Open log file
+Start-Process notepad.exe $logPath
+☁️ Part 3: Docker Backup to OneDrive (Archive Only)
+powershell
+# ============================================
+# DOCKER TO ONEDRIVE - BACKUP ARCHIVE SCRIPT
+# For: Surface Laptop 7th Edition (ARM64)
+# Saves backup to your OneDrive folder
+# ============================================
+
+$backupDate = Get-Date -Format "yyyyMMdd_HHmmss"
+$backupLog = "$env:USERPROFILE\Downloads\Docker_OneDrive_Backup_Log_$backupDate.txt"
+
+Write-Host @"
+╔════════════════════════════════════════════════════════════════╗
+║     DOCKER TO ONEDRIVE - BACKUP ARCHIVE                        ║
+║     ⚠️  This creates a BACKUP - not for active Docker!        ║
+║     Log: $backupLog
+╚════════════════════════════════════════════════════════════════╝
+"@ -ForegroundColor Cyan
+
+# Find OneDrive location
+$oneDrivePaths = @(
+    "$env:USERPROFILE\OneDrive",
+    "$env:OneDriveCommercial",
+    "$env:OneDriveConsumer"
+)
+
+$oneDrivePath = $null
+foreach ($path in $oneDrivePaths) {
+    if (Test-Path $path) {
+        $oneDrivePath = $path
+        break
+    }
+}
+
+if (-not $oneDrivePath) {
+    Write-Host "OneDrive not found. Please ensure OneDrive is set up." -ForegroundColor Red
+    $oneDrivePath = Read-Host "Enter your OneDrive folder path"
+}
+
+Write-Host "OneDrive location: $oneDrivePath" -ForegroundColor Green
+
+# Create backup folder
+$backupFolder = Join-Path $oneDrivePath "Docker_Backup_$backupDate"
+New-Item -ItemType Directory -Force -Path $backupFolder | Out-Null
+
+# Log start
+@"
+Docker OneDrive Backup
+======================
+Backup Date: $(Get-Date)
+Computer: $env:COMPUTERNAME
+User: $env:USERNAME
+Backup Location: $backupFolder
+
+"@ | Out-File -FilePath $backupLog -Encoding UTF8
+
+# Check Docker status
+$dockerRunning = docker info 2>&1
+if ($LASTEXITCODE -eq 0) {
+    "Docker Status: RUNNING" | Add-Content $backupLog
+    
+    # Export images
+    Write-Host "[1/4] Exporting Docker images..." -ForegroundColor Yellow
+    "`n--- DOCKER IMAGES ---" | Add-Content $backupLog
+    $images = docker images --format "{{.Repository}}:{{.Tag}}" 2>$null
+    $imageCount = 0
+    foreach ($image in $images) {
+        if ($image -ne "<none>:<none>" -and $image) {
+            $safeName = $image -replace "[/:]", "_"
+            Write-Host "  Exporting: $image" -ForegroundColor Gray
+            docker save $image -o "$backupFolder\$safeName.tar" 2>&1 | Out-Null
+            $imageCount++
+            "  $image -> $safeName.tar" | Add-Content $backupLog
+        }
+    }
+    Write-Host "  ✓ Exported $imageCount images" -ForegroundColor Green
+    "Total images exported: $imageCount" | Add-Content $backupLog
+    
+    # Export volumes
+    Write-Host "[2/4] Exporting Docker volumes..." -ForegroundColor Yellow
+    "`n--- DOCKER VOLUMES ---" | Add-Content $backupLog
+    $volumes = docker volume ls -q 2>$null
+    foreach ($volume in $volumes) {
+        Write-Host "  Backing up volume: $volume" -ForegroundColor Gray
+        docker run --rm -v $volume:/volume -v "$backupFolder":/backup alpine tar czf "/backup/$volume.tar.gz" -C /volume . 2>&1 | Out-Null
+        "  $volume -> $volume.tar.gz" | Add-Content $backupLog
+    }
+    Write-Host "  ✓ Exported $($volumes.Count) volumes" -ForegroundColor Green
+    "Total volumes exported: $($volumes.Count)" | Add-Content $backupLog
+} else {
+    "Docker Status: NOT RUNNING (only backing up files)" | Add-Content $backupLog
+    Write-Host "Docker not running - backing up only Docker files" -ForegroundColor Yellow
+}
+
+# Backup Docker configuration files
+Write-Host "[3/4] Backing up Docker configuration..." -ForegroundColor Yellow
+"`n--- DOCKER CONFIGURATION ---" | Add-Content $backupLog
+
+$configPaths = @(
+    "$env:APPDATA\Docker",
+    "$env:LOCALAPPA
+
+[File content truncated]

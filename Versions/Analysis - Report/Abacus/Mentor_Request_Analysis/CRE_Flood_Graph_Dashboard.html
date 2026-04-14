@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRE Flood Graph Dashboard — Executive Overview</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<style>
+:root {
+  --primary: #003366;
+  --accent: #2196F3;
+  --bg: #F5F5F5;
+  --card-bg: #FFFFFF;
+  --text: #333333;
+  --text-light: #666666;
+  --border: #E0E0E0;
+  --shadow: rgba(0,0,0,0.08);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); }
+
+/* Navigation */
+.nav { background:var(--primary); padding:0 24px; display:flex; align-items:center; height:48px; gap:24px; }
+.nav-title { color:#fff; font-weight:700; font-size:16px; margin-right:32px; }
+.nav-tab { color:rgba(255,255,255,0.7); text-decoration:none; font-size:13px; font-weight:600; padding:12px 16px; border-bottom:3px solid transparent; transition:all 0.2s; cursor:pointer; }
+.nav-tab:hover { color:#fff; }
+.nav-tab.active { color:#fff; border-bottom-color:#2196F3; }
+
+/* Page container */
+.page { display:none; padding:20px 24px; }
+.page.active { display:block; }
+
+/* Cards row */
+.cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:16px; margin-bottom:20px; }
+.card { background:var(--card-bg); border-radius:10px; padding:18px 20px; box-shadow:0 2px 8px var(--shadow); border:1px solid var(--border); }
+.card-label { font-size:11px; font-weight:600; color:var(--text-light); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:6px; }
+.card-value { font-size:28px; font-weight:700; color:var(--primary); }
+.card-sub { font-size:11px; color:var(--text-light); margin-top:4px; }
+
+/* Grid layouts */
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:20px; }
+.grid-map-charts { display:grid; grid-template-columns:1.2fr 0.8fr; gap:16px; margin-bottom:20px; }
+
+/* Visual panel */
+.panel { background:var(--card-bg); border-radius:10px; padding:16px; box-shadow:0 2px 8px var(--shadow); border:1px solid var(--border); }
+.panel-title { font-size:13px; font-weight:700; color:var(--primary); margin-bottom:12px; }
+
+/* Slicers */
+.slicers { display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap; align-items:center; }
+.slicer { display:flex; flex-direction:column; gap:4px; }
+.slicer label { font-size:11px; font-weight:600; color:var(--text-light); text-transform:uppercase; }
+.slicer select, .slicer input { padding:6px 10px; border:1px solid var(--border); border-radius:6px; font-size:12px; background:#fff; }
+.slicer select { min-width:140px; }
+.btn-reset { padding:6px 14px; background:var(--accent); color:#fff; border:none; border-radius:6px; font-size:12px; cursor:pointer; font-weight:600; align-self:flex-end; }
+.btn-reset:hover { background:#1976D2; }
+
+/* Map */
+#map1, #map2 { height:380px; border-radius:8px; z-index:1; }
+
+/* Table */
+.data-table { width:100%; border-collapse:collapse; font-size:12px; }
+.data-table th { background:var(--primary); color:#fff; padding:8px 10px; text-align:left; font-weight:600; position:sticky; top:0; }
+.data-table td { padding:6px 10px; border-bottom:1px solid var(--border); }
+.data-table tr:hover td { background:#E3F2FD; }
+.table-scroll { max-height:350px; overflow-y:auto; border-radius:8px; border:1px solid var(--border); }
+
+/* Sector colors */
+.sector-dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }
+
+/* Legend */
+.legend { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px; }
+.legend-item { display:flex; align-items:center; font-size:11px; color:var(--text-light); }
+
+/* Chart containers */
+.chart-container { position:relative; width:100%; }
+
+@media (max-width:900px) {
+  .grid-2, .grid-3, .grid-map-charts { grid-template-columns:1fr; }
+  .cards { grid-template-columns:repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <span class="nav-title">CRE Flood Graph</span>
+  <a class="nav-tab active" data-page="page1">Executive Overview</a>
+  <a class="nav-tab" data-page="page2">Multifamily Deep-Dive</a>
+  <a class="nav-tab" data-page="page3">Time Series Analysis</a>
+</nav>
+
+<!-- PAGE 1: Executive Overview -->
+<div id="page1" class="page active">
+  <div class="slicers">
+    <div class="slicer">
+      <label>City</label>
+      <select id="slicer-city"><option value="">All Cities</option></select>
+    </div>
+    <div class="slicer">
+      <label>Sector</label>
+      <select id="slicer-sector"><option value="">All Sectors</option></select>
+    </div>
+    <div class="slicer">
+      <label>Status</label>
+      <select id="slicer-status"><option value="">All Statuses</option></select>
+    </div>
+    <div class="slicer">
+      <label>Year Range</label>
+      <div style="display:flex;gap:6px;align-items:center;">
+        <input type="number" id="slicer-year-min" style="width:70px" placeholder="Min">
+        <span style="font-size:12px">—</span>
+        <input type="number" id="slicer-year-max" style="width:70px" placeholder="Max">
+      </div>
+    </div>
+    <button class="btn-reset" onclick="resetFilters()">Reset All</button>
+  </div>
+
+  <div class="cards" id="kpi-cards"></div>
+
+  <div class="grid-map-charts">
+    <div class="panel">
+      <div class="panel-title">📍 Project Map — Size by Square Footage, Color by Sector</div>
+      <div id="map1"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="panel" style="flex:1">
+        <div class="panel-title">🍩 Square Footage by Sector</div>
+        <div class="chart-container"><canvas id="donutChart"></canvas></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-title">📈 Cumulative Square Footage (Flood Effect)</div>
+      <div class="chart-container"><canvas id="cumulativeChart"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">📊 Projects by Sector & Year</div>
+      <div class="chart-container"><canvas id="stackedBarChart"></canvas></div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: Multifamily Deep-Dive -->
+<div id="page2" class="page">
+  <div class="cards" id="mf-kpi-cards"></div>
+  <div class="grid-map-charts">
+    <div class="panel">
+      <div class="panel-title">📍 Multifamily Projects Map</div>
+      <div id="map2"></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="panel" style="flex:1">
+        <div class="panel-title">📈 Multifamily Projects by Year</div>
+        <div class="chart-container"><canvas id="mfLineChart"></canvas></div>
+      </div>
+      <div class="panel" style="flex:1">
+        <div class="panel-title">🍩 MF Status Distribution</div>
+        <div class="chart-container"><canvas id="mfStatusDonut"></canvas></div>
+      </div>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="panel-title">🏗️ Top Multifamily Projects by Units</div>
+    <div class="table-scroll" id="mf-table-container"></div>
+  </div>
+</div>
+
+<!-- PAGE 3: Time Series Analysis -->
+<div id="page3" class="page">
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-title">📈 Annual Project Count</div>
+      <div class="chart-container"><canvas id="tsProjectCount"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">📈 Annual SF Delivered</div>
+      <div class="chart-container"><canvas id="tsSFDelivered"></canvas></div>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-title">📊 Sectors Over Time (Stacked)</div>
+      <div class="chart-container"><canvas id="tsSectorStacked"></canvas></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">📈 Cumulative Growth — Projects & SF</div>
+      <div class="chart-container"><canvas id="tsCumulative"></canvas></div>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="panel-title">📊 Year-over-Year Growth Rate</div>
+    <div class="chart-container"><canvas id="tsGrowthRate"></canvas></div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// DATA & GLOBALS
+// ============================================================
+const SECTOR_COLORS = {
+  'Office': '#2196F3',
+  'Multifamily': '#FF9800',
+  'Retail': '#4CAF50',
+  'Hotel': '#9C27B0',
+  'Other': '#F44336',
+  'Industrial': '#00BCD4',
+  'Mixed-Use': '#607D8B'
+};
+const SECTORS = Object.keys(SECTOR_COLORS);
+const STATUS_COLORS = { 'Completed': '#4CAF50', 'Under Construction': '#FF9800', 'Pipeline': '#2196F3' };
+
+let RAW_DATA = [];
+let charts = {};
+let map1, map2, mapMarkers1 = [], mapMarkers2 = [];
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+document.querySelectorAll('.nav-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.page).classList.add('active');
+    if (tab.dataset.page === 'page2') { setTimeout(() => { if(map2) map2.invalidateSize(); }, 100); }
+    if (tab.dataset.page === 'page1') { setTimeout(() => { if(map1) map1.invalidateSize(); }, 100); }
+  });
+});
+
+// ============================================================
+// FILTERS
+// ============================================================
+function getFiltered() {
+  const city = document.getElementById('slicer-city').value;
+  const sector = document.getElementById('slicer-sector').value;
+  const status = document.getElementById('slicer-status').value;
+  const yMin = parseInt(document.getElementById('slicer-year-min').value) || 0;
+  const yMax = parseInt(document.getElementById('slicer-year-max').value) || 9999;
+  return RAW_DATA.filter(d =>
+    (!city || d.city === city) &&
+    (!sector || d.sector === sector) &&
+    (!status || d.status === status) &&
+    (d.delivery_year >= yMin && d.delivery_year <= yMax)
+  );
+}
+
+function resetFilters() {
+  document.getElementById('slicer-city').value = '';
+  document.getElementById('slicer-sector').value = '';
+  document.getElementById('slicer-status').value = '';
+  document.getElementById('slicer-year-min').value = '';
+  document.getElementById('slicer-year-max').value = '';
+  updateAll();
+}
+
+function onFilterChange() { updateAll(); }
+
+// ============================================================
+// KPI CARDS
+// ============================================================
+function fmt(n) { return n.toLocaleString('en-US'); }
+function fmtM(n) { return (n/1e6).toFixed(1) + 'M'; }
+function fmtPct(n) { return (n*100).toFixed(1) + '%'; }
+
+function updateKPIs(data) {
+  const totalProjects = data.length;
+  const totalSF = data.reduce((s,d) => s + (d.sqft||0), 0);
+  const totalUnits = data.reduce((s,d) => s + (d.units||0), 0);
+  const cities = new Set(data.map(d=>d.city)).size;
+  const sectors = new Set(data.map(d=>d.sector)).size;
+  const totalValue = data.reduce((s,d) => s + (d.est_value_millions||0), 0);
+  const avgSize = totalProjects ? totalSF/totalProjects : 0;
+
+  document.getElementById('kpi-cards').innerHTML = `
+    <div class="card"><div class="card-label">Total Projects</div><div class="card-value">${fmt(totalProjects)}</div></div>
+    <div class="card"><div class="card-label">Total Square Footage</div><div class="card-value">${fmtM(totalSF)}</div><div class="card-sub">${fmt(Math.round(totalSF))} SF</div></div>
+    <div class="card"><div class="card-label">Total Units</div><div class="card-value">${fmt(Math.round(totalUnits))}</div></div>
+    <div class="card"><div class="card-label">Active Cities</div><div class="card-value">${cities}</div></div>
+    <div class="card"><div class="card-label">Active Sectors</div><div class="card-value">${sectors}</div></div>
+    <div class="card"><div class="card-label">Est. Value</div><div class="card-value">$${fmtM(totalValue*1e6)}</div></div>
+    <div class="card"><div class="card-label">Avg Project Size</div><div class="card-value">${fmt(Math.round(avgSize))}</div><div class="card-sub">SF per project</div></div>
+  `;
+}
+
+function updateMFKPIs() {
+  const mf = RAW_DATA.filter(d => d.sector === 'Multifamily');
+  const totalProjects = mf.length;
+  const totalUnits = mf.reduce((s,d) => s + (d.units||0), 0);
+  const totalSF = mf.reduce((s,d) => s + (d.sqft||0), 0);
+  const completed = mf.filter(d => d.status === 'Completed').length;
+  const pipeline = mf.filter(d => d.status === 'Pipeline');
+  const pipelineUnits = pipeline.reduce((s,d) => s + (d.units||0), 0);
+  const avgDensity = mf.filter(d=>d.units>0).length ? totalUnits / mf.filter(d=>d.units>0).length : 0;
+  const completionRate = totalProjects ? completed/totalProjects : 0;
+
+  document.getElementById('mf-kpi-cards').innerHTML = `
+    <div class="card"><div class="card-label">MF Projects</div><div class="card-value">${fmt(totalProjects)}</div></div>
+    <div class="card"><div class="card-label">Total Units</div><div class="card-value">${fmt(Math.round(totalUnits))}</div></div>
+    <div class="card"><div class="card-label">Total SF</div><div class="card-value">${fmtM(totalSF)}</div></div>
+    <div class="card"><div class="card-label">Avg Unit Density</div><div class="card-value">${Math.round(avgDensity)}</div><div class="card-sub">units/project</div></div>
+    <div class="card"><div class="card-label">Completion Rate</div><div class="card-value">${fmtPct(completionRate)}</div></div>
+    <div class="card"><div class="card-label">Pipeline Units</div><div class="card-value">${fmt(Math.round(pipelineUnits))}</div></div>
+  `;
+}
+
+// ============================================================
+// MAP
+// ============================================================
+function initMap(mapId, containerId) {
+  const m = L.map(containerId).setView([37.5, -79.5], 6);
+  L.tileLayer('https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tiled_web_map_Stevage.png/1280px-Tiled_web_map_Stevage.png', {
+    attribution: '© OpenStreetMap © CARTO', maxZoom: 18
+  }).addTo(m);
+  return m;
+}
+
+function updateMap(map, markers, data, filterSector) {
+  markers.forEach(m => map.removeLayer(m));
+  markers.length = 0;
+  const filtered = filterSector ? data.filter(d => d.sector === filterSector) : data;
+  const bounds = [];
+  filtered.forEach(d => {
+    if (!d.latitude || !d.longitude) return;
+    const color = SECTOR_COLORS[d.sector] || '#999';
+    const radius = Math.max(3, Math.min(20, Math.sqrt((d.sqft||0)/50000)));
+    const marker = L.circleMarker([d.latitude, d.longitude], {
+      radius, fillColor: color, color: '#fff', weight: 1, fillOpacity: 0.7
+    }).addTo(map);
+    marker.bindPopup(`<b>${d.project_name}</b><br>${d.sector} | ${d.city}<br>${fmt(d.sqft||0)} SF | ${d.units||0} units<br>Status: ${d.status}<br>Delivery: ${d.est_delivery||'N/A'}`);
+    markers.push(marker);
+    bounds.push([d.latitude, d.longitude]);
+  });
+  if (bounds.length) map.fitBounds(bounds, { padding: [20,20] });
+}
+
+// ============================================================
+// CHARTS
+// ============================================================
+function destroyChart(key) { if(charts[key]) { charts[key].destroy(); delete charts[key]; } }
+
+function updateDonutChart(data) {
+  destroyChart('donut');
+  const bySector = {};
+  data.forEach(d => { bySector[d.sector] = (bySector[d.sector]||0) + (d.sqft||0); });
+  const labels = Object.keys(bySector).sort((a,b) => bySector[b]-bySector[a]);
+  const values = labels.map(l => bySector[l]);
+  const colors = labels.map(l => SECTOR_COLORS[l]||'#999');
+  charts.donut = new Chart(document.getElementById('donutChart'), {
+    type: 'doughnut',
+    data: { labels, datasets: [{ data: values, backgroundColor: colors, borderWidth: 2, borderColor: '#fff' }] },
+    options: {
+      responsive: true, maintainAspectRatio: true,
+      plugins: {
+        legend: { position: 'right', labels: { font: { size: 11 }, padding: 8 } },
+        tooltip: { callbacks: { label: ctx => `${ctx.label}: ${fmtM(ctx.raw)} SF (${(ctx.raw/values.reduce((a,b)=>a+b,0)*100).toFixed(1)}%)` } }
+      }
+    }
+  });
+}
+
+function updateCumulativeChart(data) {
+  destroyChart('cumulative');
+  const years = [...new Set(data.map(d=>d.delivery_year))].filter(y=>y).sort();
+  const datasets = SECTORS.filter(s => data.some(d=>d.sector===s)).map(sector => {
+    let cum = 0;
+    const vals = years.map(y => {
+      cum += data.filter(d=>d.delivery_year===y && d.sector===sector).reduce((s,d)=>s+(d.sqft||0),0);
+      return cum;
+    });
+    return { label: sector, data: vals, backgroundColor: SECTOR_COLORS[sector]+'80', borderColor: SECTOR_COLORS[sector], fill: true, tension: 0.3 };
+  });
+  charts.cumulative = new Chart(document.getElementById('cumulativeChart'), {
+    type: 'line',
+    data: { labels: years, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: true,
+      scales: { y: { ticks: { callback: v => fmtM(v) }, title: { display: true, text: 'Cumulative SF' } }, x: { title: { display: true, text: 'Delivery Year' } } },
+      plugins: { legend: { position: 'bottom', labels: { font: { size: 10 } } }, tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${fmtM(ctx.raw)}` } } },
+      interaction: { mode: 'index', intersect: false }
+    }
+  });
+}
+
+function updateStackedBarChart(data) {
+  destroyChart('stackedBar');
+  const years = [...new Set(data.map(d=>d.delivery_year))].filter(y=>y).sort();
+  const datasets = SECTORS.filter(s => data.some(d=>d.sector===s)).map(sector => ({
+    label: sector,
+    data: years.map(y => data.filter(d=>d.delivery_year===y && d.sector===sector).length),
+    backgroundColor: SECTOR_COLORS[sector]
+  }));
+  charts.stackedBar = new Chart(document.getElementById('stackedBarChart'), {
+    type: 'bar',
+    data: { labels: years, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: true,
+      scales: { x: { stacked: true, title: { display: true, text: 'Year' } }, y: { stacked: true, title: { display: true, text: 'Projects' } } },
+      plugins: { legend: { position: 'bottom', labels: { font: { size: 10 } } } }
+    }
+  });
+}
+
+// MF Charts
+function updateMFCharts() {
+  const mf = RAW_DATA.filter(d => d.sector === 'Multifamily');
+  
+  // Line chart - projects by year
+  destroyChart('mfLine');
+  const years = [...new Set(mf.map(d=>d.delivery_year))].filter(y=>y).sort();
+  const counts = years.map(y => mf.filter(d=>d.delivery_year===y).length);
+  const units = years.map(y => mf.filter(d=>d.delivery_year===y).reduce((s,d)=>s+(d.units||0),0));
+  charts.mfLine = new Chart(document.getElementById('mfLineChart'), {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [
+        { label: 'Projects', data: counts, backgroundColor: '#FF9800', yAxisID: 'y' },
+        { label: 'Units', data: units, type: 'line', borderColor: '#F44336', backgroundColor: '#F4433640', yAxisID: 'y1', tension: 0.3 }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: true,
+      scales: {
+        y: { position: 'left', title: { display: true, text: 'Projects' } },
+        y1: { position: 'right', title: { display: true, text: 'Units' }, grid: { drawOnChartArea: false } }
+      },
+      plugins: { legend: { position: 'bottom' } }
+    }
+  });
+
+  // Status donut
+  destroyChart('mfStatusDonut');
+  const byStatus = {};
+  mf.forEach(d => { byStatus[d.status] = (byStatus[d.status]||0) + 1; });
+  const sLabels = Object.keys(byStatus);
+  charts.mfStatusDonut = new Chart(document.getElementById('mfStatusDonut'), {
+    type: 'doughnut',
+    data: {
+      labels: sLabels,
+      datasets: [{ data: sLabels.map(l=>byStatus[l]), backgroundColor: sLabels.map(l=>STATUS_COLORS[l]||'#999'), borderWidth: 2, borderColor: '#fff' }]
+    },
+    options: { responsive: true, maintainAspectRatio: true, plugins: { legend: { position: 'right', labels: { font: { size: 11 } } } } }
+  });
+
+  // Table
+  const topMF = [...mf].sort((a,b) => (b.units||0)-(a.units||0)).slice(0, 25);
+  let html = '<table class="data-table"><thead><tr><th>Project</th><th>City</th><th>Units</th><th>SF</th><th>Status</th><th>Delivery</th><th>Est Value ($M)</th></tr></thead><tbody>';
+  topMF.forEach(d => {
+    html += `<tr><td>${d.project_name}</td><td>${d.city}</td><td>${fmt(d.units||0)}</td><td>${fmt(d.sqft||0)}</td><td>${d.status}</td><td>${d.est_delivery||'N/A'}</td><td>${d.est_value_millions ? '$'+fmt(Math.round(d.est_value_millions)) : 'N/A'}</td></tr>`;
+  });
+  html += '</tbody></table>';
+  document.getElementById('mf-table-container').innerHTML = html;
+}
+
+// Time Series Charts
+function updateTSCharts() {
+  const data = RAW_DATA;
+  const years = [...new Set(data.map(d=>d.delivery_year))].filter(y=>y).sort();
+
+  // Annual project count
+  destroyChart('tsPC');
+  const pcData = years.map(y => data.filter(d=>d.delivery_year===y).length);
+  charts.tsPC = new Chart(document.getElementById('tsProjectCount'), {
+    type: 'bar',
+    data: { labels: years, datasets: [{ label: 'Projects', data: pcData, backgroundColor: '#2196F3' }] },
+    options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { title: { display: true, text: 'Count' } } } }
+  });
+
+  // Annual SF
+  destroyChart('tsSF');
+  const sfData = years.map(y => data.filter(d=>d.delivery_year===y).reduce((s,d)=>s+(d.sqft||0),0));
+  charts.tsSF = new Chart(document.getElementById('tsSFDelivered'), {
+    type: 'bar',
+    data: { labels: years, datasets: [{ label: 'SF Delivered', data: sfData, backgroundColor: '#FF9800' }] },
+    options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { ticks: { callback: v=>fmtM(v) }, title: { display: true, text: 'Square Footage' } } } }
+  });
+
+  // Sectors stacked
+  destroyChart('tsSS');
+  const ssDatasets = SECTORS.filter(s=>data.some(d=>d.sector===s)).map(sector => ({
+    label: sector,
+    data: years.map(y => data.filter(d=>d.delivery_year===y && d.sector===sector).reduce((s,d)=>s+(d.sqft||0),0)),
+    backgroundColor: SECTOR_COLORS[sector]
+  }));
+  charts.tsSS = new Chart(document.getElementById('tsSectorStacked'), {
+    type: 'bar',
+    data: { labels: years, datasets: ssDatasets },
+    options: { responsive: true, scales: { x: { stacked: true }, y: { stacked: true, ticks: { callback: v=>fmtM(v) } } }, plugins: { legend: { position: 'bottom', labels: { font: { size: 10 } } } } }
+  });
+
+  // Cumulative
+  destroyChart('tsCum');
+  let cumSF = 0, cumP = 0;
+  const cumSFData = years.map(y => { cumSF += sfData[years.indexOf(y)]; return cumSF; });
+  const cumPData = years.map(y => { cumP += pcData[years.indexOf(y)]; return cumP; });
+  charts.tsCum = new Chart(document.getElementById('tsCumulative'), {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [
+        { label: 'Cumulative SF', data: cumSFData, borderColor: '#2196F3', backgroundColor: '#2196F320', fill: true, yAxisID: 'y', tension: 0.3 },
+        { label: 'Cumulative Projects', data: cumPData, borderColor: '#FF9800', borderDash: [5,5], yAxisID: 'y1', tension: 0.3 }
+      ]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        y: { position: 'left', ticks: { callback: v=>fmtM(v) }, title: { display: true, text: 'Cumulative SF' } },
+        y1: { position: 'right', title: { display: true, text: 'Cumulative Projects' }, grid: { drawOnChartArea: false } }
+      },
+      plugins: { legend: { position: 'bottom' } }
+    }
+  });
+
+  // Growth rate
+  destroyChart('tsGR');
+  const growthData = years.map((y, i) => {
+    if (i === 0) return 0;
+    const prev = sfData[i-1];
+    return prev ? (sfData[i] - prev) / prev : 0;
+  });
+  charts.tsGR = new Chart(document.getElementById('tsGrowthRate'), {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [{
+        label: 'YoY Growth Rate',
+        data: growthData.map(v=>v*100),
+        backgroundColor: growthData.map(v => v >= 0 ? '#4CAF50' : '#F44336')
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: { y: { ticks: { callback: v=>v.toFixed(0)+'%' }, title: { display: true, text: 'Growth Rate' } } },
+      plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ctx.raw.toFixed(1)+'%' } } }
+    }
+  });
+}
+
+// ============================================================
+// UPDATE ALL
+// ============================================================
+function updateAll() {
+  const data = getFiltered();
+  updateKPIs(data);
+  updateMap(map1, mapMarkers1, data, null);
+  updateDonutChart(data);
+  updateCumulativeChart(data);
+  updateStackedBarChart(data);
+  // MF and TS use full data (not filtered by page1 slicers)
+  updateMFKPIs();
+  updateMFCharts();
+  updateMap(map2, mapMarkers2, RAW_DATA, 'Multifamily');
+  updateTSCharts();
+}
+
+// ============================================================
+// INIT
+// ============================================================
+function init(data) {
+  RAW_DATA = data;
+  
+  // Populate slicers
+  const cities = [...new Set(data.map(d=>d.city))].sort();
+  const sectors = [...new Set(data.map(d=>d.sector))].sort();
+  const statuses = [...new Set(data.map(d=>d.status))].sort();
+  
+  cities.forEach(c => { const o = document.createElement('option'); o.value=c; o.textContent=c; document.getElementById('slicer-city').appendChild(o); });
+  sectors.forEach(s => { const o = document.createElement('option'); o.value=s; o.textContent=s; document.getElementById('slicer-sector').appendChild(o); });
+  statuses.forEach(s => { const o = document.createElement('option'); o.value=s; o.textContent=s; document.getElementById('slicer-status').appendChild(o); });
+  
+  const years = data.map(d=>d.delivery_year).filter(y=>y);
+  document.getElementById('slicer-year-min').placeholder = Math.min(...years);
+  document.getElementById('slicer-year-max').placeholder = Math.max(...years);
+  
+  // Event listeners
+  ['slicer-city','slicer-sector','slicer-status'].forEach(id => document.getElementById(id).addEventListener('change', onFilterChange));
+  ['slicer-year-min','slicer-year-max'].forEach(id => document.getElementById(id).addEventListener('input', onFilterChange));
+  
+  // Init maps
+  map1 = initMap('map1', 'map1');
+  map2 = initMap('map2', 'map2');
+  
+  updateAll();
+}
+
+// Load data
+fetch('dashboard_data.json')
+  .then(r => r.json())
+  .then(data => init(data))
+  .catch(err => {
+    console.error('Failed to load data:', err);
+    // Fallback: try inline
+    document.body.innerHTML = '<div style="padding:40px;text-align:center"><h2>Loading Error</h2><p>Place dashboard_data.json in the same directory as this HTML file.</p></div>';
+  });
+</script>
+</body>
+</html>

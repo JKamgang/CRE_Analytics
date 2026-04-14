@@ -1,0 +1,324 @@
+{
+  "name": "CRE_Flood_Graph_Model",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "tables": [
+      {
+        "name": "combined_pipeline",
+        "columns": [
+          {
+            "name": "project_name",
+            "dataType": "string",
+            "sourceColumn": "project_name"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city"
+          },
+          {
+            "name": "ward",
+            "dataType": "int64",
+            "sourceColumn": "ward"
+          },
+          {
+            "name": "neighborhood",
+            "dataType": "string",
+            "sourceColumn": "neighborhood"
+          },
+          {
+            "name": "developer",
+            "dataType": "string",
+            "sourceColumn": "developer"
+          },
+          {
+            "name": "architect",
+            "dataType": "string",
+            "sourceColumn": "architect"
+          },
+          {
+            "name": "sector",
+            "dataType": "string",
+            "sourceColumn": "sector"
+          },
+          {
+            "name": "status",
+            "dataType": "string",
+            "sourceColumn": "status"
+          },
+          {
+            "name": "sqft",
+            "dataType": "double",
+            "sourceColumn": "sqft"
+          },
+          {
+            "name": "units",
+            "dataType": "double",
+            "sourceColumn": "units"
+          },
+          {
+            "name": "est_value_millions",
+            "dataType": "double",
+            "sourceColumn": "est_value_millions"
+          },
+          {
+            "name": "est_delivery",
+            "dataType": "string",
+            "sourceColumn": "est_delivery"
+          },
+          {
+            "name": "report_year",
+            "dataType": "int64",
+            "sourceColumn": "report_year"
+          },
+          {
+            "name": "latitude",
+            "dataType": "double",
+            "sourceColumn": "latitude",
+            "dataCategory": "Latitude"
+          },
+          {
+            "name": "longitude",
+            "dataType": "double",
+            "sourceColumn": "longitude",
+            "dataCategory": "Longitude"
+          },
+          {
+            "name": "delivery_year",
+            "dataType": "int64",
+            "sourceColumn": "delivery_year"
+          },
+          {
+            "name": "delivery_quarter",
+            "dataType": "int64",
+            "sourceColumn": "delivery_quarter"
+          },
+          {
+            "name": "delivery_date",
+            "dataType": "dateTime",
+            "sourceColumn": "delivery_date"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Projects",
+            "expression": "COUNTROWS(combined_pipeline)"
+          },
+          {
+            "name": "Total SF",
+            "expression": "SUM(combined_pipeline[sqft])",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Total SF (M)",
+            "expression": "DIVIDE(SUM(combined_pipeline[sqft]), 1000000, 0)",
+            "formatString": "#,##0.0"
+          },
+          {
+            "name": "Total Units",
+            "expression": "SUM(combined_pipeline[units])",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Total Est Value",
+            "expression": "SUM(combined_pipeline[est_value_millions])",
+            "formatString": "$#,##0"
+          },
+          {
+            "name": "Active Cities",
+            "expression": "DISTINCTCOUNT(combined_pipeline[city])"
+          },
+          {
+            "name": "Active Sectors",
+            "expression": "DISTINCTCOUNT(combined_pipeline[sector])"
+          },
+          {
+            "name": "Avg Project Size",
+            "expression": "AVERAGE(combined_pipeline[sqft])",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Cumulative SF",
+            "expression": "CALCULATE(SUM(combined_pipeline[sqft]), FILTER(ALL(combined_pipeline[delivery_year]), combined_pipeline[delivery_year] <= MAX(combined_pipeline[delivery_year])))",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Cumulative SF by Sector",
+            "expression": "CALCULATE(SUM(combined_pipeline[sqft]), FILTER(ALL(combined_pipeline[delivery_year]), combined_pipeline[delivery_year] <= MAX(combined_pipeline[delivery_year])), VALUES(combined_pipeline[sector]))",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "Cumulative Projects",
+            "expression": "CALCULATE(COUNTROWS(combined_pipeline), FILTER(ALL(combined_pipeline[delivery_year]), combined_pipeline[delivery_year] <= MAX(combined_pipeline[delivery_year])))"
+          },
+          {
+            "name": "Growth Rate YoY",
+            "expression": "VAR CurrentYearVal = [Total SF]\nVAR PriorYearVal = CALCULATE([Total SF], FILTER(ALL(combined_pipeline[delivery_year]), combined_pipeline[delivery_year] = MAX(combined_pipeline[delivery_year]) - 1))\nRETURN DIVIDE(CurrentYearVal - PriorYearVal, PriorYearVal, 0)",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Bubble Size",
+            "expression": "DIVIDE(SUM(combined_pipeline[sqft]), 1000, 1)"
+          },
+          {
+            "name": "Project Density",
+            "expression": "DIVIDE(COUNTROWS(combined_pipeline), DISTINCTCOUNT(combined_pipeline[neighborhood]), 0)",
+            "formatString": "#,##0.0"
+          },
+          {
+            "name": "MF Total Units",
+            "expression": "CALCULATE(SUM(combined_pipeline[units]), combined_pipeline[sector] = \"Multifamily\")",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "MF Total Projects",
+            "expression": "CALCULATE(COUNTROWS(combined_pipeline), combined_pipeline[sector] = \"Multifamily\")"
+          },
+          {
+            "name": "MF Avg Unit Density",
+            "expression": "CALCULATE(AVERAGE(combined_pipeline[units]), combined_pipeline[sector] = \"Multifamily\", combined_pipeline[units] > 0)",
+            "formatString": "#,##0"
+          },
+          {
+            "name": "MF Completion Rate",
+            "expression": "DIVIDE(CALCULATE(COUNTROWS(combined_pipeline), combined_pipeline[sector] = \"Multifamily\", combined_pipeline[status] = \"Completed\"), CALCULATE(COUNTROWS(combined_pipeline), combined_pipeline[sector] = \"Multifamily\"), 0)",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "MF Pipeline Units",
+            "expression": "CALCULATE(SUM(combined_pipeline[units]), combined_pipeline[sector] = \"Multifamily\", combined_pipeline[status] = \"Pipeline\")",
+            "formatString": "#,##0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "combined_pipeline",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"combined_pipeline.csv\"), [Delimiter=\",\", Encoding=65001]),\n    PromotedHeaders = Table.PromoteHeaders(Source)\nin\n    PromotedHeaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "sector_lookup",
+        "columns": [
+          {
+            "name": "sector",
+            "dataType": "string",
+            "sourceColumn": "sector"
+          },
+          {
+            "name": "color_hex",
+            "dataType": "string",
+            "sourceColumn": "color_hex"
+          },
+          {
+            "name": "sort_order",
+            "dataType": "int64",
+            "sourceColumn": "sort_order"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "sector_lookup",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"sector_lookup.csv\"), [Delimiter=\",\", Encoding=65001]),\n    PromotedHeaders = Table.PromoteHeaders(Source)\nin\n    PromotedHeaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "city_lookup",
+        "columns": [
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city"
+          },
+          {
+            "name": "city_full",
+            "dataType": "string",
+            "sourceColumn": "city_full"
+          },
+          {
+            "name": "state",
+            "dataType": "string",
+            "sourceColumn": "state"
+          },
+          {
+            "name": "region",
+            "dataType": "string",
+            "sourceColumn": "region"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "city_lookup",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"city_lookup.csv\"), [Delimiter=\",\", Encoding=65001]),\n    PromotedHeaders = Table.PromoteHeaders(Source)\nin\n    PromotedHeaders"
+            }
+          }
+        ]
+      },
+      {
+        "name": "time_dimension",
+        "columns": [
+          {
+            "name": "year",
+            "dataType": "int64",
+            "sourceColumn": "year"
+          },
+          {
+            "name": "quarter",
+            "dataType": "int64",
+            "sourceColumn": "quarter"
+          },
+          {
+            "name": "year_quarter",
+            "dataType": "string",
+            "sourceColumn": "year_quarter"
+          },
+          {
+            "name": "date_key",
+            "dataType": "dateTime",
+            "sourceColumn": "date_key"
+          },
+          {
+            "name": "is_forecast",
+            "dataType": "boolean",
+            "sourceColumn": "is_forecast"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "time_dimension",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"time_dimension.csv\"), [Delimiter=\",\", Encoding=65001]),\n    PromotedHeaders = Table.PromoteHeaders(Source)\nin\n    PromotedHeaders"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "pipeline_to_sector",
+        "fromTable": "combined_pipeline",
+        "fromColumn": "sector",
+        "toTable": "sector_lookup",
+        "toColumn": "sector"
+      },
+      {
+        "name": "pipeline_to_city",
+        "fromTable": "combined_pipeline",
+        "fromColumn": "city",
+        "toTable": "city_lookup",
+        "toColumn": "city"
+      }
+    ]
+  }
+}

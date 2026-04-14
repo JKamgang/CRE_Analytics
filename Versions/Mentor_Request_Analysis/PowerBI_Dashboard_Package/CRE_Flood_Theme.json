@@ -1,0 +1,87 @@
+{
+  "name": "CRE Flood Graph Theme",
+  "dataColors": [
+    "#2196F3",
+    "#FF9800",
+    "#4CAF50",
+    "#9C27B0",
+    "#F44336",
+    "#00BCD4",
+    "#607D8B",
+    "#FFC107"
+  ],
+  "background": "#F5F5F5",
+  "foreground": "#333333",
+  "tableAccent": "#003366",
+  "good": "#4CAF50",
+  "neutral": "#FFC107",
+  "bad": "#F44336",
+  "maximum": "#003366",
+  "center": "#2196F3",
+  "minimum": "#E3F2FD",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontFamily": "Segoe UI Semibold",
+            "fontSize": 12,
+            "fontColor": {
+              "solid": {
+                "color": "#003366"
+              }
+            }
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#E0E0E0"
+              }
+            },
+            "radius": 8
+          }
+        ],
+        "shadow": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#00000020"
+              }
+            },
+            "position": "Outer"
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F5F5F5"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
