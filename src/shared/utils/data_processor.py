@@ -28,6 +28,13 @@ def load_processed_csv(city_config: dict) -> pd.DataFrame:
     return pd.DataFrame()
 
 
+from src.entities.md_permit.api import run_maryland_pipeline
+from src.entities.ga_metro.api import run_ga_metro_pipeline
+
+# ── Mock Configs for new Regions ──────────────────────────────────────────────
+MD_CONFIG = {"processed_file": "md_pipeline_processed.csv"}
+GA_METRO_CONFIG = {"processed_file": "ga_metro_pipeline_processed.csv"}
+
 def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
     """
     Return processed data for a city.
@@ -39,6 +46,12 @@ def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
     elif city.upper() in ("ATL", "ATLANTA"):
         cfg = ATLANTA_CONFIG
         pipeline_fn = run_atlanta_pipeline
+    elif city.upper() in ("MD", "MARYLAND"):
+        cfg = MD_CONFIG
+        pipeline_fn = run_maryland_pipeline
+    elif city.upper() in ("GA_METRO", "ATLANTA_METRO"):
+        cfg = GA_METRO_CONFIG
+        pipeline_fn = run_ga_metro_pipeline
     else:
         logger.warning("Unknown city: %s", city)
         return pd.DataFrame()
@@ -53,15 +66,15 @@ def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
 
 
 def load_all_cities(force_refresh: bool = False) -> pd.DataFrame:
-    """Load and merge data for all configured cities."""
+    """Load and merge data for all configured cities and regions."""
     frames = []
-    for city_key in ("DC", "ATL"):
+    for city_key in ("DC", "ATL", "MD", "GA_METRO"):
         df = load_or_fetch(city_key, force_refresh=force_refresh)
         if not df.empty:
             frames.append(df)
     if frames:
         combined = pd.concat(frames, ignore_index=True)
-        logger.info("Combined DataFrame: %d records across %d cities", len(combined), len(frames))
+        logger.info("Combined DataFrame: %d records across %d cities/regions", len(combined), len(frames))
         return combined
     return pd.DataFrame()
 

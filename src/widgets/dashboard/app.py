@@ -585,11 +585,22 @@ with tab_exports:
     with col1:
         if st.button("Generate Pro Excel File"):
             if not df.empty:
-                atl_df = df[df['city'] == 'Atlanta, GA']
-                dc_df = df[df['city'] == 'Washington, DC']
+                atl_df = df[df['city'] == 'Atlanta, GA'].copy()
+                dc_df = df[df['city'] == 'Washington, DC'].copy()
                 # Try to use original short names if mapped
-                if atl_df.empty: atl_df = df[df['city'] == 'ATL']
-                if dc_df.empty: dc_df = df[df['city'] == 'DC']
+                if atl_df.empty: atl_df = df[df['city'] == 'ATL'].copy()
+                if dc_df.empty: dc_df = df[df['city'] == 'DC'].copy()
+
+                # Make sure ProjectID exists to avoid filtering out everything in the Growth Calculator
+                if 'project_id' not in atl_df.columns and not atl_df.empty:
+                    atl_df['ProjectID'] = atl_df.index.astype(str) + '_atl'
+                elif not atl_df.empty:
+                    atl_df['ProjectID'] = atl_df['project_id']
+
+                if 'project_id' not in dc_df.columns and not dc_df.empty:
+                    dc_df['ProjectID'] = dc_df.index.astype(str) + '_dc'
+                elif not dc_df.empty:
+                    dc_df['ProjectID'] = dc_df['project_id']
 
                 gen = ExcelProGenerator()
                 out = gen.generate(atl_df, dc_df)
@@ -622,6 +633,29 @@ with tab_exports:
 with tab_learning:
     st.subheader("🧠 AI-Assisted Learning Hub")
     st.markdown("Automated insights and self-documenting data models.")
+
+    st.markdown("### Local LLM Guide: Building Power BI Visuals")
+    st.markdown("""
+    You can use local open-source LLMs (like **Llama 3** or **Gemma 4**) to build Power BI visuals on the fly.
+    1. **Download Local LLM Engine:** Install Ollama or LM Studio to run models locally for free.
+    2. **Load Model:** Pull a model like `llama3` or `gemma`. (Note: Keep local models to 5 or fewer to optimize system resources).
+    3. **Prompting:** Ask the LLM to generate DAX based on your schema. Example:
+       > *"I have a table 'GrowthData' with 'City', 'EntryDate', and 'Est_Value'. Write a DAX measure to calculate Year-Over-Year Growth."*
+    4. **Paste:** Copy the generated DAX into your Power BI model.
+    """)
+
+    st.markdown("### Summary of Data Sources")
+    st.markdown("""
+    | Source | Best For | Format | Type |
+    |---|---|---|---|
+    | **Open Data DC (WDCEP)** | Live Pipeline tracking (DC) | GeoService API | Free |
+    | **Atlanta ARC** | Regional growth trends (GA Metro) | GeoService API | Free |
+    | **Maryland iMap** | Boundary / County Permits | GeoService API | Free |
+    | **QGIS** | Local spatial analysis | Shapefiles / GeoJSON | Free |
+    | **CoStar** | Deep historical & rent data | Proprietary API | Commercial |
+    """)
+
+    st.divider()
 
     llm_router = LLMCascadeRouter(use_local_only=not st.session_state.tier.has_real_time_api())
     prompt = "Explain the relationship between multi-family units and growth pressure in a commercial real estate context."
