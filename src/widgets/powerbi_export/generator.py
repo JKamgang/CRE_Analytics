@@ -18,6 +18,20 @@ RETURN
         ),
         (1.05 + (BasePressure * 0.02)) * 'Date'[Year] + MOD('Date'[Year], 5) * 0.3
     )
+
+// DAX Measure: Year-Over-Year (YoY) Regional Permit Growth
+YoY_Regional_Permit_Growth =
+VAR CurrentYearPermits = CALCULATE(COUNTROWS(GrowthData), 'GrowthData'[City] = SELECTEDVALUE('GrowthData'[City]))
+VAR PreviousYearPermits = CALCULATE(COUNTROWS(GrowthData), SAMEPERIODLASTYEAR('Date'[Date]), 'GrowthData'[City] = SELECTEDVALUE('GrowthData'[City]))
+RETURN
+    DIVIDE(CurrentYearPermits - PreviousYearPermits, PreviousYearPermits, 0)
+
+// DAX Measure: Z-Score Normalized Development Value
+Z_Score_Normalized_Value =
+VAR CityAvg = CALCULATE(AVERAGE(GrowthData[Est_Value]), ALLEXCEPT(GrowthData, GrowthData[City]))
+VAR CityStdDev = CALCULATE(STDEV.P(GrowthData[Est_Value]), ALLEXCEPT(GrowthData, GrowthData[City]))
+RETURN
+    DIVIDE(MAX(GrowthData[Est_Value]) - CityAvg, CityStdDev, 0)
         """
 
     def get_power_query_script(self) -> str:
