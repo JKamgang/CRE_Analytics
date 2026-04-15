@@ -9,7 +9,8 @@ def fetch_atlanta_metro_regional_data(limit=1000, state=None, county=None, zip_c
     Fetches commercial development data from ARC Open Data Hub (21-County Metro).
     Supports hyper-granular geospatial search (State, County, ZIP, Street).
     """
-    url = "https://opendata.atlantaregional.com/datasets/bb7da4c7962f430ba561526ef1581760_1/FeatureServer/0/query"
+    url = "https://opendata.atlantaregional.com/datasets/655f985f43cc40b4bf2ab7bc73d2169b_1/FeatureServer/0/query"
+    fallback_url = "https://www.arcgis.com/sharing/rest/content/items/655f985f43cc40b4bf2ab7bc73d2169b/data"
 
     where_clauses = ["1=1"]
     if state: where_clauses.append(f"STATE_ABBR = '{state}'")
@@ -28,9 +29,19 @@ def fetch_atlanta_metro_regional_data(limit=1000, state=None, county=None, zip_c
         response = requests.get(url, params=params)
         response.raise_for_status()
         data = response.json()
+        features = None
 
         if 'features' in data:
             features = [f['attributes'] for f in data['features']]
+        else:
+            logger.info("Falling back to raw item data URL...")
+            fallback_response = requests.get(fallback_url)
+            fallback_response.raise_for_status()
+            fallback_data = fallback_response.json()
+            if 'features' in fallback_data:
+                features = [f['attributes'] for f in fallback_data['features']]
+
+        if features:
             df = pd.DataFrame(features)
 
             # Standardize columns to match Data Artery

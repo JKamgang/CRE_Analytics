@@ -93,6 +93,8 @@ with st.sidebar:
     st.divider()
 
     language = st.selectbox("Language", I18nConfig.LANGUAGES, index=0)
+    st.session_state['lang'] = language
+
     tier = st.selectbox("Tier", [MonetizationTier.FREE, MonetizationTier.PRO, MonetizationTier.ENTERPRISE], index=0)
     st.session_state.tier = MonetizationTier(tier)
 
@@ -196,14 +198,17 @@ st.divider()
 # ╔══════════════════════════════════════════════════════════════════════════╗
 # ║  TABS                                                                   ║
 # ╚══════════════════════════════════════════════════════════════════════════╝
+# Get current language from session state or default to EN
+current_lang = st.session_state.get('lang', 'en')
+
 tab_flood, tab_geo, tab_trends, tab_mf, tab_data, tab_exports, tab_learning = st.tabs([
-    "🌊 Flood Rising Map",
-    "📍 Geointelligence Map",
-    "📈 Time Series Trends",
-    "🏢 Multifamily Deep-Dive",
-    "📋 Data Explorer",
-    "💾 Exports & Scaffolds",
-    "🧠 Learning Hub",
+    I18nConfig.get_text("tab_flood", current_lang),
+    I18nConfig.get_text("tab_geo", current_lang),
+    I18nConfig.get_text("tab_trends", current_lang),
+    I18nConfig.get_text("tab_mf", current_lang),
+    I18nConfig.get_text("tab_data", current_lang),
+    I18nConfig.get_text("tab_exports", current_lang),
+    I18nConfig.get_text("tab_learning", current_lang),
 ])
 
 # ──────────────────────────────────────────────────────────────────────────
