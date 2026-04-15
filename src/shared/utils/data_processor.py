@@ -231,6 +231,10 @@ def compute_flood_intensity(df: pd.DataFrame) -> pd.DataFrame:
     atl_df = df[df['city'] == 'Atlanta, GA'].copy()
     dc_df = df[df['city'] == 'Washington, DC'].copy()
 
+    # Fallback to short codes
+    if atl_df.empty: atl_df = df[df['city'] == 'ATL'].copy()
+    if dc_df.empty: dc_df = df[df['city'] == 'DC'].copy()
+
     calc = GrowthPressureCalculator()
     combined_df = calc.calculate_pressure(atlanta_df=atl_df, dc_df=dc_df)
 
@@ -246,4 +250,15 @@ def compute_flood_intensity(df: pd.DataFrame) -> pd.DataFrame:
 
     # Map back to report year
     timeline_df.columns = ["report_year", "flood_level"]
-    return df.merge(timeline_df, on="report_year", how="left")
+
+    # We need to map the simulated timeline (2010-2030) to all geographic records
+    # Create a cartesian product of projects and timeline to simulate the animation frame correctly
+    locations = df[['project_name', 'latitude', 'longitude', 'sector', 'city', 'sqft', 'status', 'est_value_millions']].drop_duplicates()
+    cartesian_df = locations.merge(timeline_df, how='cross')
+
+    # Optional: We can add a variance or threshold based on individual growth pressure
+    if 'growth_pressure' in df.columns:
+        cartesian_df = cartesian_df.merge(df[['project_name', 'growth_pressure']].drop_duplicates(), on='project_name', how='left')
+        cartesian_df['flood_level'] = cartesian_df['flood_level'] * cartesian_df['growth_pressure'].fillna(1.0)
+
+    return cartesian_df

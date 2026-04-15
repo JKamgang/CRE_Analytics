@@ -6,6 +6,10 @@ load_dotenv()
 class Config:
     GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
+    # Legacy bindings to fix breaking changes in older modules
+    DC_WDCEP_BASE_URL = "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Property_and_Land_WebMercator/MapServer"
+    ATLANTA_ARC_BASE_URL = "https://services1.arcgis.com/1CfuB83LwE58G5g4/arcgis/rest/services"
+
 # ─── Application Settings ───────────────────────────────────────────────────────
 APP_TITLE = "CRE Flood Graph — Development Pipeline Visualizer"
 APP_ICON = "🌊"
@@ -63,6 +67,7 @@ ATLANTA_CONFIG = {
     "short": "ATL",
     "arcgis_feature_server": "https://services5.arcgis.com/H2e8kXqsqoMRfwtz/arcgis/rest/services/Building_Permits/FeatureServer/0",
     "geojson_url": "https://services5.arcgis.com/H2e8kXqsqoMRfwtz/arcgis/rest/services/Building_Permits/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson&resultRecordCount=2000",
+    "arc_regional_data_url": "https://www.arcgis.com/sharing/rest/content/items/655f985f43cc40b4bf2ab7bc73d2169b/data",
     "max_record_count": 2000,
     "sector_map": {
         "office": "Office", "commercial": "Office", "retail": "Retail",
