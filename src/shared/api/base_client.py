@@ -5,11 +5,18 @@ class BaseAPIClient:
 
     def __init__(self, base_url=""):
         self.base_url = base_url
+        self.headers = {
+            "User-Agent": "AlileCREAnalytics/2.0 (cs@alileva.com) GeospatialEngine/1.0"
+        }
 
     def get(self, endpoint, params=None, headers=None):
         url = f"{self.base_url}{endpoint}"
+        actual_headers = self.headers.copy()
+        if headers:
+            actual_headers.update(headers)
+
         try:
-            response = requests.get(url, params=params, headers=headers)
+            response = requests.get(url, params=params, headers=actual_headers, timeout=60)
             response.raise_for_status()
             return response.json()
         except requests.exceptions.RequestException as e:

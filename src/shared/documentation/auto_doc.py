@@ -1,31 +1,33 @@
+import json
+import os
+from src.shared.llm_router import LLMCascadeRouter
+
 class SemanticModelDocumenter:
     """
-    Self-Documenting feature where any change to the Semantic Model automatically
-    updates the user-facing 'Learning Hub'.
+    Provides automated documentation and semantic mapping for the AI assistant.
+    Integrates with LLM Cascade to help users understand data and create analysis.
     """
+    def __init__(self, mapping_path="src/shared/models/semantic_map.json"):
+        self.mapping_path = mapping_path
+        self.mapping = self._load_mapping()
+        self.ai = LLMCascadeRouter()
 
-    def generate_hub_docs(self, schema_changes: dict) -> str:
-        docs = "# Alile CRE Analytics - Learning Hub\n\n"
-        docs += "This documentation is auto-generated based on the current semantic model.\n\n"
+    def _load_mapping(self):
+        if os.path.exists(self.mapping_path):
+            with open(self.mapping_path, "r") as f:
+                return json.load(f)
+        return {}
 
-        for field, description in schema_changes.items():
-            docs += f"## {field}\n"
-            docs += f"**Description**: {description}\n\n"
+    def get_column_description(self, col_name):
+        return self.mapping.get(col_name, "No description available.")
 
-        # In a real app, this would use a local LLM or Jules to rewrite/explain
-        # the changes to students.
-        docs += "## Auto-Generated AI Insight\n"
-        docs += "The changes above reflect the transmission vector of capital across metro regions.\n\n"
+    def generate_ai_context(self):
+        ctx = "Semantic Model Context for Alile CRE Analytics:\n"
+        for col, desc in self.mapping.items():
+            ctx += f"- {col}: {desc}\n"
+        return ctx
 
-        docs += "## Understanding the Data & Transformation\n"
-        docs += "**Z-Score Normalization**: Because a $500M project in DC is different than a $5M permit in Atlanta, we compute a `Z-Score` to standardize 'Growth Pressure'. It compares the size of a project relative to its own regional average rather than absolute value.\n\n"
-
-        docs += "## Guide to Local Open-Source LLMs (Llama 3 / Gemma 4)\n"
-        docs += "Use offline tools like LM Studio to connect this solution to your local LLM.\n"
-        docs += "### Example Prompts for Power BI DAX\n"
-        docs += "- *\"Given a column 'growth_pressure', write a DAX measure to calculate a 5-year rolling average.\"* \n"
-        docs += "- *\"I have 'EntryDate'. Help me write a DAX string for Year-Over-Year 'flood' calculation.\"* \n"
-        docs += "### Example Prompts for Excel VBA / Macros\n"
-        docs += "- *\"Write an Excel VBA macro that automatically generates a Pivot Table mapping 'City' to 'Growth Pressure'.\"*\n"
-
-        return docs
+    def assist_user(self, query):
+        context = self.generate_ai_context()
+        prompt = f"Context: {context}\n\nUser Question: {query}\n\nHelp the user understand the data or create analysis based on the semantic model."
+        return self.ai.route_request(prompt)
