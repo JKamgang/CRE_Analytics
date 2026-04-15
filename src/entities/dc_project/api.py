@@ -2,7 +2,7 @@
 DC Data Pipeline — WDCEP Development Report
 =============================================
 Fetches data from the Open Data DC ArcGIS FeatureServer, normalizes it into
-the canonical CRE Flood Graph schema, and exports to CSV.
+the canonical CRE Growth Graph schema, and exports to CSV.
 """
 
 import os

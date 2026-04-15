@@ -6,13 +6,13 @@ load_dotenv()
 class Config:
     GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
-    # Legacy bindings to fix breaking changes in older modules
+    # Legacy bindings
     DC_WDCEP_BASE_URL = "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Property_and_Land_WebMercator/FeatureServer"
     ATLANTA_ARC_BASE_URL = "https://services5.arcgis.com/H2e8kXqsqoMRfwtz/arcgis/rest/services/Building_Permits/FeatureServer"
 
 # ─── Application Settings ───────────────────────────────────────────────────────
-APP_TITLE = "CRE Flood Graph — Development Pipeline Visualizer"
-APP_ICON = "🌊"
+APP_TITLE = "Alile CRE Growth Dynamics"
+APP_ICON = "📈"
 DEFAULT_PAGE_LAYOUT = "wide"
 
 # ─── Data Directories ──────────────────────────────────────────────────────────
@@ -90,7 +90,7 @@ COSTAR_CONFIG = {
 }
 
 MAPBOX_STYLE = "carto-positron"
-FLOOD_COLOR_SCALE = [
+GROWTH_COLOR_SCALE = [
     [0.0, "#f7fbff"], [0.2, "#c6dbef"], [0.4, "#6baed6"],
     [0.6, "#2171b5"], [0.8, "#08519c"], [1.0, "#08306b"]
 ]

@@ -4,3 +4,7 @@ requests
 shapely
 google-generativeai
 python-dotenv
+streamlit
+plotly
+xlsxwriter
+numpy
