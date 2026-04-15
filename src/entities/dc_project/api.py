@@ -17,14 +17,20 @@ logger = logging.getLogger(__name__)
 
 
 # ── ArcGIS REST paging helper ────────────────────────────────────────────────
-def _query_arcgis(base_url: str, max_records: int = 2000) -> list[dict]:
-    """Page through an ArcGIS FeatureServer and return all features."""
+def _query_arcgis(base_url: str, max_records: int = 2000, state=None, county=None, zip_code=None, street=None) -> list[dict]:
+    """Page through an ArcGIS FeatureServer and return all features. Supports hyper-granular searches."""
     all_features: list[dict] = []
     offset = 0
 
+    where_clauses = ["1=1"]
+    if state: where_clauses.append(f"STATE = '{state}'")
+    if county: where_clauses.append(f"COUNTY LIKE '%{county}%'")
+    if zip_code: where_clauses.append(f"ZIPCODE = '{zip_code}'")
+    if street: where_clauses.append(f"ADDRESS LIKE '%{street}%'")
+
     while True:
         params = {
-            "where": "1=1",
+            "where": " AND ".join(where_clauses),
             "outFields": "*",
             "f": "json",
             "resultOffset": offset,
@@ -55,11 +61,12 @@ def _query_arcgis(base_url: str, max_records: int = 2000) -> list[dict]:
 
 
 # ── Public functions ─────────────────────────────────────────────────────────
-def fetch_dc_data() -> pd.DataFrame:
-    """Fetch raw WDCEP data and return as DataFrame."""
+def fetch_dc_data(**kwargs) -> pd.DataFrame:
+    """Fetch raw WDCEP data and return as DataFrame. Supports hyper-granular geospatial search."""
     features = _query_arcgis(
         DC_CONFIG["arcgis_feature_server"],
         DC_CONFIG["max_record_count"],
+        **kwargs
     )
 
     if not features:
@@ -191,10 +198,10 @@ def save_dc_data(raw_df: pd.DataFrame, processed_df: pd.DataFrame) -> tuple[str,
     return raw_path, proc_path
 
 
-def run_dc_pipeline() -> pd.DataFrame:
+def run_dc_pipeline(**kwargs) -> pd.DataFrame:
     """End-to-end: fetch → normalize → save → return processed DataFrame."""
     logger.info("═══ DC Pipeline START ═══")
-    raw = fetch_dc_data()
+    raw = fetch_dc_data(**kwargs)
     processed = normalize_dc_data(raw)
     if not processed.empty:
         save_dc_data(raw, processed)
