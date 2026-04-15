@@ -1,1 +1,1 @@
-from .generator import ExcelGrowthGenerator
+from .generator import ExcelProGenerator

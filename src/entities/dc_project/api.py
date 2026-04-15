@@ -111,32 +111,17 @@ def normalize_dc_data(df: pd.DataFrame) -> pd.DataFrame:
 
     sector_map = DC_CONFIG["sector_map"]
 
-    # Pre-calculate sector mapping using unique values to avoid slow row-by-row apply
-    raw_project_type = df.get("PROJECTTYPE", df.get("PROJECT_TYPE", pd.Series(dtype="str")))
-    unique_types = raw_project_type.unique()
-
-    sector_memo = {}
-    sector_items = tuple(sector_map.items())
-
-    for raw_type in unique_types:
+    def _map_sector(raw_type: str) -> str:
         if pd.isna(raw_type):
-            sector_memo[raw_type] = "Other"
-            continue
-
+            return "Other"
         key = str(raw_type).strip().lower()
+        # Try exact match first, then partial
         if key in sector_map:
-            sector_memo[raw_type] = sector_map[key]
-            continue
-
-        found = False
-        for token, sector in sector_items:
+            return sector_map[key]
+        for token, sector in sector_map.items():
             if token in key:
-                sector_memo[raw_type] = sector
-                found = True
-                break
-
-        if not found:
-            sector_memo[raw_type] = "Other"
+                return sector
+        return "Other"
 
     # Build canonical columns
     out = pd.DataFrame()
@@ -146,7 +131,7 @@ def normalize_dc_data(df: pd.DataFrame) -> pd.DataFrame:
     out["neighborhood"] = df.get("LOCATION", df.get("ADDRESS", pd.Series(dtype="str")))
     out["developer"] = df.get("DEVELOPER", pd.Series(dtype="str"))
     out["architect"] = df.get("ARCHITECT", pd.Series(dtype="str"))
-    out["sector"] = raw_project_type.map(sector_memo)
+    out["sector"] = (df.get("PROJECTTYPE", df.get("PROJECT_TYPE", pd.Series(dtype="str")))).apply(_map_sector)
     out["status"] = df.get("STATUS", pd.Series(dtype="str"))
     out["sqft"] = pd.to_numeric(df.get("TYPE_SQFT", df.get("SQFT", pd.Series(dtype="float"))), errors="coerce")
     out["units"] = pd.to_numeric(df.get("UNITS", pd.Series(dtype="float")), errors="coerce")

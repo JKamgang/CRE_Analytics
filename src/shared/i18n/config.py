@@ -6,8 +6,8 @@ class I18nConfig:
         "en": {
             "title": "Alile CRE Analytics",
             "subtitle": "Development Pipeline Visualizer (alileva.com)",
-            "growth_status": "Growth Pressure",
-            "cumulative_growth_series": "Cumulative Growth",
+            "growth_pressure": "Growth Pressure",
+            "cumulative_growth": "Cumulative Growth",
             "data_source": "Data source",
             "language": "Language",
             "tier": "Tier",
@@ -31,8 +31,8 @@ class I18nConfig:
         "fr": {
             "title": "Analytique Alile CRE",
             "subtitle": "Visualisateur de pipeline de développement",
-            "growth_status": "Pression de Croissance",
-            "cumulative_growth_series": "Croissance Cumulée",
+            "growth_pressure": "Pression de Croissance",
+            "cumulative_growth": "Croissance Cumulée",
             "data_source": "Source de données",
             "language": "Langue",
             "tier": "Niveau",
@@ -56,8 +56,8 @@ class I18nConfig:
         "es": {
             "title": "Análisis Alile CRE",
             "subtitle": "Visualizador de Pipeline de Desarrollo",
-            "growth_status": "Presión de Crecimiento",
-            "cumulative_growth_series": "Crecimiento Acumulado",
+            "growth_pressure": "Presión de Crecimiento",
+            "cumulative_growth": "Crecimiento Acumulado",
             "data_source": "Fuente de datos",
             "language": "Idioma",
             "tier": "Nivel",

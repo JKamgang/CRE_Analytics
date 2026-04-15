@@ -82,6 +82,13 @@ ATLANTA_CONFIG = {
     "default_zoom": 11,
 }
 
+COSTAR_CONFIG = {
+    "name": "CoStar",
+    "enabled": False,
+    "api_base_url": "https://api.costar.com/",
+    "api_key_env_var": "COSTAR_API_KEY",
+}
+
 MAPBOX_STYLE = "carto-positron"
 GROWTH_COLOR_SCALE = [
     [0.0, "#f7fbff"], [0.2, "#c6dbef"], [0.4, "#6baed6"],
