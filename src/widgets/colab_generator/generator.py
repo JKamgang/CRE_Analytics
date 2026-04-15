@@ -62,7 +62,7 @@ class ColabGenerator:
                     "source": [
                         "# Pseudo code to compute Growth Pressure (Z-Score)\n",
                         "# df['z_score_cost'] = (df['cost'] - df['cost'].mean()) / df['cost'].std()\n",
-                        "# df['growth_pressure'] = df['z_score_cost'].clip(lower=0)"
+                        "# df['growth_status'] = df['z_score_cost'].clip(lower=0)"
                     ]
                 },
                 {
