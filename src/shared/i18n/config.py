@@ -5,7 +5,7 @@ class I18nConfig:
     TRANSLATIONS = {
         "en": {
             "title": "Alile CRE Analytics",
-            "subtitle": "Development Pipeline Visualizer",
+            "subtitle": "Development Pipeline Visualizer (alileva.com)",
             "growth_pressure": "Growth Pressure",
             "cumulative_growth": "Cumulative Growth",
             "data_source": "Data source",

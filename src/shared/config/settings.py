@@ -7,8 +7,8 @@ class Config:
     GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
     # Legacy bindings to fix breaking changes in older modules
-    DC_WDCEP_BASE_URL = "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Property_and_Land_WebMercator/MapServer"
-    ATLANTA_ARC_BASE_URL = "https://services1.arcgis.com/1CfuB83LwE58G5g4/arcgis/rest/services"
+    DC_WDCEP_BASE_URL = "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Property_and_Land_WebMercator/FeatureServer"
+    ATLANTA_ARC_BASE_URL = "https://services5.arcgis.com/H2e8kXqsqoMRfwtz/arcgis/rest/services/Building_Permits/FeatureServer"
 
 # ─── Application Settings ───────────────────────────────────────────────────────
 APP_TITLE = "CRE Flood Graph — Development Pipeline Visualizer"
