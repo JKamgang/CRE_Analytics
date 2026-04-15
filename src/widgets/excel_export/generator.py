@@ -27,12 +27,22 @@ class ExcelProGenerator:
 
             # Additional 'Pro' logic: Pivot Table Scaffold
             if not combined_df.empty:
-                pivot = pd.pivot_table(combined_df,
-                                       values='growth_pressure',
-                                       index='city' if 'city' in combined_df.columns else None,
-                                       columns='status' if 'status' in combined_df.columns else None,
-                                       aggfunc='mean')
-                pivot.to_excel(writer, sheet_name='Pivot - Pressure by City')
+                try:
+                    pivot = pd.pivot_table(combined_df,
+                                           values='growth_pressure',
+                                           index='city' if 'city' in combined_df.columns else None,
+                                           columns='status' if 'status' in combined_df.columns else None,
+                                           aggfunc='mean')
+                    pivot.to_excel(writer, sheet_name='Pivot - Pressure by City')
+
+                    if 'zip_code' in combined_df.columns:
+                        zip_pivot = pd.pivot_table(combined_df,
+                                               values='growth_pressure',
+                                               index='zip_code',
+                                               aggfunc='count')
+                        zip_pivot.to_excel(writer, sheet_name='Pivot - Hotspots by ZIP')
+                except Exception as e:
+                    print(f"Pivot generation failed: {e}")
 
         print(f"Generated Pro Excel File: {self.output_path}")
         return self.output_path

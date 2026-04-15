@@ -4,14 +4,21 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def fetch_maryland_permits(limit=1000):
+def fetch_maryland_permits(limit=1000, state=None, county=None, zip_code=None, street=None):
     """
     Fetches commercial building permits for Maryland (e.g., Montgomery, Prince George's Counties)
-    using the Maryland iMap ArcGIS portal.
+    using the Maryland iMap ArcGIS portal. Supports hyper-granular spatial searches.
     """
     url = "https://geodata.md.gov/imap/rest/services/BusinessEconomy/MD_IncentiveZones/FeatureServer/0/query"
+
+    where_clauses = ["1=1"]
+    if state: where_clauses.append(f"STATE = '{state}'")
+    if county: where_clauses.append(f"COUNTY LIKE '%{county}%'")
+    if zip_code: where_clauses.append(f"ZIP = '{zip_code}'")
+    if street: where_clauses.append(f"STREET LIKE '%{street}%'")
+
     params = {
-        'where': '1=1',
+        'where': ' AND '.join(where_clauses),
         'outFields': '*',
         'resultRecordCount': limit,
         'f': 'json'
@@ -28,8 +35,12 @@ def fetch_maryland_permits(limit=1000):
 
             # Standardize columns to match Data Artery
             if not df.empty:
-                df.rename(columns={'OBJECTID': 'ProjectID'}, inplace=True)
-                df['City'] = 'Maryland'
+                df.rename(columns={'OBJECTID': 'project_id'}, inplace=True)
+                df['city'] = 'MD'
+                df['sector'] = 'Other'
+                df['est_value_millions'] = 1.0 # placeholder for testing z-score
+                df['sqft'] = 1000 # placeholder
+                df['report_year'] = 2026
             return df
         else:
             logger.warning("No features found in Maryland permit API response.")
@@ -39,6 +50,6 @@ def fetch_maryland_permits(limit=1000):
         logger.error(f"Error fetching Maryland permits: {e}")
         return pd.DataFrame()
 
-def run_maryland_pipeline():
+def run_maryland_pipeline(**kwargs):
     logger.info("Running Maryland Pipeline")
-    return fetch_maryland_permits()
+    return fetch_maryland_permits(**kwargs)

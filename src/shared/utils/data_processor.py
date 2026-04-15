@@ -216,18 +216,34 @@ def get_multifamily_deep_dive(df: pd.DataFrame) -> pd.DataFrame:
     return mf
 
 
+from src.features.growth_pressure.calculator import GrowthPressureCalculator
+from src.features.cumulative_growth.tracker import CumulativeGrowthTracker
+
 def compute_flood_intensity(df: pd.DataFrame) -> pd.DataFrame:
     """
-    For each year, compute a cumulative 'flood level' (normalized 0–1)
-    representing the intensity of development activity — used for the
-    animated flood-rising map visualization.
+    For each year, compute a cumulative 'growth level' simulating development
+    activity from 2010 to 2030 based on the CumulativeGrowthTracker.
     """
     if df.empty or "report_year" not in df.columns:
         return df
 
-    yearly = df.groupby("report_year")["sqft"].sum().sort_index().cumsum()
-    max_val = yearly.max() if yearly.max() > 0 else 1
-    yearly_norm = (yearly / max_val).reset_index()
-    yearly_norm.columns = ["report_year", "flood_level"]
+    # Separate logic temporarily if we need to call calculator
+    atl_df = df[df['city'] == 'Atlanta, GA'].copy()
+    dc_df = df[df['city'] == 'Washington, DC'].copy()
 
-    return df.merge(yearly_norm, on="report_year", how="left")
+    calc = GrowthPressureCalculator()
+    combined_df = calc.calculate_pressure(atlanta_df=atl_df, dc_df=dc_df)
+
+    # Overwrite generic base
+    if not combined_df.empty and 'growth_pressure' in combined_df.columns:
+        df = df.merge(combined_df[['project_name', 'growth_pressure']], on='project_name', how='left')
+        base_pressure = combined_df['growth_pressure'].mean()
+    else:
+        base_pressure = 0.0
+
+    tracker = CumulativeGrowthTracker()
+    timeline_df = tracker.generate_timeline(start_year=2010, end_year=2030, base_pressure=base_pressure)
+
+    # Map back to report year
+    timeline_df.columns = ["report_year", "flood_level"]
+    return df.merge(timeline_df, on="report_year", how="left")

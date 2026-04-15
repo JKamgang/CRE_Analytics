@@ -26,20 +26,51 @@ class GrowthPressureCalculator:
         return combined_df
 
     def calculate_pressure(self, atlanta_df: pd.DataFrame, dc_df: pd.DataFrame, md_df: pd.DataFrame = None, ga_metro_df: pd.DataFrame = None) -> pd.DataFrame:
+        # Generate dummy Project IDs if missing to ensure data isn't dropped entirely during dedup
+        if not atlanta_df.empty:
+            if 'project_id' not in atlanta_df.columns:
+                atlanta_df['ProjectID'] = atlanta_df.index.astype(str) + '_atl'
+            else:
+                atlanta_df['ProjectID'] = atlanta_df['project_id'].astype(str) + '_atl'
+
+        if not dc_df.empty:
+            if 'project_id' not in dc_df.columns:
+                dc_df['ProjectID'] = dc_df.index.astype(str) + '_dc'
+            else:
+                dc_df['ProjectID'] = dc_df['project_id'].astype(str) + '_dc'
+
+        if md_df is not None and not md_df.empty:
+            if 'project_id' not in md_df.columns:
+                md_df['ProjectID'] = md_df.index.astype(str) + '_md'
+            else:
+                md_df['ProjectID'] = md_df['project_id'].astype(str) + '_md'
+
+        if ga_metro_df is not None and not ga_metro_df.empty:
+            if 'project_id' not in ga_metro_df.columns:
+                ga_metro_df['ProjectID'] = ga_metro_df.index.astype(str) + '_ga'
+            else:
+                ga_metro_df['ProjectID'] = ga_metro_df['project_id'].astype(str) + '_ga'
+
         # Step 1: Normalize Dollar Value / Cost arrays where possible
         if not atlanta_df.empty and 'est_value_millions' in atlanta_df.columns:
-            atlanta_df['z_score_cost'] = (atlanta_df['est_value_millions'] - atlanta_df['est_value_millions'].mean()) / atlanta_df['est_value_millions'].std()
-            atlanta_df['growth_pressure'] = atlanta_df['z_score_cost'].clip(lower=0)
-        else:
-            atlanta_df['growth_pressure'] = 0
-            if not atlanta_df.empty: atlanta_df['ProjectID'] = atlanta_df.index.astype(str) + '_atl'
+            std_val = atlanta_df['est_value_millions'].std()
+            if pd.notna(std_val) and std_val > 0:
+                atlanta_df['z_score_cost'] = (atlanta_df['est_value_millions'] - atlanta_df['est_value_millions'].mean()) / std_val
+                atlanta_df['growth_pressure'] = atlanta_df['z_score_cost'].clip(lower=0)
+            else:
+                atlanta_df['growth_pressure'] = 0.5
+        elif not atlanta_df.empty:
+            atlanta_df['growth_pressure'] = 0.0
 
         if not dc_df.empty and 'sqft' in dc_df.columns:
-            dc_df['z_score_sqft'] = (dc_df['sqft'] - dc_df['sqft'].mean()) / dc_df['sqft'].std()
-            dc_df['growth_pressure'] = dc_df['z_score_sqft'].clip(lower=0)
-        else:
-            dc_df['growth_pressure'] = 0
-            if not dc_df.empty: dc_df['ProjectID'] = dc_df.index.astype(str) + '_dc'
+            std_val = dc_df['sqft'].std()
+            if pd.notna(std_val) and std_val > 0:
+                dc_df['z_score_sqft'] = (dc_df['sqft'] - dc_df['sqft'].mean()) / std_val
+                dc_df['growth_pressure'] = dc_df['z_score_sqft'].clip(lower=0)
+            else:
+                dc_df['growth_pressure'] = 0.5
+        elif not dc_df.empty:
+            dc_df['growth_pressure'] = 0.0
 
         if md_df is not None and not md_df.empty:
             md_df['growth_pressure'] = 1.0 # placeholder

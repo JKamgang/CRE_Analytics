@@ -81,13 +81,25 @@ def load_data(use_live: bool = True) -> pd.DataFrame:
 # ╚══════════════════════════════════════════════════════════════════════════╝
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/96/city-buildings.png", width=64)
-    st.title("🌊 CRE Flood Graph")
+    st.title(I18nConfig.get_text("title", "en"))
     st.caption("Development Pipeline Visualizer")
+
+    with st.expander("👤 User Login / Alile Pay"):
+        st.text_input("Email", placeholder="user@example.com")
+        st.text_input("Password", type="password")
+        if st.button("Login"):
+            st.success("Logged in successfully!")
+
     st.divider()
 
     language = st.selectbox("Language", I18nConfig.LANGUAGES, index=0)
     tier = st.selectbox("Tier", [MonetizationTier.FREE, MonetizationTier.PRO, MonetizationTier.ENTERPRISE], index=0)
     st.session_state.tier = MonetizationTier(tier)
+
+    if st.session_state.tier.has_gemma_4_cv():
+        st.success("🚀 Gemma 4 Computer Vision unlocked!")
+    if st.session_state.tier.has_alile_pay():
+        st.info("💳 Alile Pay activated!")
 
     st.divider()
 
@@ -638,10 +650,12 @@ with tab_learning:
     st.markdown("""
     You can use local open-source LLMs (like **Llama 3** or **Gemma 4**) to build Power BI visuals on the fly.
     1. **Download Local LLM Engine:** Install Ollama or LM Studio to run models locally for free.
-    2. **Load Model:** Pull a model like `llama3` or `gemma`. (Note: Keep local models to 5 or fewer to optimize system resources).
-    3. **Prompting:** Ask the LLM to generate DAX based on your schema. Example:
+    2. **Load Model:** Pull a model like `llama3` or `gemma`. *(Note: Keep local models to 5 or fewer to optimize system resources)*.
+    3. **Prompting for DAX:** Ask the LLM to generate DAX based on your schema.
        > *"I have a table 'GrowthData' with 'City', 'EntryDate', and 'Est_Value'. Write a DAX measure to calculate Year-Over-Year Growth."*
-    4. **Paste:** Copy the generated DAX into your Power BI model.
+    4. **Prompting for Z-Score Understanding:**
+       > *"Explain how Z-Score normalization helps overlay multi-regional CRE data, like treating a $500M DC project vs a $5M Atlanta project fairly."*
+    5. **Paste:** Copy the generated DAX or Python code directly into your Power BI or Colab instance.
     """)
 
     st.markdown("### Summary of Data Sources")

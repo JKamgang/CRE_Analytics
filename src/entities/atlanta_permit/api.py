@@ -16,14 +16,20 @@ logger = logging.getLogger(__name__)
 
 
 # ── ArcGIS REST paging helper ────────────────────────────────────────────────
-def _query_arcgis(base_url: str, max_records: int = 2000) -> list[dict]:
-    """Page through an ArcGIS FeatureServer and return all features (with geometry)."""
+def _query_arcgis(base_url: str, max_records: int = 2000, state=None, county=None, zip_code=None, street=None) -> list[dict]:
+    """Page through an ArcGIS FeatureServer and return all features (with geometry). Supports hyper-granular geospatial search."""
     all_features: list[dict] = []
     offset = 0
 
+    where_clauses = ["1=1"]
+    if state: where_clauses.append(f"STATE = '{state}'")
+    if county: where_clauses.append(f"COUNTY LIKE '%{county}%'")
+    if zip_code: where_clauses.append(f"ZIPCODE = '{zip_code}'")
+    if street: where_clauses.append(f"ADDRESS LIKE '%{street}%'")
+
     while True:
         params = {
-            "where": "1=1",
+            "where": " AND ".join(where_clauses),
             "outFields": "*",
             "f": "json",
             "resultOffset": offset,
@@ -54,11 +60,12 @@ def _query_arcgis(base_url: str, max_records: int = 2000) -> list[dict]:
 
 
 # ── Public functions ─────────────────────────────────────────────────────────
-def fetch_atlanta_data() -> pd.DataFrame:
+def fetch_atlanta_data(**kwargs) -> pd.DataFrame:
     """Fetch raw Atlanta building-permit data and return as DataFrame."""
     features = _query_arcgis(
         ATLANTA_CONFIG["arcgis_feature_server"],
         ATLANTA_CONFIG["max_record_count"],
+        **kwargs
     )
 
     if not features:
@@ -150,10 +157,10 @@ def save_atlanta_data(raw_df: pd.DataFrame, processed_df: pd.DataFrame) -> tuple
     return raw_path, proc_path
 
 
-def run_atlanta_pipeline() -> pd.DataFrame:
+def run_atlanta_pipeline(**kwargs) -> pd.DataFrame:
     """End-to-end: fetch → normalize → save → return processed DataFrame."""
     logger.info("═══ Atlanta Pipeline START ═══")
-    raw = fetch_atlanta_data()
+    raw = fetch_atlanta_data(**kwargs)
     processed = normalize_atlanta_data(raw)
     if not processed.empty:
         save_atlanta_data(raw, processed)
