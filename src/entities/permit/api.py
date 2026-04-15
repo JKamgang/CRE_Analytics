@@ -5,11 +5,11 @@ from .model import Permit
 class AtlantaPermitAPI:
     def __init__(self):
         # Placeholder ID for Atlanta Building Permits on ARC Open Data
-        self.client = ArcGISClient(base_url=f"{Config.ATLANTA_ARC_BASE_URL}/Building_Permits/FeatureServer")
+        self.client = ArcGISClient(base_url=Config.ATLANTA_ARC_BASE_URL)
 
     def fetch_recent_permits(self, limit=100) -> list[Permit]:
         # Using a mock layer ID 0
-        data = self.client.fetch_layer_data(layer_id="0", out_fields="OBJECTID,PERMIT_TYPE,ISSUE_DATE,STATUS,ESTIMATED_COST,DESCRIPTION")
+        data = self.client.fetch_layer_data(layer_id="0", out_fields="*")
 
         permits = []
         if data and "features" in data:

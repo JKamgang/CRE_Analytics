@@ -52,7 +52,29 @@ We utilize an **LLM Cascade Router** (with fallbacks ranging from local caching 
 - **Robustness**: The 5-fallback routing ensures an explanation is always provided, saving API costs on repetitive queries while defaulting to advanced models for complex, novel scenarios.
 
 ## Quick Start
-1. Ensure Python 3.10+
-2. Install dependencies: `pip install -r requirements.txt`
-3. Set environment variable: `export GEMINI_API_KEY=your_key` (optional, for real LLM insights)
-4. Run pipeline: `python3 -m src.app.main`
+
+### 1. Prerequisites
+- Python 3.10+
+- (Optional) Gemini API Key for AI Insights
+
+### 2. Installation
+```bash
+pip install -r requirements.txt
+export GEMINI_API_KEY=your_key  # Optional
+```
+
+### 3. Launching the Web Application
+To launch the interactive dashboard (Alile CRE Analytics):
+```bash
+streamlit run src/widgets/dashboard/app.py
+```
+
+### 4. Running the Data Pipeline (CLI)
+To run the underlying data ingestion and analysis pipeline:
+```bash
+python3 -m src.app.main
+```
+
+## Branding & Mission
+A product of **Alile Group** (alileva.com).
+Contact: cs@alileva.com

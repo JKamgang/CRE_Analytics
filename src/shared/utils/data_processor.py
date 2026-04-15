@@ -9,6 +9,7 @@ import os
 import logging
 import pandas as pd
 import numpy as np
+import streamlit as st
 
 from src.shared.config.settings import DC_CONFIG, ATLANTA_CONFIG, PROCESSED_DATA_DIR, RAW_DATA_DIR, SECTORS
 from src.entities.dc_project.api import run_dc_pipeline
@@ -35,6 +36,7 @@ from src.entities.ga_metro.api import run_ga_metro_pipeline
 MD_CONFIG = {"processed_file": "md_pipeline_processed.csv"}
 GA_METRO_CONFIG = {"processed_file": "ga_metro_pipeline_processed.csv"}
 
+@st.cache_data(show_spinner=False)
 def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
     """
     Return processed data for a city.
@@ -65,6 +67,7 @@ def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
     return pipeline_fn()
 
 
+@st.cache_data(show_spinner="Loading regional data artery...")
 def load_all_cities(force_refresh: bool = False) -> pd.DataFrame:
     """Load and merge data for all configured cities and regions."""
     frames = []

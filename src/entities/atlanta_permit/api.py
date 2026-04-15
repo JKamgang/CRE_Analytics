@@ -105,11 +105,14 @@ def normalize_atlanta_data(df: pd.DataFrame) -> pd.DataFrame:
         return "Other"
 
     # Atlanta column names vary — try multiple options
+    # Use a pre-calculated map for O(1) lookups instead of nested loops
+    col_map = {col.upper(): col for col in df.columns}
+
     def _col(candidates, default=None):
         for c in candidates:
-            for col in df.columns:
-                if col.upper() == c.upper():
-                    return df[col]
+            match = col_map.get(c.upper())
+            if match:
+                return df[match]
         return pd.Series(default, index=df.index, dtype="object")
 
     out = pd.DataFrame()

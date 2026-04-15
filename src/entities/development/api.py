@@ -8,8 +8,8 @@ class DCDevelopmentAPI:
         self.client = ArcGISClient(base_url=Config.DC_WDCEP_BASE_URL)
 
     def fetch_projects(self, limit=100) -> list[DevelopmentProject]:
-        # Placeholder layer 58 for WDCEP projects
-        data = self.client.fetch_layer_data(layer_id="58", out_fields="OBJECTID,PROJECT_NAME,STATUS,PROPERTY_TYPE,SQ_FT,COMPLETION_YEAR")
+        # Placeholder layer 71 for WDCEP projects (matching DC_CONFIG in settings)
+        data = self.client.fetch_layer_data(layer_id="71", out_fields="*")
 
         projects = []
         if data and "features" in data:
