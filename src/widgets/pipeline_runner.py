@@ -2,7 +2,7 @@ from src.entities.permit.api import AtlantaPermitAPI
 from src.entities.development.api import DCDevelopmentAPI
 from src.entities.cremi.api import CREMIMockAPI
 from src.features.growth_status.calculator import GrowthStatusCalculator
-from src.features.cumulative_growth_series.tracker import CumulativeGrowthSeriesTracker
+from src.features.cumulative_growth_series_series.tracker import CumulativeGrowthSeriesTracker
 from src.shared.llm_router import LLMCascadeRouter
 import json
 import pandas as pd
@@ -40,7 +40,7 @@ class DataArteryPipeline:
 
         return {
             "mean_z_score": round(float(base_pressure), 2),
-            "timeline_peak": timeline[-1]['cumulative_growth_level'],
+            "timeline_peak": timeline[-1]['cumulative_growth_series_level'],
             "insight": insight,
             "summary": self.growth_calc.get_status_summary(df)
         }

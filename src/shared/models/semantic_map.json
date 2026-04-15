@@ -1,18 +1,22 @@
 {
-  "project_name": "Name of the commercial real estate project or permit.",
-  "city": "City where the project is located (e.g., ATL for Atlanta, DC for Washington).",
-  "ward": "Local administrative district or ward number.",
-  "neighborhood": "Specific neighborhood or street address.",
-  "developer": "The entity responsible for developing the project.",
-  "architect": "The architectural firm involved in the project design.",
-  "sector": "The asset class (e.g., Multifamily, Office, Industrial, Retail, Hotel, Mixed-Use).",
-  "status": "Current phase of the project (e.g., Planned, Under Construction, Delivered).",
-  "sqft": "Square Footage of Commercial Space.",
-  "units": "Number of residential units (for Multifamily/Mixed-Use).",
-  "est_value_millions": "Estimated dollar amount of construction/investment in millions of USD.",
-  "report_year": "The year the data was recorded or is being analyzed for.",
-  "latitude": "Geographic latitude coordinate.",
-  "longitude": "Geographic longitude coordinate.",
-  "growth_pressure": "A Z-score normalized value representing development intensity relative to the mean.",
-  "growth_status": "Categorized growth based on Z-score: Decline (Z < -1), Stagnation (-1 <= Z <= 1), Increase (Z > 1)."
+  "project_name": "Master project title.",
+  "city": "ATL/DC/MD",
+  "ward": "Admin District",
+  "status_mapping": {
+    "New Construction": "Increase",
+    "Issued": "Increase",
+    "Active": "Increase",
+    "Addition": "Increase",
+    "On-Hold": "Stagnation",
+    "Expired": "Stagnation",
+    "Review Required": "Stagnation",
+    "Demolition": "Decline",
+    "Revoked": "Decline",
+    "Withdrawn": "Decline"
+  },
+  "fields": {
+    "SQFT": "Total Square Footage of Commercial Space.",
+    "EST_COST": "Estimated investment value in USD.",
+    "RES_UNITS": "Count of multifamily living units."
+  }
 }
