@@ -17,7 +17,7 @@ class CumulativeGrowthSeriesTracker:
 
             timeline.append({
                 "year": year,
-                "cumulative_growth_level": round(current_growth_level, 2)
+                "cumulative_growth_series_level": round(current_growth_level, 2)
             })
 
         return timeline
