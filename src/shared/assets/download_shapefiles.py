@@ -24,9 +24,7 @@ def download_file(url, filename):
         logger.error(f"Failed to download {filename}: {e}")
         return None
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-
+def download_regional_assets():
     # Placeholder URLs - these would point to actual ArcGIS GeoJSON export endpoints
     assets = {
         "dc_wards.geojson": "https://opendata.dc.gov/datasets/0ef47379cbae44e88267c01eaec2ff6a_31.geojson",
@@ -36,3 +34,7 @@ if __name__ == "__main__":
 
     for filename, url in assets.items():
         download_file(url, filename)
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    download_regional_assets()
