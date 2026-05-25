@@ -62,6 +62,7 @@ def _query_arcgis(base_url: str, max_records: int = 2000, state=None, county=Non
 
 # ── Public functions ─────────────────────────────────────────────────────────
 def fetch_dc_data(**kwargs) -> pd.DataFrame:
+
     """Fetch raw WDCEP data and return as DataFrame. Supports hyper-granular geospatial search."""
     features = _query_arcgis(
         DC_CONFIG["arcgis_feature_server"],
