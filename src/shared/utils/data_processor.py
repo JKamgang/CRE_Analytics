@@ -75,9 +75,3 @@ def generate_sample_data() -> pd.DataFrame:
                 "longitude": lon + np.random.uniform(-0.1, 0.1),
             })
     return pd.DataFrame(rows)
-
-from src.features.growth_status.calculator import GrowthStatusCalculator
-
-def compute_growth_intensity(df: pd.DataFrame) -> pd.DataFrame:
-    # Legacy wrapper for intensity simulation
-    return df # Logic shifted to geo_viz for better temporal control
