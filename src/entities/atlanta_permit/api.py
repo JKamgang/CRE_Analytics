@@ -11,6 +11,7 @@ import requests
 import pandas as pd
 
 from src.shared.config.settings import ATLANTA_CONFIG, RAW_DATA_DIR, PROCESSED_DATA_DIR
+from src.shared.utils.security import sanitize_query_param
 
 logger = logging.getLogger(__name__)
 
@@ -22,10 +23,10 @@ def _query_arcgis(base_url: str, max_records: int = 2000, state=None, county=Non
     offset = 0
 
     where_clauses = ["1=1"]
-    if state: where_clauses.append(f"STATE = '{state}'")
-    if county: where_clauses.append(f"COUNTY LIKE '%{county}%'")
-    if zip_code: where_clauses.append(f"ZIPCODE = '{zip_code}'")
-    if street: where_clauses.append(f"ADDRESS LIKE '%{street}%'")
+    if state: where_clauses.append(f"STATE = '{sanitize_query_param(state)}'")
+    if county: where_clauses.append(f"COUNTY LIKE '%{sanitize_query_param(county)}%'")
+    if zip_code: where_clauses.append(f"ZIPCODE = '{sanitize_query_param(zip_code)}'")
+    if street: where_clauses.append(f"ADDRESS LIKE '%{sanitize_query_param(street)}%'")
 
     while True:
         params = {
