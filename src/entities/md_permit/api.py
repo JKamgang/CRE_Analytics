@@ -2,6 +2,8 @@ import requests
 import pandas as pd
 import logging
 
+from src.shared.utils.security import sanitize_query_param
+
 logger = logging.getLogger(__name__)
 
 def fetch_maryland_permits(limit=1000, state=None, county=None, zip_code=None, street=None):
@@ -12,10 +14,10 @@ def fetch_maryland_permits(limit=1000, state=None, county=None, zip_code=None, s
     url = "https://geodata.md.gov/imap/rest/services/BusinessEconomy/MD_IncentiveZones/FeatureServer/0/query"
 
     where_clauses = ["1=1"]
-    if state: where_clauses.append(f"STATE = '{state}'")
-    if county: where_clauses.append(f"COUNTY LIKE '%{county}%'")
-    if zip_code: where_clauses.append(f"ZIP = '{zip_code}'")
-    if street: where_clauses.append(f"STREET LIKE '%{street}%'")
+    if state: where_clauses.append(f"STATE = '{sanitize_query_param(state)}'")
+    if county: where_clauses.append(f"COUNTY LIKE '%{sanitize_query_param(county)}%'")
+    if zip_code: where_clauses.append(f"ZIP = '{sanitize_query_param(zip_code)}'")
+    if street: where_clauses.append(f"STREET LIKE '%{sanitize_query_param(street)}%'")
 
     params = {
         'where': ' AND '.join(where_clauses),
