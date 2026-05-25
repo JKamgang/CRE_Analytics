@@ -1,5 +1,12 @@
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
+import sys
+
+# Network-restricted environment mock for requests and other external deps
+import unittest.mock
+unittest.mock.patch.dict(sys.modules, {
+    'streamlit': MagicMock()
+}).start()
 
 from src.entities.ga_metro.api import fetch_atlanta_metro_regional_data
 
