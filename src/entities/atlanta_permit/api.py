@@ -9,10 +9,17 @@ import os
 import logging
 import requests
 import pandas as pd
+import re
 
 from src.shared.config.settings import ATLANTA_CONFIG, RAW_DATA_DIR, PROCESSED_DATA_DIR
 
 logger = logging.getLogger(__name__)
+
+# Pre-compile sector mapping regex at module level for performance
+_SECTOR_MAP = ATLANTA_CONFIG.get("sector_map", {})
+_tokens = sorted(_SECTOR_MAP.keys(), key=len, reverse=True)
+_pattern_str = '|'.join(map(re.escape, _tokens)) if _tokens else r'$.^'
+SECTOR_REGEX = re.compile(_pattern_str, flags=re.IGNORECASE)
 
 
 # ── ArcGIS REST paging helper ────────────────────────────────────────────────
@@ -99,9 +106,9 @@ def normalize_atlanta_data(df: pd.DataFrame) -> pd.DataFrame:
         key = str(raw_type).strip().lower()
         if key in sector_map:
             return sector_map[key]
-        for token, sector in sector_map.items():
-            if token in key:
-                return sector
+        match = SECTOR_REGEX.search(key)
+        if match:
+            return sector_map[match.group(0).lower()]
         return "Other"
 
     # Atlanta column names vary — try multiple options
@@ -122,7 +129,12 @@ def normalize_atlanta_data(df: pd.DataFrame) -> pd.DataFrame:
     out["neighborhood"] = _col(["ADDRESS", "address", "LOCATION", "location"], "")
     out["developer"] = _col(["APPLICANT", "applicant", "CONTRACTOR", "contractor", "OWNER"], "")
     out["architect"] = ""
-    out["sector"] = _col(["PERMIT_TYPE", "permit_type", "TYPE", "type", "WORK_TYPE", "PROJECT_TYPE"]).apply(_map_sector)
+
+    raw_sector_series = _col(["PERMIT_TYPE", "permit_type", "TYPE", "type", "WORK_TYPE", "PROJECT_TYPE"])
+    unique_sectors = raw_sector_series.unique()
+    sector_mapping_dict = {val: _map_sector(val) for val in unique_sectors}
+    out["sector"] = raw_sector_series.map(sector_mapping_dict)
+
     out["status"] = _col(["STATUS", "status", "PERMIT_STATUS"], "")
     out["sqft"] = pd.to_numeric(_col(["SQFT", "sqft", "SQUARE_FEET", "TOTAL_SQFT"], 0), errors="coerce")
     out["units"] = pd.to_numeric(_col(["UNITS", "units", "NUM_UNITS"], 0), errors="coerce")
