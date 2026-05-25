@@ -1,7 +1,6 @@
 import requests
 import pandas as pd
 import os
-from src.shared.config.settings import Config
 
 class QuickbaseClient:
     """
