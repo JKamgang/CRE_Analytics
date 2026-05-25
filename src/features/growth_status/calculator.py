@@ -10,15 +10,24 @@ class GrowthStatusCalculator:
     Stagnation (=): -1 <= Z <= 1
     Decline (-): Z < -1
     """
+
+    _semantic_map_cache = None
+
     def __init__(self):
         self.semantic_map = self._load_semantic_map()
 
     def _load_semantic_map(self):
+        if GrowthStatusCalculator._semantic_map_cache is not None:
+            return GrowthStatusCalculator._semantic_map_cache
+
         path = "src/shared/models/semantic_map.json"
         if os.path.exists(path):
             with open(path, "r") as f:
-                return json.load(f)
-        return {}
+                GrowthStatusCalculator._semantic_map_cache = json.load(f)
+        else:
+            GrowthStatusCalculator._semantic_map_cache = {}
+
+        return GrowthStatusCalculator._semantic_map_cache
 
     def calculate_growth_metrics(self, df: pd.DataFrame) -> pd.DataFrame:
         if df.empty:
