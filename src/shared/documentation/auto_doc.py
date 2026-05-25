@@ -1,3 +1,4 @@
+import functools
 import json
 import os
 from src.shared.llm_router import LLMCascadeRouter
@@ -9,12 +10,14 @@ class SemanticModelDocumenter:
     """
     def __init__(self, mapping_path="src/shared/models/semantic_map.json"):
         self.mapping_path = mapping_path
-        self.mapping = self._load_mapping()
+        self.mapping = self._load_mapping(self.mapping_path)
         self.ai = LLMCascadeRouter()
 
-    def _load_mapping(self):
-        if os.path.exists(self.mapping_path):
-            with open(self.mapping_path, "r") as f:
+    @staticmethod
+    @functools.lru_cache(maxsize=32)
+    def _load_mapping(mapping_path):
+        if os.path.exists(mapping_path):
+            with open(mapping_path, "r") as f:
                 return json.load(f)
         return {}
 
