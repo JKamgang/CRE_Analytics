@@ -25,7 +25,7 @@ def fetch_maryland_permits(limit=1000, state=None, county=None, zip_code=None, s
     }
 
     try:
-        response = requests.get(url, params=params)
+        response = requests.get(url, params=params, timeout=60)
         response.raise_for_status()
         data = response.json()
 
