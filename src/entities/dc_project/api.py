@@ -10,10 +10,15 @@ import json
 import logging
 import requests
 import pandas as pd
+import re
 
 from src.shared.config.settings import DC_CONFIG, RAW_DATA_DIR, PROCESSED_DATA_DIR
 
 logger = logging.getLogger(__name__)
+
+# Pre-compile regex patterns
+_YEAR_PATTERN = re.compile(r'\b((?:19|20)\d{2})\b')
+_SHORT_YEAR_PATTERN = re.compile(r'(\d{2})$')
 
 
 # ── ArcGIS REST paging helper ────────────────────────────────────────────────
@@ -161,31 +166,20 @@ def normalize_dc_data(df: pd.DataFrame) -> pd.DataFrame:
             return None
         s = str(val).strip()
         # Try to get last 4-digit year from the string
-        import re
-        years = re.findall(r'\b((?:19|20)\d{2})\b', s)
+        years = _YEAR_PATTERN.findall(s)
         if years:
             return int(years[-1])
         # Try extracting from delivery date (e.g. "Q2 24" → 2024)
+        m = _SHORT_YEAR_PATTERN.search(s)
+        if m:
+            yr = int(m.group(1))
+            return 2000 + yr if yr < 50 else 1900 + yr
         return None
     out["report_year"] = raw_year.apply(_parse_year)
 
     # Also create a delivery_year from ESTDELIVERY for time series
     est_del = df.get("ESTDELIVERY", df.get("EST_DELIVERY", pd.Series(dtype="str")))
-    def _parse_delivery_year(val):
-        if pd.isna(val):
-            return None
-        s = str(val).strip()
-        import re
-        years = re.findall(r'\b((?:19|20)\d{2})\b', s)
-        if years:
-            return int(years[-1])
-        # Handle "Q2 24" format
-        m = re.search(r'(\d{2})$', s)
-        if m:
-            yr = int(m.group(1))
-            return 2000 + yr if yr < 50 else 1900 + yr
-        return None
-    out["delivery_year"] = est_del.apply(_parse_delivery_year)
+    out["delivery_year"] = est_del.apply(_parse_year)
 
     # Use delivery_year as report_year if report_year is missing
     out["report_year"] = out["report_year"].fillna(out["delivery_year"])
