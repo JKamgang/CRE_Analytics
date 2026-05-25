@@ -16,7 +16,8 @@ class QuickbaseClient:
         }
 
     def query_records(self, table_id):
-        if not self.headers["Authorization"].split()[-1]:
+        token = self.headers.get("Authorization", "").split()[-1]
+        if token in ("None", "QB-USER-TOKEN", ""):
             return pd.DataFrame() # No token provided
 
         endpoint = f"{self.base_url}/records/query"
