@@ -46,5 +46,23 @@ class TestGAMetroAPI(unittest.TestCase):
         expected_where_clause = "1=1 AND COUNTY LIKE '%Fulton%'' OR ''1''=''1%'"
         self.assertEqual(params['where'], expected_where_clause)
 
+    @patch('src.entities.ga_metro.api.requests.get')
+    def test_fetch_atlanta_metro_regional_data_timeout(self, mock_get):
+        # Setup mock to return an empty JSON response
+        mock_get.return_value.json.return_value = {}
+
+        fetch_atlanta_metro_regional_data()
+
+        # It's called twice because of the fallback mechanism
+        self.assertEqual(mock_get.call_count, 2)
+
+        # Verify the primary request timeout
+        args, kwargs = mock_get.call_args_list[0]
+        self.assertEqual(kwargs.get('timeout'), 60)
+
+        # Verify the fallback request timeout
+        args, kwargs = mock_get.call_args_list[1]
+        self.assertEqual(kwargs.get('timeout'), 60)
+
 if __name__ == '__main__':
     unittest.main()
