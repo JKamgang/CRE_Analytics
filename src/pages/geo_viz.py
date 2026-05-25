@@ -10,53 +10,9 @@ from src.features.growth_status.calculator import GrowthStatusCalculator
 from src.shared.monetization.framework import MonetizationTier
 from src.widgets.report_builder.generator import ReportBuilder
 
-def main():
-    st.header("🌍 Growth Dynamics — Interactive Geospatial Center")
-
-    tier = st.session_state.get('tier', MonetizationTier.FREE)
-
-    # 1. Configuration & Engine Choice
-    with st.sidebar:
-        st.header("🗺️ GIS Configuration")
-        engine = st.selectbox(
-            "Mapping Engine",
-            ["Leaflet + OpenStreetMap (OSM)", "MapLibre GL", "QGIS Desktop Bridge"],
-            help="Select the geospatial rendering engine."
-        )
-
-        st.divider()
-        st.header("🎨 Temporal Colors")
-        past_color = st.color_picker("Past Year Color", "#9E9E9E")  # Ghost Gray
-        present_color = st.color_picker("Current Year Color", "#FF5252")  # Pulse Red
-        future_color = st.color_picker("Future Year Color", "#2196F3")  # Horizon Blue
-
-        st.divider()
-        st.header("🫧 Bubble Settings")
-        bubble_var = st.radio(
-            "Bubble Size Variable",
-            ["Project Count", "Total Sqft", "Est. Value ()"]
-        )
-
-        view_mode = st.radio("View Mode", ["Exact Points", "Aggregated Clustering"])
-
-    # 2. Load Data
-    df_raw = load_all_cities()
-    if df_raw.empty:
-        st.warning("No data available to visualize.")
-        return
-
-    calc = GrowthStatusCalculator()
-    df = calc.calculate_growth_metrics(df_raw)
-
-    # 3. Temporal Control
-    min_year = int(df['report_year'].min()) if 'report_year' in df.columns and not df['report_year'].isna().all() else 2010
-    max_year = int(df['report_year'].max()) if 'report_year' in df.columns and not df['report_year'].isna().all() else 2030
-    current_year = st.slider("🕰️ Temporal Controller", min_year, max_year, 2024)
-
-    # 4. Data Processing for Map
+def process_map_data(df, current_year, view_mode, bubble_var):
     df_map = df.copy()
 
-    # Color logic: past, present, future
     def get_temporal_cat(year):
         if year < current_year: return "Past"
         if year == current_year: return "Present"
@@ -65,7 +21,6 @@ def main():
     df_map['temporal_category'] = df_map['report_year'].apply(get_temporal_cat)
 
     if view_mode == "Aggregated Clustering":
-        # Aggregate by City and Ward for simulation of clustering
         agg_cols = ['city', 'ward', 'temporal_category', 'growth_status']
         df_map = df_map.groupby(agg_cols).agg({
             'latitude': 'mean',
@@ -80,7 +35,6 @@ def main():
         df_map['project_count'] = 1
         hover_name = "project_name"
 
-    # Size logic
     if bubble_var == "Project Count":
         df_map['bubble_size'] = df_map['project_count'] * 10
     elif bubble_var == "Total Sqft":
@@ -90,7 +44,9 @@ def main():
 
     df_map['bubble_size'] = np.clip(df_map['bubble_size'], 8, 60)
 
-    # Rendering
+    return df_map, hover_name
+
+def render_map(df_map, engine, past_color, present_color, future_color, hover_name, view_mode):
     mapbox_style = "carto-positron" if "OSM" in engine else "dark"
 
     fig = px.scatter_mapbox(
@@ -114,7 +70,7 @@ def main():
     fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
     st.plotly_chart(fig, use_container_width=True)
 
-    # Export options for paid users
+def render_export_options(tier, engine):
     if tier != MonetizationTier.FREE:
         col_ex1, col_ex2 = st.columns(2)
         with col_ex1:
@@ -124,7 +80,7 @@ def main():
                 rb = ReportBuilder()
                 rb.export_qgis_script()
 
-    # 5. Legend / Symbology Panel
+def render_legend_panel(current_year, past_color, present_color, future_color, tier):
     st.divider()
     col_l1, col_l2 = st.columns([2, 1])
     with col_l1:
@@ -145,6 +101,66 @@ def main():
             rb.render_ui()
         else:
             st.info("💡 Pro Tier unlocked: Branded PDF Report Builder & QGIS Desktop Bridge.")
+
+def render_sidebar_config():
+    with st.sidebar:
+        st.header("🗺️ GIS Configuration")
+        engine = st.selectbox(
+            "Mapping Engine",
+            ["Leaflet + OpenStreetMap (OSM)", "MapLibre GL", "QGIS Desktop Bridge"],
+            help="Select the geospatial rendering engine."
+        )
+
+        st.divider()
+        st.header("🎨 Temporal Colors")
+        past_color = st.color_picker("Past Year Color", "#9E9E9E")  # Ghost Gray
+        present_color = st.color_picker("Current Year Color", "#FF5252")  # Pulse Red
+        future_color = st.color_picker("Future Year Color", "#2196F3")  # Horizon Blue
+
+        st.divider()
+        st.header("🫧 Bubble Settings")
+        bubble_var = st.radio(
+            "Bubble Size Variable",
+            ["Project Count", "Total Sqft", "Est. Value ()"]
+        )
+
+        view_mode = st.radio("View Mode", ["Exact Points", "Aggregated Clustering"])
+
+    return engine, past_color, present_color, future_color, bubble_var, view_mode
+
+def main():
+    st.header("🌍 Growth Dynamics — Interactive Geospatial Center")
+
+    tier = st.session_state.get('tier', MonetizationTier.FREE)
+
+    # 1. Configuration & Engine Choice
+    engine, past_color, present_color, future_color, bubble_var, view_mode = render_sidebar_config()
+
+    # 2. Load Data
+    df_raw = load_all_cities()
+    if df_raw.empty:
+        st.warning("No data available to visualize.")
+        return
+
+    calc = GrowthStatusCalculator()
+    df = calc.calculate_growth_metrics(df_raw)
+
+    # 3. Temporal Control
+    min_year = int(df['report_year'].min()) if 'report_year' in df.columns and not df['report_year'].isna().all() else 2010
+    max_year = int(df['report_year'].max()) if 'report_year' in df.columns and not df['report_year'].isna().all() else 2030
+    current_year = st.slider("🕰️ Temporal Controller", min_year, max_year, 2024)
+
+    # 4. Data Processing for Map
+    df_map, hover_name = process_map_data(df, current_year, view_mode, bubble_var)
+
+    # 5. Rendering
+    render_map(df_map, engine, past_color, present_color, future_color, hover_name, view_mode)
+
+    # 6. Export options for paid users
+    render_export_options(tier, engine)
+
+    # 7. Legend / Symbology Panel
+    render_legend_panel(current_year, past_color, present_color, future_color, tier)
 
 if __name__ == "__main__":
     main()
