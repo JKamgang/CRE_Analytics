@@ -12,25 +12,22 @@ import requests
 import pandas as pd
 
 from src.shared.config.settings import DC_CONFIG, RAW_DATA_DIR, PROCESSED_DATA_DIR
+from src.shared.utils.arcgis import build_where_clause
 
 logger = logging.getLogger(__name__)
 
 
 # ── ArcGIS REST paging helper ────────────────────────────────────────────────
-def _query_arcgis(base_url: str, max_records: int = 2000, state=None, county=None, zip_code=None, street=None) -> list[dict]:
+def _query_arcgis(base_url: str, max_records: int = 2000, state=None, county=None, zip_code=None, street=None, **kwargs) -> list[dict]:
     """Page through an ArcGIS FeatureServer and return all features. Supports hyper-granular searches."""
     all_features: list[dict] = []
     offset = 0
 
-    where_clauses = ["1=1"]
-    if state: where_clauses.append(f"STATE = '{state}'")
-    if county: where_clauses.append(f"COUNTY LIKE '%{county}%'")
-    if zip_code: where_clauses.append(f"ZIPCODE = '{zip_code}'")
-    if street: where_clauses.append(f"ADDRESS LIKE '%{street}%'")
+    where_str = build_where_clause(state=state, county=county, zip_code=zip_code, street=street, **kwargs)
 
     while True:
         params = {
-            "where": " AND ".join(where_clauses),
+            "where": where_str,
             "outFields": "*",
             "f": "json",
             "resultOffset": offset,
