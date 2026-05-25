@@ -9,7 +9,6 @@ from src.entities.dc_project.api import run_dc_pipeline
 from src.entities.atlanta_permit.api import run_atlanta_pipeline
 from src.entities.md_permit.api import run_maryland_pipeline
 from src.entities.ga_metro.api import run_ga_metro_pipeline
-from src.entities.dc_wdcep.api import run_dc_wdcep_pipeline
 
 logger = logging.getLogger(__name__)
 
@@ -18,9 +17,6 @@ def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
     if city.upper() in ("DC", "WASHINGTON"):
         cfg = DC_CONFIG
         pipeline_fn = run_dc_pipeline
-    elif city.upper() == "DC_WDCEP":
-        cfg = {"processed_file": "dc_wdcep_processed.csv"}
-        pipeline_fn = run_dc_wdcep_pipeline
     elif city.upper() in ("ATL", "ATLANTA"):
         cfg = ATLANTA_CONFIG
         pipeline_fn = run_atlanta_pipeline
@@ -44,7 +40,7 @@ def load_or_fetch(city: str, force_refresh: bool = False) -> pd.DataFrame:
 @st.cache_data(show_spinner="Loading Growth Dynamics Artery...")
 def load_all_cities(force_refresh: bool = False) -> pd.DataFrame:
     frames = []
-    for key in ("DC", "ATL", "MD", "GA_METRO", "DC_WDCEP"):
+    for key in ("DC", "ATL", "MD", "GA_METRO"):
         df = load_or_fetch(key, force_refresh=force_refresh)
         if not df.empty:
             frames.append(df)
