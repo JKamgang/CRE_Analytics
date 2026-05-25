@@ -7,16 +7,23 @@ class SemanticModelDocumenter:
     Provides automated documentation and semantic mapping for the AI assistant.
     Integrates with LLM Cascade to help users understand data and create analysis.
     """
+
+    _cache = {}
+
     def __init__(self, mapping_path="src/shared/models/semantic_map.json"):
         self.mapping_path = mapping_path
         self.mapping = self._load_mapping()
         self.ai = LLMCascadeRouter()
 
     def _load_mapping(self):
-        if os.path.exists(self.mapping_path):
-            with open(self.mapping_path, "r") as f:
-                return json.load(f)
-        return {}
+        if self.mapping_path not in self.__class__._cache:
+            if os.path.exists(self.mapping_path):
+                with open(self.mapping_path, "r") as f:
+                    self.__class__._cache[self.mapping_path] = json.load(f)
+            else:
+                self.__class__._cache[self.mapping_path] = {}
+
+        return self.__class__._cache[self.mapping_path]
 
     def get_column_description(self, col_name):
         return self.mapping.get(col_name, "No description available.")
