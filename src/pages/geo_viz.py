@@ -56,13 +56,13 @@ def main():
     # 4. Data Processing for Map
     df_map = df.copy()
 
-    # Color logic: past, present, future
-    def get_temporal_cat(year):
-        if year < current_year: return "Past"
-        if year == current_year: return "Present"
-        return "Future"
-
-    df_map['temporal_category'] = df_map['report_year'].apply(get_temporal_cat)
+    # Color logic: past, present, future (Vectorized)
+    conditions = [
+        df_map['report_year'] < current_year,
+        df_map['report_year'] == current_year
+    ]
+    choices = ["Past", "Present"]
+    df_map['temporal_category'] = np.select(conditions, choices, default="Future")
 
     if view_mode == "Aggregated Clustering":
         # Aggregate by City and Ward for simulation of clustering
