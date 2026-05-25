@@ -25,6 +25,11 @@ class TestGAMetroAPI(unittest.TestCase):
         # We expect the ' in the input to be replaced by ''
         expected_where_clause = "1=1 AND STATE_ABBR = 'GA'' OR 1=1--'"
         self.assertEqual(params['where'], expected_where_clause)
+        self.assertEqual(kwargs.get('timeout'), 60)
+
+        # Check fallback call
+        args_fb, kwargs_fb = mock_get.call_args_list[1]
+        self.assertEqual(kwargs_fb.get('timeout'), 60)
 
     @patch('src.entities.ga_metro.api.requests.get')
     def test_fetch_atlanta_metro_regional_data_county_injection(self, mock_get):
@@ -45,6 +50,7 @@ class TestGAMetroAPI(unittest.TestCase):
 
         expected_where_clause = "1=1 AND COUNTY LIKE '%Fulton%'' OR ''1''=''1%'"
         self.assertEqual(params['where'], expected_where_clause)
+        self.assertEqual(kwargs.get('timeout'), 60)
 
 if __name__ == '__main__':
     unittest.main()
