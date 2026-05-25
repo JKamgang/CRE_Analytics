@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import json
 import os
+import html
 from src.shared.utils.data_processor import load_all_cities
 from src.features.growth_status.calculator import GrowthStatusCalculator
 from src.shared.monetization.framework import MonetizationTier
@@ -131,10 +132,13 @@ def main():
         st.subheader("📊 Legend & Symbology")
         st.write(f"**Active Time Period:** {current_year}")
         st.latex(r"Z = \frac{x - \mu}{\sigma}")
+        safe_past = html.escape(past_color, quote=True)
+        safe_present = html.escape(present_color, quote=True)
+        safe_future = html.escape(future_color, quote=True)
         st.markdown(f"""
-        - <span style='color:{past_color}'>●</span> **Past Year Color:** {past_color} (Growth already delivered)
-        - <span style='color:{present_color}'>●</span> **Current Year Color:** {present_color} (Active construction/permits)
-        - <span style='color:{future_color}'>●</span> **Future Year Color:** {future_color} (Projected horizon)
+        - <span style='color:{safe_past}'>●</span> **Past Year Color:** {safe_past} (Growth already delivered)
+        - <span style='color:{safe_present}'>●</span> **Current Year Color:** {safe_present} (Active construction/permits)
+        - <span style='color:{safe_future}'>●</span> **Future Year Color:** {safe_future} (Projected horizon)
         """, unsafe_allow_html=True)
 
         st.info(f"**Growth Dynamics Mode:** Tracking Increase (Z>1), Stagnation (-1 to 1), and Decline (Z<-1)")
