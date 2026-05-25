@@ -6,12 +6,16 @@ the canonical CRE Growth Graph schema, and exports to CSV.
 """
 
 import os
+import re
 import json
 import logging
 import requests
 import pandas as pd
 
 from src.shared.config.settings import DC_CONFIG, RAW_DATA_DIR, PROCESSED_DATA_DIR
+
+YEAR_PATTERN = re.compile(r'\b((?:19|20)\d{2})\b')
+DELIVERY_PATTERN = re.compile(r'(\d{2})$')
 
 logger = logging.getLogger(__name__)
 
@@ -161,8 +165,7 @@ def normalize_dc_data(df: pd.DataFrame) -> pd.DataFrame:
             return None
         s = str(val).strip()
         # Try to get last 4-digit year from the string
-        import re
-        years = re.findall(r'\b((?:19|20)\d{2})\b', s)
+        years = YEAR_PATTERN.findall(s)
         if years:
             return int(years[-1])
         # Try extracting from delivery date (e.g. "Q2 24" → 2024)
@@ -175,12 +178,11 @@ def normalize_dc_data(df: pd.DataFrame) -> pd.DataFrame:
         if pd.isna(val):
             return None
         s = str(val).strip()
-        import re
-        years = re.findall(r'\b((?:19|20)\d{2})\b', s)
+        years = YEAR_PATTERN.findall(s)
         if years:
             return int(years[-1])
         # Handle "Q2 24" format
-        m = re.search(r'(\d{2})$', s)
+        m = DELIVERY_PATTERN.search(s)
         if m:
             yr = int(m.group(1))
             return 2000 + yr if yr < 50 else 1900 + yr
