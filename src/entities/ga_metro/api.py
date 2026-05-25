@@ -28,7 +28,7 @@ def fetch_atlanta_metro_regional_data(limit=1000, state=None, county=None, zip_c
     }
 
     try:
-        response = requests.get(url, params=params)
+        response = requests.get(url, params=params, timeout=60)
         response.raise_for_status()
         data = response.json()
         features = None
@@ -37,7 +37,7 @@ def fetch_atlanta_metro_regional_data(limit=1000, state=None, county=None, zip_c
             features = [f['attributes'] for f in data['features']]
         else:
             logger.info("Falling back to raw item data URL...")
-            fallback_response = requests.get(fallback_url)
+            fallback_response = requests.get(fallback_url, timeout=60)
             fallback_response.raise_for_status()
             fallback_data = fallback_response.json()
             if 'features' in fallback_data:
